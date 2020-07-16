@@ -1,4 +1,4 @@
-﻿namespace VokaTester.Controllers
+﻿namespace VokaTester.Features
 {
     using Microsoft.AspNetCore.Mvc;
 

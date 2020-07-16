@@ -1,9 +1,7 @@
-﻿
-
-namespace VokaTester.Models.Vokabel
+﻿namespace VokaTester.Features.Vokabeln.Models
 {
     using System.ComponentModel.DataAnnotations;
-    
+
     using static VokaTester.Data.Validation.Vokabel;
 
     public class CreateVokabelRequestModel

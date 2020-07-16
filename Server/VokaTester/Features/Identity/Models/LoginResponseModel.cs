@@ -1,4 +1,4 @@
-﻿namespace VokaTester.Models.Identity
+﻿namespace VokaTester.Features.Identity.Models
 {
     public class LoginResponseModel
     {
