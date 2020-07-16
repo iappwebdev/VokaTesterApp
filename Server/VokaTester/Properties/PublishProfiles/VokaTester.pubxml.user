@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAt31R48cDREWw4/DmCDZbFQAAAAACAAAAAAAQZgAAAAEAACAAAAB5/vYhvWjzF5VY7K8HAAbd0mD8rOao6Xs9/g5uLrLmSgAAAAAOgAAAAAIAACAAAAATflVvBi3LurrlriP3OFR1ATAWP5VJfZ2DG2W8n2I1DSAAAACObKywuatXowzsKoybhBGpZk3YCXLBFbNcvoUaTBoc+EAAAAB5a0W1WqbvkLqIVSN27keBgSC5/2iSG5yrTnhAe1EA5sHT/rvxW3+VPo01IYORImn8nD24+pjp2UzuDeElh5jY</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=VMB20FCA9\\BASERVER%3bDatabase=VokaTester%3bIntegrated Security=true%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="VokaTester.Data.VokaTesterDbContext">
+      <Value>00000000000000_CreateIdentitySchema</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
