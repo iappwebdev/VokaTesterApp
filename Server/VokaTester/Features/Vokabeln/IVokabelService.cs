@@ -8,6 +8,8 @@
     {
         Task<int> Create(string frz, string deu, int lektionId);
 
-        public Task<IEnumerable<VokabelListResponseModel>> ByLektion(int lektionId);
+        public Task<IEnumerable<VokabelListingServiceModel>> ByLektion(int lektionId);
+
+        public Task<VokabelDetailsServiceModel> Details(int id);
     }
 }

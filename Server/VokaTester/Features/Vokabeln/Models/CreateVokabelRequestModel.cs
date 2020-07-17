@@ -4,7 +4,7 @@
 
     using static VokaTester.Data.Validation.Vokabel;
 
-    public class CreateVokabelRequestModel
+    public class CreateVokabelModel
     {
         [Required]
         [MaxLength(MaxWort)]

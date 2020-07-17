@@ -47,7 +47,7 @@
 
         [HttpPost]
         [Route(nameof(Login))]
-        public async Task<ActionResult<LoginResponseModel>> Login(LoginRequestModel model)
+        public async Task<ActionResult<LoginResponseModel>> Login(LoginModel model)
         {
             User user = await this.userManager.FindByNameAsync(model.UserName);
             if (user == null)

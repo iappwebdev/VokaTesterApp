@@ -1,6 +1,6 @@
 ﻿namespace VokaTester.Features.Vokabeln.Models
 {
-    public class VokabelListResponseModel
+    public class VokabelListingServiceModel
     {
         public int Id { get; set; }
 

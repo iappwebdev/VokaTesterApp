@@ -17,11 +17,11 @@
             this.dbContext = dbContext;
         }
 
-        public async Task<IEnumerable<VokabelListResponseModel>> ByLektion(int lektionId)
+        public async Task<IEnumerable<VokabelListingServiceModel>> ByLektion(int lektionId)
             => await this.dbContext
                 .Vokabel
                 .Where(x => x.LektionId == lektionId)
-                .Select(x => new VokabelListResponseModel
+                .Select(x => new VokabelListingServiceModel
                 {
                     Id = x.Id,
                     Frz = x.Frz,
@@ -48,5 +48,20 @@
 
             return vokabel.Id;
         }
+
+        public async Task<VokabelDetailsServiceModel> Details(int id)
+            => await this.dbContext
+                .Vokabel
+                .Where(x => x.Id == id)
+                .Select(x => new VokabelDetailsServiceModel
+                {
+                    Id = x.Id,
+                    LektionName = x.Lektion.Name,
+                    Frz = x.Frz,
+                    Deu = x.Deu,
+                    Phonetik = x.Phonetik,
+                    ImageUrl = x.ImageUrl
+                })
+                .FirstOrDefaultAsync();
     }
 }

@@ -12,6 +12,7 @@
     using VokaTester.Data.Models;
     using VokaTester.Features.Identity;
     using VokaTester.Features.Vokabeln;
+    using VokaTester.Infrastructure.Filters;
 
     public static class ServiceCollectionExtensions
     {
@@ -81,5 +82,10 @@
             services.Configure<AppSettings>(applicationSettings);
             return applicationSettings.Get<AppSettings>();
         }
+
+        public static void AddApiControllers(this IServiceCollection services)
+            => services
+                .AddControllers(options => options
+                    .Filters.Add<ModelOrNotFoundActionFilter>());
     }
 }

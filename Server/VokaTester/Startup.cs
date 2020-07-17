@@ -22,7 +22,7 @@ namespace VokaTester
                 .AddJwtAuthentication(services.GetApplicationSettings(this.Configuration))
                 .AddApplicationServices()
                 .AddSwagger()
-                .AddControllers();
+                .AddApiControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

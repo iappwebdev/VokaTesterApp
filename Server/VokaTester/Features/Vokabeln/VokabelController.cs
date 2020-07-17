@@ -6,6 +6,7 @@
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using VokaTester.Features.Vokabeln.Models;
+    using VokaTester.Infrastructure.Extensions;
 
     [Authorize]
     public class VokabelController : ApiController
@@ -18,16 +19,15 @@
         }
 
         [HttpGet]
-        public async Task<IEnumerable<VokabelListResponseModel>> GetByLektion() => await this.vokabelService.ByLektion(1);
+        public async Task<IEnumerable<VokabelListingServiceModel>> GetByLektion()
+            => await this.vokabelService.ByLektion(1);
 
         [HttpGet]
-        public async Task<VokabelDetailsResponseModel> Details()
-        {
-
-        }
+        public async Task<VokabelDetailsServiceModel> Details(int id)
+            => await this.vokabelService.Details(id);
 
         [HttpPost]
-        public async Task<ActionResult<int>> Create(CreateVokabelRequestModel model)
+        public async Task<ActionResult<int>> Create(CreateVokabelModel model)
         {
             int id = await this.vokabelService.Create(model.Frz, model.Deu, 1);
 
