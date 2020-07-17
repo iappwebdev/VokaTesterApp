@@ -12,6 +12,10 @@
         {
         }
 
+        public DbSet<Lektion> Lektion { get; set; }
+        
+        public DbSet<Vokabel> Vokabel { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder

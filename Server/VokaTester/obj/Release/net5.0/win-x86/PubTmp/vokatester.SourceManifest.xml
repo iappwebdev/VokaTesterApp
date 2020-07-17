@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="o:\vokatester\vokatester\obj\Release\net5.0\win-x86\PubTmp\Out\" />
-  <dbfullsql path="o:\vokatester\vokatester\obj\Release\net5.0\win-x86\PubTmp\EFSQLScripts\VokaTester.Data.VokaTesterDbContext.sql" />
+  <IisApp path="O:\VokaTester\Server\VokaTester\obj\Release\net5.0\win-x86\PubTmp\Out\" />
 </sitemanifest>

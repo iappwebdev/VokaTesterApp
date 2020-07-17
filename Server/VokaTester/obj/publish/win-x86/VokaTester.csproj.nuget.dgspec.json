@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "O:\\VokaTester\\VokaTester\\VokaTester.csproj": {}
+    "O:\\VokaTester\\Server\\VokaTester\\VokaTester.csproj": {}
   },
   "projects": {
-    "O:\\VokaTester\\VokaTester\\VokaTester.csproj": {
+    "O:\\VokaTester\\Server\\VokaTester\\VokaTester.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "O:\\VokaTester\\VokaTester\\VokaTester.csproj",
+        "projectUniqueName": "O:\\VokaTester\\Server\\VokaTester\\VokaTester.csproj",
         "projectName": "VokaTester",
-        "projectPath": "O:\\VokaTester\\VokaTester\\VokaTester.csproj",
+        "projectPath": "O:\\VokaTester\\Server\\VokaTester\\VokaTester.csproj",
         "packagesPath": "C:\\Users\\Simon\\.nuget\\packages\\",
-        "outputPath": "O:\\VokaTester\\VokaTester\\obj\\publish\\win-x86\\",
+        "outputPath": "O:\\VokaTester\\Server\\VokaTester\\obj\\publish\\win-x86\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -66,6 +66,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [
@@ -78,6 +82,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+              "version": "[5.0.0-preview.6.20312.15, 5.0.0-preview.6.20312.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x86",
+              "version": "[5.0.0-preview.6.20305.6, 5.0.0-preview.6.20305.6]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+              "version": "[5.0.0-preview.6.20308.1, 5.0.0-preview.6.20308.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
