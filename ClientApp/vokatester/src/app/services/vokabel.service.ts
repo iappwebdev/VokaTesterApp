@@ -8,8 +8,11 @@ import { Vokabel } from '../models/vokabel';
   providedIn: 'root'
 })
 export class VokabelService {
-  private vokabelPath = environment.apiUrl + '/vokabel'
-  constructor(private http: HttpClient) { }
+  private vokabelPath = environment.apiUrl + '/vokabel';
+
+  constructor(
+    private http: HttpClient
+  ) { }
 
   create(data: Vokabel): Observable<Vokabel> {
     return this.http.post<Vokabel>(this.vokabelPath, data);

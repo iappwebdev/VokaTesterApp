@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { VokabelService } from '../services/vokabel.service';
 
 @Component({
@@ -9,7 +10,12 @@ import { VokabelService } from '../services/vokabel.service';
 })
 export class CreateVokabelComponent implements OnInit {
   vokabelForm: FormGroup;
-  constructor(private fb: FormBuilder, private vokabelService: VokabelService) {
+
+  constructor(
+    private fb: FormBuilder,
+    private vokabelService: VokabelService,
+    private toastr: ToastrService
+  ) {
     this.vokabelForm = this.fb.group({
       'frz': ['', [Validators.required]],
       'deu': ['', [Validators.required]],
@@ -39,7 +45,7 @@ export class CreateVokabelComponent implements OnInit {
 
   create() {
     this.vokabelService.create(this.vokabelForm.value).subscribe(res => {
-        console.log(res)
-    })
+      this.toastr.success('Vokabel angelegt.');
+    });
   }
 }

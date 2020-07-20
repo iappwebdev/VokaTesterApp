@@ -31,6 +31,10 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "src/assets/forms.less",
               "src/styles.less"
             ],
             "scripts": []
@@ -95,6 +99,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "node_modules/ngx-toastr/toastr.css",
               "src/styles.less"
             ],
             "scripts": []
@@ -126,6 +133,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "vokatester"
 }

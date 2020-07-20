@@ -7,28 +7,28 @@
                     <label for="frz">Frz</label>
                     <input type="text" class="form-control" formControlName="frz">
                 </div>
-                <div *ngIf="frz.touched && frz.errors?.required" class="alert alert-danger">
+                <div *ngIf="frz?.touched && frz?.errors?.required" class="alert alert-danger">
                     This field is required!
                 </div>
                 <div class="form-group">
                     <label for="deu">Deu</label>
                     <input type="text" class="form-control" formControlName="deu">
                 </div>
-                <div *ngIf="deu.touched && deu.errors?.required" class="alert alert-danger">
+                <div *ngIf="deu?.touched && deu?.errors?.required" class="alert alert-danger">
                     This field is required!
                 </div>
                 <div class="form-group">
                     <label for="phonetik">Phonetik</label>
                     <input type="text" class="form-control" formControlName="phonetik">
                 </div>
-                <div *ngIf="phonetik.touched && phonetik.errors?.required" class="alert alert-danger">
+                <div *ngIf="phonetik?.touched && phonetik?.errors?.required" class="alert alert-danger">
                     This field is required!
                 </div>
                 <div class="form-group">
                     <label for="imageUrl">Image URL</label>
                     <input type="text" class="form-control" formControlName="imageUrl">
                 </div>
-                <div *ngIf="imageUrl.touched && imageUrl.errors?.required" class="alert alert-danger">
+                <div *ngIf="imageUrl?.touched && imageUrl?.errors?.required" class="alert alert-danger">
                     This field is required!
                 </div>
                 <button type="submit" class="btn btn-primary">Create</button>

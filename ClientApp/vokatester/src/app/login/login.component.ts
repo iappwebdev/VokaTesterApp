@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -9,7 +11,13 @@ import { AuthService } from '../services/auth.service';
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
-  constructor(private fb: FormBuilder, private authService: AuthService) { 
+
+  constructor(
+    private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router,
+    private toastr: ToastrService
+  ) {
     this.loginForm = this.fb.group({
       'username': ['', [Validators.required]],
       'password': ['', [Validators.required]]
@@ -17,11 +25,16 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (this.authService.isAuthenticated()) {
+      this.router.navigate(['home-vokabeln'])
+    }
   }
 
   login() {
     this.authService.login(this.loginForm.value).subscribe(data => {
       this.authService.saveToken(data.token);
+      this.toastr.success('Willkommen!')
+      this.router.navigate(['home-vokabeln'])
     })
   }
 
