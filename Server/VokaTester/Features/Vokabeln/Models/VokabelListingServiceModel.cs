@@ -6,12 +6,16 @@
 
         public int LektionId { get; set; }
 
-        public string Frz { get; set; }
+        public int BereichId { get; set; }
+        
+        public bool CaseSensitive { get; set; }
 
-        public string Deu { get; set; }
+        public string Frz { get; set; }
+        
+        public string FrzSan { get; internal set; }
 
         public string Phonetik { get; set; }
 
-        public string ImageUrl { get; set; }
+        public string Deu { get; set; }
     }
 }

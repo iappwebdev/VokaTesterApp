@@ -11,7 +11,7 @@
             {
                 object model = result.Value;
 
-                if (model != null)
+                if (model == null)
                 {
                     context.Result = new NotFoundResult();
                 }

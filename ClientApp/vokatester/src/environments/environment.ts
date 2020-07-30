@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  //apiUrl: 'https://localhost:5001/api',
-  apiUrl: 'http://vokatester.de/api'
+  apiUrl: 'https://localhost:44388/api',
+  // apiUrl: 'https://localhost:5001/api',
+  // apiUrl: 'https://vokatester.de/backend/api'
 };
 
 /*

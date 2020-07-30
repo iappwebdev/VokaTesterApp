@@ -3,6 +3,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using AutoMapper;
     using Microsoft.EntityFrameworkCore;
     using VokaTester.Data;
     using VokaTester.Data.Models;
@@ -11,24 +12,44 @@
     public class VokabelService : IVokabelService
     {
         private readonly VokaTesterDbContext dbContext;
+        private readonly IMapper mapper;
 
-        public VokabelService(VokaTesterDbContext dbContext)
+        public VokabelService(
+            VokaTesterDbContext dbContext,
+            IMapper mapper)
         {
             this.dbContext = dbContext;
+            this.mapper = mapper;
         }
+
+        public async Task<LektionListingServiceModel> Lektion(int lektionId)
+        {
+            Lektion res =
+                await this.dbContext
+                   .Lektion
+                   .FirstOrDefaultAsync(x => x.Id == lektionId);
+
+            return this.mapper.Map<LektionListingServiceModel>(res);
+        }
+
+        public async Task<IEnumerable<LektionListingServiceModel>> Lektionen()
+            => await this.dbContext
+                .Lektion
+                .Select(x => this.mapper.Map<LektionListingServiceModel>(x))
+                .ToListAsync();
 
         public async Task<IEnumerable<VokabelListingServiceModel>> ByLektion(int lektionId)
             => await this.dbContext
                 .Vokabel
                 .Where(x => x.LektionId == lektionId)
-                .Select(x => new VokabelListingServiceModel
-                {
-                    Id = x.Id,
-                    Frz = x.Frz,
-                    Deu = x.Deu,
-                    Phonetik = x.Phonetik,
-                    ImageUrl = x.ImageUrl
-                })
+                .Select(x => this.mapper.Map<VokabelListingServiceModel>(x))
+                .ToListAsync();
+
+        public async Task<IEnumerable<VokabelListingServiceModel>> ByWortnetz(string wortnetz)
+            => await this.dbContext
+                .Vokabel
+                .Where(x => x.WortnetzList.Contains(wortnetz))
+                .Select(x => this.mapper.Map<VokabelListingServiceModel>(x))
                 .ToListAsync();
 
         public async Task<int> Create(string frz, string deu, int lektionId)
@@ -38,7 +59,6 @@
                 Frz = frz,
                 Deu = deu,
                 Phonetik = "N/A",
-                ImageUrl = "N/A",
                 LektionId = lektionId
             };
 
@@ -59,8 +79,7 @@
                     LektionName = x.Lektion.Name,
                     Frz = x.Frz,
                     Deu = x.Deu,
-                    Phonetik = x.Phonetik,
-                    ImageUrl = x.ImageUrl
+                    Phonetik = x.Phonetik
                 })
                 .FirstOrDefaultAsync();
     }

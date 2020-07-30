@@ -2,7 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
 
-    using static VokaTester.Data.Validation.Vokabel;
+    using static VokaTester.Data.ValidationRules.Vokabel;
 
     public class CreateVokabelModel
     {

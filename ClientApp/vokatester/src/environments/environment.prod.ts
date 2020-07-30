@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://vokatester.de/api'
+  apiUrl: 'https://vokatester.de/backend/api'
 };

@@ -8,8 +8,14 @@
     {
         Task<int> Create(string frz, string deu, int lektionId);
 
+        Task<LektionListingServiceModel> Lektion(int lektionId);
+
+        Task<IEnumerable<LektionListingServiceModel>> Lektionen();
+
         public Task<IEnumerable<VokabelListingServiceModel>> ByLektion(int lektionId);
 
+        Task<IEnumerable<VokabelListingServiceModel>> ByWortnetz(string wortnetz);
+        
         public Task<VokabelDetailsServiceModel> Details(int id);
     }
 }

@@ -1,0 +1,28 @@
+<section fxLayout="row wrap" fxLayoutAlign="center center">
+    <mat-card fxFlex="350px" fxFlex.xs="100%">
+        <mat-card-title>Login</mat-card-title>
+        <form [formGroup]="registerForm" novalidate (ngSubmit)="register()" fxLayout="column wrap"
+            fxLayoutAlign="center center" fxLayoutGap="10px">
+            <mat-card-content>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Username" formControlName="username" id="username">
+                    <mat-error *ngIf="hasErrorRequired('username')">Username ist erforderlich</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="email" placeholder="Email" formControlName="email" id="email">
+                    <mat-error *ngIf="hasErrorRequired('email')">Email ist erforderlich</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="password" placeholder="Passwort" formControlName="password" id="password">
+                    <mat-error *ngIf="hasErrorRequired('password')">Passwort ist erforderlich</mat-error>
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-actions align="start">
+                <button mat-raised-button color="primary" [disabled]="!registerForm.valid">Registrieren</button>
+                <div class="link-login">
+                    Konto bereits vorhanden? <a routerLink="/login">Login</a>
+                </div>
+            </mat-card-actions>
+        </form>
+    </mat-card>
+</section>

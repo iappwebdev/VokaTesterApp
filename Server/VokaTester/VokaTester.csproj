@@ -6,11 +6,33 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\Migrations\20200717081354_NewMigration.cs" />
-    <Compile Remove="Data\Migrations\20200717081354_NewMigration.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200723170840_CreateVokabelSchema.cs" />
+    <Compile Remove="Data\Migrations\20200723170840_CreateVokabelSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200723173958_CreateVokabelSchema.cs" />
+    <Compile Remove="Data\Migrations\20200723173958_CreateVokabelSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200723200734_CreateTableWort.cs" />
+    <Compile Remove="Data\Migrations\20200723200734_CreateTableWort.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200723201207_CreateTableWort.cs" />
+    <Compile Remove="Data\Migrations\20200723201207_CreateTableWort.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200723201846_AddColumsToVokabel.cs" />
+    <Compile Remove="Data\Migrations\20200723201846_AddColumsToVokabel.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200726110948_AddAdditionalColumsToVokabel.cs" />
+    <Compile Remove="Data\Migrations\20200726110948_AddAdditionalColumsToVokabel.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200726112139_CreateVokabelSchema.cs" />
+    <Compile Remove="Data\Migrations\20200726112139_CreateVokabelSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200729080745_ExtendVokabelSchema.cs" />
+    <Compile Remove="Data\Migrations\20200729080745_ExtendVokabelSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200729105428_ExtendLektionSchema.cs" />
+    <Compile Remove="Data\Migrations\20200729105428_ExtendLektionSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200729113326_ExtendLektionSchema2.cs" />
+    <Compile Remove="Data\Migrations\20200729113326_ExtendLektionSchema2.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="CsvHelper" Version="15.0.5" />
+    <PackageReference Include="F23.StringSimilarity" Version="3.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.6" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.0-preview.6.20312.15" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0-preview.6.20312.15" />

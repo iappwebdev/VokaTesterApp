@@ -2,8 +2,10 @@
 {
     using Microsoft.AspNetCore.Mvc;
 
+    using static VokaTester.Infrastructure.WebConstants;
+
     [ApiController]
-    [Route("api/[controller]")]
+    [Route(DefaultRoute)]
     public abstract class ApiController : ControllerBase
     {
     }

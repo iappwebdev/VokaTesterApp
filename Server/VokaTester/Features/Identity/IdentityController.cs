@@ -1,4 +1,4 @@
-﻿namespace VokaTester.Controllers.Identity
+﻿namespace VokaTester.Features.Identity
 {
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Identity;
@@ -37,12 +37,7 @@
 
             IdentityResult result = await this.userManager.CreateAsync(user, model.Password);
 
-            if (result.Succeeded)
-            {
-                return Ok();
-            }
-
-            return BadRequest(result.Errors);
+            return result.Succeeded ? Ok() : (ActionResult)BadRequest(result.Errors);
         }
 
         [HttpPost]

@@ -1,0 +1,8 @@
+﻿<columns units="px">
+  <column name="Muster" type="Text" />
+  <column name="Replace" type="Text" />
+  <column name="Regex" type="Boolean" format="1;0" nulltext="-" alignment="Center" />
+  <column name="Match case" type="Text" />
+  <column name="Bemerkung" type="Text" />
+  <column name="Mehrmals" type="Boolean" format="1;0" nulltext="-" alignment="Center" />
+</columns>

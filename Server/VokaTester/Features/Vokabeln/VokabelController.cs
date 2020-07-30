@@ -1,14 +1,13 @@
 ﻿namespace VokaTester.Features.Vokabeln
 {
-    using System.Collections;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using VokaTester.Features.Vokabeln.Models;
-    using VokaTester.Infrastructure.Extensions;
 
-    [Authorize]
+    using static VokaTester.Infrastructure.WebConstants;
+
+    //[Authorize]
     public class VokabelController : ApiController
     {
         private readonly IVokabelService vokabelService;
@@ -22,6 +21,7 @@
         public async Task<IEnumerable<VokabelListingServiceModel>> GetByLektion()
             => await this.vokabelService.ByLektion(1);
 
+        [Route(Id)]
         [HttpGet]
         public async Task<VokabelDetailsServiceModel> Details(int id)
             => await this.vokabelService.Details(id);

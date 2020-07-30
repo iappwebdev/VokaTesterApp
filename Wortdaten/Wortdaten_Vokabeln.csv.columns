@@ -1,0 +1,13 @@
+﻿<columns units="px">
+  <column name="SeedId" type="Text" />
+  <column name="Sheet" type="Text" />
+  <column name="LektionNr" type="Text" />
+  <column name="LektionName" type="Text" />
+  <column name="BereichNr" type="Text" />
+  <column name="CaseSensitive" type="Boolean" format="1;0" nulltext="-" alignment="Center" />
+  <column name="Frz" type="Text" />
+  <column name="Frz_San" type="Text" />
+  <column name="Phonetik" type="Text" />
+  <column name="Deu" type="Text" />
+  <column name="Deu_San" type="Text" />
+</columns>
