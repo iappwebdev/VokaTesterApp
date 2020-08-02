@@ -2,20 +2,16 @@
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using VokaTester.Features.Vokabeln.Models;
+    using VokaTester.Features.Vokabeln.Dto;
 
     public interface IVokabelService
     {
-        Task<int> Create(string frz, string deu, int lektionId);
+        Task<IEnumerable<VokabelDto>> All();
 
-        Task<LektionListingServiceModel> Lektion(int lektionId);
+        public Task<IEnumerable<VokabelDto>> ByLektion(int lektionId);
 
-        Task<IEnumerable<LektionListingServiceModel>> Lektionen();
+        Task<IEnumerable<VokabelDto>> ByWortnetz(string wortnetz);
 
-        public Task<IEnumerable<VokabelListingServiceModel>> ByLektion(int lektionId);
-
-        Task<IEnumerable<VokabelListingServiceModel>> ByWortnetz(string wortnetz);
-        
-        public Task<VokabelDetailsServiceModel> Details(int id);
+        Task<VokabelDto> Single(int id);
     }
 }

@@ -6,9 +6,9 @@
     using Microsoft.Extensions.Options;
     using VokaTester.Data.Models;
     using VokaTester.Features;
-    using VokaTester.Features.Identity;
-    using VokaTester.Features.Identity.Models;
+    using VokaTester.Features.Identity.Dto;
 
+    [Route("api/identity")]
     public class IdentityController : ApiController
     {
         private readonly UserManager<User> userManager;
@@ -26,8 +26,8 @@
         }
 
         [HttpPost]
-        [Route(nameof(Register))]
-        public async Task<ActionResult> Register(RegisterUserRequestModel model)
+        [Route("register")]
+        public async Task<ActionResult> Register(RegisterUserRequestDto model)
         {
             var user = new User
             {
@@ -41,8 +41,8 @@
         }
 
         [HttpPost]
-        [Route(nameof(Login))]
-        public async Task<ActionResult<LoginResponseModel>> Login(LoginModel model)
+        [Route("login")]
+        public async Task<ActionResult<LoginResponseDto>> Login(LoginDto model)
         {
             User user = await this.userManager.FindByNameAsync(model.UserName);
             if (user == null)
@@ -58,7 +58,7 @@
 
             string token = this.identityService.GenerateJwtToken(user.Id, user.UserName, this.appSettings.Secret);
 
-            return new LoginResponseModel
+            return new LoginResponseDto
             {
                 Token = token
             };

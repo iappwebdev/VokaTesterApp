@@ -9,6 +9,7 @@ namespace VokaTester.Features.WortArt
     using VokaTester.Infrastructure.Services;
 
     [Authorize]
+    [Route("api/wortart")]
     public class WortArtController : ApiController
     {
         private readonly IWortArtService wortArtService;

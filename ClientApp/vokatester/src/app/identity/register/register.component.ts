@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { AuthService } from '../../services/auth.service';
-import { FormValidationService } from '../../services/form-validation.service';
+import { FormValidationService } from 'src/app/services/form-validation.service';
+import { AuthService } from 'src/app/services/infrastructure/auth.service';
 
 @Component({
   selector: 'app-register',
@@ -11,7 +11,11 @@ import { FormValidationService } from '../../services/form-validation.service';
   styleUrls: ['./register.component.less']
 })
 export class RegisterComponent implements OnInit {
-  registerForm: FormGroup
+  registerForm = this.fb.group({
+    'username': ['', [Validators.required]],
+    'email': ['', [Validators.required]],
+    'password': ['', [Validators.required]]
+  });
 
   constructor(
     private fb: FormBuilder,
@@ -19,13 +23,7 @@ export class RegisterComponent implements OnInit {
     private formValidation: FormValidationService,
     private router: Router,
     private toastr: ToastrService
-  ) {
-    this.registerForm = this.fb.group({
-      'username': ['', [Validators.required]],
-      'email': ['', [Validators.required]],
-      'password': ['', [Validators.required]]
-    })
-  }
+  ) { }
 
   ngOnInit(): void {
   }
@@ -36,7 +34,7 @@ export class RegisterComponent implements OnInit {
     this.authService.register(this.registerForm.value).subscribe(data => {
       this.toastr.success('Registrierung erfolgreich, Sie können sich nun anmelden!')
       this.router.navigate(['login'])
-    })
+    });
   }
 
   get username() {

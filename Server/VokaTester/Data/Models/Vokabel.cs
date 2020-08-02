@@ -15,11 +15,11 @@
         [Required]
         public int LektionId { get; set; }
 
-        public Lektion Lektion { get; set; }
+        public virtual Lektion Lektion { get; set; }
 
         public int BereichId { get; set; }
 
-        public Bereich Bereich { get; set; }
+        public virtual Bereich Bereich { get; set; }
 
         public bool CaseSensitive { get; set; }
 

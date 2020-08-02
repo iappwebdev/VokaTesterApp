@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { AuthService } from 'src/app/services/infrastructure/auth.service';
 import { environment } from 'src/environments/environment';
-import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-navigation',
@@ -11,6 +11,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class NavigationComponent {
   msgCnt: number = 0;
+
   constructor(
     private authService: AuthService,
     private toastr: ToastrService,
@@ -36,7 +37,7 @@ export class NavigationComponent {
       else {
         this.toastr.error("Das ist eine Error Test Nachricht");
       }
-      
+
       this.msgCnt++;
     }
   }

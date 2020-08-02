@@ -11,7 +11,8 @@ export class HeadlineComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private route: ActivatedRoute) {
+    private route: ActivatedRoute
+  ) {
     this.router.events.subscribe((data) => {
       if (data instanceof RoutesRecognized) {
         this.routeData = data.state.root.firstChild?.data;
@@ -25,7 +26,7 @@ export class HeadlineComponent implements OnInit {
   get title() {
     return this.routeData?.title;
   }
-  
+
   get parent() {
     return this.routeData?.parent;
   }

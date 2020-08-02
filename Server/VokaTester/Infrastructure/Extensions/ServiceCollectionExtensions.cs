@@ -17,18 +17,20 @@
     using VokaTester.Features.WortArt;
     using VokaTester.Infrastructure.Filters;
     using VokaTester.Infrastructure.Services;
+    using VokaTester.Features.Lektionen;
 
     public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
             => services
                 .AddScoped<ICurrentUserService, CurrentUserService>()
-                .AddTransient<IIdentityService, IdentityService>()
-                .AddTransient<IIdentityService, IdentityService>()
                 .AddTransient<IGeneralizeStringService, GeneralizeStringService>()
-                .AddTransient<IVokabelSpellCheckService, VokabelSpellCheckService>()
+                .AddTransient<IIdentityService, IdentityService>()
+                .AddTransient<IIdentityService, IdentityService>()
+                .AddTransient<ILektionenService, LektionenService>()
                 .AddTransient<IStringSimilarityService, StringSimilarityService>()
                 .AddTransient<IVokabelService, VokabelService>()
+                .AddTransient<IVokabelSpellCheckService, VokabelSpellCheckService>()
                 .AddTransient<IWortArtService, WortArtService>();
 
         public static void AddApiControllers(this IServiceCollection services)
@@ -40,6 +42,7 @@
         {
             services
                     .AddDbContext<VokaTesterDbContext>(options => options
+                        .UseLazyLoadingProxies()
                         .UseSqlServer(configuration.GetDefaultConnectionString()));
             //services
                 //.AddIdentity<User, IdentityRole>()

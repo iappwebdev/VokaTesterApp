@@ -1,0 +1,84 @@
+@import '../../../globals.less';
+
+mat-card-title {
+    margin-bottom: 40px !important;
+    color: @primary;
+    font-size: 18px;
+}
+
+.question {
+    line-height: 1;
+    font-size: 30px;
+    min-height: 90px;
+}
+
+.solution {
+    min-height: 80px;
+
+    .heading {
+        margin-bottom: 3px;
+        font-size: 16px;
+
+        &.is-correct {
+            font-size: 25px;
+            margin-bottom: 7px;
+            color: @correct-answer;
+        }
+    }
+
+    .truth {
+        font-size: 20px;
+    }
+}
+
+input.form-control:disabled {
+    background-color: #fff;
+}
+
+.input-group-text {
+    background-color: #fff;
+    font-size: 20px;
+}
+
+app-sonderzeichen-leiste {
+    display: block;
+    margin-top: 10px;
+}
+
+mat-card-actions {
+    text-align: left;
+    margin: 40px 0 0 0;
+
+    button {
+        font-size: 18px;
+    }
+}
+
+.has-answered {
+    &.is-correct {
+
+        input,
+        .input-group-text {
+            color: @correct-answer;
+            border-color: @correct-answer;
+        }
+    }
+
+    &.is-similar {
+
+        input,
+        .input-group-text {
+            color: @similar-answer;
+            border-color: @similar-answer;
+        }
+    }
+
+    &.is-wrong {
+
+        input,
+        .input-group-text {
+            color: @wrong-answer;
+            border-color: @wrong-answer;
+        }
+    }
+}

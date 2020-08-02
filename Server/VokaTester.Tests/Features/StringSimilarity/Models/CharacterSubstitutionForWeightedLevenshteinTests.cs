@@ -3,7 +3,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using NUnit.Framework;
-    using VokaTester.Features.StringSimilarity.Models.WeightedLevenshtein;
+    using VokaTester.Features.StringSimilarity.Dto.WeightedLevenshtein;
 
     public class CharacterSubstitutionForWeightedLevenshteinTests
     {

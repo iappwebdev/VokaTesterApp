@@ -15,6 +15,6 @@
         [Required, MaxLength(MaxNameOrTitel)]
         public string Name { get; set; }
 
-        public List<Vokabel> Vokabeln { get; } = new List<Vokabel>();
+        public virtual ICollection<Vokabel> Vokabeln { get; set; }
     }
 }

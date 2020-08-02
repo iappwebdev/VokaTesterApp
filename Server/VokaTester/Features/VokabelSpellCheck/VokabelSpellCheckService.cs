@@ -6,7 +6,7 @@
     using Microsoft.EntityFrameworkCore;
     using VokaTester.Data;
     using VokaTester.Data.Models;
-    using VokaTester.Features.VokabelSpellCheck.Models;
+    using VokaTester.Features.VokabelSpellCheck.Dto;
     using VokaTester.Features.StringSimilarity;
 
     public class VokabelSpellCheckService : IVokabelSpellCheckService
@@ -25,7 +25,7 @@
             this.stringSimilarityService = stringSimilarityService;
         }
 
-        public async Task<VokabelSpellCheckResult> CheckSpelling(int vokabelId, string frz)
+        public async Task<CheckVokabelResponse> CheckSpelling(int vokabelId, string frz)
         {
             Vokabel vokabel = await this.dbContext.Vokabel.FindAsync(vokabelId);
 
@@ -33,45 +33,47 @@
         }
 
 
-        public async Task<VokabelSpellCheckResult> CheckSpelling(Vokabel vokabel, string answer)
+        public async Task<CheckVokabelResponse> CheckSpelling(Vokabel vokabel, string answer)
         {
-            string truth = vokabel.Frz;
+            string truth = vokabel.FrzSan;
 
-            var result = new VokabelSpellCheckResult
+            var result = new CheckVokabelResponse
             {
                 VokabelId = vokabel.Id,
                 Answer = answer,
-                AnswerSanitized = this.generalizeStringService.SanitizeString(answer),
+                AnswerSan = this.generalizeStringService.SanitizeString(answer),
                 Truth = truth,
-                TruthSanitized = this.generalizeStringService.SanitizeString(truth)
+                TruthSan = this.generalizeStringService.SanitizeString(truth)
             };
 
             await this.GetAdditionalAnswers(vokabel, result);
 
-            if (this.IsCorrectAnswer(result.TruthSanitized, result.AnswerSanitized))
+            if (this.IsCorrectAnswer(result.TruthSan, result.AnswerSan, vokabel.CaseSensitive))
             {
                 result.IsCorrect = true;
             }
             else
             {
-                result.SimilarityResult =  this.stringSimilarityService.CheckSimilarity(truth, result.AnswerSanitized);
+                result.SimilarityResult = this.stringSimilarityService.CheckSimilarity(truth, result.AnswerSan);
             }
 
             return result;
         }
 
-        private async Task GetAdditionalAnswers(Vokabel vokabel, VokabelSpellCheckResult result)
+        private async Task GetAdditionalAnswers(Vokabel vokabel, CheckVokabelResponse result)
         {
             List<Vokabel> similarVokabeln = await dbContext.Vokabel.Where(x => x.Deu == vokabel.Deu && x.Id != vokabel.Id).ToListAsync();
 
             if (similarVokabeln.Any())
             {
                 result.HasMultipleCorrectAnswers = true;
+                result.FurterCorrectVokabelIds = similarVokabeln.Select(x => x.Id).ToList();
                 result.FurtherCorrectAnswers = similarVokabeln.Select(x => x.Frz).ToList();
-                result.FurtherCorrectAnswersSanitized = result.FurtherCorrectAnswers.Select(x => this.generalizeStringService.SanitizeString(x)).ToList();
+                result.FurtherCorrectAnswersSan = result.FurtherCorrectAnswers.Select(x => this.generalizeStringService.SanitizeString(x)).ToList();
             }
         }
 
-        public bool IsCorrectAnswer(string truth, string answer) => truth == answer;
+        public bool IsCorrectAnswer(string truth, string answer, bool isCaseSensitive)
+            => isCaseSensitive ? truth == answer : truth.ToLower() == answer.ToLower();
     }
 }

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { AuthService } from '../../services/auth.service';
-import { FormValidationService } from '../../services/form-validation.service';
+import { FormValidationService } from 'src/app/services/form-validation.service';
+import { AuthService } from 'src/app/services/infrastructure/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +11,10 @@ import { FormValidationService } from '../../services/form-validation.service';
   styleUrls: ['./login.component.less']
 })
 export class LoginComponent implements OnInit {
-  loginForm: FormGroup;
+  loginForm = this.fb.group({
+    'username': ['', [Validators.required]],
+    'password': ['', [Validators.required]]
+  });
 
   constructor(
     private fb: FormBuilder,
@@ -19,12 +22,7 @@ export class LoginComponent implements OnInit {
     private formValidation: FormValidationService,
     private router: Router,
     private toastr: ToastrService
-  ) {
-    this.loginForm = this.fb.group({
-      'username': ['', [Validators.required]],
-      'password': ['', [Validators.required]]
-    });
-  }
+  ) { }
 
   ngOnInit(): void {
     if (this.authService.isAuthenticated()) {

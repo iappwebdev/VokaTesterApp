@@ -6,7 +6,8 @@ SET IDENTITY_INSERT [dbo].[Vokabel] ON;
 GO
 
 INSERT INTO [dbo].[Vokabel]
-	([SheetNr]
+	([Id]
+	,[SheetNr]
     ,[LektionId]
     ,[BereichId]
     ,[CaseSensitive]

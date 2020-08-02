@@ -1,20 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment';
-import { Vokabel } from '../models/vokabel';
+import { Vokabel } from 'src/app/models/vokabel';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class VokabelService {
-  private vokabelPath = environment.apiUrl + '/vokabel';
+  private path = environment.apiUrl + '/vokabeln';
 
   constructor(
     private http: HttpClient
   ) { }
 
-  create(data: Vokabel): Observable<Vokabel> {
-    return this.http.post<Vokabel>(this.vokabelPath, data);
+  byLektion(lektionId: number): Observable<Vokabel[]> {
+    return this.http.get<Vokabel[]>(this.path + '/by-lektion/' + lektionId);
   }
 }

@@ -1,6 +1,6 @@
 ﻿namespace VokaTester.Features.StringSimilarity
 {
-    using VokaTester.Features.StringSimilarity.Models;
+    using VokaTester.Features.StringSimilarity.Dto;
 
     public interface IStringSimilarityService
     {

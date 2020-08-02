@@ -9,7 +9,7 @@
     using VokaTester.Data;
     using VokaTester.Data.Models;
     using VokaTester.Features.StringSimilarity;
-    using VokaTester.Features.WortArt.Models;
+    using VokaTester.Features.WortArt.Dto;
 
     public class WortArtService : IWortArtService
     {
@@ -41,7 +41,7 @@
 
                 if (response != "[]")
                 {
-                    List<DwdsResponse> dwdsResponses = JsonConvert.DeserializeObject<List<DwdsResponse>>(response);
+                    List<DwdsResponseDto> dwdsResponses = JsonConvert.DeserializeObject<List<DwdsResponseDto>>(response);
                     bool gotResult = dwdsResponses.Where(x => !string.IsNullOrWhiteSpace(x.Wortart)).Any();
 
                     if (gotResult)

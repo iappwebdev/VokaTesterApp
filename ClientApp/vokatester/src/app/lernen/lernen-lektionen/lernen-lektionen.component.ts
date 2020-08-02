@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Lektion } from '../../models/lektion';
-import { LernenService } from '../../services/lernen.service';
+import { Lektion } from 'src/app/models/lektion';
+import { LektionenService } from 'src/app/services/lektionen.service';
 
 @Component({
   selector: 'app-lernen-lektionen',
@@ -9,10 +9,13 @@ import { LernenService } from '../../services/lernen.service';
 })
 export class LernenLektionenComponent implements OnInit {
   lektionen: Lektion[] = [];
-  constructor(private lernenService: LernenService) { }
+
+  constructor(
+    private lektionenService: LektionenService
+  ) { }
 
   ngOnInit(): void {
-    this.lernenService.lektionen().subscribe(res => {
+    this.lektionenService.lektionen().subscribe(res => {
       this.lektionen = res;
     })
   }

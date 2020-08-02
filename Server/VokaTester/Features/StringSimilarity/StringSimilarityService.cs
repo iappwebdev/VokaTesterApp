@@ -1,9 +1,9 @@
 ﻿namespace VokaTester.Features.StringSimilarity
 {
     using F23.StringSimilarity;
-    using VokaTester.Features.StringSimilarity.Models;
-    using VokaTester.Features.StringSimilarity.Models.Levensthein;
-    using VokaTester.Features.StringSimilarity.Models.WeightedLevenshtein;
+    using VokaTester.Features.StringSimilarity.Dto;
+    using VokaTester.Features.StringSimilarity.Dto.Levensthein;
+    using VokaTester.Features.StringSimilarity.Dto.WeightedLevenshtein;
 
     public class StringSimilarityService : IStringSimilarityService
     {

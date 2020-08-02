@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppTile } from '../../models/app-tile';
+import { AppTile } from 'src/app/models/app-tile';
 
 @Component({
   selector: 'app-main-lernen',
@@ -19,7 +19,7 @@ export class MainLernenComponent implements OnInit {
     },
     {
       id: 2,
-      text: 'Vokabeln trainieren nach Wortnetzen',
+      text: 'Vokabeln lernen nach Wortnetzen',
       descr: 'Hier kannst du die Vokabeln nach Wortnetzen lernen.',
       photo: '../../assets/images/ki2.webp',
       link: '/vokabeln/lernen/wortnetze',

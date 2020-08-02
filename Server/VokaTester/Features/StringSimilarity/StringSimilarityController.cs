@@ -1,12 +1,11 @@
 ﻿namespace VokaTester.Features.StringSimilarity
 {
-    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
-    using VokaTester.Features.StringSimilarity.Models;
-    using VokaTester.Features.VokabelSpellCheck.Models;
+    using VokaTester.Features.StringSimilarity.Dto;
     using VokaTester.Infrastructure.Services;
 
     //[Authorize]
+    [Route("api/string-similarity")]
     public class StringSimilarityController : ApiController
     {
         private readonly IStringSimilarityService stringSimilarityService;

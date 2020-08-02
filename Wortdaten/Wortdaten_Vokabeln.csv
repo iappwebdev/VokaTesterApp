@@ -71,17 +71,12 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 70;2;1;Au début;BV;0;un cinéma;un cinéma;ɛ̃sinema;ein Kino;ein Kino
 71;2;1;Au début;BV;0;une médiathèque;une médiathèque;ynmedjatɛk;eine Mediathek;eine Mediathek
 72;2;1;Au début;BV;0;dans la rue;dans la rue;dɑ͂laʀy;auf der Straße;auf der Straße
-73;2;2;Unité 1;DE;1;Bonjour!;Bonjour;bɔ̃ʒuʀ;Guten Tag!;Guten Tag
 74;2;2;Unité 1;DE;1;Paris;Paris;paʀi;Hauptstadt Frankreichs;Hauptstadt Frankreichs
-75;2;2;Unité 1;AA;0;et;et;e;und;und
 76;2;2;Unité 1;AA;1;Viens!;Viens;vjɛ̃;Komm! (Aufforderung);Komm
 77;2;2;Unité 1;AA;0;papa;papa;papa;Papa;Papa
-78;2;2;Unité 1;AA;0;vite (adv.);vite;vit;schnell (Adv.);schnell
 79;2;2;Unité 1;AA;1;Miaou!;Miaou;mjau;Miau!;Miau
 80;2;2;Unité 1;AA;1;Ouah, ouah!;Ouah, ouah;wawa;Wau, wau!;Wau, wau
 81;2;2;Unité 1;AA;0;S.P.A.;S.P.A.;ɛspea;die S.P.A.;die S.P.A.
-82;2;2;Unité 1;AA;0;Ça va?;Ça va;sava;Wie geht's?;Wie geht's
-83;2;2;Unité 1;AA;0;je m'appelle;je m'appelle;ʒəmapɛl;ich heiße;ich heiße
 84;2;2;Unité 1;AA;0;qui (Fragepronomen);qui;ki;wer;wer
 85;2;2;Unité 1;AA;1;Qui est-ce?;Qui est-ce;kiɛs;Wer ist das?;Wer ist das
 86;2;2;Unité 1;AA;1;Attention!;Attention;atɑ͂sjɔ̃;Achtung!;Achtung
@@ -89,24 +84,15 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 88;2;2;Unité 1;AA;0;non;non;nɔ̃;nein;nein
 89;3;2;Unité 1;AA;1;Pardon.;Pardon;paʀdɔ̃;Entschuldigung.;Entschuldigung
 90;3;2;Unité 1;AA;1;Salut! (fam.);Salut;saly;Hallo!/Grüß dich!;Hallo/Grüß dich
-91;3;2;Unité 1;AA;1;Salut! (fam.);Salut;saly;Grüß dich!;Grüß dich
 92;3;2;Unité 1;AA;1;Comment?;Comment;kɔmɑ͂;Wie? (Fragewort);Wie
 93;3;2;Unité 1;AA;0;ce/c';ce|c';sə;das (z. B. in c'est = das ist ...);das
 94;3;2;Unité 1;AA;0;c'est;c'est;sɛ;das ist;das ist
-95;3;2;Unité 1;AA;0;moi;moi;mwa;ich (betont);ich
 96;3;2;Unité 1;AA;0;je suis;je suis;ʒəsɥi;ich bin;ich bin
-97;3;2;Unité 1;AA;0;toi;toi;twa;du (betont);du
-98;3;2;Unité 1;AA;0;voilà;voilà;vwala;da ist;da ist
-99;3;2;Unité 1;AA;0;voilà;voilà;vwala;da sind;da sind
 100;3;2;Unité 1;AA;1;Tu t'appelles comment?;Tu t'appelles comment;tytapɛlkɔmɑ͂;Wie heißt du?;Wie heißt du
 101;3;2;Unité 1;AB;0;bizarre;bizarre;bizaʀ;komisch;komisch
 102;3;2;Unité 1;AB;0;bizarre;bizarre;bizaʀ;merkwürdig;merkwürdig
 103;3;2;Unité 1;AB;0;un chat;un chat;ɛ̃ʃa;eine Katze;eine Katze
-104;3;2;Unité 1;AB;0;un chien;un chien;ɛ̃ʃjɛ̃;ein Hund;ein Hund
 105;3;2;Unité 1;AB;0;mais;mais;mɛ;aber;aber
-106;3;2;Unité 1;AB;0;oui;oui;wi;ja;ja
-107;3;2;Unité 1;AB;0;bien (adv.);bien;bjɛ̃;gut (Adv.);gut
-108;3;2;Unité 1;AB;0;merci;merci;mɛʀsi;danke;danke
 109;3;2;Unité 1;AB;0;ici;ici;isi;hier;hier
 110;3;2;Unité 1;AB;0;ici;ici;isi;hierher;hierher
 111;3;2;Unité 1;AB;0;tu es;tu es;tyɛ;du bist;du bist
@@ -121,8 +107,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 120;3;2;Unité 1;AB;0;elle est;elle est;ɛlɛ;sie ist;sie ist
 121;3;2;Unité 1;AB;0;fantastique;fantastique;fɑ͂tastik;fantastisch;fantastisch
 122;3;2;Unité 1;AB;0;fantastique;fantastique;fɑ͂tastik;toll;toll
-123;3;2;Unité 1;AB;0;aussi;aussi;osi;auch;auch
-124;3;2;Unité 1;AB;0;un copain/une copine (fam.);un copain|une copine;ɛ̃kɔpɛ̃/ynkɔpin;ein Freund/eine Freundin;ein Freund/eine Freundin
 125;3;2;Unité 1;AB;0;une dame;une dame;yndam;eine Dame;eine Dame
 126;3;2;Unité 1;AB;0;une dame;une dame;yndam;eine Frau;eine Frau
 127;3;2;Unité 1;AB;0;un monsieur;un monsieur;ɛ̃məsjø;ein Herr;ein Herr
@@ -134,7 +118,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 133;4;2;Unité 1;AB;0;madame ...;madame;madam;Frau ...;Frau
 134;4;2;Unité 1;AB;1;Bof! (fam.);Bof;bɔf;Na ja. (ugs.);Na ja
 135;4;2;Unité 1;AB;1;Bof! (fam.);Bof;bɔf;Ach. (ugs.);Ach
-136;4;2;Unité 1;AB;1;Au revoir!;Au revoir;ɔʀvwaʀ;Auf Wiedersehen!;Auf Wiedersehen
 137;4;2;Unité 1;PR;1;un cochon d'Inde;un cochon d'Inde;ɛ̃kɔʃɔ̃dɛ̃d;ein Meereschweinchen;ein Meereschweinchen
 138;4;2;Unité 1;PR;0;un poisson;un poisson;ɛ̃pwasɔ̃;ein Fisch;ein Fisch
 139;4;2;Unité 1;PR;0;un cheval/des chevaux;un cheval|des chevaux;ɛ̃ʃəval/deʃəvo;ein Pferd/Pferde;ein Pferd/Pferde
@@ -157,7 +140,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 156;4;3;Unité 2;DE;0;Qu'est-ce que c'est?;Qu'est-ce que c'est;kɛskəsɛ;Was ist das?;Was ist das
 157;4;3;Unité 2;DE;1;à (Paris);à (Paris);a;in (Paris);in (Paris)
 158;4;3;Unité 2;DE;1;à (Paris);à (Paris);a;nach (Paris);nach (Paris)
-159;4;3;Unité 2;DE;0;une maison;une maison;ynmɛzɔ̃;ein Haus;ein Haus
 160;4;3;Unité 2;DE;0;une maison de la presse;une maison de la presse;ynmɛzɔ̃dəlapʀɛs;ein Zeitschriften- und Schreibwarengeschäft;ein Zeitschriften- und Schreibwarengeschäft
 161;4;3;Unité 2;DE;0;que;que;kə;was;was
 162;4;3;Unité 2;DE;1;Que fait Léo?;Que fait Léo;kəfɛleo;Was macht Léo?;Was macht Léo
@@ -189,21 +171,18 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 188;5;3;Unité 2;AA;0;porter qc;porter qc;pɔʀte;etwas tragen;etwas tragen
 189;5;3;Unité 2;AA;0;dans;dans;dɑ͂;in;in
 190;5;3;Unité 2;AA;0;une rue;une rue;ynʀy;eine Straße;eine Straße
-191;5;3;Unité 2;AA;0;dans la rue;dans la rue;dɑ͂laʀy;auf der Straße;auf der Straße
 192;5;3;Unité 2;AA;0;entrer;entrer;ɑ͂tʀe;eintreten;eintreten
 193;5;3;Unité 2;AA;0;entrer;entrer;ɑ͂tʀe;hereinkommen;hereinkommen
 194;5;3;Unité 2;AA;0;euh ...;euh;ø;äh ...;äh
 195;5;3;Unité 2;AA;0;là;là;la;da;da
 196;5;3;Unité 2;AA;0;là;là;la;dort;dort
 197;5;3;Unité 2;AA;1;Chut!;Chut;ʃyt;Pst!;Pst
-198;5;3;Unité 2;AA;0;pour;pour;puʀ;für;für
 199;5;3;Unité 2;AA;0;une école;une école;ynekɔl;eine Schule;eine Schule
 200;5;3;Unité 2;AA;0;en vacances (f. pl.);en vacances;ɑ͂vakɑ͂s;in den Ferien;in den Ferien
 201;5;3;Unité 2;AA;1;Tiens!;Tiens;tjɛ̃;Sieh mal!;Sieh mal
 202;5;3;Unité 2;AA;1;Tiens!;Tiens;tjɛ̃;Schau mal!;Schau mal
 203;5;3;Unité 2;AA;0;une grand-mère;une grand-mère;yngʀɑ͂mɛʀ;eine Großmutter;eine Großmutter
 204;5;3;Unité 2;AA;0;un carton;un carton;ɛ̃kaʀtɔ̃;ein Karton;ein Karton
-205;5;3;Unité 2;AA;0;un ami/une amie;un ami|une amie;ɛ̃nami/ynami;ein Freund/eine Freundin;ein Freund/eine Freundin
 206;5;3;Unité 2;AA;1;Zut! (fam.);Zut;zyt;Mist!;Mist
 207;5;3;Unité 2;AA;1;Zut! (fam.);Zut;zyt;Verdammt!;Verdammt
 208;5;3;Unité 2;AA;0;une catastrophe;une catastrophe;ynkatastʀɔf;eine Katastrophe;eine Katastrophe
@@ -241,7 +220,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 240;6;3;Unité 2;AB;0;le rap;le rap;ləʀap;Rap (Musikstil);Rap
 241;6;3;Unité 2;AB;0;la gymnastique;la gymnastique;laʒimnastik;das Turnen;das Turnen
 242;6;3;Unité 2;AB;0;la gymnastique;la gymnastique;laʒimnastik;die Gymnastik;die Gymnastik
-243;6;3;Unité 2;AB;0;une chanson;une chanson;ynʃɑ͂sɔ̃;ein Lied;ein Lied
 244;6;3;Unité 2;PR;0;un saxophone;un saxophone;ləsaksɔfɔn;ein Saxophon;ein Saxophon
 245;6;3;Unité 2;PR;0;un piano;un piano;ɛ̃pjano;ein Klavier;ein Klavier
 246;6;3;Unité 2;PR;0;un piano;un piano;ɛ̃pjano;ein Piano;ein Piano
@@ -250,7 +228,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 249;6;3;Unité 2;PR;0;l'athlétisme (m.);l'athlétisme;latletism;die Leichtathletik;die Leichtathletik
 250;6;3;Unité 2;PR;0;le roller;le roller;lərɔlqʀ;der Rollerskate;der Rollerskate
 251;6;3;Unité 2;PR;0;le roller;le roller;lərɔlqʀ;der Inliner;der Inliner
-252;6;3;Unité 2;PR;0;un cinéma;un cinéma;ɛ̃sinema;ein Kino;ein Kino
 253;6;3;Unité 2;PR;1;le VTT;le VTT;ləvetete;das Mountainbike;das Mountainbike
 254;6;3;Unité 2;PR;0;la lecture;la lecture;lalɛktyʀ;das Lesen;das Lesen
 255;6;4;Unité 3;DE;0;un anniversaire;un anniversaire;ɛ̃nanivɛʀsɛʀ;ein Geburtstag;ein Geburtstag
@@ -305,7 +282,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 304;7;4;Unité 3;AA;0;toujours;toujours;tuʒuʀ;immer;immer
 305;7;4;Unité 3;AA;0;aujourd'hui;aujourd'hui;oʒuʀdɥi;heute;heute
 306;7;4;Unité 3;AA;0;une famille;une famille;ynfamij;eine Familie;eine Familie
-307;7;4;Unité 3;AA;0;un enfant;un enfant;ɛ̃nɑ͂fɑ͂;ein Kind;ein Kind
 308;7;4;Unité 3;AA;0;les grands-parents (m.);les grands-parents;legʀɑ͂paʀɑ͂;die Großeltern;die Großeltern
 309;8;4;Unité 3;AA;0;un grand-père;un grand-père;ɛ̃gʀɑ͂pɛʀ;ein Großvater;ein Großvater
 310;8;4;Unité 3;AA;0;les parents (m.);les parents;leparɑ͂;die Eltern;die Eltern
@@ -353,7 +329,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 352;8;4;Unité 3;AB;0;septembre (m.);septembre;sɛptɑ͂bʀ;September;September
 353;9;4;Unité 3;AB;0;octobre (m.);octobre;ɔktɔbʀ;Oktober;Oktober
 354;9;4;Unité 3;AB;0;novembre (m.);novembre;nɔvɑ͂bʀ;November;November
-355;9;4;Unité 3;AB;0;décembre (m.);décembre;desɑ͂bʀ;Dezember;Dezember
 356;9;4;Unité 3;AB;0;quand;quand;kɑ͂;wann;wann
 357;9;4;Unité 3;AB;0;le premier;le premier;ləpʀəmje;der erste;der erste
 358;9;4;Unité 3;AB;0;l'âge (m.);l'âge;laʒ;das Alter;das Alter
@@ -373,7 +348,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 372;9;5;Unité 4;DE;0;l'allemand (m.);l'allemand;lalmɑ͂;Deutsch;Deutsch
 373;9;5;Unité 4;DE;0;un retard;un retard;ɛ̃ʀətaʀ;eine Verspätung;eine Verspätung
 374;9;5;Unité 4;DE;0;être en retard;être en retard;ɛtʀɑ͂ʀətaʀ;zu spät kommen;zu spät kommen
-375;9;5;Unité 4;DE;1;un CDI;un CDI;ɛ̃sedei;eine Schulbibliothek;eine Schulbibliothek
 376;9;5;Unité 4;DE;0;une cantine;une cantine;ynkɑ͂tin;eine Kantine;eine Kantine
 377;9;5;Unité 4;DE;0;une cantine;une cantine;ynkɑ͂tin;eine Mensa;eine Mensa
 378;9;5;Unité 4;DE;0;une infirmerie;une infirmerie;ynɛ̃fiʀməʀi;eine Krankenstation;eine Krankenstation
@@ -489,7 +463,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 488;12;6;Unité 5;DE;0;le, la dix-septième;le, la dix-septième;lə/ladisɛtjɛm;der, die, das siebzehnte;der, die, das siebzehnte
 489;12;6;Unité 5;DE;0;un arrondissement;un arrondissement;ɛ̃naʀɔ̃dismɑ͂;ein Arrondissement (ein Verwaltungsbezirk);ein Arrondissement
 490;12;6;Unité 5;DE;0;une photo;une photo;ynfɔto;ein Foto;ein Foto
-491;12;6;Unité 5;DE;0;un parc;un parc;ɛ̃paʀk;ein Park;ein Park
 492;12;6;Unité 5;DE;0;le roller;le roller;ləʀɔlqʀ;das Inlinerfahren;das Inlinerfahren
 493;12;6;Unité 5;DE;0;une avenue;une avenue;ynavəny;eine Straße;eine Straße
 494;12;6;Unité 5;DE;1;Interclub 17;Interclub 17;ɛ̃tɛʀklqbdisɛt;Interclub 17 Name eines Jugendzentrums;Interclub 17 Name eines Jugendzentrums
@@ -506,7 +479,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 505;12;6;Unité 5;AA;0;le soir;le soir;ləswaʀ;der Abend;der Abend
 506;12;6;Unité 5;AA;0;ce soir;ce soir;səswaʀ;heute Abend;heute Abend
 507;12;6;Unité 5;AA;0;un jour;un jour;ɛ̃ʒuʀ;ein Tag;ein Tag
-508;12;6;Unité 5;AA;1;A plus! (fam.);A plus;aplys;Bis später!;Bis später
 509;12;6;Unité 5;AA;0;ma puce (fam.);ma puce;mapys;meine Kleine (wörtl.: mein Floh);meine Kleine
 510;12;6;Unité 5;AA;1;A plus, ma puce!;A plus, ma puce;aplysmapys;Bis später, mein Kleines.;Bis später, mein Kleines
 511;12;6;Unité 5;AA;0;une voiture;une voiture;ynvwatyʀ;ein Auto;ein Auto
@@ -536,7 +508,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 535;13;6;Unité 5;AA;0;l'après-midi (m.) (f.);l'après-midi;lapʀɛmidi;der Nachmittag;der Nachmittag
 536;13;6;Unité 5;AA;0;l'après-midi (m.) (f.);l'après-midi;lapʀɛmidi;nachmittags;nachmittags
 537;13;6;Unité 5;AA;0;faire du judo;faire du judo;fɛʀdyʒydo;Judo machen, betreiben;Judo machen, betreiben
-538;13;6;Unité 5;AA;0;l'athlétisme (m.);l'athlétisme;latletism;die Leichtathletik;die Leichtathletik
 539;13;6;Unité 5;AA;0;je voudrais ...;je voudrais;ʒəvudʀɛ;ich möchte gerne ...;ich möchte gerne
 540;13;6;Unité 5;AA;0;le bruit;le bruit;ləbʀɥi;das Geräusch;das Geräusch
 541;13;6;Unité 5;AA;0;le bruit;le bruit;ləbʀɥi;der Lärm;der Lärm
@@ -545,7 +516,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 544;13;6;Unité 5;AA;0;quitter qc;quitter qc;kite;etwas verlassen;etwas verlassen
 545;13;6;Unité 5;AA;0;des spaghettis (m. pl.);des spaghettis;spageti;Spaghetti;Spaghetti
 546;13;6;Unité 5;AA;0;déjà;déjà;deʒa;schon;schon
-547;13;6;Unité 5;AA;0;le basket(ball);le basket(ball);ləbaskɛtbol;Basketball;Basketball
 548;13;6;Unité 5;AA;0;le volley(ball);le volley(ball);ləvɔlɛbol;Volleyball;Volleyball
 549;13;6;Unité 5;AA;0;le hand-ball;le hand-ball;ləɑ͂dbal;Handball;Handball
 550;13;6;Unité 5;AA;0;l'équitation (f.);l'équitation;lekitasjɔ̃;das Reiten;das Reiten
@@ -560,9 +530,7 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 559;13;6;Unité 5;AA;0;comme;comme;kɔm;als;als
 560;13;6;Unité 5;AB;0;à droite;à droite;adʀwat;(nach) rechts;(nach) rechts
 561;13;6;Unité 5;AB;0;à gauche;à gauche;agoʃ;(nach) links;(nach) links
-562;13;6;Unité 5;AB;0;une boulangerie;une boulangerie;ynbulɑ͂ʒʀi;eine Bäckerei;eine Bäckerei
 563;13;6;Unité 5;AB;0;tout droit;tout droit;tudʀwa;geradeaus;geradeaus
-564;13;6;Unité 5;AB;0;un café;un café;ɛ̃kafe;ein Café;ein Café
 565;13;6;Unité 5;AB;0;traverser qc;traverser qc;tʀavɛʀse;etwas überqueren;etwas überqueren
 566;13;6;Unité 5;AB;0;un carrefour;un carrefour;ɛ̃kaʀfuʀ;eine Kreuzung;eine Kreuzung
 567;13;6;Unité 5;AB;0;tourner;tourner;tuʀne;drehen;drehen
@@ -659,7 +627,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 658;15;7;Unité 6;AA;0;téléphoner à qn;téléphoner à qn;telefɔne;jemanden anrufen;jemanden anrufen
 659;15;7;Unité 6;AA;0;rester;rester;ʀɛste;bleiben;bleiben
 660;15;7;Unité 6;AA;0;hier;hier;jɛʀ;gestern;gestern
-661;16;7;Unité 6;AA;0;un journal/des journaux;un journal|des journaux;ɛ̃ʒuʀnal/deʒuʀno;eine Zeitung;eine Zeitung
 662;16;7;Unité 6;AA;0;un journal/des journaux;un journal|des journaux;ɛ̃ʒuʀnal/deʒuʀno;hier: ein Tagebuch;hier: ein Tagebuch
 663;16;7;Unité 6;AA;0;les vacances (f. pl.);les vacances;levakɑ͂s;der Urlaub;der Urlaub
 664;16;7;Unité 6;AA;0;les vacances (f. pl.);les vacances;levakɑ͂s;die Ferien;die Ferien
@@ -690,7 +657,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 689;16;7;Unité 6;AB;1;la Place de la Bastille;la Place de la Bastille;laplasdəlabastij;der Platz der Bastille;der Platz der Bastille
 690;16;7;Unité 6;AB;0;mauvais/mauvaise;mauvais/mauvaise;movɛ/movɛz;schlecht;schlecht
 691;16;7;Unité 6;AB;0;donner qc à qn;donner qc à qn;dɔne;jemandem etwas geben;jemandem etwas geben
-692;16;7;Unité 6;AB;1;Quoi?;Quoi;kwa;Was?;Was
 693;16;7;Unité 6;AB;0;une casquette;une casquette;ynkaskɛt;eine Kappe;eine Kappe
 694;16;7;Unité 6;AB;0;une casquette;une casquette;ynkaskɛt;eine Schirmmütze;eine Schirmmütze
 695;16;7;Unité 6;AB;0;la poche;la poche;lapɔʃ;die Tasche;die Tasche
@@ -755,7 +721,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 754;18;8;Unité 7;AA;0;chaud/chaude;chaud|chaude;ʃo/ʃod;heiß;heiß
 755;18;8;Unité 7;AA;1;Il fait chaud.;Il fait chaud;ilfɛʃo;Es ist warm/heiß.;Es ist warm/heiß
 756;18;8;Unité 7;AA;0;la vue;la vue;lavy;die Aussicht;die Aussicht
-757;18;8;Unité 7;AA;0;un restaurant;un restaurant;ɛ̃ʀɛstɔʀɑ͂;ein Restaurant;ein Restaurant
 758;18;8;Unité 7;AA;0;une boutique;une boutique;ynbutik;eine Boutique;eine Boutique
 759;18;8;Unité 7;AA;0;une boutique;une boutique;ynbutik;ein Ladengeschäft;ein Ladengeschäft
 760;18;8;Unité 7;AA;0;un souvenir;un souvenir;ɛ̃suvniʀ;eine Erinnerung;eine Erinnerung
@@ -787,8 +752,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 786;18;8;Unité 7;AA;0;génial/géniale;génial|géniale;ʒenjal;super;super
 787;18;8;Unité 7;AA;0;génial/géniale;génial|géniale;ʒenjal;genial;genial
 788;18;8;Unité 7;AA;1;la Joconde;la Joconde;laʒɔkɔ̃d;Mona Lisa (Gemälde von Leonardo da Vinci);Mona Lisa (Gemälde von Leonardo da Vinci)
-789;18;8;Unité 7;AA;0;une bise (fam.);une bise;ynbiz;ein Kuss;ein Kuss
-790;18;8;Unité 7;AA;0;une bise (fam.);une bise;ynbiz;ein Küsschen;ein Küsschen
 791;18;8;Unité 7;AA;1;Coucou!;Coucou;kuku;Hallo!;Hallo
 792;18;8;Unité 7;AA;1;Comment allez-vous?;Comment allez-vous;kɔmɑ͂talevu;Wie geht es euch/Ihnen?;Wie geht es euch/Ihnen
 793;19;8;Unité 7;AB;0;un million;un million;ɛ̃miljɔ̃;eine Million;eine Million
@@ -831,7 +794,6 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 830;19;8;Unité 7;AC;0;désirer qc;désirer qc;deziʀe;etwas wünschen;etwas wünschen
 831;19;8;Unité 7;AC;0;(je suis) désolé/désolée;(je suis) désolé|désolée;dezole;es tut mir leid;es tut mir leid
 832;19;8;Unité 7;AC;0;peu de;peu de;pødə;wenig(e);wenig(e)
-833;19;8;Unité 7;AC;0;beaucoup de;beaucoup de;bokudə;viel(e);viel(e)
 834;19;8;Unité 7;DE;0;un grand huit;un grand huit;ɛ̃gʀɑ͂ɥit;eine Achterbahn;eine Achterbahn
 835;19;8;Unité 7;DE;0;vrai/vraie;vrai|vraie;vrɛ;wahr;wahr
 836;19;8;Unité 7;DE;0;vrai/vraie;vrai|vraie;vrɛ;richtig;richtig
@@ -844,4 +806,3 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 843;20;8;Unité 7;DE;0;ne ... rien;ne rien;nə rjɛ̃;nichts;nichts
 844;20;8;Unité 7;DE;0;une liste;une liste;ynlist;eine Liste;eine Liste
 845;20;8;Unité 7;DE;0;une réponse;une réponse;ynʀepɔ̃s;eine Antwort;eine Antwort
-846;20;8;Unité 7;DE;0;adorer qn/qc;adorer qn/qc;adɔʀe;jemanden/etwas sehr gern mögen;jemanden/etwas sehr gern mögen

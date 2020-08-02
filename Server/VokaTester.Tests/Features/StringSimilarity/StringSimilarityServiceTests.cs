@@ -2,7 +2,7 @@ namespace VokaTester.Tests.Features.StringSimilarity
 {
     using NUnit.Framework;
     using VokaTester.Features.StringSimilarity;
-    using VokaTester.Features.StringSimilarity.Models;
+    using VokaTester.Features.StringSimilarity.Dto;
 
     public class StringSimilarityServiceTests
     {

@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './identity/login/login.component';
-import { RegisterComponent } from './identity/register/register.component';
-import { LernenLektionComponent } from './lernen/lernen-lektion/lernen-lektion.component';
-import { LernenLektionenComponent } from './lernen/lernen-lektionen/lernen-lektionen.component';
-import { LernenWortnetzeComponent } from './lernen/lernen-wortnetze/lernen-wortnetze.component';
-import { MainLernenComponent } from './lernen/main-lernen/main-lernen.component';
-import { AuthGuardService } from './services/auth-guard.service';
-import { MainTrainierenComponent } from './trainieren/main-trainieren/main-trainieren.component';
-import { TrainierenLektionenComponent } from './trainieren/trainieren-lektionen/trainieren-lektionen.component';
-import { TrainierenWortnetzeComponent } from './trainieren/trainieren-wortnetze/trainieren-wortnetze.component';
-import { CreateVokabelComponent } from './vokabel/create-vokabel/create-vokabel.component';
-
+import { HomeComponent } from 'src/app/home/home.component';
+import { LoginComponent } from 'src/app/identity/login/login.component';
+import { RegisterComponent } from 'src/app/identity/register/register.component';
+import { LernenLektionComponent } from 'src/app/lernen/lernen-lektion/lernen-lektion.component';
+import { LernenLektionenComponent } from 'src/app/lernen/lernen-lektionen/lernen-lektionen.component';
+import { LernenWortnetzeComponent } from 'src/app/lernen/lernen-wortnetze/lernen-wortnetze.component';
+import { MainLernenComponent } from 'src/app/lernen/main-lernen/main-lernen.component';
+import { AuthGuardService } from 'src/app/services/infrastructure/auth-guard.service';
+import { MainTrainierenComponent } from 'src/app/trainieren/main-trainieren/main-trainieren.component';
+import { TrainierenLektionComponent } from 'src/app/trainieren/trainieren-lektion/trainieren-lektion.component';
+import { TrainierenLektionenComponent } from 'src/app/trainieren/trainieren-lektionen/trainieren-lektionen.component';
+import { TrainierenWortnetzeComponent } from 'src/app/trainieren/trainieren-wortnetze/trainieren-wortnetze.component';
 
 const defaultPath = 'vokabeln';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'create-vokabel', component: CreateVokabelComponent, canActivate: [AuthGuardService] },
   {
     path: 'vokabeln', component: HomeComponent, canActivate: [AuthGuardService],
     data: { title: 'Home' }
@@ -46,6 +44,10 @@ const routes: Routes = [
   {
     path: 'vokabeln/trainieren/lektionen', component: TrainierenLektionenComponent, canActivate: [AuthGuardService],
     data: { title: 'Vokabeln trainieren nach Lektionen', parent: 'vokabeln/trainieren' }, 
+  },
+  {
+    path: 'vokabeln/trainieren/lektionen/:id', component: TrainierenLektionComponent, canActivate: [AuthGuardService],
+    data: { title: 'Vokabeln trainieren nach Lektion', parent: 'vokabeln/trainieren/lektionen' }, 
   },
   {
     path: 'vokabeln/trainieren/wortnetze', component: TrainierenWortnetzeComponent, canActivate: [AuthGuardService],

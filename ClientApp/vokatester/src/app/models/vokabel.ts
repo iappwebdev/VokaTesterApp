@@ -1,7 +1,13 @@
 export interface Vokabel {
   id: number,
+  lektionId: number,
+  lektionName: string,
+  bereichId: number,
+  bereichName: string,
+  caseSensitive: boolean,
   frz: string,
-  deu: string,
+  frzSan: string,
   phonetik: string,
-  imageUrl: string
+  deu: string,
+  deutSan: string
 }

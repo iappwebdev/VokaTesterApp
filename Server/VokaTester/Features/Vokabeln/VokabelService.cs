@@ -7,7 +7,7 @@
     using Microsoft.EntityFrameworkCore;
     using VokaTester.Data;
     using VokaTester.Data.Models;
-    using VokaTester.Features.Vokabeln.Models;
+    using VokaTester.Features.Vokabeln.Dto;
 
     public class VokabelService : IVokabelService
     {
@@ -22,65 +22,34 @@
             this.mapper = mapper;
         }
 
-        public async Task<LektionListingServiceModel> Lektion(int lektionId)
-        {
-            Lektion res =
-                await this.dbContext
-                   .Lektion
-                   .FirstOrDefaultAsync(x => x.Id == lektionId);
-
-            return this.mapper.Map<LektionListingServiceModel>(res);
-        }
-
-        public async Task<IEnumerable<LektionListingServiceModel>> Lektionen()
+        public async Task<IEnumerable<VokabelDto>> All()
             => await this.dbContext
-                .Lektion
-                .Select(x => this.mapper.Map<LektionListingServiceModel>(x))
+                .Vokabel
+                .Select(x => this.mapper.Map<VokabelDto>(x))
                 .ToListAsync();
 
-        public async Task<IEnumerable<VokabelListingServiceModel>> ByLektion(int lektionId)
+        public async Task<IEnumerable<VokabelDto>> ByLektion(int lektionId)
             => await this.dbContext
                 .Vokabel
                 .Where(x => x.LektionId == lektionId)
-                .Select(x => this.mapper.Map<VokabelListingServiceModel>(x))
+                .Select(x => this.mapper.Map<VokabelDto>(x))
                 .ToListAsync();
 
-        public async Task<IEnumerable<VokabelListingServiceModel>> ByWortnetz(string wortnetz)
+        public async Task<IEnumerable<VokabelDto>> ByWortnetz(string wortnetz)
             => await this.dbContext
                 .Vokabel
                 .Where(x => x.WortnetzList.Contains(wortnetz))
-                .Select(x => this.mapper.Map<VokabelListingServiceModel>(x))
+                .Select(x => this.mapper.Map<VokabelDto>(x))
                 .ToListAsync();
 
-        public async Task<int> Create(string frz, string deu, int lektionId)
+        public async Task<VokabelDto> Single(int id)
         {
-            var vokabel = new Vokabel()
-            {
-                Frz = frz,
-                Deu = deu,
-                Phonetik = "N/A",
-                LektionId = lektionId
-            };
+            Vokabel res =
+                await this.dbContext
+                   .Vokabel
+                   .FirstOrDefaultAsync(x => x.Id == id);
 
-            this.dbContext.Add(vokabel);
-
-            await this.dbContext.SaveChangesAsync();
-
-            return vokabel.Id;
+            return this.mapper.Map<VokabelDto>(res);
         }
-
-        public async Task<VokabelDetailsServiceModel> Details(int id)
-            => await this.dbContext
-                .Vokabel
-                .Where(x => x.Id == id)
-                .Select(x => new VokabelDetailsServiceModel
-                {
-                    Id = x.Id,
-                    LektionName = x.Lektion.Name,
-                    Frz = x.Frz,
-                    Deu = x.Deu,
-                    Phonetik = x.Phonetik
-                })
-                .FirstOrDefaultAsync();
     }
 }
