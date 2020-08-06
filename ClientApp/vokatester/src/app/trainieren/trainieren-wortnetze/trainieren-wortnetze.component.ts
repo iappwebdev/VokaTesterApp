@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+// import { Component, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'app-trainieren-wortnetze',
-  templateUrl: './trainieren-wortnetze.component.html',
-  styleUrls: ['./trainieren-wortnetze.component.less']
-})
-export class TrainierenWortnetzeComponent implements OnInit {
+// @Component({
+//   selector: 'app-trainieren-wortnetze',
+//   templateUrl: './trainieren-wortnetze.component.html',
+//   styleUrls: ['./trainieren-wortnetze.component.less']
+// })
+// export class TrainierenWortnetzeComponent implements OnInit {
 
-  constructor() { }
+//   constructor() { }
 
-  ngOnInit(): void {
-  }
+//   ngOnInit(): void {
+//   }
 
-}
+// }

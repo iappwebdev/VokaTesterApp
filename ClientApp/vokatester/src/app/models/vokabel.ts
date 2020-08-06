@@ -1,5 +1,6 @@
 export interface Vokabel {
   id: number,
+  position: number,
   lektionId: number,
   lektionName: string,
   bereichId: number,
@@ -9,5 +10,8 @@ export interface Vokabel {
   frzSan: string,
   phonetik: string,
   deu: string,
-  deutSan: string
+  deutSan: string,
+  wiederholung: number,
+  isInserted: boolean,
+  reasonInserted: string
 }

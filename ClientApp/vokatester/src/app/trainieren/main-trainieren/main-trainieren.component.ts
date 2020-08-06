@@ -13,19 +13,19 @@ export class MainTrainierenComponent implements OnInit {
       text: 'Vokabeln trainieren nach Lektion',
       descr: 'Hier kannst du die Vokabeln nach den Lektionen deines Buches trainieren.',
       photo: '../../assets/images/learn.jpeg',
-      link: '/vokabeln/trainieren/lektionen',
-      isLearning: false,
+      link: '/vokabeln/übungen/lektionen',
+      isOverview: false,
       isTraining: true
     },
-    {
-      id: 2,
-      text: 'Vokabeln trainieren nach Wortnetzen',
-      descr: 'Hier kannst du die Vokabeln nach Wortnetzen trainieren.',
-      photo: '../../assets/images/ki2.webp',
-      link: '/vokabeln/trainieren/wortnetze',
-      isLearning: false,
-      isTraining: true
-    }
+    // {
+    //   id: 2,
+    //   text: 'Vokabeln trainieren nach Wortnetzen',
+    //   descr: 'Hier kannst du die Vokabeln nach Wortnetzen trainieren.',
+    //   photo: '../../assets/images/ki2.webp',
+    //   link: '/vokabeln/übungen/wortnetze',
+    //   isOverview: false,
+    //   isTraining: true
+    // }
   ];
 
   constructor() { }

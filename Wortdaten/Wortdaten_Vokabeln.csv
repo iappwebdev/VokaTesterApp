@@ -1,7 +1,7 @@
 SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;Deu;Deu_San
 1;1;1;Au début;BV;0;Bienvenue!;Bienvenue;bjɛ̃vny;Willkommen!;Willkommen
-2;1;1;Au début;BV;1;Salut! (fam.);Salut;saly;Hallo!;Hallo
-3;1;1;Au début;BV;1;Salut! (fam.);Salut;saly;Grüß dich!;Grüß dich
+2;1;1;Au début;BV;0;Salut! (fam.);Salut;saly;Hallo!;Hallo
+3;1;1;Au début;BV;0;Salut! (fam.);Salut;saly;Grüß dich!;Grüß dich
 4;1;1;Au début;BV;1;Sarah;Sarah;saʀa;Sarah;Sarah
 5;1;1;Au début;BV;0;et;et;e;und;und
 6;1;1;Au début;BV;0;toi;toi;twa;du (betont);du
@@ -10,799 +10,820 @@ SeedId;Sheet;LektionNr;LektionName;BereichNr;CaseSensitive;Frz;Frz_San;Phonetik;
 9;1;1;Au début;BV;0;Ça va?;Ça va;sava;Wie geht's?;Wie geht's
 10;1;1;Au début;BV;0;oui;oui;wi;ja;ja
 11;1;1;Au début;BV;0;merci;merci;mɛʀsi;danke;danke
-12;1;1;Au début;BV;1;A plus! (fam.);A plus;aplys;Bis später!;Bis später
-13;1;1;Au début;BV;1;Bonjour!;Bonjour;bɔ̃ʒuʀ;Guten Tag!;Guten Tag
-14;1;1;Au début;BV;1;Au revoir!;Au revoir;ɔʀvwaʀ;Auf Wiedersehen!;Auf Wiedersehen
-15;1;1;Au début;BV;1;Salut! (fam.);Salut;saly;Tschüss!;Tschüss
-16;1;1;Au début;BV;0;un ami/une amie;un ami|une amie;ɛ̃nami/ynami;ein Freund/eine Freundin;ein Freund/eine Freundin
-17;1;1;Au début;BV;1;Bonjour, les amis!;Bonjour, les amis;bɔ̃ʒuʀlezami;Guten Tag, Freunde!;Guten Tag, Freunde
-18;1;1;Au début;BV;0;bien (adv.);bien;bjɛ̃;gut (Adv.);gut
-19;1;1;Au début;BV;0;une chanson;une chanson;ynʃɑ͂sɔ̃;ein Lied;ein Lied
-20;1;1;Au début;BV;1;Venez!;Venez;vəne;Kommt! (Aufforderung);Kommt
-21;1;1;Au début;BV;0;à;à;a;in;in
-22;1;1;Au début;BV;0;à;à;a;nach;nach
-23;1;1;Au début;BV;0;un copain/une copine (fam.);un copain|une copine;ɛ̃kɔpɛ̃/ynkɔpin;ein Freund/eine Freundin;ein Freund/eine Freundin
-24;1;1;Au début;BV;0;à demain;à demain;adəmɛ̃;bis morgen;bis morgen
-25;1;1;Au début;BV;0;voilà;voilà;vwala;da ist;da ist
-26;1;1;Au début;BV;0;voilà;voilà;vwala;da sind;da sind
-27;1;1;Au début;BV;0;une bise (fam.);une bise;ynbiz;ein Kuss;ein Kuss
-28;1;1;Au début;BV;0;une bise (fam.);une bise;ynbiz;ein Küsschen;ein Küsschen
-29;1;1;Au début;BV;0;pour;pour;puʀ;für;für
-30;1;1;Au début;BV;1;Quoi?;Quoi;kwa;Was?;Was
-31;1;1;Au début;BV;1;Je pique une crise! (fam.);Je pique une crise;ʒəpikynkʀiz;Ich krieg die Krise.;Ich krieg die Krise
-32;1;1;Au début;BV;0;vite (adv.);vite;vit;schnell (Adv.);schnell
-33;1;1;Au début;BV;1;Appelle la police!;Appelle la police;apɛllapɔlis;Ruf die Polizei!;Ruf die Polizei
-34;1;1;Au début;BV;0;pas de dessert;pas de dessert;padədesɛʀ;kein Nachtisch;kein Nachtisch
-35;1;1;Au début;BV;0;dans le désert;dans le désert;dɑ͂ldezɛʀ;in der Wüste;in der Wüste
-36;1;1;Au début;BV;0;aussi;aussi;osi;auch;auch
-37;1;1;Au début;BV;0;un bonbon;un bonbon;ɛ̃bɔ̃bɔ̃;ein Bonbon;ein Bonbon
-38;1;1;Au début;BV;1;C'est bon!;C'est bon;sɛbɔ̃;Das ist gut!;Das ist gut
-39;1;1;Au début;BV;0;un croissant;un croissant;ɛ̃kʀwasɑ͂;ein Croissant (Hörnchen);ein Croissant
-40;1;1;Au début;BV;0;un ballon;un ballon;ɛ̃balɔ̃;ein Ball;ein Ball
-41;1;1;Au début;BV;0;un lapin;un lapin;ɛ̃lapɛ̃;ein Kaninchen;ein Kaninchen
-42;1;1;Au début;BV;0;un volcan;un volcan;ɛ̃vɔlkɑ͂;ein Vulkan;ein Vulkan
-43;1;1;Au début;BV;0;une main;une main;ynmɛ̃;die Hand;die Hand
-44;1;1;Au début;BV;0;un chien;un chien;ɛ̃ʃjɛ̃;ein Hund;ein Hund
-45;2;1;Au début;BV;0;un crayon;un crayon;ɛ̃kʀɛjɔ̃;ein Bleistift;ein Bleistift
-46;2;1;Au début;BV;0;un éléphant;un éléphant;ɛ̃nelefɑ͂;ein Elefant;ein Elefant
-47;2;1;Au début;BV;0;un enfant;un enfant;ɛ̃nɑ͂fɑ͂;ein Kind;ein Kind
-48;2;1;Au début;BV;0;une maison;une maison;ynmɛzɔ̃;ein Haus;ein Haus
-49;2;1;Au début;BV;0;un gratin;un gratin;ɛ̃gʀatɛ̃;ein Auflauf;ein Auflauf
-50;2;1;Au début;BV;0;mon petit chat;mon petit chat;mɔ̃pətiʃa;mein kleines Kätzchen;mein kleines Kätzchen
-51;2;1;Au début;BV;0;un;un;ɛ̃;eins;eins
-52;2;1;Au début;BV;0;deux;deux;dø;zwei;zwei
-53;2;1;Au début;BV;0;trois;trois;trwa;drei;drei
-54;2;1;Au début;BV;0;quatre;quatre;katʀ;vier;vier
-55;2;1;Au début;BV;0;cinq;cinq;sɛ̃k;fünf;fünf
-56;2;1;Au début;BV;0;six;six;sis;sechs;sechs
-57;2;1;Au début;BV;0;sept;sept;sɛt;sieben;sieben
-58;2;1;Au début;BV;0;huit;huit;ɥit;acht;acht
-59;2;1;Au début;BV;0;neuf;neuf;nqf;neun;neun
-60;2;1;Au début;BV;0;dix;dix;dis;zehn;zehn
-61;2;1;Au début;BV;0;onze;onze;ɔ̃z;elf;elf
-62;2;1;Au début;BV;0;douze;douze;duz;zwölf;zwölf
-63;2;1;Au début;BV;1;un CDI;un CDI;ɛ̃sedei;eine Schulbibliothek;eine Schulbibliothek
-64;2;1;Au début;BV;0;un café;un café;ɛ̃kafe;ein Café;ein Café
-65;2;1;Au début;BV;0;une pharmacie;une pharmacie;ynfaʀmasi;eine Apotheke;eine Apotheke
-66;2;1;Au début;BV;0;un bureau de poste;un bureau de poste;ɛ̃byʀodəpɔst;ein Postamt;ein Postamt
-67;2;1;Au début;BV;0;un restaurant;un restaurant;ɛ̃ʀɛstɔʀɑ͂;ein Restaurant;ein Restaurant
-68;2;1;Au début;BV;0;un parc;un parc;ɛ̃paʀk;ein Park;ein Park
-69;2;1;Au début;BV;0;une boulangerie;une boulangerie;ynbulɑ͂ʒʀi;eine Bäckerei;eine Bäckerei
-70;2;1;Au début;BV;0;un cinéma;un cinéma;ɛ̃sinema;ein Kino;ein Kino
-71;2;1;Au début;BV;0;une médiathèque;une médiathèque;ynmedjatɛk;eine Mediathek;eine Mediathek
-72;2;1;Au début;BV;0;dans la rue;dans la rue;dɑ͂laʀy;auf der Straße;auf der Straße
-74;2;2;Unité 1;DE;1;Paris;Paris;paʀi;Hauptstadt Frankreichs;Hauptstadt Frankreichs
-76;2;2;Unité 1;AA;1;Viens!;Viens;vjɛ̃;Komm! (Aufforderung);Komm
+12;1;1;Au début;BV;0;A plus! (fam.);A plus;aplys;Bis später!;Bis später
+13;1;1;Au début;BV;0;Bonjour!;Bonjour;bɔ̃ʒuʀ;Guten Tag!;Guten Tag
+14;1;1;Au début;BV;0;Au revoir!;Au revoir;ɔʀvwaʀ;Auf Wiedersehen!;Auf Wiedersehen
+15;1;1;Au début;BV;0;Salut! (fam.);Salut;saly;Tschüss!;Tschüss
+16;1;1;Au début;BV;0;un ami;un ami;ɛ̃nami;ein Freund;ein Freund
+17;1;1;Au début;BV;0;une amie;une amie;ynami;eine Freundin;eine Freundin
+18;1;1;Au début;BV;0;Bonjour, les amis!;Bonjour, les amis;bɔ̃ʒuʀlezami;Guten Tag, Freunde!;Guten Tag, Freunde
+19;1;1;Au début;BV;0;bien (adv.);bien;bjɛ̃;gut (Adv.);gut
+20;1;1;Au début;BV;0;une chanson;une chanson;ynʃɑ͂sɔ̃;ein Lied;ein Lied
+21;1;1;Au début;BV;0;Venez!;Venez;vəne;Kommt! (Aufforderung);Kommt
+22;1;1;Au début;BV;0;à (Paris);à;a;in (Paris);in
+23;1;1;Au début;BV;0;à (Paris);à;a;nach (Paris);nach
+24;1;1;Au début;BV;0;un copain (fam.);un copain;ɛ̃kɔpɛ̃;ein Freund (fam.);ein Freund
+25;1;1;Au début;BV;0;une copine (fam.);une copine;ynkɔpin;eine Freundin (fam.);eine Freundin
+26;1;1;Au début;BV;0;à demain;à demain;adəmɛ̃;bis morgen;bis morgen
+27;1;1;Au début;BV;0;voilà;voilà;vwala;da ist/da sind;da ist/da sind
+29;1;1;Au début;BV;0;une bise (fam.);une bise;ynbiz;ein Kuss/Küsschen;ein Kuss/Küsschen
+31;1;1;Au début;BV;0;pour;pour;puʀ;für;für
+32;1;1;Au début;BV;0;Quoi?;Quoi;kwa;Was?;Was
+33;1;1;Au début;BV;0;Je pique une crise! (fam.);Je pique une crise;ʒəpikynkʀiz;Ich krieg die Krise.;Ich krieg die Krise
+34;1;1;Au début;BV;0;vite (adv.);vite;vit;schnell (Adv.);schnell
+35;1;1;Au début;BV;0;Appelle la police!;Appelle la police;apɛllapɔlis;Ruf die Polizei!;Ruf die Polizei
+36;1;1;Au début;BV;0;pas de dessert;pas de dessert;padədesɛʀ;kein Nachtisch;kein Nachtisch
+37;1;1;Au début;BV;0;dans le désert;dans le désert;dɑ͂ldezɛʀ;in der Wüste;in der Wüste
+38;1;1;Au début;BV;0;aussi;aussi;osi;auch;auch
+39;1;1;Au début;BV;0;un bonbon;un bonbon;ɛ̃bɔ̃bɔ̃;ein Bonbon;ein Bonbon
+40;1;1;Au début;BV;0;C'est bon!;C'est bon;sɛbɔ̃;Das ist gut!;Das ist gut
+41;1;1;Au début;BV;0;un croissant;un croissant;ɛ̃kʀwasɑ͂;ein Hörnchen (Gebäck);ein Hörnchen (Gebäck)
+42;1;1;Au début;BV;0;un ballon;un ballon;ɛ̃balɔ̃;ein Ball;ein Ball
+43;1;1;Au début;BV;0;un lapin;un lapin;ɛ̃lapɛ̃;ein Kaninchen;ein Kaninchen
+44;1;1;Au début;BV;0;un volcan;un volcan;ɛ̃vɔlkɑ͂;ein Vulkan;ein Vulkan
+45;1;1;Au début;BV;0;une main;une main;ynmɛ̃;eine Hand;eine Hand
+46;1;1;Au début;BV;0;un chien;un chien;ɛ̃ʃjɛ̃;ein Hund;ein Hund
+47;2;1;Au début;BV;0;un crayon;un crayon;ɛ̃kʀɛjɔ̃;ein Bleistift;ein Bleistift
+48;2;1;Au début;BV;0;un éléphant;un éléphant;ɛ̃nelefɑ͂;ein Elefant;ein Elefant
+49;2;1;Au début;BV;0;un enfant;un enfant;ɛ̃nɑ͂fɑ͂;ein Kind;ein Kind
+50;2;1;Au début;BV;0;une maison;une maison;ynmɛzɔ̃;ein Haus;ein Haus
+51;2;1;Au début;BV;0;un gratin;un gratin;ɛ̃gʀatɛ̃;ein Auflauf;ein Auflauf
+52;2;1;Au début;BV;0;mon petit chat;mon petit chat;mɔ̃pətiʃa;mein kleines Kätzchen;mein kleines Kätzchen
+53;2;1;Au début;BV;0;un;un;ɛ̃;eins;eins
+54;2;1;Au début;BV;0;deux;deux;dø;zwei;zwei
+55;2;1;Au début;BV;0;trois;trois;trwa;drei;drei
+56;2;1;Au début;BV;0;quatre;quatre;katʀ;vier;vier
+57;2;1;Au début;BV;0;cinq;cinq;sɛ̃k;fünf;fünf
+58;2;1;Au début;BV;0;six;six;sis;sechs;sechs
+59;2;1;Au début;BV;0;sept;sept;sɛt;sieben;sieben
+60;2;1;Au début;BV;0;huit;huit;ɥit;acht;acht
+61;2;1;Au début;BV;0;neuf;neuf;nœf;neun;neun
+62;2;1;Au début;BV;0;dix;dix;dis;zehn;zehn
+63;2;1;Au début;BV;0;onze;onze;ɔ̃z;elf;elf
+64;2;1;Au début;BV;0;douze;douze;duz;zwölf;zwölf
+65;2;1;Au début;BV;1;un CDI;un CDI;ɛ̃sedei;eine Schulbibliothek;eine Schulbibliothek
+66;2;1;Au début;BV;0;un café;un café;ɛ̃kafe;ein Café;ein Café
+67;2;1;Au début;BV;0;une pharmacie;une pharmacie;ynfaʀmasi;eine Apotheke;eine Apotheke
+68;2;1;Au début;BV;0;un bureau de poste;un bureau de poste;ɛ̃byʀodəpɔst;ein Postamt;ein Postamt
+69;2;1;Au début;BV;0;un restaurant;un restaurant;ɛ̃ʀɛstɔʀɑ͂;ein Restaurant;ein Restaurant
+70;2;1;Au début;BV;0;un parc;un parc;ɛ̃paʀk;ein Park;ein Park
+71;2;1;Au début;BV;0;une boulangerie;une boulangerie;ynbulɑ͂ʒʀi;eine Bäckerei;eine Bäckerei
+72;2;1;Au début;BV;0;un cinéma;un cinéma;ɛ̃sinema;ein Kino;ein Kino
+73;2;1;Au début;BV;0;une médiathèque;une médiathèque;ynmedjatɛk;eine Mediathek;eine Mediathek
+74;2;1;Au début;BV;0;dans la rue;dans la rue;dɑ͂laʀy;auf der Straße;auf der Straße
+75;2;2;Unité 1;DE;1;Paris;Paris;paʀi;Hauptstadt Frankreichs;Hauptstadt Frankreichs
+76;2;2;Unité 1;AA;0;Viens!;Viens;vjɛ̃;Komm! (Aufforderung);Komm
 77;2;2;Unité 1;AA;0;papa;papa;papa;Papa;Papa
-79;2;2;Unité 1;AA;1;Miaou!;Miaou;mjau;Miau!;Miau
-80;2;2;Unité 1;AA;1;Ouah, ouah!;Ouah, ouah;wawa;Wau, wau!;Wau, wau
-81;2;2;Unité 1;AA;0;S.P.A.;S.P.A.;ɛspea;die S.P.A.;die S.P.A.
-84;2;2;Unité 1;AA;0;qui (Fragepronomen);qui;ki;wer;wer
-85;2;2;Unité 1;AA;1;Qui est-ce?;Qui est-ce;kiɛs;Wer ist das?;Wer ist das
-86;2;2;Unité 1;AA;1;Attention!;Attention;atɑ͂sjɔ̃;Achtung!;Achtung
-87;2;2;Unité 1;AA;1;Attention!;Attention;atɑ͂sjɔ̃;Vorsicht!;Vorsicht
-88;2;2;Unité 1;AA;0;non;non;nɔ̃;nein;nein
-89;3;2;Unité 1;AA;1;Pardon.;Pardon;paʀdɔ̃;Entschuldigung.;Entschuldigung
-90;3;2;Unité 1;AA;1;Salut! (fam.);Salut;saly;Hallo!/Grüß dich!;Hallo/Grüß dich
-92;3;2;Unité 1;AA;1;Comment?;Comment;kɔmɑ͂;Wie? (Fragewort);Wie
-93;3;2;Unité 1;AA;0;ce/c';ce|c';sə;das (z. B. in c'est = das ist ...);das
-94;3;2;Unité 1;AA;0;c'est;c'est;sɛ;das ist;das ist
-96;3;2;Unité 1;AA;0;je suis;je suis;ʒəsɥi;ich bin;ich bin
-100;3;2;Unité 1;AA;1;Tu t'appelles comment?;Tu t'appelles comment;tytapɛlkɔmɑ͂;Wie heißt du?;Wie heißt du
-101;3;2;Unité 1;AB;0;bizarre;bizarre;bizaʀ;komisch;komisch
-102;3;2;Unité 1;AB;0;bizarre;bizarre;bizaʀ;merkwürdig;merkwürdig
-103;3;2;Unité 1;AB;0;un chat;un chat;ɛ̃ʃa;eine Katze;eine Katze
-105;3;2;Unité 1;AB;0;mais;mais;mɛ;aber;aber
-109;3;2;Unité 1;AB;0;ici;ici;isi;hier;hier
-110;3;2;Unité 1;AB;0;ici;ici;isi;hierher;hierher
-111;3;2;Unité 1;AB;0;tu es;tu es;tyɛ;du bist;du bist
-112;3;2;Unité 1;AB;0;de/d';de|d';də;aus;aus
-113;3;2;Unité 1;AB;0;de/d';de|d';də;von;von
-114;3;2;Unité 1;AB;0;super (inv.);super;sypɛʀ;super;super
-115;3;2;Unité 1;AB;0;super (inv.);super;sypɛʀ;toll;toll
-116;3;2;Unité 1;AB;0;un garçon;un garçon;ɛ̃gaʀsɔ̃;ein Junge;ein Junge
-117;3;2;Unité 1;AB;0;une fille;une fille;ynfij;ein Mädchen;ein Mädchen
-118;3;2;Unité 1;AB;0;une fille;une fille;ynfij;eine Tochter;eine Tochter
-119;3;2;Unité 1;AB;0;il est;il est;ilɛ;er ist;er ist
-120;3;2;Unité 1;AB;0;elle est;elle est;ɛlɛ;sie ist;sie ist
-121;3;2;Unité 1;AB;0;fantastique;fantastique;fɑ͂tastik;fantastisch;fantastisch
-122;3;2;Unité 1;AB;0;fantastique;fantastique;fɑ͂tastik;toll;toll
-125;3;2;Unité 1;AB;0;une dame;une dame;yndam;eine Dame;eine Dame
-126;3;2;Unité 1;AB;0;une dame;une dame;yndam;eine Frau;eine Frau
-127;3;2;Unité 1;AB;0;un monsieur;un monsieur;ɛ̃məsjø;ein Herr;ein Herr
-128;3;2;Unité 1;AB;0;un monsieur;un monsieur;ɛ̃məsjø;ein Mann;ein Mann
-129;3;2;Unité 1;AB;1;Toulouse;Toulouse;tuluz;Toulouse;Toulouse
-130;3;2;Unité 1;AB;1;Strasbourg;Strasbourg;stʀasbuʀ;Straßburg;Straßburg
-131;3;2;Unité 1;AB;1;Nice;Nice;nis;Nizza;Nizza
-132;3;2;Unité 1;AB;1;Brest;Brest;bʀɛst;Brest;Brest
-133;4;2;Unité 1;AB;0;madame ...;madame;madam;Frau ...;Frau
-134;4;2;Unité 1;AB;1;Bof! (fam.);Bof;bɔf;Na ja. (ugs.);Na ja
-135;4;2;Unité 1;AB;1;Bof! (fam.);Bof;bɔf;Ach. (ugs.);Ach
-137;4;2;Unité 1;PR;1;un cochon d'Inde;un cochon d'Inde;ɛ̃kɔʃɔ̃dɛ̃d;ein Meereschweinchen;ein Meereschweinchen
-138;4;2;Unité 1;PR;0;un poisson;un poisson;ɛ̃pwasɔ̃;ein Fisch;ein Fisch
-139;4;2;Unité 1;PR;0;un cheval/des chevaux;un cheval|des chevaux;ɛ̃ʃəval/deʃəvo;ein Pferd/Pferde;ein Pferd/Pferde
-140;4;2;Unité 1;PR;0;une souris;une souris;ynsuʀi;eine Maus;eine Maus
-141;4;2;Unité 1;PR;0;un cochon;un cochon;ɛ̃kɔʃɔ̃;ein Schwein;ein Schwein
-142;4;2;Unité 1;PR;0;un canari;un canari;ɛ̃kanaʀi;ein Kanarienvogel;ein Kanarienvogel
-143;4;2;Unité 1;PR;0;un perroquet;un perroquet;ɛ̃peʀɔkɛ;ein Papagei;ein Papagei
-144;4;2;Unité 1;PR;0;un rat;un rat;ɛ̃ʀa;eine Ratte;eine Ratte
-145;4;2;Unité 1;PR;0;une tortue;une tortue;yntɔʀty;eine Schildkröte;eine Schildkröte
-146;4;2;Unité 1;PR;0;une perruche;une perruche;ynpeʀyʃ;ein Wellensittich;ein Wellensittich
-147;4;2;Unité 1;PR;0;un serpent;un serpent;ɛ̃sɛʀpɑ͂;eine Schlange;eine Schlange
-148;4;2;Unité 1;PR;0;un hamster;un hamster;ɛ̃amstɛʀ;ein Hamster;ein Hamster
-149;4;2;Unité 1;PR;1;A tout à l'heure!;A tout à l'heure;atutalqʀ;Bis gleich!;Bis gleich
-150;4;3;Unité 2;DE;0;un magasin;un magasin;ɛ̃magazɛ̃;ein Geschäft;ein Geschäft
-151;4;3;Unité 2;DE;0;un magasin;un magasin;ɛ̃magazɛ̃;ein Laden;ein Laden
-152;4;3;Unité 2;DE;0;un journal/des journaux;un journal|des journaux;ɛ̃ʒuʀnal/deʒuʀno;eine Zeitung;eine Zeitung
-153;4;3;Unité 2;DE;1;une BD;une BD;ynbede;ein Comic;ein Comic
-154;4;3;Unité 2;DE;0;une affiche;une affiche;ynafiʃ;ein Plakat;ein Plakat
-155;4;3;Unité 2;DE;0;une affiche;une affiche;ynafiʃ;ein Poster;ein Poster
-156;4;3;Unité 2;DE;0;Qu'est-ce que c'est?;Qu'est-ce que c'est;kɛskəsɛ;Was ist das?;Was ist das
-157;4;3;Unité 2;DE;1;à (Paris);à (Paris);a;in (Paris);in (Paris)
-158;4;3;Unité 2;DE;1;à (Paris);à (Paris);a;nach (Paris);nach (Paris)
-160;4;3;Unité 2;DE;0;une maison de la presse;une maison de la presse;ynmɛzɔ̃dəlapʀɛs;ein Zeitschriften- und Schreibwarengeschäft;ein Zeitschriften- und Schreibwarengeschäft
-161;4;3;Unité 2;DE;0;que;que;kə;was;was
-162;4;3;Unité 2;DE;1;Que fait Léo?;Que fait Léo;kəfɛleo;Was macht Léo?;Was macht Léo
-163;4;3;Unité 2;DE;0;regarder qc;regarder qc;ʀəgaʀde;etwas ansehen;etwas ansehen
-164;4;3;Unité 2;DE;0;regarder qc;regarder qc;ʀəgaʀde;etwas betrachten;etwas betrachten
-165;4;3;Unité 2;DE;0;parler;parler;paʀle;sprechen;sprechen
-166;4;3;Unité 2;DE;0;avec;avec;avɛk;mit;mit
-167;4;3;Unité 2;DE;0;chercher qn/qc;chercher qn/qc;ʃɛʀʃe;jemanden/etwas suchen;jemanden/etwas suchen
-168;4;3;Unité 2;DE;0;arriver;arriver;aʀive;(an)kommen;(an)kommen
-169;4;3;Unité 2;AA;0;en français;en français;ɑ͂fʀɑ͂sɛ;auf Französisch;auf Französisch
-170;4;3;Unité 2;AA;0;un stylo;un stylo;ɛ̃stilo;ein Füller;ein Füller
-171;4;3;Unité 2;AA;0;un stylo;un stylo;ɛ̃stilo;ein Kuli;ein Kuli
-172;4;3;Unité 2;AA;0;une gomme;une gomme;yngɔm;ein Radiergummi;ein Radiergummi
-173;4;3;Unité 2;AA;0;un livre;un livre;ɛ̃livʀ;ein Buch;ein Buch
-174;4;3;Unité 2;AA;0;un cahier;un cahier;ɛ̃kaje;ein Heft;ein Heft
-175;4;3;Unité 2;AA;0;un crayon;un crayon;ɛ̃kʀɛjɔ̃;ein Bleistift;ein Bleistift
-176;4;3;Unité 2;AA;0;un truc (fam.);un truc;ɛ̃tʀyk;ein Ding;ein Ding
-177;5;3;Unité 2;AA;0;un truc (fam.);un truc;ɛ̃tʀyk;eine Sache;eine Sache
-178;5;3;Unité 2;AA;0;une trousse;une trousse;yntʀus;ein Federmäppchen;ein Federmäppchen
-179;5;3;Unité 2;AA;0;une feuille;une feuille;ynfqj;ein Blatt;ein Blatt
-180;5;3;Unité 2;AA;0;un cartable;un cartable;ɛ̃kaʀtabl;eine Schultasche;eine Schultasche
-181;5;3;Unité 2;AA;0;un classeur;un classeur;ɛ̃klasqʀ;ein Ordner;ein Ordner
-182;5;3;Unité 2;AA;0;un sac à dos;un sac à dos;ɛ̃sakado;ein Rucksack;ein Rucksack
-183;5;3;Unité 2;AA;0;français/française;français|française;fʀɑ͂sɛ/fʀɑ͂sɛz;französisch;französisch
-184;5;3;Unité 2;AA;0;écouter qn/qc;écouter qn/qc;ekute;jemandem zuhören;jemandem zuhören
-185;5;3;Unité 2;AA;0;écouter qn/qc;écouter qn/qc;ekute;etwas anhören;etwas anhören
-186;5;3;Unité 2;AA;0;trouver qn/qc;trouver qn/qc;tʀuve;jemanden/etwas finden;jemanden/etwas finden
-187;5;3;Unité 2;AA;0;travailler;travailler;tʀavaje;arbeiten;arbeiten
-188;5;3;Unité 2;AA;0;porter qc;porter qc;pɔʀte;etwas tragen;etwas tragen
-189;5;3;Unité 2;AA;0;dans;dans;dɑ͂;in;in
-190;5;3;Unité 2;AA;0;une rue;une rue;ynʀy;eine Straße;eine Straße
-192;5;3;Unité 2;AA;0;entrer;entrer;ɑ͂tʀe;eintreten;eintreten
-193;5;3;Unité 2;AA;0;entrer;entrer;ɑ͂tʀe;hereinkommen;hereinkommen
-194;5;3;Unité 2;AA;0;euh ...;euh;ø;äh ...;äh
-195;5;3;Unité 2;AA;0;là;là;la;da;da
-196;5;3;Unité 2;AA;0;là;là;la;dort;dort
-197;5;3;Unité 2;AA;1;Chut!;Chut;ʃyt;Pst!;Pst
-199;5;3;Unité 2;AA;0;une école;une école;ynekɔl;eine Schule;eine Schule
-200;5;3;Unité 2;AA;0;en vacances (f. pl.);en vacances;ɑ͂vakɑ͂s;in den Ferien;in den Ferien
-201;5;3;Unité 2;AA;1;Tiens!;Tiens;tjɛ̃;Sieh mal!;Sieh mal
-202;5;3;Unité 2;AA;1;Tiens!;Tiens;tjɛ̃;Schau mal!;Schau mal
-203;5;3;Unité 2;AA;0;une grand-mère;une grand-mère;yngʀɑ͂mɛʀ;eine Großmutter;eine Großmutter
-204;5;3;Unité 2;AA;0;un carton;un carton;ɛ̃kaʀtɔ̃;ein Karton;ein Karton
-206;5;3;Unité 2;AA;1;Zut! (fam.);Zut;zyt;Mist!;Mist
-207;5;3;Unité 2;AA;1;Zut! (fam.);Zut;zyt;Verdammt!;Verdammt
-208;5;3;Unité 2;AA;0;une catastrophe;une catastrophe;ynkatastʀɔf;eine Katastrophe;eine Katastrophe
-209;5;3;Unité 2;AA;0;il dit/elle dit;il dit/elle dit;ildi/ɛldi;er sagt/sie sagt;er sagt/sie sagt
-210;5;3;Unité 2;AB;0;être;être;ɛtʀ;sein;sein
-211;5;3;Unité 2;AB;0;devant;devant;dəvɑ͂;vor (örtlich);vor
-212;5;3;Unité 2;AB;0;habiter;habiter;abite;wohnen;wohnen
-213;5;3;Unité 2;AB;1;la rue Nollet;la rue Nollet;laʀynɔlɛ;Name einer Straße in Paris;Name einer Straße in Paris
-214;5;3;Unité 2;AB;0;où;où;u;wo;wo
-215;5;3;Unité 2;AB;0;où;où;u;wohin;wohin
-216;5;3;Unité 2;AB;1;la rue Truffaut;la rue Truffaut;laʀytʀyfo;Name einer Straße in Paris;Name einer Straße in Paris
-217;5;3;Unité 2;AB;0;un t-shirt;un t-shirt;ɛ̃tiʃqʀt;ein T-Shirt;ein T-Shirt
-218;5;3;Unité 2;AB;0;le rugby;le rugby;ləʀygbi;das Rugby (Ballspiel);das Rugby
-219;5;3;Unité 2;AB;0;le judo;le judo;ləʒydo;das Judo;das Judo
-220;5;3;Unité 2;AB;1;Qu'est-ce que ...?;Qu'est-ce que;kɛskə;Was ...?;Was
-221;6;3;Unité 2;AB;0;le sport;le sport;ləspɔʀ;der Sport;der Sport
-222;6;3;Unité 2;AB;0;la musique;la musique;lamyzik;die Musik;die Musik
-223;6;3;Unité 2;AB;0;un frère;un frère;ɛ̃fʀɛʀ;ein Bruder;ein Bruder
-224;6;3;Unité 2;AB;0;une soeur;une soeur;ynsqʀ;eine Schwester;eine Schwester
-225;6;3;Unité 2;AB;0;sympa;sympa;sɛ̃pa;nett;nett
-226;6;3;Unité 2;AB;0;détester qn/qc;détester qn/qc;detɛste;jemanden/etwas verabscheuen;jemanden/etwas verabscheuen
-227;6;3;Unité 2;AB;0;ça;ça;sa;das;das
-228;6;3;Unité 2;AB;0;d'accord;d'accord;dakɔʀ;einverstanden;einverstanden
-229;6;3;Unité 2;AB;0;d'accord;d'accord;dakɔʀ;o.k.;o.k.
-230;6;3;Unité 2;AB;0;alors;alors;alɔʀ;nun;nun
-231;6;3;Unité 2;AB;0;alors;alors;alɔʀ;jetzt;jetzt
-232;6;3;Unité 2;AB;0;alors;alors;alɔʀ;dann;dann
-233;6;3;Unité 2;AB;1;Ouf!;Ouf;uf;Uff!;Uff
-234;6;3;Unité 2;AB;0;aimer qn/qc;aimer qn/qc;eme;jemanden/etwas lieben;jemanden/etwas lieben
-235;6;3;Unité 2;AB;0;aimer qn/qc;aimer qn/qc;eme;jemanden/etwas mögen;jemanden/etwas mögen
-236;6;3;Unité 2;AB;0;le rock;le rock;ləʀɔk;die Rockmusik;die Rockmusik
-237;6;3;Unité 2;AB;0;le foot(ball);le foot(ball);ləfut(bɔl);der Fußball (Sportart);der Fußball
-238;6;3;Unité 2;AB;0;un vélo;un vélo;ɛ̃velo;ein Fahrrad;ein Fahrrad
-239;6;3;Unité 2;AB;0;la techno;la techno;latɛkno;Techno (Musikstil);Techno
-240;6;3;Unité 2;AB;0;le rap;le rap;ləʀap;Rap (Musikstil);Rap
-241;6;3;Unité 2;AB;0;la gymnastique;la gymnastique;laʒimnastik;das Turnen;das Turnen
-242;6;3;Unité 2;AB;0;la gymnastique;la gymnastique;laʒimnastik;die Gymnastik;die Gymnastik
-244;6;3;Unité 2;PR;0;un saxophone;un saxophone;ləsaksɔfɔn;ein Saxophon;ein Saxophon
-245;6;3;Unité 2;PR;0;un piano;un piano;ɛ̃pjano;ein Klavier;ein Klavier
-246;6;3;Unité 2;PR;0;un piano;un piano;ɛ̃pjano;ein Piano;ein Piano
-247;6;3;Unité 2;PR;0;un dessin;un dessin;ɛ̃desɛ̃;eine Zeichnung;eine Zeichnung
-248;6;3;Unité 2;PR;0;le basket(ball);le basket(ball);ləbaskɛtbol;Basketball;Basketball
-249;6;3;Unité 2;PR;0;l'athlétisme (m.);l'athlétisme;latletism;die Leichtathletik;die Leichtathletik
-250;6;3;Unité 2;PR;0;le roller;le roller;lərɔlqʀ;der Rollerskate;der Rollerskate
-251;6;3;Unité 2;PR;0;le roller;le roller;lərɔlqʀ;der Inliner;der Inliner
-253;6;3;Unité 2;PR;1;le VTT;le VTT;ləvetete;das Mountainbike;das Mountainbike
-254;6;3;Unité 2;PR;0;la lecture;la lecture;lalɛktyʀ;das Lesen;das Lesen
-255;6;4;Unité 3;DE;0;un anniversaire;un anniversaire;ɛ̃nanivɛʀsɛʀ;ein Geburtstag;ein Geburtstag
-256;6;4;Unité 3;AA;0;une idée;une idée;ynide;eine Idee;eine Idee
-257;6;4;Unité 3;AA;0;une idée;une idée;ynide;ein Gedanke;ein Gedanke
-258;6;4;Unité 3;AA;0;des;des;de;Plural (die Mehrzahl) von un und une.;Plural
-259;6;4;Unité 3;AA;0;un cadeau;un cadeau;ɛ̃kado;ein Geschenk;ein Geschenk
-260;6;4;Unité 3;AA;1;la FNAC;la FNAC;lafnak;die FNAC;die FNAC
-261;6;4;Unité 3;AA;0;bientôt;bientôt;bjɛ̃to;bald;bald
-262;6;4;Unité 3;AA;1;Ah, bon?;Ah, bon;abɔ̃;Ach ja?;Ach ja
-263;6;4;Unité 3;AA;1;Ah, bon?;Ah, bon;abɔ̃;Wirklich?;Wirklich
-264;6;4;Unité 3;AA;0;une histoire;une histoire;ynistwaʀ;eine Geschichte;eine Geschichte
-265;7;4;Unité 3;AA;0;ou;ou;u;oder;oder
-266;7;4;Unité 3;AA;0;un ordinateur;un ordinateur;ɛ̃nɔʀdinatqʀ;ein Computer;ein Computer
-267;7;4;Unité 3;AA;1;un CD/des CD;un CD|des CD;ɛ̃sede/desede;eine CD/CDs;eine CD/CDs
-268;7;4;Unité 3;AA;0;il y a;il y a;ilja;es gibt;es gibt
-269;7;4;Unité 3;AA;0;il y a;il y a;ilja;es ist;es ist
-270;7;4;Unité 3;AA;0;il y a;il y a;ilja;es sind;es sind
-271;7;4;Unité 3;AA;0;ensemble;ensemble;ɑ͂sɑ͂bl;gemeinsam;gemeinsam
-272;7;4;Unité 3;AA;0;ensemble;ensemble;ɑ͂sɑ͂bl;zusammen;zusammen
-273;7;4;Unité 3;AA;0;d'abord;d'abord;dabɔʀ;zuerst;zuerst
-274;7;4;Unité 3;AA;1;Qu'est-ce qu'il y a?;Qu'est-ce qu'il y a;kɛskilja;Was gibt es?;Was gibt es
-275;7;4;Unité 3;AA;1;Bien sûr!;Bien sûr;bjɛ̃syʀ;Sicherlich!;Sicherlich
-276;7;4;Unité 3;AA;1;Bien sûr!;Bien sûr;bjɛ̃syʀ;Na klar!;Na klar
-277;7;4;Unité 3;AA;1;Bien sûr!;Bien sûr;bjɛ̃syʀ;Selbstverständlich!;Selbstverständlich
-278;7;4;Unité 3;AA;0;préparer qc;préparer qc;pʀepaʀe;etwas vorbereiten;etwas vorbereiten
-279;7;4;Unité 3;AA;1;la France;la France;lafʀɑ͂s;Frankreich;Frankreich
-280;7;4;Unité 3;AA;1;l'Allemagne (f.);l'Allemagne;lalmaɲ;Deutschland;Deutschland
-281;7;4;Unité 3;AA;1;en Allemagne;en Allemagne;ɑ͂nalmaɲ;in Deutschland;in Deutschland
-282;7;4;Unité 3;AA;1;Allô?;Allô;alo;Hallo? (am Telefon);Hallo
-283;7;4;Unité 3;AA;0;un train;un train;ɛ̃tʀɛ̃;ein Zug;ein Zug
-284;7;4;Unité 3;AA;1;Cologne;Cologne;kɔlɔɲ;Köln;Köln
-285;7;4;Unité 3;AA;0;demain;demain;dəmɛ̃;morgen;morgen
-286;7;4;Unité 3;AA;0;ton/ta/tes;ton/ta|tes;tɔ̃/ta/te;dein/deine;dein/deine
-287;7;4;Unité 3;AA;0;mon/ma/mes;mon/ma|mes;mɔ̃/ma/me;mein/meine;mein/meine
-288;7;4;Unité 3;AA;1;C'est dommage.;C'est dommage;sɛdɔmaʒ;Das ist schade.;Das ist schade
-289;7;4;Unité 3;AA;0;inviter qn;inviter qn;ɛ̃vite;jemanden einladen;jemanden einladen
-290;7;4;Unité 3;AA;0;allemand;allemand;almɑ͂/almɑ͂d;deutsch;deutsch
-291;7;4;Unité 3;AA;0;en allemand;en allemand;ɑ͂nalmɑ͂;auf Deutsch;auf Deutsch
-292;7;4;Unité 3;AA;0;à bientôt;à bientôt;abjɛ̃to;bis bald;bis bald
-293;7;4;Unité 3;AA;0;maman (f.);maman;mamɑ͂;Mama;Mama
-294;7;4;Unité 3;AA;0;maman (f.);maman;mamɑ͂;Mutti;Mutti
-295;7;4;Unité 3;AA;0;une chambre;une chambre;ynʃɑ͂bʀ;ein (Schlaf-)Zimmer;ein (Schlaf-)Zimmer
-296;7;4;Unité 3;AA;0;une bougie;une bougie;ynbuʒi;eine Kerze;eine Kerze
-297;7;4;Unité 3;AA;0;un gâteau/des gâteaux;un gâteau|des gâteaux;ɛ̃gato/degato;ein Kuchen/Kuchen;ein Kuchen/Kuchen
-298;7;4;Unité 3;AA;0;ranger qc;ranger qc;ʀɑ͂ʒe;etwas aufräumen;etwas aufräumen
-299;7;4;Unité 3;AA;0;s'il te plaît;s'il te plaît;siltəplɛ;bitte (wenn man jemanden duzt);bitte
-300;7;4;Unité 3;AA;0;s'il vous plaît;s'il vous plaît;silvuplɛ;bitte (wenn man jemanden siezt);bitte
-301;7;4;Unité 3;AA;0;maintenant;maintenant;mɛ̃tnɑ͂;jetzt;jetzt
-302;7;4;Unité 3;AA;0;une affaire;une affaire;ynafɛʀ;eine Sache;eine Sache
-303;7;4;Unité 3;AA;0;une affaire;une affaire;ynafɛʀ;eine Angelegenheit;eine Angelegenheit
-304;7;4;Unité 3;AA;0;toujours;toujours;tuʒuʀ;immer;immer
-305;7;4;Unité 3;AA;0;aujourd'hui;aujourd'hui;oʒuʀdɥi;heute;heute
-306;7;4;Unité 3;AA;0;une famille;une famille;ynfamij;eine Familie;eine Familie
-308;7;4;Unité 3;AA;0;les grands-parents (m.);les grands-parents;legʀɑ͂paʀɑ͂;die Großeltern;die Großeltern
-309;8;4;Unité 3;AA;0;un grand-père;un grand-père;ɛ̃gʀɑ͂pɛʀ;ein Großvater;ein Großvater
-310;8;4;Unité 3;AA;0;les parents (m.);les parents;leparɑ͂;die Eltern;die Eltern
-311;8;4;Unité 3;AA;0;un père;un père;ɛ̃pɛʀ;ein Vater;ein Vater
-312;8;4;Unité 3;AA;0;une mère;une mère;ynmɛʀ;eine Mutter;eine Mutter
-313;8;4;Unité 3;AA;0;un oncle;un oncle;ɛ̃nɔ̃kl;ein Onkel;ein Onkel
-314;8;4;Unité 3;AA;0;une tante;une tante;yntɑ͂t;eine Tante;eine Tante
-315;8;4;Unité 3;AA;0;un fils;un fils;ɛ̃fis;ein Sohn;ein Sohn
-316;8;4;Unité 3;AA;0;une demi-soeur;une demi-soeur;ynd(ə)misqʀ;eine Halbschwester;eine Halbschwester
-317;8;4;Unité 3;AA;0;un demi-frère;un demi-frère;ɛ̃d(ə)mifʀɛʀ;ein Halbbruder;ein Halbbruder
-318;8;4;Unité 3;AA;0;un cousin/une cousine;un cousin|une cousine;ɛ̃kuzɛ̃/ynkuzin;ein Cousin/eine Cousine;ein Cousin/eine Cousine
-319;8;4;Unité 3;AB;0;décembre (m.);décembre;desɑ͂bʀ;Dezember;Dezember
-320;8;4;Unité 3;AB;0;son/sa/ses;son/sa|ses;sɔ̃/sa/se;sein/seine;sein/seine
-321;8;4;Unité 3;AB;0;son/sa/ses;son/sa|ses;sɔ̃/sa/se;ihr/ihre;ihr/ihre
-322;8;4;Unité 3;AB;1;C'est ça?;C'est ça;sɛsa;Stimmt's?;Stimmt's
-323;8;4;Unité 3;AB;0;encore;encore;ɑ͂kɔʀ;noch;noch
-324;8;4;Unité 3;AB;1;un DVD;un DVD;ɛ̃devede;eine DVD;eine DVD
-325;8;4;Unité 3;AB;0;un jeu/des jeux;un jeu|des jeux;ɛ̃ʒø;ein Spiel/Spiele;ein Spiel/Spiele
-326;8;4;Unité 3;AB;0;un jeu vidéo/des jeux vidéo;un jeu vidéo|des jeux vidéo;ɛ̃ʒøvideo/deʒøvideo;ein Computerspiel/Computerspiele;ein Computerspiel/Computerspiele
-327;8;4;Unité 3;AB;0;la faim;la faim;lafɛ̃;der Hunger;der Hunger
-328;8;4;Unité 3;AB;0;avoir faim;avoir faim;avwaʀfɛ̃;Hunger haben;Hunger haben
-329;8;4;Unité 3;AB;0;manger qc;manger qc;mɑ͂ʒe;etwas essen;etwas essen
-330;8;4;Unité 3;AB;0;souffler qc;souffler qc;sufle;etwas ausblasen;etwas ausblasen
-331;8;4;Unité 3;AB;0;puis;puis;pɥi;dann;dann
-332;8;4;Unité 3;AB;0;chanter;chanter;ʃɑ͂te;singen;singen
-333;8;4;Unité 3;AB;0;un an;un an;ɛ̃nɑ͂;ein Jahr;ein Jahr
-334;8;4;Unité 3;AB;0;avoir onze ans;avoir onze ans;avwaʀɔ̃zɑ͂;elf Jahre alt sein;elf Jahre alt sein
-335;8;4;Unité 3;AB;0;l'envie (f.);l'envie;ynɑ͂vi;die Lust;die Lust
-336;8;4;Unité 3;AB;0;l'envie (f.);l'envie;ynɑ͂vi;das Verlangen;das Verlangen
-337;8;4;Unité 3;AB;0;avoir envie de faire qc;avoir envie de faire qc;avwaʀɑ͂vi;Lust haben, etwas zu tun;Lust haben, etwas zu tun
-338;8;4;Unité 3;AB;0;sur;sur;syʀ;auf;auf
-339;8;4;Unité 3;AB;0;sur;sur;syʀ;über;über
-340;8;4;Unité 3;AB;0;une surprise;une surprise;ynsyʀpʀiz;eine Überraschung;eine Überraschung
-341;8;4;Unité 3;AB;0;avoir;avoir;avwaʀ;haben;haben
-342;8;4;Unité 3;AB;0;un mois;un mois;ɛ̃mwa;ein Monat;ein Monat
-343;8;4;Unité 3;AB;0;une année;une année;ynane;ein Jahr;ein Jahr
-344;8;4;Unité 3;AB;0;janvier (m.);janvier;ʒɑ͂vje;Januar;Januar
-345;8;4;Unité 3;AB;0;février (m.);février;fevʀije;Februar;Februar
-346;8;4;Unité 3;AB;0;mars (m.);mars;maʀs;März;März
-347;8;4;Unité 3;AB;0;avril (m.);avril;avʀil;April;April
-348;8;4;Unité 3;AB;0;mai (m.);mai;mɛ;Mai;Mai
-349;8;4;Unité 3;AB;0;juin (m.);juin;ʒɥɛ̃;Juni;Juni
-350;8;4;Unité 3;AB;0;juillet (m.);juillet;ʒɥijɛ;Juli;Juli
-351;8;4;Unité 3;AB;0;août (m.);août;ut;August;August
-352;8;4;Unité 3;AB;0;septembre (m.);septembre;sɛptɑ͂bʀ;September;September
-353;9;4;Unité 3;AB;0;octobre (m.);octobre;ɔktɔbʀ;Oktober;Oktober
-354;9;4;Unité 3;AB;0;novembre (m.);novembre;nɔvɑ͂bʀ;November;November
-356;9;4;Unité 3;AB;0;quand;quand;kɑ͂;wann;wann
-357;9;4;Unité 3;AB;0;le premier;le premier;ləpʀəmje;der erste;der erste
-358;9;4;Unité 3;AB;0;l'âge (m.);l'âge;laʒ;das Alter;das Alter
-359;9;4;Unité 3;AB;1;Tu as quel âge?;Tu as quel âge;tyakɛlaʒ;Wie alt bist du?;Wie alt bist du
-360;9;4;Unité 3;AB;0;il s'appelle;il s'appelle;ilsapɛl;er heißt;er heißt
-361;9;4;Unité 3;PR;1;la Pentecôte;la Pentecôte;lapɑ͂tkot;Pfingsten;Pfingsten
-362;9;4;Unité 3;PR;1;Noël (m.);Noël;nɔɛl;Weihnachten;Weihnachten
-363;9;4;Unité 3;PR;0;le nouvel an;le nouvel an;lənuvɛlɑ͂;Neujahr;Neujahr
-364;9;4;Unité 3;PR;0;le baptême;le baptême;ləbatɛm;die Taufe;die Taufe
-365;9;4;Unité 3;PR;1;le 14 Juillet;le 14 Juillet;ləkatɔʀzʒɥijɛ;der 14. Juli (französischer Nationalfeiertag);der 14. Juli
-366;9;4;Unité 3;PR;1;Pâques;Pâques;pak;Ostern;Ostern
-367;9;4;Unité 3;PR;0;le mariage;le mariage;ləmaʀjaʒ;die Hochzeit;die Hochzeit
-368;9;5;Unité 4;DE;0;un collège;un collège;ɛ̃kɔlɛʒ;ein Collège;ein Collège
-369;9;5;Unité 4;DE;0;une cour;une cour;ynkuʀ;ein (Schul-)Hof;ein (Schul-)Hof
-370;9;5;Unité 4;DE;0;un élève/une élève;un élève|une élève;ɛ̃nelɛv/ynelɛv;ein Schüler/eine Schülerin;ein Schüler/eine Schülerin
-371;9;5;Unité 4;DE;0;un cours;un cours;ɛ̃kuʀ;eine Unterrichtsstunde;eine Unterrichtsstunde
-372;9;5;Unité 4;DE;0;l'allemand (m.);l'allemand;lalmɑ͂;Deutsch;Deutsch
-373;9;5;Unité 4;DE;0;un retard;un retard;ɛ̃ʀətaʀ;eine Verspätung;eine Verspätung
-374;9;5;Unité 4;DE;0;être en retard;être en retard;ɛtʀɑ͂ʀətaʀ;zu spät kommen;zu spät kommen
-376;9;5;Unité 4;DE;0;une cantine;une cantine;ynkɑ͂tin;eine Kantine;eine Kantine
-377;9;5;Unité 4;DE;0;une cantine;une cantine;ynkɑ͂tin;eine Mensa;eine Mensa
-378;9;5;Unité 4;DE;0;une infirmerie;une infirmerie;ynɛ̃fiʀməʀi;eine Krankenstation;eine Krankenstation
-379;9;5;Unité 4;DE;1;Aïe!;Aïe;aj;Aua!;Aua
-380;9;5;Unité 4;DE;0;un pied;un pied;ɛ̃pje;ein Fuß;ein Fuß
-381;9;5;Unité 4;DE;0;jouer;jouer;ʒwe;spielen;spielen
-382;9;5;Unité 4;AA;1;Balzac, Honoré de;Balzac, Honoré de;hɔnɔʀedəbalzak;französischer Schriftsteller (1799-1850);französischer Schriftsteller (1799-1850)
-383;9;5;Unité 4;AA;0;une journée;une journée;ynʒuʀne;ein Tag;ein Tag
-384;9;5;Unité 4;AA;0;une heure;une heure;ynqʀ;eine Stunde;eine Stunde
-385;9;5;Unité 4;AA;0;sept heures;sept heures;sɛtqʀ;sieben Uhr;sieben Uhr
-386;9;5;Unité 4;AA;0;sept heures et demie;sept heures et demie;sɛtqʀedəmi;halb acht;halb acht
-387;9;5;Unité 4;AA;0;sept heures moins le quart;sept heures moins le quart;sɛtqʀmwɛ̃ləkaʀ;Viertel vor sieben Uhr;Viertel vor sieben Uhr
-388;9;5;Unité 4;AA;0;sept heures et quart;sept heures et quart;sɛtqʀekaʀ;Viertel nach sieben;Viertel nach sieben
-389;9;5;Unité 4;AA;0;un lit;un lit;ɛ̃li;ein Bett;ein Bett
-390;9;5;Unité 4;AA;0;demi/demie;demi|demie;dəmi;halb;halb
-391;9;5;Unité 4;AA;0;les toilettes (f.pl.);les toilettes;letwalɛt;die Toilette;die Toilette
-392;9;5;Unité 4;AA;0;un quart;un quart;ɛ̃kaʀ;ein Viertel;ein Viertel
-393;9;5;Unité 4;AA;0;huit heures et quart;huit heures et quart;ɥitqʀekaʀ;Viertel nach acht;Viertel nach acht
-394;9;5;Unité 4;AA;0;midi;midi;midi;zwölf Uhr (mittags);zwölf Uhr (mittags)
-395;9;5;Unité 4;AA;0;après;après;apʀɛ;nach;nach
-396;9;5;Unité 4;AA;0;après;après;apʀɛ;danach;danach
-397;10;5;Unité 4;AA;0;rentrer;rentrer;ʀɑ͂tʀe;zurückkommen;zurückkommen
-398;10;5;Unité 4;AA;0;rentrer;rentrer;ʀɑ͂tʀe;nach Hause gehen;nach Hause gehen
-399;10;5;Unité 4;AA;0;à la maison;à la maison;alamɛzɔ̃;zu Hause;zu Hause
-400;10;5;Unité 4;AA;0;à la maison;à la maison;alamɛzɔ̃;nach Hause;nach Hause
-401;10;5;Unité 4;AA;0;six heures moins le quart;six heures moins le quart;sizqʀmwɛ̃lkaʀ;Viertel vor sechs;Viertel vor sechs
-402;10;5;Unité 4;AA;0;chez qn;chez qn;ʃe;bei jemandem;bei jemandem
-403;10;5;Unité 4;AA;0;la télévision;la télévision;latelevizjɔ̃;das Fernsehen;das Fernsehen
-404;10;5;Unité 4;AA;0;commencer;commencer;kɔmɑ͂se;anfangen;anfangen
-405;10;5;Unité 4;AA;0;commencer;commencer;kɔmɑ͂se;beginnen;beginnen
-406;10;5;Unité 4;AA;1;Quelle heure est-il?;Quelle heure est-il;kɛlqʀɛtil;Wie viel Uhr ist es?;Wie viel Uhr ist es
-407;10;5;Unité 4;AA;1;Quelle heure est-il?;Quelle heure est-il;kɛlqʀɛtil;Wie spät ist es?;Wie spät ist es
-408;10;5;Unité 4;AA;0;à quelle heure?;à quelle heure;akɛlqʀ;um wie viel Uhr?;um wie viel Uhr
-409;10;5;Unité 4;AA;0;de ... à;de à;də…a;von ... bis;von bis
-410;10;5;Unité 4;AA;0;une clé;une clé;ynkle;ein Schlüssel;ein Schlüssel
-411;10;5;Unité 4;AA;1;une clé USB;une clé USB;ynkleyɛsbe;ein USB-Stick;ein USB-Stick
-412;10;5;Unité 4;AA;0;lundi (m.);lundi;lɛ̃di;Montag;Montag
-413;10;5;Unité 4;AA;0;lundi (m.);lundi;lɛ̃di;am Montag;am Montag
-414;10;5;Unité 4;AA;0;aller;aller;ale;gehen;gehen
-415;10;5;Unité 4;AA;0;aller;aller;ale;fahren;fahren
-416;10;5;Unité 4;AA;0;ne ... pas;ne pas;nə pa;nicht;nicht
-417;10;5;Unité 4;AA;0;la 6eA;la 6eA;lasizjɛma;die Klasse 6A;die Klasse 6A
-418;10;5;Unité 4;AA;0;une minute;une minute;ynminyt;eine Minute;eine Minute
-419;10;5;Unité 4;AA;0;une classe;une classe;ynklas;eine Klasse;eine Klasse
-420;10;5;Unité 4;AA;0;sous;sous;su;unter;unter
-421;10;5;Unité 4;AA;0;une salle de cours;une salle de cours;ynsaldəkuʀ;ein Klassenraum;ein Klassenraum
-422;10;5;Unité 4;AA;1;Excusez-moi.;Excusez-moi;ɛkskyzemwa;Entschuldigen Sie./Entschuldigung!;Entschuldigen Sie/Entschuldigung
-423;10;5;Unité 4;AA;1;Excusez-moi.;Excusez-moi;ɛkskyzemwa;Entschuldigung!;Entschuldigung
-424;10;5;Unité 4;AA;1;Excuse-moi.;Excuse-moi;ɛkskyzmwa;Entschuldige bitte.;Entschuldige bitte
-425;10;5;Unité 4;AA;0;une place;une place;ynplas;ein Platz;ein Platz
-426;10;5;Unité 4;AA;0;la main;la main;lamɛ̃;die Hand;die Hand
-427;10;5;Unité 4;AA;0;la récréation;la récréation;laʀekʀeasjɔ̃;die Pause;die Pause
-428;10;5;Unité 4;AA;0;retrouver qn/qc;retrouver qn/qc;ʀətʀuve;jemanden treffen;jemanden treffen
-429;10;5;Unité 4;AA;0;retrouver qn/qc;retrouver qn/qc;ʀətʀuve;etwas wiederfinden;etwas wiederfinden
-430;10;5;Unité 4;AA;0;en 6eB;en 6eB;ɑ͂sisjɛmbe;in der 6B;in der 6B
-431;10;5;Unité 4;AA;0;raconter qc;raconter qc;ʀakɔ̃te;etwas erzählen;etwas erzählen
-432;10;5;Unité 4;AA;1;Il/Elle est à qui?;Il/Elle est à qui;ilɛtaki/ɛlɛtaki;Wem gehört er/sie/es?;Wem gehört er/sie/es
-433;10;5;Unité 4;AA;1;Je ne sais pas.;Je ne sais pas;ʒənəsɛpa;Ich weiß nicht.;Ich weiß nicht
-434;10;5;Unité 4;AA;1;Ce ne sont pas mes affaires.;Ce ne sont pas mes affaires;sənəsɔ̃pamezafɛʀ;Das sind nicht meine Sachen.;Das sind nicht meine Sachen
-435;10;5;Unité 4;AA;0;discuter (de qc);discuter (de qc);diskyte;(über etwas) diskutieren;(über etwas) diskutieren
-436;10;5;Unité 4;AA;0;discuter (de qc);discuter (de qc);diskyte;sich (über etwas) unterhalten;sich (über etwas) unterhalten
-437;10;5;Unité 4;AA;0;un professeur/une professeure;un professeur|une professeure;ɛ̃pʀɔfesqʀ/ynprɔfesqʀ;ein Lehrer/eine Lehrerin;ein Lehrer/eine Lehrerin
-438;10;5;Unité 4;AB;0;le temps;le temps;lətɑ͂;die Zeit;die Zeit
-439;10;5;Unité 4;AB;0;l'emploi (m.) du temps;l'emploi du temps;lɑ͂plwadytɑ͂;der Stundenplan;der Stundenplan
-440;10;5;Unité 4;AB;0;mardi (m.);mardi;maʀdi;Dienstag;Dienstag
-441;11;5;Unité 4;AB;0;mardi (m.);mardi;maʀdi;am Dienstag;am Dienstag
-442;11;5;Unité 4;AB;0;mercredi (m.);mercredi;mɛʀkʀədi;Mittwoch;Mittwoch
-443;11;5;Unité 4;AB;0;mercredi (m.);mercredi;mɛʀkʀədi;am Mittwoch;am Mittwoch
-444;11;5;Unité 4;AB;0;jeudi (m.);jeudi;ʒødi;Donnerstag;Donnerstag
-445;11;5;Unité 4;AB;0;jeudi (m.);jeudi;ʒødi;am Donnerstag;am Donnerstag
-446;11;5;Unité 4;AB;0;vendredi (m.);vendredi;vɑ͂dʀədi;Freitag;Freitag
-447;11;5;Unité 4;AB;0;vendredi (m.);vendredi;vɑ͂dʀədi;am Freitag;am Freitag
-448;11;5;Unité 4;AB;0;samedi (m.);samedi;samdi;Samstag;Samstag
-449;11;5;Unité 4;AB;0;samedi (m.);samedi;samdi;am Samstag;am Samstag
-450;11;5;Unité 4;AB;0;dimanche (m.);dimanche;dimɑ͂ʃ;Sonntag;Sonntag
-451;11;5;Unité 4;AB;0;dimanche (m.);dimanche;dimɑ͂ʃ;am Sonntag;am Sonntag
-452;11;5;Unité 4;AB;0;un mot;un mot;ɛ̃mo;ein Wort;ein Wort
-453;11;5;Unité 4;AB;0;un gymnase;un gymnase;ɛ̃ʒimnaz;eine Turnhalle;eine Turnhalle
-454;11;5;Unité 4;AB;0;un rêve;un rêve;ɛ̃ʀɛv;ein Traum;ein Traum
-455;11;5;Unité 4;AB;0;cool (fam.);cool;kul;cool;cool
-456;11;5;Unité 4;AB;0;cliquer;cliquer;klike;klicken;klicken
-457;11;5;Unité 4;AB;0;notre/nos;notre|nos;nɔtʀ/no;unser/unsere;unser/unsere
-458;11;5;Unité 4;AB;0;votre/vos;votre|vos;vɔtʀ/vo;euer/eure;euer/eure
-459;11;5;Unité 4;AB;0;votre/vos;votre|vos;vɔtʀ/vo;Ihr/Ihre;Ihr/Ihre
-460;11;5;Unité 4;AB;0;leur/leurs;leur|leurs;lqʀ;ihr/ihre;ihr/ihre
-461;11;5;Unité 4;AB;0;une interrogation;une interrogation;ynɛ̃teʀɔgasjɔ̃;eine Klassenarbeit;eine Klassenarbeit
-462;11;5;Unité 4;AB;0;quelque chose;quelque chose;kɛlkəʃoz;etwas;etwas
-463;11;5;Unité 4;AB;0;un sac;un sac;ɛ̃sak;eine Tasche;eine Tasche
-464;11;5;Unité 4;AB;0;faire qc;faire qc;fɛʀ;etwas tun /machen;etwas tun /machen
-465;11;5;Unité 4;AB;0;une copie;une copie;ynkɔpi;eine Kopie;eine Kopie
-466;11;5;Unité 4;AB;0;un exercice;un exercice;ɛ̃nɛgzɛʀsis;eine Übung;eine Übung
-467;11;5;Unité 4;AB;0;si;si;si;doch;doch
-468;11;5;Unité 4;AB;0;comme ça;comme ça;kɔmsa;so;so
-469;11;5;Unité 4;AB;0;comme ça;comme ça;kɔmsa;auf diese Weise;auf diese Weise
-470;11;5;Unité 4;AB;0;comme;comme;kɔm;wie;wie
-471;11;5;Unité 4;AB;0;les devoirs (m. pl.);les devoirs;ledəvwaʀ;die (Haus)Aufgaben;die (Haus)Aufgaben
-472;11;5;Unité 4;AB;0;avoir raison;avoir raison;avwaʀʀɛzɔ̃;Recht haben;Recht haben
-473;11;5;Unité 4;AB;0;une partie;une partie;ynpaʀti;ein Teil;ein Teil
-474;11;5;Unité 4;AB;0;la fin;la fin;lafɛ̃;das Ende/der Schluss;das Ende/der Schluss
-475;11;5;Unité 4;AB;0;un titre;un titre;ɛ̃titʀ;Titel;Titel
-476;11;5;Unité 4;AB;0;derrière;derrière;dɛʀjɛʀ;hinter;hinter
-477;11;5;Unité 4;PR;1;l'E.P.S. (Education physique et sportive) (f.);l'E.P.S. (Education physique et sportive);ləpeɛs;Sport als Schulfach;Sport als Schulfach
-478;11;5;Unité 4;PR;0;les arts plastiques (m.);les arts plastiques;lezaʀplastik;Kunst als Schulfach;Kunst als Schulfach
-479;11;5;Unité 4;PR;1;les S.V.T. (Sciences de la vie et de la terre) (f.);les S.V.T. (Sciences de la vie et de la terre);leɛsvete;Biologie (als Schulfach);Biologie
-480;11;5;Unité 4;PR;0;la technologie;la technologie;latɛknɔlɔʒi;Technik;Technik
-481;11;5;Unité 4;PR;0;l'anglais (m.);l'anglais;lɑ͂glɛ;Englisch;Englisch
-482;11;5;Unité 4;PR;0;les mathématiques (f.);les mathématiques;lematematik;Mathematik;Mathematik
-483;11;5;Unité 4;PR;0;l'histoire-géo (f.);l'histoire-géo;listwaʀʒeɔ;Geschichte und Erdkunde als Schulfach;Geschichte und Erdkunde als Schulfach
-484;11;5;Unité 4;PR;0;l'éducation musicale (f.);l'éducation musicale;ledykasjɔ̃mysikal;Musik als Schulfach;Musik als Schulfach
-485;12;5;Unité 4;PR;0;le français;le français;ləfʀɑ͂sɛ;Französisch;Französisch
-486;12;6;Unité 5;DE;0;un quartier;un quartier;ɛ̃kaʀtje;ein Stadtviertel;ein Stadtviertel
-487;12;6;Unité 5;DE;1;Batignolles;Batignolles;batiɲɔl;Name eines Viertels in Paris;Name eines Viertels in Paris
-488;12;6;Unité 5;DE;0;le, la dix-septième;le, la dix-septième;lə/ladisɛtjɛm;der, die, das siebzehnte;der, die, das siebzehnte
-489;12;6;Unité 5;DE;0;un arrondissement;un arrondissement;ɛ̃naʀɔ̃dismɑ͂;ein Arrondissement (ein Verwaltungsbezirk);ein Arrondissement
-490;12;6;Unité 5;DE;0;une photo;une photo;ynfɔto;ein Foto;ein Foto
-492;12;6;Unité 5;DE;0;le roller;le roller;ləʀɔlqʀ;das Inlinerfahren;das Inlinerfahren
-493;12;6;Unité 5;DE;0;une avenue;une avenue;ynavəny;eine Straße;eine Straße
-494;12;6;Unité 5;DE;1;Interclub 17;Interclub 17;ɛ̃tɛʀklqbdisɛt;Interclub 17 Name eines Jugendzentrums;Interclub 17 Name eines Jugendzentrums
-495;12;6;Unité 5;DE;0;une activité;une activité;ynaktivite;eine Freizeitbeschäftigung;eine Freizeitbeschäftigung
-496;12;6;Unité 5;DE;0;tout le monde;tout le monde;tulmɔ̃d;alle;alle
-497;12;6;Unité 5;DE;0;tout le monde;tout le monde;tulmɔ̃d;jeder;jeder
-498;12;6;Unité 5;DE;0;un stand;un stand;ɛ̃stɑ͂d;ein Stand;ein Stand
-499;12;6;Unité 5;DE;0;un stand;un stand;ɛ̃stɑ͂d;eine Bude;eine Bude
-500;12;6;Unité 5;DE;0;une crêpe;une crêpe;ynkʀɛp;eine Crêpe;eine Crêpe
-501;12;6;Unité 5;AA;0;un taxi;un taxi;ɛ̃taksi;ein Taxi;ein Taxi
-502;12;6;Unité 5;AA;0;passer;passer;pase;etwas verbringen;etwas verbringen
-503;12;6;Unité 5;AA;0;la nuit;la nuit;lanɥi;die Nacht;die Nacht
-504;12;6;Unité 5;AA;0;une entrée;une entrée;ynɑ͂tʀe;ein Eingang;ein Eingang
-505;12;6;Unité 5;AA;0;le soir;le soir;ləswaʀ;der Abend;der Abend
-506;12;6;Unité 5;AA;0;ce soir;ce soir;səswaʀ;heute Abend;heute Abend
-507;12;6;Unité 5;AA;0;un jour;un jour;ɛ̃ʒuʀ;ein Tag;ein Tag
-509;12;6;Unité 5;AA;0;ma puce (fam.);ma puce;mapys;meine Kleine (wörtl.: mein Floh);meine Kleine
-510;12;6;Unité 5;AA;1;A plus, ma puce!;A plus, ma puce;aplysmapys;Bis später, mein Kleines.;Bis später, mein Kleines
-511;12;6;Unité 5;AA;0;une voiture;une voiture;ynvwatyʀ;ein Auto;ein Auto
-512;12;6;Unité 5;AA;0;en voiture;en voiture;ɑ͂vwatyʀ;mit dem Auto;mit dem Auto
-513;12;6;Unité 5;AA;0;loin;loin;lwɛ̃;weit (Adv.);weit
-514;12;6;Unité 5;AA;0;à pied;à pied;apje;zu Fuß;zu Fuß
-515;12;6;Unité 5;AA;0;aller faire qc;aller faire qc;alefɛʀ;etwas tun werden;etwas tun werden
-516;12;6;Unité 5;AA;0;un appartement;un appartement;ɛ̃napaʀtəmɑ͂;eine Wohnung;eine Wohnung
-517;12;6;Unité 5;AA;0;une pièce;une pièce;ynpjɛs;ein Zimmer;ein Zimmer
-518;12;6;Unité 5;AA;0;une salle de bains;une salle de bains;ynsaldəbɛ̃;ein Bad;ein Bad
-519;12;6;Unité 5;AA;0;une salle de bains;une salle de bains;ynsaldəbɛ̃;ein Badezimmer;ein Badezimmer
-520;12;6;Unité 5;AA;0;un salon;un salon;ɛ̃salɔ̃;ein Wohnzimmer;ein Wohnzimmer
-521;12;6;Unité 5;AA;0;une chambre d'enfant;une chambre d'enfant;ynʃɑ͂bʀdɑ͂fɑ͂;ein Kinderzimmer;ein Kinderzimmer
-522;12;6;Unité 5;AA;0;une salle à manger;une salle à manger;ynsalamɑ͂ʒe;ein Esszimmer;ein Esszimmer
-523;12;6;Unité 5;AA;1;les W.-C.;les W.-C.;levese;die Toilette;die Toilette
-524;12;6;Unité 5;AA;0;un couloir;un couloir;ɛ̃kulwaʀ;ein Gang;ein Gang
-525;12;6;Unité 5;AA;0;un couloir;un couloir;ɛ̃kulwaʀ;ein Flur;ein Flur
-526;12;6;Unité 5;AA;0;une table;une table;yntabl;ein Tisch;ein Tisch
-527;12;6;Unité 5;AA;0;à table;à table;atabl;bei Tisch;bei Tisch
-528;12;6;Unité 5;AA;0;un repas;un repas;ɛ̃ʀəpa;ein Essen;ein Essen
-529;13;6;Unité 5;AA;0;un repas;un repas;ɛ̃ʀəpa;eine Mahlzeit;eine Mahlzeit
-530;13;6;Unité 5;AA;0;minuit (m.);minuit;minɥi;Mitternacht/12 Uhr nachts;Mitternacht/12 Uhr nachts
-531;13;6;Unité 5;AA;0;le matin;le matin;ləmatɛ̃;der Morgen;der Morgen
-532;13;6;Unité 5;AA;0;un tour;un tour;ɛ̃tuʀ;eine Tour;eine Tour
-533;13;6;Unité 5;AA;0;un tour;un tour;ɛ̃tuʀ;ein Rundgang;ein Rundgang
-534;13;6;Unité 5;AA;0;le samedi;le samedi;ləsamdi;samstags;samstags
-535;13;6;Unité 5;AA;0;l'après-midi (m.) (f.);l'après-midi;lapʀɛmidi;der Nachmittag;der Nachmittag
-536;13;6;Unité 5;AA;0;l'après-midi (m.) (f.);l'après-midi;lapʀɛmidi;nachmittags;nachmittags
-537;13;6;Unité 5;AA;0;faire du judo;faire du judo;fɛʀdyʒydo;Judo machen, betreiben;Judo machen, betreiben
-539;13;6;Unité 5;AA;0;je voudrais ...;je voudrais;ʒəvudʀɛ;ich möchte gerne ...;ich möchte gerne
-540;13;6;Unité 5;AA;0;le bruit;le bruit;ləbʀɥi;das Geräusch;das Geräusch
-541;13;6;Unité 5;AA;0;le bruit;le bruit;ləbʀɥi;der Lärm;der Lärm
-542;13;6;Unité 5;AA;0;tard;tard;taʀ;spät;spät
-543;13;6;Unité 5;AA;0;une cuisine;une cuisine;ynkɥizin;eine Küche;eine Küche
-544;13;6;Unité 5;AA;0;quitter qc;quitter qc;kite;etwas verlassen;etwas verlassen
-545;13;6;Unité 5;AA;0;des spaghettis (m. pl.);des spaghettis;spageti;Spaghetti;Spaghetti
-546;13;6;Unité 5;AA;0;déjà;déjà;deʒa;schon;schon
-548;13;6;Unité 5;AA;0;le volley(ball);le volley(ball);ləvɔlɛbol;Volleyball;Volleyball
-549;13;6;Unité 5;AA;0;le hand-ball;le hand-ball;ləɑ͂dbal;Handball;Handball
-550;13;6;Unité 5;AA;0;l'équitation (f.);l'équitation;lekitasjɔ̃;das Reiten;das Reiten
-551;13;6;Unité 5;AA;0;le cyclisme;le cyclisme;ləsiklism;Radfahren;Radfahren
-552;13;6;Unité 5;AA;0;le ski;le ski;ləski;Ski fahren;Ski fahren
-553;13;6;Unité 5;AA;0;la natation;la natation;lanatasjɔ̃;das Schwimmen;das Schwimmen
-554;13;6;Unité 5;AA;0;la danse;la danse;ladɑ͂s;der Tanz;der Tanz
-555;13;6;Unité 5;AA;0;la danse;la danse;ladɑ͂s;das Tanzen;das Tanzen
-556;13;6;Unité 5;AA;0;le théâtre;le théâtre;ləteatʀ;das Theater;das Theater
-557;13;6;Unité 5;AA;0;une guitare;une guitare;yngitaʀ;eine Gitarre;eine Gitarre
-558;13;6;Unité 5;AA;0;le tennis;le tennis;lətenis;Tennis;Tennis
-559;13;6;Unité 5;AA;0;comme;comme;kɔm;als;als
-560;13;6;Unité 5;AB;0;à droite;à droite;adʀwat;(nach) rechts;(nach) rechts
-561;13;6;Unité 5;AB;0;à gauche;à gauche;agoʃ;(nach) links;(nach) links
-563;13;6;Unité 5;AB;0;tout droit;tout droit;tudʀwa;geradeaus;geradeaus
-565;13;6;Unité 5;AB;0;traverser qc;traverser qc;tʀavɛʀse;etwas überqueren;etwas überqueren
-566;13;6;Unité 5;AB;0;un carrefour;un carrefour;ɛ̃kaʀfuʀ;eine Kreuzung;eine Kreuzung
-567;13;6;Unité 5;AB;0;tourner;tourner;tuʀne;drehen;drehen
-568;13;6;Unité 5;AB;0;tourner;tourner;tuʀne;abbiegen;abbiegen
-569;13;6;Unité 5;AB;0;pour faire qc;pour faire qc;puʀfɛʀ;um etwas zu tun;um etwas zu tun
-570;13;6;Unité 5;AB;0;beaucoup;beaucoup;boku;viel;viel
-571;13;6;Unité 5;AB;1;Merci beaucoup!;Merci beaucoup;mɛʀsiboku;Vielen Dank!;Vielen Dank
-572;13;6;Unité 5;AB;0;la poste;la poste;lapɔst;die Post;die Post
-573;14;6;Unité 5;AB;0;une piscine;une piscine;ynpisin;ein Schwimmbad;ein Schwimmbad
-574;14;6;Unité 5;AB;1;Vous pouvez répéter, s'il vous plaît?;Vous pouvez répéter, s'il vous plaît;vupuveʀepete;Können Sie bitte wiederholen?;Können Sie bitte wiederholen
-575;14;6;Unité 5;AB;0;un champion/une championne;un champion|une championne;ɛ̃ʃɑ͂pjɔ̃/ynʃɑ͂pjɔn;ein Champion;ein Champion
-576;14;6;Unité 5;AB;0;un champion/une championne;un champion|une championne;ɛ̃ʃɑ͂pjɔ̃/ynʃɑ͂pjɔn;ein Meister/eine Meisterin;ein Meister/eine Meisterin
-577;14;6;Unité 5;AB;0;un numéro;un numéro;ɛ̃nymeʀo;eine Nummer;eine Nummer
-578;14;6;Unité 5;AB;0;un combat;un combat;ɛ̃kɔ̃ba;ein Kampf;ein Kampf
-579;14;6;Unité 5;AB;0;vraiment;vraiment;vʀɛmɑ͂;wirklich;wirklich
-580;14;6;Unité 5;AB;0;même;même;mɛm;sogar;sogar
-581;14;6;Unité 5;AB;0;une interview;une interview;ynɛ̃tɛʀvju;ein Interview;ein Interview
-582;14;6;Unité 5;AB;0;est-ce que;est-ce que;ɛskə;Frageformel;Frageformel
-583;14;6;Unité 5;AB;0;gagner qc;gagner qc;gaɲe;etwas gewinnen;etwas gewinnen
-584;14;6;Unité 5;AB;0;poser qc;poser qc;poze;etwas setzen/stellen/legen;etwas setzen/stellen/legen
-585;14;6;Unité 5;AB;0;une question;une question;ynkɛstjɔ̃;eine Frage;eine Frage
-586;14;6;Unité 5;AB;1;Comment est-ce que ...?;Comment est-ce que;kɔmɑ͂ɛskə;Wie ...?;Wie
-587;14;6;Unité 5;AB;0;tomber;tomber;tɔ̃be;fallen;fallen
-588;14;6;Unité 5;AB;0;faire mal;faire mal;fɛʀmal;weh tun;weh tun
-589;14;6;Unité 5;AB;0;pourquoi?;pourquoi;puʀkwa;warum?;warum
-590;14;6;Unité 5;AB;0;parce que;parce que;paʀskə;weil;weil
-591;14;6;Unité 5;AB;0;trop;trop;tʀo;zu viel;zu viel
-592;14;6;Unité 5;AB;0;trop;trop;tʀo;zu sehr;zu sehr
-593;14;6;Unité 5;AB;0;nul;nul;nyl;blöd;blöd
-594;14;6;Unité 5;AB;1;C'est trop nul! (fam.);C'est trop nul;sɛtʀonyl;Das ist zu blöd! (ugs.);Das ist zu blöd
-595;14;6;Unité 5;AB;0;avoir mal;avoir mal;avwaʀmal;Schmerzen haben;Schmerzen haben
-596;14;6;Unité 5;AC;1;le parc des Batignolles;le parc des Batignolles;ləpaʀkdebatiɲɔl;Park von Batignolles;Park von Batignolles
-597;14;6;Unité 5;AC;0;un portable;un portable;ɛ̃pɔʀtabl;ein Handy;ein Handy
-598;14;6;Unité 5;AC;0;un portable;un portable;ɛ̃pɔʀtabl;ein Mobiltelefon;ein Mobiltelefon
-599;14;6;Unité 5;AC;1;un SMS;un SMS;ɛ̃ɛsɛmɛs;eine SMS;eine SMS
-600;14;6;Unité 5;AC;0;un film;un film;ɛ̃film;ein Film;ein Film
-601;14;6;Unité 5;AC;0;la soif;la soif;laswaf;der Durst;der Durst
-602;14;6;Unité 5;AC;0;avoir soif;avoir soif;avwaʀswaf;Durst haben;Durst haben
-603;14;6;Unité 5;AC;0;prendre qc;prendre qc;pʀɑ͂dʀ;etwas nehmen;etwas nehmen
-604;14;6;Unité 5;AC;0;prendre qc;prendre qc;pʀɑ͂dʀ;hier: essen;hier: essen
-605;14;6;Unité 5;AC;0;une gaufre;une gaufre;yngofʀ;eine Waffel;eine Waffel
-606;14;6;Unité 5;AC;0;coûter;coûter;kute;kosten;kosten
-607;14;6;Unité 5;AC;0;Ça coûte combien?;Ça coûte combien;sakutkɔ̃bjɛ̃;Wie viel kostet das?;Wie viel kostet das
-608;14;6;Unité 5;AC;0;combien (de);combien (de);kɔ̃bjɛ̃;wie viel;wie viel
-609;14;6;Unité 5;AC;0;un euro/des euros;un euro|des euros;ɛ̃nøʀo/dezøʀo;ein Euro/Euro;ein Euro/Euro
-610;14;6;Unité 5;AC;0;un centime;un centime;ɛ̃sɑ͂tim;ein Cent;ein Cent
-611;14;6;Unité 5;AC;0;un vendeur/une vendeuse;un vendeur|une vendeuse;ɛ̃vɑ͂dqʀ/ynvɑ͂døz;ein Verkäufer/eine Verkäuferin;ein Verkäufer/eine Verkäuferin
-612;14;6;Unité 5;AC;0;un coca;un coca;ɛ̃koka;eine Cola;eine Cola
-613;14;6;Unité 5;AC;0;une eau minérale;une eau minérale;ynomineʀal;ein Mineralwasser;ein Mineralwasser
-614;14;6;Unité 5;AC;0;un jus de pomme;un jus de pomme;ɛ̃ʒydpɔm;ein Apfelsaft;ein Apfelsaft
-615;14;6;Unité 5;AC;0;l'eau (f.);l'eau;lo;das Wasser;das Wasser
-616;14;6;Unité 5;AC;0;une pomme;une pomme;ynpɔm;ein Apfel;ein Apfel
-617;15;6;Unité 5;AC;0;un jus;un jus;ɛ̃ʒy;ein Saft;ein Saft
-618;15;6;Unité 5;AC;0;une orange;une orange;ynɔʀɑ͂ʒ;eine Orange;eine Orange
-619;15;6;Unité 5;AC;0;un diabolo menthe;un diabolo menthe;ɛ̃djabɔlomɑ͂t;ein Diabolo Menthe;ein Diabolo Menthe
-620;15;6;Unité 5;AC;0;Ça fait combien?;Ça fait combien;safɛ̃kɔ̃bjɛ̃;Wie viel kostet das?;Wie viel kostet das
-621;15;6;Unité 5;AC;0;Ça fait ...;Ça fait;safɛ;Das macht ...;Das macht
-622;15;6;Unité 5;AC;0;Ça fait ...;Ça fait;safɛ;Das kostet ...;Das kostet
-623;15;6;Unité 5;AC;0;un client/une cliente;un client|une cliente;ɛ̃klijɑ͂/ynklijɑ͂t;ein Kunde/eine Kundin;ein Kunde/eine Kundin
-624;15;6;Unité 5;AC;1;Bonne journée!;Bonne journée;bɔnʒuʀne;Einen schönen Tag!;Einen schönen Tag
-625;15;6;Unité 5;PR;0;la planche à voile;la planche à voile;laplɑ͂ʃavwal;das Windsurfen;das Windsurfen
-626;15;6;Unité 5;PR;0;le ski nautique;le ski nautique;fɛʀdyskinotik;das Wasserskifahren;das Wasserskifahren
-627;15;6;Unité 5;PR;0;une maison des jeunes;une maison des jeunes;ynmɛzɔ̃deʒqn;ein Jugendzentrum;ein Jugendzentrum
-628;15;6;Unité 5;PR;0;un terrain de foot;un terrain de foot;ɛ̃teʀɛ̃dəfut;ein Fußballplatz;ein Fußballplatz
-629;15;6;Unité 5;PR;0;un club de foot;un club de foot;ɛ̃klqbdəfut;ein Fußballverein;ein Fußballverein
-630;15;6;Unité 5;PR;0;un club sportif;un club sportif;ɛ̃klqbspɔʀtif;ein Sportverein;ein Sportverein
-631;15;6;Unité 5;PR;0;une école de musique;une école de musique;ynekɔldəmyzik;eine Musikschule;eine Musikschule
-632;15;6;Unité 5;PR;0;un glacier;un glacier;ɛ̃glasje;ein Eisverkäufer;ein Eisverkäufer
-633;15;6;Unité 5;PR;0;un glacier;un glacier;ɛ̃glasje;eine Eisdiele;eine Eisdiele
-634;15;6;Unité 5;PR;0;un coiffeur/une coiffeuse;un coiffeur|une coiffeuse;ɛ̃kwafqʀ/ynkwaføz;ein Frisör;ein Frisör
-635;15;6;Unité 5;PR;0;un coiffeur/une coiffeuse;un coiffeur|une coiffeuse;ɛ̃kwafqʀ/ynkwaføz;eine Frisörin;eine Frisörin
-636;15;6;Unité 5;PR;0;une papeterie;une papeterie;ynpapɛtʀi;ein Schreibwarengeschäft;ein Schreibwarengeschäft
-637;15;6;Unité 5;PR;0;un supermarché;un supermarché;ɛ̃sypɛʀmaʀʃe;ein Supermarkt;ein Supermarkt
-638;15;6;Unité 5;PR;0;un grand magasin;un grand magasin;ɛ̃gʀɑ͂magazɛ̃;ein Kaufhaus;ein Kaufhaus
-639;15;6;Unité 5;PR;0;un kiosque;un kiosque;ɛ̃kjɔsk;ein Kiosk;ein Kiosk
-640;15;6;Unité 5;PR;0;une bibliothèque;une bibliothèque;ynbiblijɔtɛk;eine Bücherei;eine Bücherei
-641;15;7;Unité 6;DE;0;une fête;une fête;ynfɛt;ein Fest;ein Fest
-642;15;7;Unité 6;DE;0;une fête;une fête;ynfɛt;eine Party;eine Party
-643;15;7;Unité 6;DE;0;une fête nationale;une fête nationale;ynfɛtnasjɔnal;ein Nationalfeiertag;ein Nationalfeiertag
-644;15;7;Unité 6;DE;0;les gens (m. pl.);les gens;leʒɑ͂;die Leute;die Leute
-645;15;7;Unité 6;DE;0;un bal;un bal;ɛ̃bal;ein Ball;ein Ball
-646;15;7;Unité 6;DE;0;un bal;un bal;ɛ̃bal;ein Fest;ein Fest
-647;15;7;Unité 6;DE;0;grand/grande;grand|grande;gʀɑ͂/gʀɑ͂d;groß;groß
-648;15;7;Unité 6;DE;0;un feu/des feux;un feu|des feux;ɛ̃fø/defø;ein Feuer/Feuer;ein Feuer/Feuer
-649;15;7;Unité 6;DE;0;un feu d'artifice;un feu d'artifice;ɛ̃fødaʀtifis;ein Feuerwerk;ein Feuerwerk
-650;15;7;Unité 6;DE;0;une tour;une tour;yntuʀ;ein Turm;ein Turm
-651;15;7;Unité 6;DE;1;la tour Eiffel;la tour Eiffel;latuʀɛfɛl;der Eiffelturm;der Eiffelturm
-652;15;7;Unité 6;DE;0;danser;danser;dɑ͂se;tanzen;tanzen
-653;15;7;Unité 6;AA;1;le TGV;le TGV;ləteʒeve;der TGV;der TGV
-654;15;7;Unité 6;AA;0;une personne;une personne;ynpɛʀsɔn;eine Person;eine Person
-655;15;7;Unité 6;AA;0;l'arrivée (f.);l'arrivée;laʀive;die Ankunft;die Ankunft
-656;15;7;Unité 6;AA;0;un problème;un problème;ɛ̃pʀɔblɛm;ein Problem;ein Problem
-657;15;7;Unité 6;AA;0;téléphoner à qn;téléphoner à qn;telefɔne;mit jemandem telefonieren;mit jemandem telefonieren
-658;15;7;Unité 6;AA;0;téléphoner à qn;téléphoner à qn;telefɔne;jemanden anrufen;jemanden anrufen
-659;15;7;Unité 6;AA;0;rester;rester;ʀɛste;bleiben;bleiben
-660;15;7;Unité 6;AA;0;hier;hier;jɛʀ;gestern;gestern
-662;16;7;Unité 6;AA;0;un journal/des journaux;un journal|des journaux;ɛ̃ʒuʀnal/deʒuʀno;hier: ein Tagebuch;hier: ein Tagebuch
-663;16;7;Unité 6;AA;0;les vacances (f. pl.);les vacances;levakɑ͂s;der Urlaub;der Urlaub
-664;16;7;Unité 6;AA;0;les vacances (f. pl.);les vacances;levakɑ͂s;die Ferien;die Ferien
-665;16;7;Unité 6;AA;0;dernier/dernière;dernier|dernière;dɛʀnje/dɛʀnjɛʀ;letzter/letzte/letztes;letzter/letzte/letztes
-666;16;7;Unité 6;AA;0;triste/triste;triste|triste;tʀist;traurig;traurig
-667;16;7;Unité 6;AA;0;intéressant/intéressante;intéressant/intéressante;ɛ̃teʀesɑ͂/ɛ̃teʀesɑ͂t;interessant;interessant
-668;16;7;Unité 6;AA;0;très;très;tʀɛ;sehr;sehr
-669;16;7;Unité 6;AA;0;bon/bonne;bon|bonne;bɔ̃/bɔn;gut;gut
-670;16;7;Unité 6;AA;0;peut-être;peut-être;pøtɛtʀ;vielleicht;vielleicht
-671;16;7;Unité 6;AA;0;une gare;une gare;yngaʀ;ein Bahnhof;ein Bahnhof
-672;16;7;Unité 6;AA;1;Lyon;Lyon;ljɔ̃;Stadt im Osten Frankreichs;Stadt im Osten Frankreichs
-673;16;7;Unité 6;AA;0;un chanteur/une chanteuse;un chanteur|une chanteuse;ɛ̃ʃɑ͂tqʀ/ynʃɑ͂tøz;ein Sänger/eine Sängerin;ein Sänger/eine Sängerin
-674;16;7;Unité 6;AA;0;oublier qc;oublier qc;ublije;etwas vergessen;etwas vergessen
-675;16;7;Unité 6;AA;0;petit/petite;petit|petite;pəti/pətit;klein;klein
-676;16;7;Unité 6;AA;0;enfin;enfin;ɑ͂fɛ̃;endlich;endlich
-677;16;7;Unité 6;AA;0;enfin;enfin;ɑ͂fɛ̃;schließlich;schließlich
-678;16;7;Unité 6;AA;0;un chapeau;un chapeau;ɛ̃ʃapo;ein Hut;ein Hut
-679;16;7;Unité 6;AA;0;joli/jolie;joli|jolie;ʒɔli;hübsch;hübsch
-680;16;7;Unité 6;AA;0;une robe;une robe;ynʀɔb;ein Kleid;ein Kleid
-681;16;7;Unité 6;AA;0;long/longue;long|longue;lɔ̃/lɔ̃g;lang;lang
-682;16;7;Unité 6;AA;0;un pantalon;un pantalon;ɛ̃pɑ͂talɔ̃;eine Hose;eine Hose
-683;16;7;Unité 6;AA;0;vert/verte;vert|verte;vɛʀ/vɛʀt;grün;grün
-684;16;7;Unité 6;AA;0;content/contente;content|contente;kɔ̃tɑ͂/kɔ̃tɑ͂t;zufrieden;zufrieden
-685;16;7;Unité 6;AA;0;content/contente;content|contente;kɔ̃tɑ͂/kɔ̃tɑ͂t;froh;froh
-686;16;7;Unité 6;AB;0;avant;avant;avɑ͂;vor;vor
-687;16;7;Unité 6;AB;0;mettre qc;mettre qc;mɛtʀ;etwas stellen/legen/setzen;etwas stellen/legen/setzen
-688;16;7;Unité 6;AB;0;mettre qc;mettre qc;mɛtʀ;etwas anziehen;etwas anziehen
-689;16;7;Unité 6;AB;1;la Place de la Bastille;la Place de la Bastille;laplasdəlabastij;der Platz der Bastille;der Platz der Bastille
-690;16;7;Unité 6;AB;0;mauvais/mauvaise;mauvais/mauvaise;movɛ/movɛz;schlecht;schlecht
-691;16;7;Unité 6;AB;0;donner qc à qn;donner qc à qn;dɔne;jemandem etwas geben;jemandem etwas geben
-693;16;7;Unité 6;AB;0;une casquette;une casquette;ynkaskɛt;eine Kappe;eine Kappe
-694;16;7;Unité 6;AB;0;une casquette;une casquette;ynkaskɛt;eine Schirmmütze;eine Schirmmütze
-695;16;7;Unité 6;AB;0;la poche;la poche;lapɔʃ;die Tasche;die Tasche
-696;16;7;Unité 6;AB;0;la poche;la poche;lapɔʃ;die Hosentasche;die Hosentasche
-697;16;7;Unité 6;AB;0;demander (qc) à qn;demander (qc) à qn;dəmɑ͂de;jemanden (nach etwas) fragen;jemanden (nach etwas) fragen
-698;16;7;Unité 6;AB;0;demander (qc) à qn;demander (qc) à qn;dəmɑ͂de;jemanden (um etwas) bitten;jemanden (um etwas) bitten
-699;16;7;Unité 6;AB;0;entre;entre;ɑ͂tʀ;zwischen;zwischen
-700;16;7;Unité 6;AB;0;montrer qc à qn;montrer qc à qn;mɔ̃tʀe;jemandem etwas zeigen;jemandem etwas zeigen
-701;16;7;Unité 6;AB;0;parler à qn;parler à qn;paʀle;mit jemandem sprechen;mit jemandem sprechen
-702;16;7;Unité 6;AB;0;autre/autre;autre|autre;otʀ;anderer/andere/anderes;anderer/andere/anderes
-703;16;7;Unité 6;AB;0;rencontrer qn;rencontrer qn;ʀɑ͂kɔ̃tʀe;jemanden treffen;jemanden treffen
-704;16;7;Unité 6;AB;0;rencontrer qn;rencontrer qn;ʀɑ͂kɔ̃tʀe;jemandem begegnen;jemandem begegnen
-705;17;7;Unité 6;AB;0;aider qn;aider qn;ede;jemandem helfen;jemandem helfen
-706;17;7;Unité 6;AB;0;un courriel;un courriel;ɛ̃kuʀjɛl;eine E-Mail;eine E-Mail
-707;17;7;Unité 6;AB;0;une couleur;une couleur;ynkulqʀ;eine Farbe;eine Farbe
-708;17;7;Unité 6;AB;0;bleu/bleue;bleu|bleue;blø;blau;blau
-709;17;7;Unité 6;AB;0;blanc/blanche;blanc|blanche;blɑ͂/blɑ͂ʃ;weiß;weiß
-710;17;7;Unité 6;AB;0;rouge/rouge;rouge|rouge;ʀuʒ;rot;rot
-711;17;7;Unité 6;AB;0;jaune/jaune;jaune|jaune;ʒon;gelb;gelb
-712;17;7;Unité 6;AB;0;surtout;surtout;syʀtu;vor allem;vor allem
-713;17;7;Unité 6;AB;0;un vêtement;un vêtement;ɛ̃vɛtmɑ͂;ein Kleidungsstück;ein Kleidungsstück
-714;17;7;Unité 6;AB;0;noir/noire;noir|noire;nwaʀ;schwarz;schwarz
-715;17;7;Unité 6;AB;0;gris/grise;gris|grise;gʀi/gʀiz;grau;grau
-716;17;7;Unité 6;AB;0;un jean;un jean;ɛ̃dʒin;eine Jeans;eine Jeans
-717;17;7;Unité 6;AB;0;une basket;une basket;ynbaskɛt;ein Turnschuh;ein Turnschuh
-718;17;7;Unité 6;AB;0;une jupe;une jupe;ynʒyp;ein Rock;ein Rock
-719;17;7;Unité 6;AB;0;un anorak;un anorak;ɛ̃nanɔʀak;ein Anorak;ein Anorak
-720;17;7;Unité 6;AB;0;une chemise;une chemise;ynʃəmiz;ein Hemd;ein Hemd
-721;17;7;Unité 6;AB;0;une veste;une veste;ynvɛst;eine Jacke;eine Jacke
-722;17;7;Unité 6;AB;0;une chaussure;une chaussure;ynʃosyʀ;ein Schuh;ein Schuh
-723;17;7;Unité 6;AB;0;un pull;un pull;ɛ̃pyl;ein Pulli;ein Pulli
-724;17;7;Unité 6;AB;0;les fringues (f. pl.) (fam.);les fringues;lefʀɛ̃g;die Klamotten;die Klamotten
-725;17;7;Unité 6;AB;0;un short;un short;ɛ̃ʃɔʀt;Shorts;Shorts
-726;17;7;Unité 6;AB;0;un sweat;un sweat;ɛ̃swɛt;ein Sweatshirt;ein Sweatshirt
-727;17;7;Unité 6;AB;0;un blouson;un blouson;ɛ̃bluzɔ̃;ein Blouson;ein Blouson
-728;17;7;Unité 6;AB;0;un blouson;un blouson;ɛ̃bluzɔ̃;eine Jacke;eine Jacke
-729;17;7;Unité 6;AB;0;un poème;un poème;ɛ̃pɔɛm;ein Gedicht;ein Gedicht
-730;17;7;Unité 6;PR;0;un sketch;un sketch;ɛ̃skɛtʃ;ein Sketch;ein Sketch
-731;17;7;Unité 6;PR;0;un sandwich;un sandwich;ɛ̃sɑ͂dwi(t)ʃ;ein Sandwich;ein Sandwich
-732;17;7;Unité 6;PR;0;une boisson;une boisson;ynbwasɔ̃;ein Getränk;ein Getränk
-733;17;7;Unité 6;PR;0;une tarte flambée;une tarte flambée;yntaʀtflɑ͂be;ein Flammkuchen;ein Flammkuchen
-734;17;7;Unité 6;PR;0;une pizza;une pizza;ynpidza;eine Pizza;eine Pizza
-735;17;7;Unité 6;PR;0;des chips (f.);des chips;deʃips;Chips;Chips
-736;17;8;Unité 7;DE;0;une semaine;une semaine;ynsəmɛn;eine Woche;eine Woche
-737;17;8;Unité 7;DE;0;un reportage;un reportage;ɛ̃ʀəpɔʀtaʒ;eine Reportage;eine Reportage
-738;17;8;Unité 7;DE;0;une ville;une ville;ynvil;eine Stadt;eine Stadt
-739;17;8;Unité 7;DE;0;un assistant/une assistante;un assistant/une assistante;ɛ̃nasistɑ͂/ynasistɑ͂t;ein Assistent/eine Assistentin;ein Assistent/eine Assistentin
-740;17;8;Unité 7;DE;0;un endroit;un endroit;ɛ̃nɑ͂dʀwa;ein Ort;ein Ort
-741;17;8;Unité 7;DE;0;un touriste/une touriste;un touriste|une touriste;ɛ̃tuʀist/yntuʀist;ein Tourist/eine Touristin;ein Tourist/eine Touristin
-742;17;8;Unité 7;DE;1;le Louvre;le Louvre;ləluvʀ;der Louvre;der Louvre
-743;17;8;Unité 7;DE;0;un musée;un musée;ɛ̃myze;ein Museum;ein Museum
-744;17;8;Unité 7;DE;0;une cathédrale;une cathédrale;ynkatedʀal;eine Kathedrale;eine Kathedrale
-745;17;8;Unité 7;DE;1;Notre-Dame;Notre-Dame;nɔtʀədam;Notre-Dame (Kathedrale im Zentrum von Paris);Notre-Dame
-746;17;8;Unité 7;DE;1;la Défense;la Défense;ladefɑ͂s;Stadtteil von Paris;Stadtteil von Paris
-747;17;8;Unité 7;DE;0;moderne;moderne;mɔdɛʀn;modern;modern
-748;17;8;Unité 7;DE;1;l'Arc de triomphe (m.);l'Arc de triomphe;laʀkdətʀijɔ̃f;der Arc de triomphe;der Arc de triomphe
-749;18;8;Unité 7;DE;0;visiter qc;visiter qc;vizite;etwas besichtigen;etwas besichtigen
-750;18;8;Unité 7;AA;0;beau;beau;bo/bɛl/bɛl;schön;schön
-751;18;8;Unité 7;AA;1;Il fait beau.;Il fait beau;ilfɛbo;Es ist schönes Wetter.;Es ist schönes Wetter
-752;18;8;Unité 7;AA;0;faire de l'escalade;faire de l'escalade;fɛʀdəlɛkalad;klettern;klettern
-753;18;8;Unité 7;AA;0;chaud/chaude;chaud|chaude;ʃo/ʃod;warm;warm
-754;18;8;Unité 7;AA;0;chaud/chaude;chaud|chaude;ʃo/ʃod;heiß;heiß
-755;18;8;Unité 7;AA;1;Il fait chaud.;Il fait chaud;ilfɛʃo;Es ist warm/heiß.;Es ist warm/heiß
-756;18;8;Unité 7;AA;0;la vue;la vue;lavy;die Aussicht;die Aussicht
-758;18;8;Unité 7;AA;0;une boutique;une boutique;ynbutik;eine Boutique;eine Boutique
-759;18;8;Unité 7;AA;0;une boutique;une boutique;ynbutik;ein Ladengeschäft;ein Ladengeschäft
-760;18;8;Unité 7;AA;0;un souvenir;un souvenir;ɛ̃suvniʀ;eine Erinnerung;eine Erinnerung
-761;18;8;Unité 7;AA;0;un souvenir;un souvenir;ɛ̃suvniʀ;ein Andenken;ein Andenken
-762;18;8;Unité 7;AA;0;un bureau;un bureau;ɛ̃byʀo;ein Büro;ein Büro
-763;18;8;Unité 7;AA;0;un bureau;un bureau;ɛ̃byʀo;ein Schreibtisch;ein Schreibtisch
-764;18;8;Unité 7;AA;0;un bureau;un bureau;ɛ̃byʀo;hier: ein Arbeitszimmer;hier: ein Arbeitszimmer
-765;18;8;Unité 7;AA;1;Eiffel, Gustave;Eiffel, Gustave;gystavɛfɛl;französischer Ingenieur, 1832-1923;französischer Ingenieur, 1832-1923
-766;18;8;Unité 7;AA;0;écrire qc à qn;écrire qc à qn;ekʀiʀ;jemandem etwas schreiben;jemandem etwas schreiben
-767;18;8;Unité 7;AA;0;une carte;une carte;ynkaʀt;eine Karte;eine Karte
-768;18;8;Unité 7;AA;0;une carte postale;une carte postale;ynkaʀtpɔstal;eine Postkarte;eine Postkarte
-769;18;8;Unité 7;AA;0;une carte postale;une carte postale;ynkaʀtpɔstal;eine Ansichtskarte;eine Ansichtskarte
-770;18;8;Unité 7;AA;0;le vent;le vent;ləvɑ͂;der Wind;der Wind
-771;18;8;Unité 7;AA;1;Il y a du vent.;Il y a du vent;iljadyvɑ͂;Es ist windig.;Es ist windig
-772;18;8;Unité 7;AA;0;beaucoup de;beaucoup de;bokudə;viel(e);viel(e)
-773;18;8;Unité 7;AA;0;le temps;le temps;lətɑ͂;das Wetter;das Wetter
-774;18;8;Unité 7;AA;1;Quel temps fait-il?;Quel temps fait-il;kɛltɑ͂fɛtil;Wie ist das Wetter?;Wie ist das Wetter
-775;18;8;Unité 7;AA;0;froid/froide;froid|froide;fʀwa/fʀwad;kalt;kalt
-776;18;8;Unité 7;AA;0;neiger;neiger;neʒe;schneien;schneien
-777;18;8;Unité 7;AA;1;Il fait mauvais.;Il fait mauvais;ilfɛmovɛ;Es ist schlechtes Wetter.;Es ist schlechtes Wetter
-778;18;8;Unité 7;AA;0;pleuvoir;pleuvoir;pløvwaʀ;regnen;regnen
-779;18;8;Unité 7;AA;1;Il pleut.;Il pleut;ilplø;Es regnet.;Es regnet
-780;18;8;Unité 7;AA;1;Il fait froid.;Il fait froid;ilfɛfʀwa;Es ist kalt.;Es ist kalt
-781;18;8;Unité 7;AA;0;lire qc/qc à qn;lire qc/qc à qn;liʀ;etwas lesen;etwas lesen
-782;18;8;Unité 7;AA;0;lire qc/qc à qn;lire qc/qc à qn;liʀ;jemandem etwas vorlesen;jemandem etwas vorlesen
-783;18;8;Unité 7;AA;0;Cher .../Chère ...;Cher|Chère;ʃɛʀ;Lieber .../Liebe ... (Anrede);Lieber/Liebe
-784;18;8;Unité 7;AA;0;papi/papy (fam.);papi|papy;papi;Opi;Opi
-785;18;8;Unité 7;AA;0;mamie (ugs.);mamie;mami;Omi;Omi
-786;18;8;Unité 7;AA;0;génial/géniale;génial|géniale;ʒenjal;super;super
-787;18;8;Unité 7;AA;0;génial/géniale;génial|géniale;ʒenjal;genial;genial
-788;18;8;Unité 7;AA;1;la Joconde;la Joconde;laʒɔkɔ̃d;Mona Lisa (Gemälde von Leonardo da Vinci);Mona Lisa (Gemälde von Leonardo da Vinci)
-791;18;8;Unité 7;AA;1;Coucou!;Coucou;kuku;Hallo!;Hallo
-792;18;8;Unité 7;AA;1;Comment allez-vous?;Comment allez-vous;kɔmɑ͂talevu;Wie geht es euch/Ihnen?;Wie geht es euch/Ihnen
-793;19;8;Unité 7;AB;0;un million;un million;ɛ̃miljɔ̃;eine Million;eine Million
-794;19;8;Unité 7;AB;0;un kilomètre;un kilomètre;ɛ̃kilɔmɛtʀ;ein Kilometer;ein Kilometer
-795;19;8;Unité 7;AB;0;tôt (adv.);tôt;to;früh (Adv.);früh
-796;19;8;Unité 7;AB;0;un bus;un bus;ɛ̃bys;ein Bus;ein Bus
-797;19;8;Unité 7;AB;0;une station;une station;ynstasjɔ̃;eine Station;eine Station
-798;19;8;Unité 7;AB;0;une station;une station;ynstasjɔ̃;eine Haltestelle;eine Haltestelle
-799;19;8;Unité 7;AB;0;le métro;le métro;ləmetʀo;die Metro;die Metro
-800;19;8;Unité 7;AB;0;le métro;le métro;ləmetʀo;die U-Bahn;die U-Bahn
-801;19;8;Unité 7;AB;0;fatigué/fatiguée;fatigué|fatiguée;fatige;müde;müde
-802;19;8;Unité 7;AB;0;par jour;par jour;paʀʒuʀ;pro Tag;pro Tag
-803;19;8;Unité 7;AB;0;par jour;par jour;paʀʒuʀ;täglich;täglich
-804;19;8;Unité 7;AB;0;un moyen de transport;un moyen de transport;ɛ̃mwajɛ̃dətʀɑ͂spɔʀ;ein Verkehrsmittel;ein Verkehrsmittel
-805;19;8;Unité 7;AB;0;un peu;un peu;ɛ̃pø;ein wenig;ein wenig
-806;19;8;Unité 7;AB;1;la gare de l'Est;la gare de l'Est;lagaʀdəlɛst;der Gare de l'Est (der Ostbahnhof);der Gare de l'Est (der Ostbahnhof)
-807;19;8;Unité 7;AB;0;un ticket;un ticket;ɛ̃tikɛ;ein Fahrschein;ein Fahrschein
-808;19;8;Unité 7;AB;0;un ticket;un ticket;ɛ̃tikɛ;eine Fahrkarte;eine Fahrkarte
-809;19;8;Unité 7;AB;0;écologique/écologique;écologique|écologique;ekɔlɔʒik;ökologisch;ökologisch
-810;19;8;Unité 7;AB;0;écologique/écologique;écologique|écologique;ekɔlɔʒik;umweltfreundlich;umweltfreundlich
-811;19;8;Unité 7;AB;0;en train;en train;ɑ͂tʀɛ̃;mit dem Zug;mit dem Zug
-812;19;8;Unité 7;AB;0;un avion;un avion;ɛ̃navjɔ̃;ein Flugzeug;ein Flugzeug
-813;19;8;Unité 7;AC;0;un marché;un marché;ɛ̃maʀʃe;ein Markt;ein Markt
-814;19;8;Unité 7;AC;0;un marché aux puces;un marché aux puces;ɛ̃maʀʃeopys;ein Flohmarkt;ein Flohmarkt
-815;19;8;Unité 7;AC;0;ne ... pas de;ne pas de;nə padə;kein/keine;kein/keine
-816;19;8;Unité 7;AC;0;pas de problème;pas de problème;padəpʀɔblɛm;kein Problem;kein Problem
-817;19;8;Unité 7;AC;0;une chose;une chose;ynʃoz;eine Sache;eine Sache
-818;19;8;Unité 7;AC;0;une chose;une chose;ynʃoz;ein Ding;ein Ding
-819;19;8;Unité 7;AC;0;un exemple;un exemple;ɛ̃nɛgzɑ͂pl;ein Beispiel;ein Beispiel
-820;19;8;Unité 7;AC;0;par exemple;par exemple;paʀɛgzɑ͂pl;zum Beispiel;zum Beispiel
-821;19;8;Unité 7;AC;0;on peut;on peut;ɔ̃pø;man kann;man kann
-822;19;8;Unité 7;AC;0;pratique/pratique;pratique|pratique;pʀatik;praktisch;praktisch
-823;19;8;Unité 7;AC;0;ne ... plus;ne plus;nə ply;nicht mehr;nicht mehr
-824;19;8;Unité 7;AC;0;ne ... plus de;ne plus de;nə plydə;kein/keine mehr;kein/keine mehr
-825;19;8;Unité 7;AC;0;plus de problème;plus de problème;plydəpʀɔblɛm;kein Problem mehr;kein Problem mehr
-826;19;8;Unité 7;AC;0;inventer qc;inventer qc;ɛ̃vɑ͂te;etwas erfinden;etwas erfinden
-827;19;8;Unité 7;AC;0;cher/chère;cher|chère;ʃɛʀ;teuer;teuer
-828;19;8;Unité 7;AC;0;ouvert/ouverte;ouvert|ouverte;uvɛʀ/uvɛrt;offen;offen
-829;19;8;Unité 7;AC;0;adorer qn/qc;adorer qn/qc;adɔʀe;jemanden/etwas sehr gern mögen;jemanden/etwas sehr gern mögen
-830;19;8;Unité 7;AC;0;désirer qc;désirer qc;deziʀe;etwas wünschen;etwas wünschen
-831;19;8;Unité 7;AC;0;(je suis) désolé/désolée;(je suis) désolé|désolée;dezole;es tut mir leid;es tut mir leid
-832;19;8;Unité 7;AC;0;peu de;peu de;pødə;wenig(e);wenig(e)
-834;19;8;Unité 7;DE;0;un grand huit;un grand huit;ɛ̃gʀɑ͂ɥit;eine Achterbahn;eine Achterbahn
-835;19;8;Unité 7;DE;0;vrai/vraie;vrai|vraie;vrɛ;wahr;wahr
-836;19;8;Unité 7;DE;0;vrai/vraie;vrai|vraie;vrɛ;richtig;richtig
-837;20;8;Unité 7;DE;0;vrai/vraie;vrai|vraie;vrɛ;echt;echt
-838;20;8;Unité 7;DE;0;un parc d'attractions;un parc d'attractions;ɛ̃paʀkdatʀaksjɔ̃;ein Freizeitpark;ein Freizeitpark
-839;20;8;Unité 7;DE;0;un parc d'attractions;un parc d'attractions;ɛ̃paʀkdatʀaksjɔ̃;ein Erlebnispark;ein Erlebnispark
-840;20;8;Unité 7;DE;0;un lecteur/une lectrice;un lecteur|une lectrice;ɛ̃lɛktqʀ/ynlɛktʀis;ein Leser/eine Leserin;ein Leser/eine Leserin
-841;20;8;Unité 7;DE;1;l'Internet (m.);l'Internet;ɛ̃tɛʀnɛt;das Internet;das Internet
-842;20;8;Unité 7;DE;1;sur Internet;sur Internet;syʀɛ̃tɛʀnɛt;im Internet;im Internet
-843;20;8;Unité 7;DE;0;ne ... rien;ne rien;nə rjɛ̃;nichts;nichts
-844;20;8;Unité 7;DE;0;une liste;une liste;ynlist;eine Liste;eine Liste
-845;20;8;Unité 7;DE;0;une réponse;une réponse;ynʀepɔ̃s;eine Antwort;eine Antwort
+78;2;2;Unité 1;AA;0;Miaou!;Miaou;mjau;Miau!;Miau
+79;2;2;Unité 1;AA;0;Ouah, ouah!;Ouah, ouah;wawa;Wau, wau!;Wau, wau
+81;2;2;Unité 1;AA;0;qui (Fragepronomen);qui;ki;wer;wer
+82;2;2;Unité 1;AA;0;Qui est-ce?;Qui est-ce;kiɛs;Wer ist das?;Wer ist das
+83;2;2;Unité 1;AA;0;Attention!;Attention;atɑ͂sjɔ̃;Achtung!;Achtung
+84;2;2;Unité 1;AA;0;Attention!;Attention;atɑ͂sjɔ̃;Vorsicht!;Vorsicht
+85;2;2;Unité 1;AA;0;non;non;nɔ̃;nein;nein
+86;3;2;Unité 1;AA;0;Pardon.;Pardon;paʀdɔ̃;Entschuldigung.;Entschuldigung
+87;3;2;Unité 1;AA;0;Salut! (fam.);Salut;saly;Hallo!/Grüß dich!;Hallo/Grüß dich
+88;3;2;Unité 1;AA;0;Comment?;Comment;kɔmɑ͂;Wie? (Fragewort);Wie
+89;3;2;Unité 1;AA;0;ce;ce;sə;das (in 'das ist ...');das
+90;3;2;Unité 1;AA;0;c'est;c'est;sɛ;das ist;das ist
+91;3;2;Unité 1;AA;0;je suis;je suis;ʒəsɥi;ich bin;ich bin
+92;3;2;Unité 1;AA;0;Tu t'appelles comment?;Tu t'appelles comment;tytapɛlkɔmɑ͂;Wie heißt du?;Wie heißt du
+93;3;2;Unité 1;AB;0;bizarre;bizarre;bizaʀ;komisch;komisch
+94;3;2;Unité 1;AB;0;bizarre;bizarre;bizaʀ;merkwürdig;merkwürdig
+95;3;2;Unité 1;AB;0;un chat;un chat;ɛ̃ʃa;eine Katze;eine Katze
+96;3;2;Unité 1;AB;0;mais;mais;mɛ;aber;aber
+97;3;2;Unité 1;AB;0;ici;ici;isi;hier/hierher;hier/hierher
+99;3;2;Unité 1;AB;0;tu es;tu es;tyɛ;du bist;du bist
+100;3;2;Unité 1;AB;0;de;de;də;aus/von;aus/von
+102;3;2;Unité 1;AB;0;super (inv.);super;sypɛʀ;super/toll;super/toll
+104;3;2;Unité 1;AB;0;un garçon;un garçon;ɛ̃gaʀsɔ̃;ein Junge;ein Junge
+105;3;2;Unité 1;AB;0;une fille;une fille;ynfij;ein Mädchen;ein Mädchen
+106;3;2;Unité 1;AB;0;une fille;une fille;ynfij;eine Tochter;eine Tochter
+107;3;2;Unité 1;AB;0;il est;il est;ilɛ;er ist;er ist
+108;3;2;Unité 1;AB;0;elle est;elle est;ɛlɛ;sie ist;sie ist
+109;3;2;Unité 1;AB;0;fantastique;fantastique;fɑ͂tastik;fantastisch/toll;fantastisch/toll
+111;3;2;Unité 1;AB;0;une dame;une dame;yndam;eine Dame/Frau;eine Dame/Frau
+113;3;2;Unité 1;AB;0;un monsieur;un monsieur;ɛ̃məsjø;ein Herr/Mann;ein Herr/Mann
+115;3;2;Unité 1;AB;1;Toulouse;Toulouse;tuluz;Toulouse;Toulouse
+116;3;2;Unité 1;AB;1;Strasbourg;Strasbourg;stʀasbuʀ;Straßburg;Straßburg
+117;3;2;Unité 1;AB;1;Nice;Nice;nis;Nizza;Nizza
+118;3;2;Unité 1;AB;1;Brest;Brest;bʀɛst;Brest;Brest
+119;4;2;Unité 1;AB;0;madame ...;madame;madam;Frau ...;Frau
+120;4;2;Unité 1;AB;0;Bof! (fam.);Bof;bɔf;Na ja/Ach (ugs.);Na ja/Ach
+122;4;2;Unité 1;PR;1;un cochon d'Inde;un cochon d'Inde;ɛ̃kɔʃɔ̃dɛ̃d;ein Meereschweinchen;ein Meereschweinchen
+123;4;2;Unité 1;PR;0;un poisson;un poisson;ɛ̃pwasɔ̃;ein Fisch;ein Fisch
+124;4;2;Unité 1;PR;0;un cheval;un cheval;ɛ̃ʃəval;ein Pferd;ein Pferd
+125;4;2;Unité 1;PR;0;des chevaux;des chevaux;deʃəvo;Pferde;Pferde
+126;4;2;Unité 1;PR;0;une souris;une souris;ynsuʀi;eine Maus;eine Maus
+127;4;2;Unité 1;PR;0;un cochon;un cochon;ɛ̃kɔʃɔ̃;ein Schwein;ein Schwein
+128;4;2;Unité 1;PR;0;un canari;un canari;ɛ̃kanaʀi;ein Kanarienvogel;ein Kanarienvogel
+129;4;2;Unité 1;PR;0;un perroquet;un perroquet;ɛ̃peʀɔkɛ;ein Papagei;ein Papagei
+130;4;2;Unité 1;PR;0;un rat;un rat;ɛ̃ʀa;eine Ratte;eine Ratte
+131;4;2;Unité 1;PR;0;une tortue;une tortue;yntɔʀty;eine Schildkröte;eine Schildkröte
+132;4;2;Unité 1;PR;0;une perruche;une perruche;ynpeʀyʃ;ein Wellensittich;ein Wellensittich
+133;4;2;Unité 1;PR;0;un serpent;un serpent;ɛ̃sɛʀpɑ͂;eine Schlange;eine Schlange
+134;4;2;Unité 1;PR;0;un hamster;un hamster;ɛ̃amstɛʀ;ein Hamster;ein Hamster
+135;4;2;Unité 1;PR;0;à tout à l'heure;à tout à l'heure;atutalœʀ;bis gleich;bis gleich
+136;4;3;Unité 2;DE;0;un magasin;un magasin;ɛ̃magazɛ̃;ein Geschäft;ein Geschäft
+137;4;3;Unité 2;DE;0;un magasin;un magasin;ɛ̃magazɛ̃;ein Laden;ein Laden
+138;4;3;Unité 2;DE;0;un journal;un journal;ɛ̃ʒuʀnal;eine Zeitung;eine Zeitung
+139;4;3;Unité 2;DE;0;des journaux;des journaux;deʒuʀno;Zeitungen;Zeitungen
+140;4;3;Unité 2;DE;1;une BD;une BD;ynbede;ein Comic;ein Comic
+141;4;3;Unité 2;DE;0;une affiche;une affiche;ynafiʃ;ein Plakat;ein Plakat
+142;4;3;Unité 2;DE;0;une affiche;une affiche;ynafiʃ;ein Poster;ein Poster
+143;4;3;Unité 2;DE;0;Qu'est-ce que c'est?;Qu'est-ce que c'est;kɛskəsɛ;Was ist das?;Was ist das
+144;4;3;Unité 2;DE;1;à (Paris);à;a;in (Paris);in
+145;4;3;Unité 2;DE;1;à (Paris);à;a;nach (Paris);nach
+146;4;3;Unité 2;DE;0;une maison de la presse;une maison de la presse;ynmɛzɔ̃dəlapʀɛs;ein Zeitschriften- und Schreibwarengeschäft;ein Zeitschriften- und Schreibwarengeschäft
+147;4;3;Unité 2;DE;0;que;que;kə;was;was
+148;4;3;Unité 2;DE;0;Que fait Léo?;Que fait Léo;kəfɛleo;Was macht Léo?;Was macht Léo
+149;4;3;Unité 2;DE;0;regarder;regarder;ʀəgaʀde;ansehen/betrachten;ansehen/betrachten
+150;4;3;Unité 2;DE;0;parler;parler;paʀle;sprechen;sprechen
+151;4;3;Unité 2;DE;0;avec;avec;avɛk;mit;mit
+152;4;3;Unité 2;DE;0;chercher;chercher;ʃɛʀʃe;suchen;suchen
+153;4;3;Unité 2;DE;0;arriver;arriver;aʀive;(an)kommen;(an)kommen
+154;4;3;Unité 2;AA;0;en français;en français;ɑ͂fʀɑ͂sɛ;auf Französisch;auf Französisch
+155;4;3;Unité 2;AA;0;un stylo;un stylo;ɛ̃stilo;ein Füller;ein Füller
+156;4;3;Unité 2;AA;0;un stylo;un stylo;ɛ̃stilo;ein Kuli;ein Kuli
+157;4;3;Unité 2;AA;0;une gomme;une gomme;yngɔm;ein Radiergummi;ein Radiergummi
+158;4;3;Unité 2;AA;0;un livre;un livre;ɛ̃livʀ;ein Buch;ein Buch
+159;4;3;Unité 2;AA;0;un cahier;un cahier;ɛ̃kaje;ein Heft;ein Heft
+160;4;3;Unité 2;AA;0;un crayon;un crayon;ɛ̃kʀɛjɔ̃;ein Bleistift;ein Bleistift
+161;4;3;Unité 2;AA;0;un truc (fam.);un truc;ɛ̃tʀyk;ein Ding;ein Ding
+162;5;3;Unité 2;AA;0;un truc (fam.);un truc;ɛ̃tʀyk;eine Sache;eine Sache
+163;5;3;Unité 2;AA;0;une trousse;une trousse;yntʀus;ein Federmäppchen;ein Federmäppchen
+164;5;3;Unité 2;AA;0;une feuille;une feuille;ynfœj;ein Blatt;ein Blatt
+165;5;3;Unité 2;AA;0;un cartable;un cartable;ɛ̃kaʀtabl;eine Schultasche;eine Schultasche
+166;5;3;Unité 2;AA;0;un classeur;un classeur;ɛ̃klasœʀ;ein Ordner;ein Ordner
+167;5;3;Unité 2;AA;0;un sac à dos;un sac à dos;ɛ̃sakado;ein Rucksack;ein Rucksack
+168;5;3;Unité 2;AA;0;français;français;fʀɑ͂sɛ;französisch (männlich);französisch
+169;5;3;Unité 2;AA;0;française;française;fʀɑ͂sɛz;französisch (weiblich);französisch
+170;5;3;Unité 2;AA;0;écouter;écouter;ekute;zuhören/anhören;zuhören/anhören
+171;5;3;Unité 2;AA;0;trouver;trouver;tʀuve;finden;finden
+172;5;3;Unité 2;AA;0;travailler;travailler;tʀavaje;arbeiten;arbeiten
+173;5;3;Unité 2;AA;0;porter;porter;pɔʀte;tragen;tragen
+174;5;3;Unité 2;AA;0;dans;dans;dɑ͂;in;in
+175;5;3;Unité 2;AA;0;une rue;une rue;ynʀy;eine Straße;eine Straße
+176;5;3;Unité 2;AA;0;entrer;entrer;ɑ͂tʀe;eintreten;eintreten
+177;5;3;Unité 2;AA;0;entrer;entrer;ɑ͂tʀe;hereinkommen;hereinkommen
+178;5;3;Unité 2;AA;0;euh ...;euh;ø;äh ...;äh
+179;5;3;Unité 2;AA;0;là;là;la;da;da
+180;5;3;Unité 2;AA;0;là;là;la;dort;dort
+181;5;3;Unité 2;AA;0;Chut!;Chut;ʃyt;Pst!;Pst
+182;5;3;Unité 2;AA;0;une école;une école;ynekɔl;eine Schule;eine Schule
+183;5;3;Unité 2;AA;0;en vacances (f. pl.);en vacances;ɑ͂vakɑ͂s;in den Ferien;in den Ferien
+184;5;3;Unité 2;AA;0;Tiens!;Tiens;tjɛ̃;Sieh mal!;Sieh mal
+185;5;3;Unité 2;AA;0;Tiens!;Tiens;tjɛ̃;Schau mal!;Schau mal
+186;5;3;Unité 2;AA;0;une grand-mère;une grand-mère;yngʀɑ͂mɛʀ;eine Großmutter;eine Großmutter
+187;5;3;Unité 2;AA;0;un carton;un carton;ɛ̃kaʀtɔ̃;ein Karton;ein Karton
+188;5;3;Unité 2;AA;0;Zut! (fam.);Zut;zyt;Mist!;Mist
+189;5;3;Unité 2;AA;0;Zut! (fam.);Zut;zyt;Verdammt!;Verdammt
+190;5;3;Unité 2;AA;0;une catastrophe;une catastrophe;ynkatastʀɔf;eine Katastrophe;eine Katastrophe
+191;5;3;Unité 2;AA;0;il dit/elle dit;il dit/elle dit;ildi/ɛldi;er sagt/sie sagt;er sagt/sie sagt
+192;5;3;Unité 2;AB;0;être;être;ɛtʀ;sein;sein
+193;5;3;Unité 2;AB;0;devant;devant;dəvɑ͂;vor (örtlich);vor
+194;5;3;Unité 2;AB;0;habiter;habiter;abite;wohnen;wohnen
+195;5;3;Unité 2;AB;1;la rue Nollet;la rue Nollet;laʀynɔlɛ;Name einer Straße in Paris;Name einer Straße in Paris
+196;5;3;Unité 2;AB;0;où;où;u;wo;wo
+197;5;3;Unité 2;AB;0;où;où;u;wohin;wohin
+198;5;3;Unité 2;AB;1;la rue Truffaut;la rue Truffaut;laʀytʀyfo;Name einer Straße in Paris;Name einer Straße in Paris
+199;5;3;Unité 2;AB;0;un t-shirt;un t-shirt;ɛ̃tiʃœʀt;ein T-Shirt;ein T-Shirt
+200;5;3;Unité 2;AB;0;le rugby;le rugby;ləʀygbi;das Rugby (Ballspiel);das Rugby
+201;5;3;Unité 2;AB;0;le judo;le judo;ləʒydo;das Judo;das Judo
+202;5;3;Unité 2;AB;0;Qu'est-ce que ...?;Qu'est-ce que;kɛskə;Was ...?;Was
+203;6;3;Unité 2;AB;0;le sport;le sport;ləspɔʀ;der Sport;der Sport
+204;6;3;Unité 2;AB;0;la musique;la musique;lamyzik;die Musik;die Musik
+205;6;3;Unité 2;AB;0;un frère;un frère;ɛ̃fʀɛʀ;ein Bruder;ein Bruder
+206;6;3;Unité 2;AB;0;une soeur;une soeur;ynsœʀ;eine Schwester;eine Schwester
+207;6;3;Unité 2;AB;0;sympa;sympa;sɛ̃pa;nett;nett
+208;6;3;Unité 2;AB;0;détester;détester;detɛste;verabscheuen;verabscheuen
+209;6;3;Unité 2;AB;0;ça;ça;sa;das;das
+210;6;3;Unité 2;AB;0;d'accord;d'accord;dakɔʀ;einverstanden;einverstanden
+211;6;3;Unité 2;AB;0;d'accord;d'accord;dakɔʀ;o.k.;o.k.
+212;6;3;Unité 2;AB;0;alors;alors;alɔʀ;nun;nun
+213;6;3;Unité 2;AB;0;alors;alors;alɔʀ;jetzt;jetzt
+214;6;3;Unité 2;AB;0;alors;alors;alɔʀ;dann;dann
+215;6;3;Unité 2;AB;0;Ouf!;Ouf;uf;Uff!;Uff
+216;6;3;Unité 2;AB;0;aimer;aimer;eme;lieben/sehr mögen;lieben/sehr mögen
+217;6;3;Unité 2;AB;0;le rock;le rock;ləʀɔk;die Rockmusik;die Rockmusik
+218;6;3;Unité 2;AB;0;le foot(ball);le foot(ball);ləfut(bɔl);der Fußball (Sportart);der Fußball
+219;6;3;Unité 2;AB;0;un vélo;un vélo;ɛ̃velo;ein Fahrrad;ein Fahrrad
+220;6;3;Unité 2;AB;0;la techno;la techno;latɛkno;Techno (Musikstil);Techno
+221;6;3;Unité 2;AB;0;le rap;le rap;ləʀap;Rap (Musikstil);Rap
+222;6;3;Unité 2;AB;0;la gymnastique;la gymnastique;laʒimnastik;das Turnen;das Turnen
+223;6;3;Unité 2;AB;0;la gymnastique;la gymnastique;laʒimnastik;die Gymnastik;die Gymnastik
+224;6;3;Unité 2;PR;0;un saxophone;un saxophone;ləsaksɔfɔn;ein Saxophon;ein Saxophon
+225;6;3;Unité 2;PR;0;un piano;un piano;ɛ̃pjano;ein Klavier;ein Klavier
+226;6;3;Unité 2;PR;0;un piano;un piano;ɛ̃pjano;ein Piano;ein Piano
+227;6;3;Unité 2;PR;0;un dessin;un dessin;ɛ̃desɛ̃;eine Zeichnung;eine Zeichnung
+228;6;3;Unité 2;PR;0;le basket(ball);le basket(ball);ləbaskɛtbol;Basketball;Basketball
+229;6;3;Unité 2;PR;0;l'athlétisme (m.);l'athlétisme;latletism;die Leichtathletik;die Leichtathletik
+230;6;3;Unité 2;PR;0;le roller;le roller;lərɔlœʀ;der Rollerskate;der Rollerskate
+231;6;3;Unité 2;PR;0;le roller;le roller;lərɔlœʀ;der Inliner;der Inliner
+232;6;3;Unité 2;PR;1;le VTT;le VTT;ləvetete;das Mountainbike;das Mountainbike
+233;6;3;Unité 2;PR;0;la lecture;la lecture;lalɛktyʀ;das Lesen;das Lesen
+234;6;4;Unité 3;DE;0;un anniversaire;un anniversaire;ɛ̃nanivɛʀsɛʀ;ein Geburtstag;ein Geburtstag
+235;6;4;Unité 3;AA;0;une idée;une idée;ynide;eine Idee;eine Idee
+236;6;4;Unité 3;AA;0;une idée;une idée;ynide;ein Gedanke;ein Gedanke
+237;6;4;Unité 3;AA;0;des;des;de;Plural (die Mehrzahl) von un und une.;Plural
+238;6;4;Unité 3;AA;0;un cadeau;un cadeau;ɛ̃kado;ein Geschenk;ein Geschenk
+239;6;4;Unité 3;AA;1;la FNAC;la FNAC;lafnak;die FNAC;die FNAC
+240;6;4;Unité 3;AA;0;bientôt;bientôt;bjɛ̃to;bald;bald
+241;6;4;Unité 3;AA;0;Ah, bon?;Ah, bon;abɔ̃;Ach ja?;Ach ja
+242;6;4;Unité 3;AA;0;Ah, bon?;Ah, bon;abɔ̃;Wirklich?;Wirklich
+243;6;4;Unité 3;AA;0;une histoire;une histoire;ynistwaʀ;eine Geschichte;eine Geschichte
+244;7;4;Unité 3;AA;0;ou;ou;u;oder;oder
+245;7;4;Unité 3;AA;0;un ordinateur;un ordinateur;ɛ̃nɔʀdinatœʀ;ein Computer;ein Computer
+246;7;4;Unité 3;AA;1;un CD;un CD;ɛ̃sede;eine CD;eine CD
+247;7;4;Unité 3;AA;1;des CD;des CD;desede;CDs;CDs
+248;7;4;Unité 3;AA;0;il y a;il y a;ilja;es gibt;es gibt
+249;7;4;Unité 3;AA;0;il y a;il y a;ilja;es ist;es ist
+250;7;4;Unité 3;AA;0;il y a;il y a;ilja;es sind;es sind
+251;7;4;Unité 3;AA;0;ensemble;ensemble;ɑ͂sɑ͂bl;gemeinsam;gemeinsam
+252;7;4;Unité 3;AA;0;ensemble;ensemble;ɑ͂sɑ͂bl;zusammen;zusammen
+253;7;4;Unité 3;AA;0;d'abord;d'abord;dabɔʀ;zuerst;zuerst
+254;7;4;Unité 3;AA;0;Qu'est-ce qu'il y a?;Qu'est-ce qu'il y a;kɛskilja;Was gibt es?;Was gibt es
+255;7;4;Unité 3;AA;0;Bien sûr!;Bien sûr;bjɛ̃syʀ;Sicherlich!;Sicherlich
+256;7;4;Unité 3;AA;0;Bien sûr!;Bien sûr;bjɛ̃syʀ;Na klar!;Na klar
+257;7;4;Unité 3;AA;0;Bien sûr!;Bien sûr;bjɛ̃syʀ;Selbstverständlich!;Selbstverständlich
+258;7;4;Unité 3;AA;0;préparer;préparer;pʀepaʀe;vorbereiten;vorbereiten
+259;7;4;Unité 3;AA;1;la France;la France;lafʀɑ͂s;Frankreich;Frankreich
+260;7;4;Unité 3;AA;1;l'Allemagne (f.);l'Allemagne;lalmaɲ;Deutschland;Deutschland
+261;7;4;Unité 3;AA;1;en Allemagne;en Allemagne;ɑ͂nalmaɲ;in Deutschland;in Deutschland
+262;7;4;Unité 3;AA;0;Allô?;Allô;alo;Hallo? (am Telefon);Hallo
+263;7;4;Unité 3;AA;0;un train;un train;ɛ̃tʀɛ̃;ein Zug;ein Zug
+264;7;4;Unité 3;AA;1;Cologne;Cologne;kɔlɔɲ;Köln;Köln
+265;7;4;Unité 3;AA;0;demain;demain;dəmɛ̃;morgen;morgen
+266;7;4;Unité 3;AA;0;ton;ton;tɔ̃;dein (männlich);dein
+267;7;4;Unité 3;AA;0;ta;ta;ta;deine (weiblich);deine
+268;7;4;Unité 3;AA;0;tes;tes;te;deine (Plural);deine
+269;7;4;Unité 3;AA;0;mon;mon;mɔ̃;mein (männlich);mein
+270;7;4;Unité 3;AA;0;ma;ma;ma;meine (weiblich);meine
+271;7;4;Unité 3;AA;0;mes;mes;me;meine (Plural);meine
+272;7;4;Unité 3;AA;0;C'est dommage.;C'est dommage;sɛdɔmaʒ;Das ist schade.;Das ist schade
+273;7;4;Unité 3;AA;0;inviter;inviter;ɛ̃vite;einladen;einladen
+274;7;4;Unité 3;AA;0;allemand;allemand;almɑ͂/almɑ͂d;deutsch;deutsch
+275;7;4;Unité 3;AA;0;en allemand;en allemand;ɑ͂nalmɑ͂;auf Deutsch;auf Deutsch
+276;7;4;Unité 3;AA;0;à bientôt;à bientôt;abjɛ̃to;bis bald;bis bald
+277;7;4;Unité 3;AA;0;maman (f.);maman;mamɑ͂;Mama;Mama
+278;7;4;Unité 3;AA;0;maman (f.);maman;mamɑ͂;Mutti;Mutti
+279;7;4;Unité 3;AA;0;une chambre;une chambre;ynʃɑ͂bʀ;ein (Schlaf-)Zimmer;ein (Schlaf-)Zimmer
+280;7;4;Unité 3;AA;0;une bougie;une bougie;ynbuʒi;eine Kerze;eine Kerze
+281;7;4;Unité 3;AA;0;un gâteau;un gâteau;ɛ̃gato;ein Kuchen;ein Kuchen
+282;7;4;Unité 3;AA;0;des gâteaux;des gâteaux;degato;Kuchen;Kuchen
+283;7;4;Unité 3;AA;0;ranger;ranger;ʀɑ͂ʒe;aufräumen;aufräumen
+284;7;4;Unité 3;AA;0;s'il te plaît;s'il te plaît;siltəplɛ;bitte (wenn man jemanden duzt);bitte
+285;7;4;Unité 3;AA;0;s'il vous plaît;s'il vous plaît;silvuplɛ;bitte (wenn man jemanden siezt);bitte
+286;7;4;Unité 3;AA;0;maintenant;maintenant;mɛ̃tnɑ͂;jetzt;jetzt
+287;7;4;Unité 3;AA;0;une affaire;une affaire;ynafɛʀ;eine Sache;eine Sache
+288;7;4;Unité 3;AA;0;une affaire;une affaire;ynafɛʀ;eine Angelegenheit;eine Angelegenheit
+289;7;4;Unité 3;AA;0;toujours;toujours;tuʒuʀ;immer;immer
+290;7;4;Unité 3;AA;0;aujourd'hui;aujourd'hui;oʒuʀdɥi;heute;heute
+291;7;4;Unité 3;AA;0;une famille;une famille;ynfamij;eine Familie;eine Familie
+292;7;4;Unité 3;AA;0;les grands-parents (m.);les grands-parents;legʀɑ͂paʀɑ͂;die Großeltern;die Großeltern
+293;8;4;Unité 3;AA;0;un grand-père;un grand-père;ɛ̃gʀɑ͂pɛʀ;ein Großvater;ein Großvater
+294;8;4;Unité 3;AA;0;les parents (m.);les parents;leparɑ͂;die Eltern;die Eltern
+295;8;4;Unité 3;AA;0;un père;un père;ɛ̃pɛʀ;ein Vater;ein Vater
+296;8;4;Unité 3;AA;0;une mère;une mère;ynmɛʀ;eine Mutter;eine Mutter
+297;8;4;Unité 3;AA;0;un oncle;un oncle;ɛ̃nɔ̃kl;ein Onkel;ein Onkel
+298;8;4;Unité 3;AA;0;une tante;une tante;yntɑ͂t;eine Tante;eine Tante
+299;8;4;Unité 3;AA;0;un fils;un fils;ɛ̃fis;ein Sohn;ein Sohn
+300;8;4;Unité 3;AA;0;une demi-soeur;une demi-soeur;ynd(ə)misœʀ;eine Halbschwester;eine Halbschwester
+301;8;4;Unité 3;AA;0;un demi-frère;un demi-frère;ɛ̃d(ə)mifʀɛʀ;ein Halbbruder;ein Halbbruder
+302;8;4;Unité 3;AA;0;un cousin;un cousin;ɛ̃kuzɛ̃;ein Cousin;ein Cousin
+303;8;4;Unité 3;AA;0;une cousine;une cousine;ynkuzin;eine Cousine;eine Cousine
+304;8;4;Unité 3;AB;0;décembre (m.);décembre;desɑ͂bʀ;Dezember;Dezember
+305;8;4;Unité 3;AB;0;son;son;sɔ̃;sein/ihr (männlich);sein/ihr
+306;8;4;Unité 3;AB;0;sa;sa;sa;seine/ihre (weiblich);seine/ihre
+307;8;4;Unité 3;AB;0;ses;ses;se;seine/ihre (Plural);seine/ihre
+308;8;4;Unité 3;AB;0;C'est ça?;C'est ça;sɛsa;Stimmt's?;Stimmt's
+309;8;4;Unité 3;AB;0;encore;encore;ɑ͂kɔʀ;noch;noch
+310;8;4;Unité 3;AB;1;un DVD;un DVD;ɛ̃devede;eine DVD;eine DVD
+311;8;4;Unité 3;AB;0;un jeu;un jeu;ɛ̃ʒø;ein Spiel;ein Spiel
+312;8;4;Unité 3;AB;0;des jeux;des jeux;deʒø;Spiele;Spiele
+313;8;4;Unité 3;AB;0;un jeu vidéo;un jeu vidéo;ɛ̃ʒøvideo;ein Computerspiel;ein Computerspiel
+314;8;4;Unité 3;AB;0;des jeux vidéo;des jeux vidéo;deʒøvideo;Computerspiele;Computerspiele
+315;8;4;Unité 3;AB;0;la faim;la faim;lafɛ̃;der Hunger;der Hunger
+316;8;4;Unité 3;AB;0;avoir faim;avoir faim;avwaʀfɛ̃;Hunger haben;Hunger haben
+317;8;4;Unité 3;AB;0;manger;manger;mɑ͂ʒe;essen;essen
+318;8;4;Unité 3;AB;0;souffler;souffler;sufle;ausblasen;ausblasen
+319;8;4;Unité 3;AB;0;puis;puis;pɥi;dann;dann
+320;8;4;Unité 3;AB;0;chanter;chanter;ʃɑ͂te;singen;singen
+321;8;4;Unité 3;AB;0;un an;un an;ɛ̃nɑ͂;ein Jahr;ein Jahr
+322;8;4;Unité 3;AB;0;avoir onze ans;avoir onze ans;avwaʀɔ̃zɑ͂;elf Jahre alt sein;elf Jahre alt sein
+323;8;4;Unité 3;AB;0;l'envie (f.);l'envie;ynɑ͂vi;die Lust;die Lust
+324;8;4;Unité 3;AB;0;l'envie (f.);l'envie;ynɑ͂vi;das Verlangen;das Verlangen
+325;8;4;Unité 3;AB;0;avoir envie de faire qc;avoir envie de faire qc;avwaʀɑ͂vi;Lust haben, etwas zu tun;Lust haben, etwas zu tun
+326;8;4;Unité 3;AB;0;sur;sur;syʀ;auf;auf
+327;8;4;Unité 3;AB;0;sur;sur;syʀ;über;über
+328;8;4;Unité 3;AB;0;une surprise;une surprise;ynsyʀpʀiz;eine Überraschung;eine Überraschung
+329;8;4;Unité 3;AB;0;avoir;avoir;avwaʀ;haben;haben
+330;8;4;Unité 3;AB;0;un mois;un mois;ɛ̃mwa;ein Monat;ein Monat
+331;8;4;Unité 3;AB;0;une année;une année;ynane;ein Jahr;ein Jahr
+332;8;4;Unité 3;AB;0;janvier (m.);janvier;ʒɑ͂vje;Januar;Januar
+333;8;4;Unité 3;AB;0;février (m.);février;fevʀije;Februar;Februar
+334;8;4;Unité 3;AB;0;mars (m.);mars;maʀs;März;März
+335;8;4;Unité 3;AB;0;avril (m.);avril;avʀil;April;April
+336;8;4;Unité 3;AB;0;mai (m.);mai;mɛ;Mai;Mai
+337;8;4;Unité 3;AB;0;juin (m.);juin;ʒɥɛ̃;Juni;Juni
+338;8;4;Unité 3;AB;0;juillet (m.);juillet;ʒɥijɛ;Juli;Juli
+339;8;4;Unité 3;AB;0;août (m.);août;ut;August;August
+340;8;4;Unité 3;AB;0;septembre (m.);septembre;sɛptɑ͂bʀ;September;September
+341;9;4;Unité 3;AB;0;octobre (m.);octobre;ɔktɔbʀ;Oktober;Oktober
+342;9;4;Unité 3;AB;0;novembre (m.);novembre;nɔvɑ͂bʀ;November;November
+343;9;4;Unité 3;AB;0;quand;quand;kɑ͂;wann;wann
+344;9;4;Unité 3;AB;0;le premier;le premier;ləpʀəmje;der erste;der erste
+345;9;4;Unité 3;AB;0;l'âge (m.);l'âge;laʒ;das Alter;das Alter
+346;9;4;Unité 3;AB;0;Tu as quel âge?;Tu as quel âge;tyakɛlaʒ;Wie alt bist du?;Wie alt bist du
+347;9;4;Unité 3;AB;0;il s'appelle;il s'appelle;ilsapɛl;er heißt;er heißt
+348;9;4;Unité 3;PR;1;la Pentecôte;la Pentecôte;lapɑ͂tkot;Pfingsten;Pfingsten
+349;9;4;Unité 3;PR;1;Noël (m.);Noël;nɔɛl;Weihnachten;Weihnachten
+350;9;4;Unité 3;PR;0;le nouvel an;le nouvel an;lənuvɛlɑ͂;Neujahr;Neujahr
+351;9;4;Unité 3;PR;0;le baptême;le baptême;ləbatɛm;die Taufe;die Taufe
+352;9;4;Unité 3;PR;1;le 14 Juillet;le 14 Juillet;ləkatɔʀzʒɥijɛ;der 14. Juli (französischer Nationalfeiertag);der 14. Juli
+353;9;4;Unité 3;PR;1;Pâques;Pâques;pak;Ostern;Ostern
+354;9;4;Unité 3;PR;0;le mariage;le mariage;ləmaʀjaʒ;die Hochzeit;die Hochzeit
+355;9;5;Unité 4;DE;0;un collège;un collège;ɛ̃kɔlɛʒ;"ein ""Collège""";ein Collège
+356;9;5;Unité 4;DE;0;une cour;une cour;ynkuʀ;ein (Schul-)Hof;ein (Schul-)Hof
+357;9;5;Unité 4;DE;0;un élève;un élève;ɛ̃nelɛv;ein Schüler;ein Schüler
+358;9;5;Unité 4;DE;0;une élève;une élève;ynelɛv;eine Schülerin;eine Schülerin
+359;9;5;Unité 4;DE;0;un cours;un cours;ɛ̃kuʀ;eine Unterrichtsstunde;eine Unterrichtsstunde
+360;9;5;Unité 4;DE;0;l'allemand (m.);l'allemand;lalmɑ͂;Deutsch;Deutsch
+361;9;5;Unité 4;DE;0;un retard;un retard;ɛ̃ʀətaʀ;eine Verspätung;eine Verspätung
+362;9;5;Unité 4;DE;0;être en retard;être en retard;ɛtʀɑ͂ʀətaʀ;zu spät kommen;zu spät kommen
+363;9;5;Unité 4;DE;0;une cantine;une cantine;ynkɑ͂tin;eine Kantine;eine Kantine
+364;9;5;Unité 4;DE;0;une cantine;une cantine;ynkɑ͂tin;eine Mensa;eine Mensa
+365;9;5;Unité 4;DE;0;une infirmerie;une infirmerie;ynɛ̃fiʀməʀi;eine Krankenstation;eine Krankenstation
+366;9;5;Unité 4;DE;0;Aïe!;Aïe;aj;Aua!;Aua
+367;9;5;Unité 4;DE;0;un pied;un pied;ɛ̃pje;ein Fuß;ein Fuß
+368;9;5;Unité 4;DE;0;jouer;jouer;ʒwe;spielen;spielen
+369;9;5;Unité 4;AA;1;Honoré de Balzac;Honoré de Balzac;hɔnɔʀedəbalzak;französischer Schriftsteller (1799-1850);französischer Schriftsteller (1799-1850)
+370;9;5;Unité 4;AA;0;une journée;une journée;ynʒuʀne;ein Tag;ein Tag
+371;9;5;Unité 4;AA;0;une heure;une heure;ynœʀ;eine Stunde;eine Stunde
+372;9;5;Unité 4;AA;0;sept heures;sept heures;sɛtœʀ;sieben Uhr;sieben Uhr
+373;9;5;Unité 4;AA;0;sept heures et demie;sept heures et demie;sɛtœʀedəmi;halb acht;halb acht
+374;9;5;Unité 4;AA;0;sept heures moins le quart;sept heures moins le quart;sɛtœʀmwɛ̃ləkaʀ;Viertel vor sieben Uhr;Viertel vor sieben Uhr
+375;9;5;Unité 4;AA;0;sept heures et quart;sept heures et quart;sɛtœʀekaʀ;Viertel nach sieben;Viertel nach sieben
+376;9;5;Unité 4;AA;0;un lit;un lit;ɛ̃li;ein Bett;ein Bett
+377;9;5;Unité 4;AA;0;demi;demi;dəmi;halb (männlich);halb (männlich)
+378;9;5;Unité 4;AA;0;demie;demie;dəmi;halb (weiblich);halb (weiblich)
+379;9;5;Unité 4;AA;0;les toilettes (f.pl.);les toilettes;letwalɛt;die Toilette;die Toilette
+380;9;5;Unité 4;AA;0;un quart;un quart;ɛ̃kaʀ;ein Viertel;ein Viertel
+381;9;5;Unité 4;AA;0;huit heures et quart;huit heures et quart;ɥitœʀekaʀ;Viertel nach acht;Viertel nach acht
+382;9;5;Unité 4;AA;0;midi;midi;midi;zwölf Uhr (mittags);zwölf Uhr (mittags)
+383;9;5;Unité 4;AA;0;après;après;apʀɛ;nach;nach
+384;9;5;Unité 4;AA;0;après;après;apʀɛ;danach;danach
+385;10;5;Unité 4;AA;0;rentrer;rentrer;ʀɑ͂tʀe;zurückkommen;zurückkommen
+386;10;5;Unité 4;AA;0;rentrer;rentrer;ʀɑ͂tʀe;nach Hause gehen;nach Hause gehen
+387;10;5;Unité 4;AA;0;à la maison;à la maison;alamɛzɔ̃;zu Hause;zu Hause
+388;10;5;Unité 4;AA;0;à la maison;à la maison;alamɛzɔ̃;nach Hause;nach Hause
+389;10;5;Unité 4;AA;0;six heures moins le quart;six heures moins le quart;sizœʀmwɛ̃lkaʀ;Viertel vor sechs;Viertel vor sechs
+390;10;5;Unité 4;AA;0;chez;chez;ʃe;bei (jemandem);bei (jemandem)
+391;10;5;Unité 4;AA;0;la télévision;la télévision;latelevizjɔ̃;das Fernsehen;das Fernsehen
+392;10;5;Unité 4;AA;0;commencer;commencer;kɔmɑ͂se;anfangen;anfangen
+393;10;5;Unité 4;AA;0;commencer;commencer;kɔmɑ͂se;beginnen;beginnen
+394;10;5;Unité 4;AA;0;Quelle heure est-il?;Quelle heure est-il;kɛlœʀɛtil;Wie viel Uhr ist es?;Wie viel Uhr ist es
+395;10;5;Unité 4;AA;0;Quelle heure est-il?;Quelle heure est-il;kɛlœʀɛtil;Wie spät ist es?;Wie spät ist es
+396;10;5;Unité 4;AA;0;à quelle heure?;à quelle heure;akɛlœʀ;um wie viel Uhr?;um wie viel Uhr
+397;10;5;Unité 4;AA;0;de ... à;de à;də…a;von ... bis;von bis
+398;10;5;Unité 4;AA;0;une clé;une clé;ynkle;ein Schlüssel;ein Schlüssel
+399;10;5;Unité 4;AA;1;une clé USB;une clé USB;ynkleyɛsbe;ein USB-Stick;ein USB-Stick
+400;10;5;Unité 4;AA;0;lundi (m.);lundi;lɛ̃di;Montag;Montag
+401;10;5;Unité 4;AA;0;lundi (m.);lundi;lɛ̃di;am Montag;am Montag
+402;10;5;Unité 4;AA;0;aller;aller;ale;gehen;gehen
+403;10;5;Unité 4;AA;0;aller;aller;ale;fahren;fahren
+404;10;5;Unité 4;AA;0;ne ... pas;ne pas;nə pa;nicht;nicht
+405;10;5;Unité 4;AA;0;la 6eA;la 6eA;lasizjɛma;die Klasse 6A;die Klasse 6A
+406;10;5;Unité 4;AA;0;une minute;une minute;ynminyt;eine Minute;eine Minute
+407;10;5;Unité 4;AA;0;une classe;une classe;ynklas;eine Klasse;eine Klasse
+408;10;5;Unité 4;AA;0;sous;sous;su;unter;unter
+409;10;5;Unité 4;AA;0;une salle de cours;une salle de cours;ynsaldəkuʀ;ein Klassenraum;ein Klassenraum
+410;10;5;Unité 4;AA;0;Excusez-moi.;Excusez-moi;ɛkskyzemwa;Entschuldigen Sie./Entschuldigung!;Entschuldigen Sie/Entschuldigung
+411;10;5;Unité 4;AA;0;Excusez-moi.;Excusez-moi;ɛkskyzemwa;Entschuldigung!;Entschuldigung
+412;10;5;Unité 4;AA;0;Excuse-moi.;Excuse-moi;ɛkskyzmwa;Entschuldige bitte.;Entschuldige bitte
+413;10;5;Unité 4;AA;0;une place;une place;ynplas;ein Platz;ein Platz
+414;10;5;Unité 4;AA;0;la main;la main;lamɛ̃;die Hand;die Hand
+415;10;5;Unité 4;AA;0;la récréation;la récréation;laʀekʀeasjɔ̃;die Pause;die Pause
+416;10;5;Unité 4;AA;0;retrouver;retrouver;ʀətʀuve;wiederfinden;wiederfinden
+417;10;5;Unité 4;AA;0;en 6eB;en 6eB;ɑ͂sisjɛmbe;in der 6B;in der 6B
+418;10;5;Unité 4;AA;0;raconter;raconter;ʀakɔ̃te;erzählen;erzählen
+419;10;5;Unité 4;AA;0;Il/Elle est à qui?;Il/Elle est à qui;ilɛtaki/ɛlɛtaki;Wem gehört er/sie/es?;Wem gehört er/sie/es
+420;10;5;Unité 4;AA;0;Je ne sais pas.;Je ne sais pas;ʒənəsɛpa;Ich weiß nicht.;Ich weiß nicht
+421;10;5;Unité 4;AA;0;Ce ne sont pas mes affaires.;Ce ne sont pas mes affaires;sənəsɔ̃pamezafɛʀ;Das sind nicht meine Sachen.;Das sind nicht meine Sachen
+422;10;5;Unité 4;AA;0;discuter;discuter;diskyte;diskutieren/sich unterhalten;diskutieren
+423;10;5;Unité 4;AA;0;un professeur;un professeur;ɛ̃pʀɔfesœʀ;ein Lehrer;ein Lehrer
+424;10;5;Unité 4;AA;0;une professeure;une professeure;ynprɔfesœʀ;eine Lehrerin;eine Lehrerin
+425;10;5;Unité 4;AB;0;le temps;le temps;lətɑ͂;die Zeit;die Zeit
+426;10;5;Unité 4;AB;0;l'emploi (m.) du temps;l'emploi du temps;lɑ͂plwadytɑ͂;der Stundenplan;der Stundenplan
+427;10;5;Unité 4;AB;0;mardi (m.);mardi;maʀdi;Dienstag;Dienstag
+428;11;5;Unité 4;AB;0;mardi (m.);mardi;maʀdi;am Dienstag;am Dienstag
+429;11;5;Unité 4;AB;0;mercredi (m.);mercredi;mɛʀkʀədi;Mittwoch;Mittwoch
+430;11;5;Unité 4;AB;0;mercredi (m.);mercredi;mɛʀkʀədi;am Mittwoch;am Mittwoch
+431;11;5;Unité 4;AB;0;jeudi (m.);jeudi;ʒødi;Donnerstag;Donnerstag
+432;11;5;Unité 4;AB;0;jeudi (m.);jeudi;ʒødi;am Donnerstag;am Donnerstag
+433;11;5;Unité 4;AB;0;vendredi (m.);vendredi;vɑ͂dʀədi;Freitag;Freitag
+434;11;5;Unité 4;AB;0;vendredi (m.);vendredi;vɑ͂dʀədi;am Freitag;am Freitag
+435;11;5;Unité 4;AB;0;samedi (m.);samedi;samdi;Samstag;Samstag
+436;11;5;Unité 4;AB;0;samedi (m.);samedi;samdi;am Samstag;am Samstag
+437;11;5;Unité 4;AB;0;dimanche (m.);dimanche;dimɑ͂ʃ;Sonntag;Sonntag
+438;11;5;Unité 4;AB;0;dimanche (m.);dimanche;dimɑ͂ʃ;am Sonntag;am Sonntag
+439;11;5;Unité 4;AB;0;un mot;un mot;ɛ̃mo;ein Wort;ein Wort
+440;11;5;Unité 4;AB;0;un gymnase;un gymnase;ɛ̃ʒimnaz;eine Turnhalle;eine Turnhalle
+441;11;5;Unité 4;AB;0;un rêve;un rêve;ɛ̃ʀɛv;ein Traum;ein Traum
+442;11;5;Unité 4;AB;0;cool (fam.);cool;kul;cool;cool
+443;11;5;Unité 4;AB;0;cliquer;cliquer;klike;klicken;klicken
+444;11;5;Unité 4;AB;0;notre;notre;nɔtʀ;unser;unser
+445;11;5;Unité 4;AB;0;nos;nos;no;unsere;unsere
+446;11;5;Unité 4;AB;0;votre;votre;vɔtʀ;euer;euer
+447;11;5;Unité 4;AB;0;vos;vos;vo;eure;eure
+448;11;5;Unité 4;AB;0;votre;votre;vɔtʀ;Ihr;Ihr
+449;11;5;Unité 4;AB;0;vos;vos;vo;Ihre;Ihre
+450;11;5;Unité 4;AB;0;leur;leur;lœʀ;ihr;ihr
+451;11;5;Unité 4;AB;0;leurs;leurs;lœʀ;ihre;ihre
+452;11;5;Unité 4;AB;0;une interrogation;une interrogation;ynɛ̃teʀɔgasjɔ̃;eine Klassenarbeit;eine Klassenarbeit
+453;11;5;Unité 4;AB;0;quelque chose;quelque chose;kɛlkəʃoz;etwas;etwas
+454;11;5;Unité 4;AB;0;un sac;un sac;ɛ̃sak;eine Tasche;eine Tasche
+455;11;5;Unité 4;AB;0;faire;faire;fɛʀ;tun/machen;tun /machen
+456;11;5;Unité 4;AB;0;une copie;une copie;ynkɔpi;eine Kopie;eine Kopie
+457;11;5;Unité 4;AB;0;un exercice;un exercice;ɛ̃nɛgzɛʀsis;eine Übung;eine Übung
+458;11;5;Unité 4;AB;0;si;si;si;doch;doch
+459;11;5;Unité 4;AB;0;comme ça;comme ça;kɔmsa;so;so
+460;11;5;Unité 4;AB;0;comme ça;comme ça;kɔmsa;auf diese Weise;auf diese Weise
+461;11;5;Unité 4;AB;0;comme;comme;kɔm;wie;wie
+462;11;5;Unité 4;AB;0;les devoirs (m. pl.);les devoirs;ledəvwaʀ;die (Haus)Aufgaben;die (Haus)Aufgaben
+463;11;5;Unité 4;AB;0;avoir raison;avoir raison;avwaʀʀɛzɔ̃;Recht haben;Recht haben
+464;11;5;Unité 4;AB;0;une partie;une partie;ynpaʀti;ein Teil;ein Teil
+465;11;5;Unité 4;AB;0;la fin;la fin;lafɛ̃;das Ende/der Schluss;das Ende/der Schluss
+466;11;5;Unité 4;AB;0;un titre;un titre;ɛ̃titʀ;Titel;Titel
+467;11;5;Unité 4;AB;0;derrière;derrière;dɛʀjɛʀ;hinter;hinter
+468;11;5;Unité 4;PR;1;l'E.P.S. (Education physique et sportive) (f.);l'E.P.S. (Education physique et sportive);ləpeɛs;Sport als Schulfach;Sport als Schulfach
+469;11;5;Unité 4;PR;0;les arts plastiques (m.);les arts plastiques;lezaʀplastik;Kunst als Schulfach;Kunst als Schulfach
+470;11;5;Unité 4;PR;1;les S.V.T. (Sciences de la vie et de la terre) (f.);les S.V.T. (Sciences de la vie et de la terre);leɛsvete;Biologie (als Schulfach);Biologie
+471;11;5;Unité 4;PR;0;la technologie;la technologie;latɛknɔlɔʒi;Technik;Technik
+472;11;5;Unité 4;PR;0;l'anglais (m.);l'anglais;lɑ͂glɛ;Englisch;Englisch
+473;11;5;Unité 4;PR;0;les mathématiques (f.);les mathématiques;lematematik;Mathematik;Mathematik
+474;11;5;Unité 4;PR;0;l'histoire-géo (f.);l'histoire-géo;listwaʀʒeɔ;Geschichte und Erdkunde als Schulfach;Geschichte und Erdkunde als Schulfach
+475;11;5;Unité 4;PR;0;l'éducation musicale (f.);l'éducation musicale;ledykasjɔ̃mysikal;Musik als Schulfach;Musik als Schulfach
+476;12;5;Unité 4;PR;0;le français;le français;ləfʀɑ͂sɛ;Französisch;Französisch
+477;12;6;Unité 5;DE;0;un quartier;un quartier;ɛ̃kaʀtje;ein Stadtviertel;ein Stadtviertel
+478;12;6;Unité 5;DE;1;Batignolles;Batignolles;batiɲɔl;Name eines Viertels in Paris;Name eines Viertels in Paris
+479;12;6;Unité 5;DE;0;le dix-septième;le dix-septième;lədisɛtjɛm;der/das siebzehnte;der/das siebzehnte
+479;12;6;Unité 5;DE;0;la dix-septième;la dix-septième;ladisɛtjɛm;die siebzehnte;die siebzehnte
+480;12;6;Unité 5;DE;0;un arrondissement;un arrondissement;ɛ̃naʀɔ̃dismɑ͂;ein Arrondissement (ein Verwaltungsbezirk);ein Arrondissement
+481;12;6;Unité 5;DE;0;une photo;une photo;ynfɔto;ein Foto;ein Foto
+482;12;6;Unité 5;DE;0;le roller;le roller;ləʀɔlœʀ;das Inlinerfahren;das Inlinerfahren
+483;12;6;Unité 5;DE;0;une avenue;une avenue;ynavəny;eine Straße;eine Straße
+484;12;6;Unité 5;DE;1;Interclub 17;Interclub 17;ɛ̃tɛʀklœbdisɛt;Interclub 17 Name eines Jugendzentrums;Interclub 17 Name eines Jugendzentrums
+485;12;6;Unité 5;DE;0;une activité;une activité;ynaktivite;eine Freizeitbeschäftigung;eine Freizeitbeschäftigung
+486;12;6;Unité 5;DE;0;tout le monde;tout le monde;tulmɔ̃d;alle;alle
+487;12;6;Unité 5;DE;0;tout le monde;tout le monde;tulmɔ̃d;jeder;jeder
+488;12;6;Unité 5;DE;0;un stand;un stand;ɛ̃stɑ͂d;ein Stand;ein Stand
+489;12;6;Unité 5;DE;0;un stand;un stand;ɛ̃stɑ͂d;eine Bude;eine Bude
+490;12;6;Unité 5;DE;0;une crêpe;une crêpe;ynkʀɛp;eine Crêpe;eine Crêpe
+491;12;6;Unité 5;AA;0;un taxi;un taxi;ɛ̃taksi;ein Taxi;ein Taxi
+492;12;6;Unité 5;AA;0;passer;passer;pase;verbringen;verbringen
+493;12;6;Unité 5;AA;0;la nuit;la nuit;lanɥi;die Nacht;die Nacht
+494;12;6;Unité 5;AA;0;une entrée;une entrée;ynɑ͂tʀe;ein Eingang;ein Eingang
+495;12;6;Unité 5;AA;0;le soir;le soir;ləswaʀ;der Abend;der Abend
+496;12;6;Unité 5;AA;0;ce soir;ce soir;səswaʀ;heute Abend;heute Abend
+497;12;6;Unité 5;AA;0;un jour;un jour;ɛ̃ʒuʀ;ein Tag;ein Tag
+498;12;6;Unité 5;AA;0;ma puce (fam.);ma puce;mapys;meine Kleine (wörtl.: mein Floh);meine Kleine
+499;12;6;Unité 5;AA;0;A plus, ma puce!;A plus, ma puce;aplysmapys;Bis später, mein Kleines.;Bis später, mein Kleines
+500;12;6;Unité 5;AA;0;une voiture;une voiture;ynvwatyʀ;ein Auto;ein Auto
+501;12;6;Unité 5;AA;0;en voiture;en voiture;ɑ͂vwatyʀ;mit dem Auto;mit dem Auto
+502;12;6;Unité 5;AA;0;loin;loin;lwɛ̃;weit (Adv.);weit
+503;12;6;Unité 5;AA;0;à pied;à pied;apje;zu Fuß;zu Fuß
+504;12;6;Unité 5;AA;0;un appartement;un appartement;ɛ̃napaʀtəmɑ͂;eine Wohnung;eine Wohnung
+505;12;6;Unité 5;AA;0;une pièce;une pièce;ynpjɛs;ein Zimmer;ein Zimmer
+506;12;6;Unité 5;AA;0;une salle de bains;une salle de bains;ynsaldəbɛ̃;ein Bad;ein Bad
+507;12;6;Unité 5;AA;0;une salle de bains;une salle de bains;ynsaldəbɛ̃;ein Badezimmer;ein Badezimmer
+508;12;6;Unité 5;AA;0;un salon;un salon;ɛ̃salɔ̃;ein Wohnzimmer;ein Wohnzimmer
+509;12;6;Unité 5;AA;0;une chambre d'enfant;une chambre d'enfant;ynʃɑ͂bʀdɑ͂fɑ͂;ein Kinderzimmer;ein Kinderzimmer
+510;12;6;Unité 5;AA;0;une salle à manger;une salle à manger;ynsalamɑ͂ʒe;ein Esszimmer;ein Esszimmer
+511;12;6;Unité 5;AA;1;les W.-C.;les W.-C.;levese;die Toilette;die Toilette
+512;12;6;Unité 5;AA;0;un couloir;un couloir;ɛ̃kulwaʀ;ein Gang;ein Gang
+513;12;6;Unité 5;AA;0;un couloir;un couloir;ɛ̃kulwaʀ;ein Flur;ein Flur
+514;12;6;Unité 5;AA;0;une table;une table;yntabl;ein Tisch;ein Tisch
+515;12;6;Unité 5;AA;0;à table;à table;atabl;bei Tisch;bei Tisch
+516;12;6;Unité 5;AA;0;un repas;un repas;ɛ̃ʀəpa;ein Essen;ein Essen
+517;13;6;Unité 5;AA;0;un repas;un repas;ɛ̃ʀəpa;eine Mahlzeit;eine Mahlzeit
+518;13;6;Unité 5;AA;0;minuit (m.);minuit;minɥi;Mitternacht/12 Uhr nachts;Mitternacht/12 Uhr nachts
+519;13;6;Unité 5;AA;0;le matin;le matin;ləmatɛ̃;der Morgen;der Morgen
+520;13;6;Unité 5;AA;0;un tour;un tour;ɛ̃tuʀ;eine Tour;eine Tour
+521;13;6;Unité 5;AA;0;un tour;un tour;ɛ̃tuʀ;ein Rundgang;ein Rundgang
+522;13;6;Unité 5;AA;0;le samedi;le samedi;ləsamdi;samstags;samstags
+523;13;6;Unité 5;AA;0;l'après-midi (m.) (f.);l'après-midi;lapʀɛmidi;der Nachmittag;der Nachmittag
+524;13;6;Unité 5;AA;0;l'après-midi (m.) (f.);l'après-midi;lapʀɛmidi;nachmittags;nachmittags
+525;13;6;Unité 5;AA;0;faire du judo;faire du judo;fɛʀdyʒydo;Judo machen, betreiben;Judo machen, betreiben
+526;13;6;Unité 5;AA;0;je voudrais ...;je voudrais;ʒəvudʀɛ;ich möchte gerne ...;ich möchte gerne
+527;13;6;Unité 5;AA;0;le bruit;le bruit;ləbʀɥi;das Geräusch;das Geräusch
+528;13;6;Unité 5;AA;0;le bruit;le bruit;ləbʀɥi;der Lärm;der Lärm
+529;13;6;Unité 5;AA;0;tard;tard;taʀ;spät;spät
+530;13;6;Unité 5;AA;0;une cuisine;une cuisine;ynkɥizin;eine Küche;eine Küche
+531;13;6;Unité 5;AA;0;quitter;quitter;kite;verlassen;verlassen
+532;13;6;Unité 5;AA;0;des spaghettis (m. pl.);des spaghettis;spageti;Spaghetti;Spaghetti
+533;13;6;Unité 5;AA;0;déjà;déjà;deʒa;schon;schon
+534;13;6;Unité 5;AA;0;le volley(ball);le volley(ball);ləvɔlɛbol;Volleyball;Volleyball
+535;13;6;Unité 5;AA;0;le hand-ball;le hand-ball;ləɑ͂dbal;Handball;Handball
+536;13;6;Unité 5;AA;0;l'équitation (f.);l'équitation;lekitasjɔ̃;das Reiten;das Reiten
+537;13;6;Unité 5;AA;0;le cyclisme;le cyclisme;ləsiklism;Radfahren;Radfahren
+538;13;6;Unité 5;AA;0;le ski;le ski;ləski;Ski fahren;Ski fahren
+539;13;6;Unité 5;AA;0;la natation;la natation;lanatasjɔ̃;das Schwimmen;das Schwimmen
+540;13;6;Unité 5;AA;0;la danse;la danse;ladɑ͂s;der Tanz;der Tanz
+541;13;6;Unité 5;AA;0;la danse;la danse;ladɑ͂s;das Tanzen;das Tanzen
+542;13;6;Unité 5;AA;0;le théâtre;le théâtre;ləteatʀ;das Theater;das Theater
+543;13;6;Unité 5;AA;0;une guitare;une guitare;yngitaʀ;eine Gitarre;eine Gitarre
+544;13;6;Unité 5;AA;0;le tennis;le tennis;lətenis;Tennis;Tennis
+545;13;6;Unité 5;AA;0;comme;comme;kɔm;als;als
+546;13;6;Unité 5;AB;0;à droite;à droite;adʀwat;(nach) rechts;(nach) rechts
+547;13;6;Unité 5;AB;0;à gauche;à gauche;agoʃ;(nach) links;(nach) links
+548;13;6;Unité 5;AB;0;tout droit;tout droit;tudʀwa;geradeaus;geradeaus
+549;13;6;Unité 5;AB;0;traverser;traverser;tʀavɛʀse;überqueren;überqueren
+550;13;6;Unité 5;AB;0;un carrefour;un carrefour;ɛ̃kaʀfuʀ;eine Kreuzung;eine Kreuzung
+551;13;6;Unité 5;AB;0;tourner;tourner;tuʀne;drehen;drehen
+552;13;6;Unité 5;AB;0;tourner;tourner;tuʀne;abbiegen;abbiegen
+553;13;6;Unité 5;AB;0;pour faire qc;pour faire qc;puʀfɛʀ;um etwas zu tun;um etwas zu tun
+554;13;6;Unité 5;AB;0;beaucoup;beaucoup;boku;viel;viel
+555;13;6;Unité 5;AB;0;Merci beaucoup!;Merci beaucoup;mɛʀsiboku;Vielen Dank!;Vielen Dank
+556;13;6;Unité 5;AB;0;la poste;la poste;lapɔst;die Post;die Post
+557;14;6;Unité 5;AB;0;une piscine;une piscine;ynpisin;ein Schwimmbad;ein Schwimmbad
+558;14;6;Unité 5;AB;0;Vous pouvez répéter, s'il vous plaît?;Vous pouvez répéter, s'il vous plaît;vupuveʀepete;Können Sie bitte wiederholen?;Können Sie bitte wiederholen
+559;14;6;Unité 5;AB;0;un champion;un champion;ɛ̃ʃɑ͂pjɔ̃;ein Meister;ein Meister
+560;14;6;Unité 5;AB;0;une championne;une championne;ynʃɑ͂pjɔn;eine Meisterin;eine Meisterin
+561;14;6;Unité 5;AB;0;un numéro;un numéro;ɛ̃nymeʀo;eine Nummer;eine Nummer
+562;14;6;Unité 5;AB;0;un combat;un combat;ɛ̃kɔ̃ba;ein Kampf;ein Kampf
+563;14;6;Unité 5;AB;0;vraiment;vraiment;vʀɛmɑ͂;wirklich;wirklich
+564;14;6;Unité 5;AB;0;même;même;mɛm;sogar;sogar
+565;14;6;Unité 5;AB;0;une interview;une interview;ynɛ̃tɛʀvju;ein Interview;ein Interview
+566;14;6;Unité 5;AB;0;est-ce que;est-ce que;ɛskə;Frageformel;Frageformel
+567;14;6;Unité 5;AB;0;gagner;gagner;gaɲe;gewinnen;gewinnen
+568;14;6;Unité 5;AB;0;poser;poser;poze;setzen/stellen/legen;setzen/stellen/legen
+569;14;6;Unité 5;AB;0;une question;une question;ynkɛstjɔ̃;eine Frage;eine Frage
+570;14;6;Unité 5;AB;0;Comment est-ce que ...?;Comment est-ce que;kɔmɑ͂ɛskə;Wie ...?;Wie
+571;14;6;Unité 5;AB;0;tomber;tomber;tɔ̃be;fallen;fallen
+572;14;6;Unité 5;AB;0;faire mal;faire mal;fɛʀmal;weh tun;weh tun
+573;14;6;Unité 5;AB;0;pourquoi?;pourquoi;puʀkwa;warum?;warum
+574;14;6;Unité 5;AB;0;parce que;parce que;paʀskə;weil;weil
+575;14;6;Unité 5;AB;0;trop;trop;tʀo;zu viel;zu viel
+576;14;6;Unité 5;AB;0;trop;trop;tʀo;zu sehr;zu sehr
+577;14;6;Unité 5;AB;0;nul;nul;nyl;blöd;blöd
+578;14;6;Unité 5;AB;0;C'est trop nul! (fam.);C'est trop nul;sɛtʀonyl;Das ist zu blöd! (ugs.);Das ist zu blöd
+579;14;6;Unité 5;AB;0;avoir mal;avoir mal;avwaʀmal;Schmerzen haben;Schmerzen haben
+580;14;6;Unité 5;AC;1;le parc des Batignolles;le parc des Batignolles;ləpaʀkdebatiɲɔl;Park von Batignolles;Park von Batignolles
+581;14;6;Unité 5;AC;0;un portable;un portable;ɛ̃pɔʀtabl;ein Handy;ein Handy
+582;14;6;Unité 5;AC;0;un portable;un portable;ɛ̃pɔʀtabl;ein Mobiltelefon;ein Mobiltelefon
+583;14;6;Unité 5;AC;1;un SMS;un SMS;ɛ̃ɛsɛmɛs;eine SMS;eine SMS
+584;14;6;Unité 5;AC;0;un film;un film;ɛ̃film;ein Film;ein Film
+585;14;6;Unité 5;AC;0;la soif;la soif;laswaf;der Durst;der Durst
+586;14;6;Unité 5;AC;0;avoir soif;avoir soif;avwaʀswaf;Durst haben;Durst haben
+587;14;6;Unité 5;AC;0;prendre;prendre;pʀɑ͂dʀ;nehmen;nehmen
+588;14;6;Unité 5;AC;0;une gaufre;une gaufre;yngofʀ;eine Waffel;eine Waffel
+589;14;6;Unité 5;AC;0;coûter;coûter;kute;kosten;kosten
+590;14;6;Unité 5;AC;0;Ça coûte combien?;Ça coûte combien;sakutkɔ̃bjɛ̃;Wie viel kostet das?;Wie viel kostet das
+591;14;6;Unité 5;AC;0;combien (de);combien (de);kɔ̃bjɛ̃;wie viel;wie viel
+592;14;6;Unité 5;AC;0;un euro;un euro;ɛ̃nøʀo/dezøʀo;ein Euro;Euro
+593;14;6;Unité 5;AC;0;des euros;des euros;ɛ̃nøʀo/dezøʀo;Euro (Plural);Euro
+594;14;6;Unité 5;AC;0;un centime;un centime;ɛ̃sɑ͂tim;ein Cent;ein Cent
+595;14;6;Unité 5;AC;0;un vendeur;un vendeur;ɛ̃vɑ͂dœʀ;ein Verkäufer;ein Verkäufer
+596;14;6;Unité 5;AC;0;une vendeuse;une vendeuse;ynvɑ͂døz;eine Verkäuferin;eine Verkäuferin
+597;14;6;Unité 5;AC;0;un coca;un coca;ɛ̃koka;eine Cola;eine Cola
+598;14;6;Unité 5;AC;0;une eau minérale;une eau minérale;ynomineʀal;ein Mineralwasser;ein Mineralwasser
+599;14;6;Unité 5;AC;0;un jus de pomme;un jus de pomme;ɛ̃ʒydpɔm;ein Apfelsaft;ein Apfelsaft
+600;14;6;Unité 5;AC;0;l'eau (f.);l'eau;lo;das Wasser;das Wasser
+601;14;6;Unité 5;AC;0;une pomme;une pomme;ynpɔm;ein Apfel;ein Apfel
+602;15;6;Unité 5;AC;0;un jus;un jus;ɛ̃ʒy;ein Saft;ein Saft
+603;15;6;Unité 5;AC;0;une orange;une orange;ynɔʀɑ͂ʒ;eine Orange;eine Orange
+604;15;6;Unité 5;AC;0;un diabolo menthe;un diabolo menthe;ɛ̃djabɔlomɑ͂t;ein Diabolo Menthe;ein Diabolo Menthe
+605;15;6;Unité 5;AC;0;Ça fait combien?;Ça fait combien;safɛ̃kɔ̃bjɛ̃;Wie viel kostet das?;Wie viel kostet das
+606;15;6;Unité 5;AC;0;Ça fait ...;Ça fait;safɛ;Das macht ...;Das macht
+607;15;6;Unité 5;AC;0;Ça fait ...;Ça fait;safɛ;Das kostet ...;Das kostet
+608;15;6;Unité 5;AC;0;un client;un client;ɛ̃klijɑ͂;ein Kunde;ein Kunde
+609;15;6;Unité 5;AC;0;une cliente;une cliente;ynklijɑ͂t;eine Kundin;eine Kundin
+610;15;6;Unité 5;AC;0;Bonne journée!;Bonne journée;bɔnʒuʀne;Einen schönen Tag!;Einen schönen Tag
+611;15;6;Unité 5;PR;0;la planche à voile;la planche à voile;laplɑ͂ʃavwal;das Windsurfen;das Windsurfen
+612;15;6;Unité 5;PR;0;le ski nautique;le ski nautique;fɛʀdyskinotik;das Wasserskifahren;das Wasserskifahren
+613;15;6;Unité 5;PR;0;une maison des jeunes;une maison des jeunes;ynmɛzɔ̃deʒœn;ein Jugendzentrum;ein Jugendzentrum
+614;15;6;Unité 5;PR;0;un terrain de foot;un terrain de foot;ɛ̃teʀɛ̃dəfut;ein Fußballplatz;ein Fußballplatz
+615;15;6;Unité 5;PR;0;un club de foot;un club de foot;ɛ̃klœbdəfut;ein Fußballverein;ein Fußballverein
+616;15;6;Unité 5;PR;0;un club sportif;un club sportif;ɛ̃klœbspɔʀtif;ein Sportverein;ein Sportverein
+617;15;6;Unité 5;PR;0;une école de musique;une école de musique;ynekɔldəmyzik;eine Musikschule;eine Musikschule
+618;15;6;Unité 5;PR;0;un glacier;un glacier;ɛ̃glasje;ein Eisverkäufer;ein Eisverkäufer
+619;15;6;Unité 5;PR;0;un glacier;un glacier;ɛ̃glasje;eine Eisdiele;eine Eisdiele
+620;15;6;Unité 5;PR;0;un coiffeur;un coiffeur;ɛ̃kwafœʀ;ein Frisör;ein Frisör
+621;15;6;Unité 5;PR;0;une coiffeuse;une coiffeuse;ynkwaføz;eine Frisörin;eine Frisörin
+622;15;6;Unité 5;PR;0;une papeterie;une papeterie;ynpapɛtʀi;ein Schreibwarengeschäft;ein Schreibwarengeschäft
+623;15;6;Unité 5;PR;0;un supermarché;un supermarché;ɛ̃sypɛʀmaʀʃe;ein Supermarkt;ein Supermarkt
+624;15;6;Unité 5;PR;0;un grand magasin;un grand magasin;ɛ̃gʀɑ͂magazɛ̃;ein Kaufhaus;ein Kaufhaus
+625;15;6;Unité 5;PR;0;un kiosque;un kiosque;ɛ̃kjɔsk;ein Kiosk;ein Kiosk
+626;15;6;Unité 5;PR;0;une bibliothèque;une bibliothèque;ynbiblijɔtɛk;eine Bücherei;eine Bücherei
+627;15;7;Unité 6;DE;0;une fête;une fête;ynfɛt;ein Fest;ein Fest
+628;15;7;Unité 6;DE;0;une fête;une fête;ynfɛt;eine Party;eine Party
+629;15;7;Unité 6;DE;0;une fête nationale;une fête nationale;ynfɛtnasjɔnal;ein Nationalfeiertag;ein Nationalfeiertag
+630;15;7;Unité 6;DE;0;les gens (m. pl.);les gens;leʒɑ͂;die Leute;die Leute
+631;15;7;Unité 6;DE;0;un bal;un bal;ɛ̃bal;ein Ball;ein Ball
+632;15;7;Unité 6;DE;0;un bal;un bal;ɛ̃bal;ein Fest;ein Fest
+633;15;7;Unité 6;DE;0;grand;grand;gʀɑ͂;groß (männlich);groß
+634;15;7;Unité 6;DE;0;grande;grande;gʀɑ͂d;groß (weiblich);groß
+635;15;7;Unité 6;DE;0;un feu;un feu;ɛ̃fø;ein Feuer;ein Feuer
+636;15;7;Unité 6;DE;0;des feux;des feux;defø;Feuer;Feuer
+637;15;7;Unité 6;DE;0;un feu d'artifice;un feu d'artifice;ɛ̃fødaʀtifis;ein Feuerwerk;ein Feuerwerk
+638;15;7;Unité 6;DE;0;une tour;une tour;yntuʀ;ein Turm;ein Turm
+639;15;7;Unité 6;DE;1;la tour Eiffel;la tour Eiffel;latuʀɛfɛl;der Eiffelturm;der Eiffelturm
+640;15;7;Unité 6;DE;0;danser;danser;dɑ͂se;tanzen;tanzen
+641;15;7;Unité 6;AA;1;le TGV;le TGV;ləteʒeve;der TGV;der TGV
+642;15;7;Unité 6;AA;0;une personne;une personne;ynpɛʀsɔn;eine Person;eine Person
+643;15;7;Unité 6;AA;0;l'arrivée (f.);l'arrivée;laʀive;die Ankunft;die Ankunft
+644;15;7;Unité 6;AA;0;un problème;un problème;ɛ̃pʀɔblɛm;ein Problem;ein Problem
+645;15;7;Unité 6;AA;0;téléphoner;téléphoner;telefɔne;telefonieren/anrufen;telefonieren/anrufen
+646;15;7;Unité 6;AA;0;rester;rester;ʀɛste;bleiben;bleiben
+647;15;7;Unité 6;AA;0;hier;hier;jɛʀ;gestern;gestern
+648;16;7;Unité 6;AA;0;les vacances (f. pl.);les vacances;levakɑ͂s;der Urlaub/die Ferien;der Urlaub
+649;16;7;Unité 6;AA;0;dernier;dernier;dɛʀnje;letzter;letzter
+650;16;7;Unité 6;AA;0;dernière;dernière;dɛʀnjɛʀ;letzte;letzte
+651;16;7;Unité 6;AA;0;triste;triste;tʀist;traurig (männlich);traurig
+652;16;7;Unité 6;AA;0;triste;triste;tʀist;traurig (weiblich);traurig
+653;16;7;Unité 6;AA;0;intéressant;intéressant;ɛ̃teʀesɑ͂;interessant (männlich);interessant
+654;16;7;Unité 6;AA;0;intéressante;intéressante;ɛ̃teʀesɑ͂t;interessant (weiblich);interessant
+655;16;7;Unité 6;AA;0;très;très;tʀɛ;sehr;sehr
+656;16;7;Unité 6;AA;0;bon;bon;bɔ̃;gut (männlich);gut
+657;16;7;Unité 6;AA;0;bonne;bonne;bɔn;gut (weiblich);gut
+658;16;7;Unité 6;AA;0;peut-être;peut-être;pøtɛtʀ;vielleicht;vielleicht
+659;16;7;Unité 6;AA;0;une gare;une gare;yngaʀ;ein Bahnhof;ein Bahnhof
+660;16;7;Unité 6;AA;1;Lyon;Lyon;ljɔ̃;Stadt im Osten Frankreichs;Stadt im Osten Frankreichs
+661;16;7;Unité 6;AA;0;un chanteur;un chanteur;ɛ̃ʃɑ͂tœʀ;ein Sänger;ein Sänger
+662;16;7;Unité 6;AA;0;une chanteuse;une chanteuse;ynʃɑ͂tøz;eine Sängerin;eine Sängerin
+663;16;7;Unité 6;AA;0;oublier;oublier;ublije;vergessen;vergessen
+664;16;7;Unité 6;AA;0;petit;petit;pəti;klein (männlich);klein
+665;16;7;Unité 6;AA;0;petite;petite;pətit;klein (weiblich);klein
+666;16;7;Unité 6;AA;0;enfin;enfin;ɑ͂fɛ̃;endlich;endlich
+667;16;7;Unité 6;AA;0;enfin;enfin;ɑ͂fɛ̃;schließlich;schließlich
+668;16;7;Unité 6;AA;0;un chapeau;un chapeau;ɛ̃ʃapo;ein Hut;ein Hut
+669;16;7;Unité 6;AA;0;joli;joli;ʒɔli;hübsch (männlich);hübsch
+670;16;7;Unité 6;AA;0;jolie;jolie;ʒɔli;hübsch (weiblich);hübsch
+671;16;7;Unité 6;AA;0;une robe;une robe;ynʀɔb;ein Kleid;ein Kleid
+672;16;7;Unité 6;AA;0;long;long;lɔ̃;lang (weiblich);lang
+673;16;7;Unité 6;AA;0;longue;longue;lɔ̃g;lang (männlich);lang
+674;16;7;Unité 6;AA;0;un pantalon;un pantalon;ɛ̃pɑ͂talɔ̃;eine Hose;eine Hose
+675;16;7;Unité 6;AA;0;vert;vert;vɛʀ;grün (männlich);grün
+676;16;7;Unité 6;AA;0;verte;verte;vɛʀt;grün (weiblich);grün
+677;16;7;Unité 6;AA;0;content;content;kɔ̃tɑ͂;zufrieden/froh (männlich);zufrieden/froh
+678;16;7;Unité 6;AA;0;contente;contente;kɔ̃tɑ͂t;zufrieden/froh (weiblich);zufrieden/froh
+679;16;7;Unité 6;AB;0;avant;avant;avɑ͂;vor;vor
+680;16;7;Unité 6;AB;0;mettre;mettre;mɛtʀ;stellen/legen/setzen;stellen/legen/setzen
+681;16;7;Unité 6;AB;0;mettre;mettre;mɛtʀ;anziehen;anziehen
+682;16;7;Unité 6;AB;1;la Place de la Bastille;la Place de la Bastille;laplasdəlabastij;der Platz der Bastille;der Platz der Bastille
+683;16;7;Unité 6;AB;0;mauvais/mauvaise;mauvais/mauvaise;movɛ/movɛz;schlecht;schlecht
+684;16;7;Unité 6;AB;0;donner;donner;dɔne;geben;geben
+685;16;7;Unité 6;AB;0;une casquette;une casquette;ynkaskɛt;eine Kappe;eine Kappe
+686;16;7;Unité 6;AB;0;une casquette;une casquette;ynkaskɛt;eine Schirmmütze;eine Schirmmütze
+687;16;7;Unité 6;AB;0;la poche;la poche;lapɔʃ;die Tasche;die Tasche
+688;16;7;Unité 6;AB;0;la poche;la poche;lapɔʃ;die Hosentasche;die Hosentasche
+689;16;7;Unité 6;AB;0;demander;demander;dəmɑ͂de;fragen/bitten;fragen/bitten
+690;16;7;Unité 6;AB;0;entre;entre;ɑ͂tʀ;zwischen;zwischen
+691;16;7;Unité 6;AB;0;montrer;montrer;mɔ̃tʀe;zeigen;zeigen
+692;16;7;Unité 6;AB;0;parler;parler;paʀle;sprechen;sprechen
+693;16;7;Unité 6;AB;0;autre;autre;otʀ;anderer/andere/anderes;anderer/andere/anderes
+694;16;7;Unité 6;AB;0;rencontrer;rencontrer;ʀɑ͂kɔ̃tʀe;treffen/begegnen;treffen/begegnen
+695;17;7;Unité 6;AB;0;aider;aider;ede;helfen;helfen
+696;17;7;Unité 6;AB;0;un courriel;un courriel;ɛ̃kuʀjɛl;eine E-Mail;eine E-Mail
+697;17;7;Unité 6;AB;0;une couleur;une couleur;ynkulœʀ;eine Farbe;eine Farbe
+698;17;7;Unité 6;AB;0;bleu;bleu;blø;blau (männlich);blau
+699;17;7;Unité 6;AB;0;bleue;bleue;blø;blau (weiblich);blau
+700;17;7;Unité 6;AB;0;blanc;blanc;blɑ͂;weiß (männlich);weiß
+701;17;7;Unité 6;AB;0;blanche;blanche;blɑ͂ʃ;weiß (weiblich);weiß
+702;17;7;Unité 6;AB;0;rouge;rouge;ʀuʒ;rot;rot
+703;17;7;Unité 6;AB;0;jaune;jaune;ʒon;gelb;gelb
+704;17;7;Unité 6;AB;0;surtout;surtout;syʀtu;vor allem;vor allem
+705;17;7;Unité 6;AB;0;un vêtement;un vêtement;ɛ̃vɛtmɑ͂;ein Kleidungsstück;ein Kleidungsstück
+706;17;7;Unité 6;AB;0;noir;noir;nwaʀ;schwarz (männlich);schwarz
+707;17;7;Unité 6;AB;0;noire;noire;nwaʀ;schwarz (weiblich);schwarz
+708;17;7;Unité 6;AB;0;gris;gris;gʀi;grau (männlich);grau
+709;17;7;Unité 6;AB;0;grise;grise;gʀiz;grau (weiblich);grau
+710;17;7;Unité 6;AB;0;un jean;un jean;ɛ̃dʒin;eine Jeans;eine Jeans
+711;17;7;Unité 6;AB;0;une basket;une basket;ynbaskɛt;ein Turnschuh;ein Turnschuh
+712;17;7;Unité 6;AB;0;une jupe;une jupe;ynʒyp;ein Rock;ein Rock
+713;17;7;Unité 6;AB;0;un anorak;un anorak;ɛ̃nanɔʀak;ein Anorak;ein Anorak
+714;17;7;Unité 6;AB;0;une chemise;une chemise;ynʃəmiz;ein Hemd;ein Hemd
+715;17;7;Unité 6;AB;0;une veste;une veste;ynvɛst;eine Jacke;eine Jacke
+716;17;7;Unité 6;AB;0;une chaussure;une chaussure;ynʃosyʀ;ein Schuh;ein Schuh
+717;17;7;Unité 6;AB;0;un pull;un pull;ɛ̃pyl;ein Pulli;ein Pulli
+718;17;7;Unité 6;AB;0;les fringues (f. pl.) (fam.);les fringues;lefʀɛ̃g;die Klamotten;die Klamotten
+719;17;7;Unité 6;AB;0;un short;un short;ɛ̃ʃɔʀt;Shorts;Shorts
+720;17;7;Unité 6;AB;0;un sweat;un sweat;ɛ̃swɛt;ein Sweatshirt;ein Sweatshirt
+721;17;7;Unité 6;AB;0;un blouson;un blouson;ɛ̃bluzɔ̃;ein Blouson;ein Blouson
+722;17;7;Unité 6;AB;0;un blouson;un blouson;ɛ̃bluzɔ̃;eine Jacke;eine Jacke
+723;17;7;Unité 6;AB;0;un poème;un poème;ɛ̃pɔɛm;ein Gedicht;ein Gedicht
+724;17;7;Unité 6;PR;0;un sketch;un sketch;ɛ̃skɛtʃ;ein Sketch;ein Sketch
+725;17;7;Unité 6;PR;0;un sandwich;un sandwich;ɛ̃sɑ͂dwi(t)ʃ;ein Sandwich;ein Sandwich
+726;17;7;Unité 6;PR;0;une boisson;une boisson;ynbwasɔ̃;ein Getränk;ein Getränk
+727;17;7;Unité 6;PR;0;une tarte flambée;une tarte flambée;yntaʀtflɑ͂be;ein Flammkuchen;ein Flammkuchen
+728;17;7;Unité 6;PR;0;une pizza;une pizza;ynpidza;eine Pizza;eine Pizza
+729;17;7;Unité 6;PR;0;des chips (f.);des chips;deʃips;Chips;Chips
+730;17;8;Unité 7;DE;0;une semaine;une semaine;ynsəmɛn;eine Woche;eine Woche
+731;17;8;Unité 7;DE;0;un reportage;un reportage;ɛ̃ʀəpɔʀtaʒ;eine Reportage;eine Reportage
+732;17;8;Unité 7;DE;0;une ville;une ville;ynvil;eine Stadt;eine Stadt
+733;17;8;Unité 7;DE;0;un assistant/une assistante;un assistant/une assistante;ɛ̃nasistɑ͂/ynasistɑ͂t;ein Assistent/eine Assistentin;ein Assistent/eine Assistentin
+734;17;8;Unité 7;DE;0;un endroit;un endroit;ɛ̃nɑ͂dʀwa;ein Ort;ein Ort
+735;17;8;Unité 7;DE;0;un touriste;un touriste;ɛ̃tuʀist;ein Tourist;ein Tourist
+736;17;8;Unité 7;DE;0;une touriste;une touriste;yntuʀist;eine Touristin;eine Touristin
+737;17;8;Unité 7;DE;1;le Louvre;le Louvre;ləluvʀ;der Louvre;der Louvre
+738;17;8;Unité 7;DE;0;un musée;un musée;ɛ̃myze;ein Museum;ein Museum
+739;17;8;Unité 7;DE;0;une cathédrale;une cathédrale;ynkatedʀal;eine Kathedrale;eine Kathedrale
+740;17;8;Unité 7;DE;1;Notre-Dame;Notre-Dame;nɔtʀədam;Notre-Dame (Kathedrale im Zentrum von Paris);Notre-Dame
+741;17;8;Unité 7;DE;1;la Défense;la Défense;ladefɑ͂s;Stadtteil von Paris;Stadtteil von Paris
+742;17;8;Unité 7;DE;0;moderne;moderne;mɔdɛʀn;modern;modern
+743;17;8;Unité 7;DE;1;l'Arc de triomphe (m.);l'Arc de triomphe;laʀkdətʀijɔ̃f;der Arc de triomphe;der Arc de triomphe
+744;18;8;Unité 7;DE;0;visiter;visiter;vizite;besichtigen;besichtigen
+745;18;8;Unité 7;AA;0;beau;beau;bo/bɛl/bɛl;schön;schön
+746;18;8;Unité 7;AA;0;Il fait beau.;Il fait beau;ilfɛbo;Es ist schönes Wetter.;Es ist schönes Wetter
+747;18;8;Unité 7;AA;0;faire de l'escalade;faire de l'escalade;fɛʀdəlɛkalad;klettern;klettern
+748;18;8;Unité 7;AA;0;chaud;chaud;ʃo;warm/heiß (männlich);warm/heiß
+749;18;8;Unité 7;AA;0;chaude;chaude;ʃod;warm/heiß (weiblich);warm/heiß
+750;18;8;Unité 7;AA;0;Il fait chaud.;Il fait chaud;ilfɛʃo;Es ist warm/heiß.;Es ist warm/heiß
+751;18;8;Unité 7;AA;0;la vue;la vue;lavy;die Aussicht;die Aussicht
+752;18;8;Unité 7;AA;0;une boutique;une boutique;ynbutik;eine Boutique;eine Boutique
+753;18;8;Unité 7;AA;0;une boutique;une boutique;ynbutik;ein Ladengeschäft;ein Ladengeschäft
+754;18;8;Unité 7;AA;0;un souvenir;un souvenir;ɛ̃suvniʀ;eine Erinnerung;eine Erinnerung
+755;18;8;Unité 7;AA;0;un souvenir;un souvenir;ɛ̃suvniʀ;ein Andenken;ein Andenken
+756;18;8;Unité 7;AA;0;un bureau;un bureau;ɛ̃byʀo;ein Büro;ein Büro
+757;18;8;Unité 7;AA;0;un bureau;un bureau;ɛ̃byʀo;ein Schreibtisch;ein Schreibtisch
+758;18;8;Unité 7;AA;0;un bureau;un bureau;ɛ̃byʀo;hier: ein Arbeitszimmer;hier: ein Arbeitszimmer
+759;18;8;Unité 7;AA;1;Gustave Eiffel;Gustave Eiffel;gystavɛfɛl;französischer Ingenieur, 1832-1923;französischer Ingenieur, 1832-1923
+760;18;8;Unité 7;AA;0;écrire;écrire;ekʀiʀ;schreiben;schreiben
+761;18;8;Unité 7;AA;0;une carte;une carte;ynkaʀt;eine Karte;eine Karte
+762;18;8;Unité 7;AA;0;une carte postale;une carte postale;ynkaʀtpɔstal;eine Postkarte;eine Postkarte
+763;18;8;Unité 7;AA;0;une carte postale;une carte postale;ynkaʀtpɔstal;eine Ansichtskarte;eine Ansichtskarte
+764;18;8;Unité 7;AA;0;le vent;le vent;ləvɑ͂;der Wind;der Wind
+765;18;8;Unité 7;AA;0;Il y a du vent.;Il y a du vent;iljadyvɑ͂;Es ist windig.;Es ist windig
+766;18;8;Unité 7;AA;0;beaucoup de;beaucoup de;bokudə;viel(e);viel(e)
+767;18;8;Unité 7;AA;0;le temps;le temps;lətɑ͂;das Wetter;das Wetter
+768;18;8;Unité 7;AA;0;Quel temps fait-il?;Quel temps fait-il;kɛltɑ͂fɛtil;Wie ist das Wetter?;Wie ist das Wetter
+769;18;8;Unité 7;AA;0;froid;froid;fʀwa;kalt (männlich);kalt
+770;18;8;Unité 7;AA;0;froide;froide;fʀwad;kalt (weiblich);kalt
+771;18;8;Unité 7;AA;0;neiger;neiger;neʒe;schneien;schneien
+772;18;8;Unité 7;AA;0;Il fait mauvais.;Il fait mauvais;ilfɛmovɛ;Es ist schlechtes Wetter.;Es ist schlechtes Wetter
+773;18;8;Unité 7;AA;0;pleuvoir;pleuvoir;pløvwaʀ;regnen;regnen
+774;18;8;Unité 7;AA;0;Il pleut.;Il pleut;ilplø;Es regnet.;Es regnet
+775;18;8;Unité 7;AA;0;Il fait froid.;Il fait froid;ilfɛfʀwa;Es ist kalt.;Es ist kalt
+776;18;8;Unité 7;AA;0;lire;lire;liʀ;lesen;lesen
+777;18;8;Unité 7;AA;0;Cher ...;Cher;ʃɛʀ;Lieber ... (Anrede);Lieber
+778;18;8;Unité 7;AA;0;Chère ...;Chère;ʃɛʀ;Liebe ... (Anrede);Liebe
+779;18;8;Unité 7;AA;0;mamie (ugs.);mamie;mami;Omi;Omi
+780;18;8;Unité 7;AA;0;génial;génial;ʒenjal;super/genial (männlich);super/genial
+781;18;8;Unité 7;AA;0;géniale;géniale;ʒenjal;super/genial (weiblich);super/genial
+782;18;8;Unité 7;AA;1;la Joconde;la Joconde;laʒɔkɔ̃d;Mona Lisa (Gemälde von Leonardo da Vinci);Mona Lisa (Gemälde von Leonardo da Vinci)
+783;18;8;Unité 7;AA;0;Coucou!;Coucou;kuku;Hallo!;Hallo
+784;18;8;Unité 7;AA;0;Comment allez-vous?;Comment allez-vous;kɔmɑ͂talevu;Wie geht es euch/Ihnen?;Wie geht es euch/Ihnen
+785;19;8;Unité 7;AB;0;un million;un million;ɛ̃miljɔ̃;eine Million;eine Million
+786;19;8;Unité 7;AB;0;un kilomètre;un kilomètre;ɛ̃kilɔmɛtʀ;ein Kilometer;ein Kilometer
+787;19;8;Unité 7;AB;0;tôt (adv.);tôt;to;früh (Adv.);früh
+788;19;8;Unité 7;AB;0;un bus;un bus;ɛ̃bys;ein Bus;ein Bus
+789;19;8;Unité 7;AB;0;une station;une station;ynstasjɔ̃;eine Station;eine Station
+790;19;8;Unité 7;AB;0;une station;une station;ynstasjɔ̃;eine Haltestelle;eine Haltestelle
+791;19;8;Unité 7;AB;0;le métro;le métro;ləmetʀo;die Metro;die Metro
+792;19;8;Unité 7;AB;0;le métro;le métro;ləmetʀo;die U-Bahn;die U-Bahn
+793;19;8;Unité 7;AB;0;fatigué;fatigué;fatige;müde (männlich);müde
+794;19;8;Unité 7;AB;0;fatiguée;fatiguée;fatige;müde (weiblich);müde
+795;19;8;Unité 7;AB;0;par jour;par jour;paʀʒuʀ;pro Tag;pro Tag
+796;19;8;Unité 7;AB;0;par jour;par jour;paʀʒuʀ;täglich;täglich
+797;19;8;Unité 7;AB;0;un moyen de transport;un moyen de transport;ɛ̃mwajɛ̃dətʀɑ͂spɔʀ;ein Verkehrsmittel;ein Verkehrsmittel
+798;19;8;Unité 7;AB;0;un peu;un peu;ɛ̃pø;ein wenig;ein wenig
+799;19;8;Unité 7;AB;1;la gare de l'Est;la gare de l'Est;lagaʀdəlɛst;der Gare de l'Est (der Ostbahnhof);der Gare de l'Est (der Ostbahnhof)
+800;19;8;Unité 7;AB;0;un ticket;un ticket;ɛ̃tikɛ;ein Fahrschein;ein Fahrschein
+801;19;8;Unité 7;AB;0;un ticket;un ticket;ɛ̃tikɛ;eine Fahrkarte;eine Fahrkarte
+802;19;8;Unité 7;AB;0;écologique;écologique;ekɔlɔʒik;ökologisch/umweltfreundlich;ökologisch/umweltfreundlich
+803;19;8;Unité 7;AB;0;en train;en train;ɑ͂tʀɛ̃;mit dem Zug;mit dem Zug
+804;19;8;Unité 7;AB;0;un avion;un avion;ɛ̃navjɔ̃;ein Flugzeug;ein Flugzeug
+805;19;8;Unité 7;AC;0;un marché;un marché;ɛ̃maʀʃe;ein Markt;ein Markt
+806;19;8;Unité 7;AC;0;un marché aux puces;un marché aux puces;ɛ̃maʀʃeopys;ein Flohmarkt;ein Flohmarkt
+807;19;8;Unité 7;AC;0;ne ... pas de;ne pas de;nə padə;kein/keine;kein/keine
+808;19;8;Unité 7;AC;0;pas de problème;pas de problème;padəpʀɔblɛm;kein Problem;kein Problem
+809;19;8;Unité 7;AC;0;une chose;une chose;ynʃoz;eine Sache;eine Sache
+810;19;8;Unité 7;AC;0;une chose;une chose;ynʃoz;ein Ding;ein Ding
+811;19;8;Unité 7;AC;0;un exemple;un exemple;ɛ̃nɛgzɑ͂pl;ein Beispiel;ein Beispiel
+812;19;8;Unité 7;AC;0;par exemple;par exemple;paʀɛgzɑ͂pl;zum Beispiel;zum Beispiel
+813;19;8;Unité 7;AC;0;on peut;on peut;ɔ̃pø;man kann;man kann
+814;19;8;Unité 7;AC;0;pratique;pratique;pʀatik;praktisch;praktisch
+815;19;8;Unité 7;AC;0;ne ... plus;ne plus;nə ply;nicht mehr;nicht mehr
+816;19;8;Unité 7;AC;0;ne ... plus de;ne plus de;nə plydə;kein/keine mehr;kein/keine mehr
+817;19;8;Unité 7;AC;0;plus de problème;plus de problème;plydəpʀɔblɛm;kein Problem mehr;kein Problem mehr
+818;19;8;Unité 7;AC;0;inventer;inventer;ɛ̃vɑ͂te;erfinden;erfinden
+819;19;8;Unité 7;AC;0;cher;cher;ʃɛʀ;teuer (männlich);teuer
+820;19;8;Unité 7;AC;0;chère;chère;ʃɛʀ;teuer (weiblich);teuer
+821;19;8;Unité 7;AC;0;ouvert;ouvert;uvɛʀ;offen (männlich);offen
+822;19;8;Unité 7;AC;0;ouverte;ouverte;uvɛrt;offen (weiblich);offen
+823;19;8;Unité 7;AC;0;adorer;adorer;adɔʀe;sehr gern mögen;sehr gern mögen
+824;19;8;Unité 7;AC;0;désirer;désirer;deziʀe;wünschen;wünschen
+825;19;8;Unité 7;AC;0;peu de;peu de;pødə;wenig(e);wenig(e)
+826;19;8;Unité 7;DE;0;un grand huit;un grand huit;ɛ̃gʀɑ͂ɥit;eine Achterbahn;eine Achterbahn
+827;19;8;Unité 7;DE;0;vrai;vrai;vrɛ;wahr/richtig/echt (männlich);wahr/richtig/echt
+828;19;8;Unité 7;DE;0;vraie;vraie;vrɛ;wahr/richtig/echt (weiblich);wahr/richtig/echt
+829;20;8;Unité 7;DE;0;un parc d'attractions;un parc d'attractions;ɛ̃paʀkdatʀaksjɔ̃;ein Freizeitpark;ein Freizeitpark
+830;20;8;Unité 7;DE;0;un parc d'attractions;un parc d'attractions;ɛ̃paʀkdatʀaksjɔ̃;ein Erlebnispark;ein Erlebnispark
+831;20;8;Unité 7;DE;0;un lecteur;un lecteur;ɛ̃lɛktœʀ;ein Leser;ein Leser
+832;20;8;Unité 7;DE;0;une lectrice;une lectrice;ynlɛktʀis;eine Leserin;eine Leserin
+833;20;8;Unité 7;DE;1;l'Internet (m.);l'Internet;ɛ̃tɛʀnɛt;das Internet;das Internet
+834;20;8;Unité 7;DE;1;sur Internet;sur Internet;syʀɛ̃tɛʀnɛt;im Internet;im Internet
+835;20;8;Unité 7;DE;0;ne ... rien;ne rien;nə rjɛ̃;nichts;nichts
+836;20;8;Unité 7;DE;0;une liste;une liste;ynlist;eine Liste;eine Liste
+837;20;8;Unité 7;DE;0;une réponse;une réponse;ynʀepɔ̃s;eine Antwort;eine Antwort

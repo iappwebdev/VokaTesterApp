@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder } from '@angular/forms';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Lektion } from 'src/app/models/lektion';
 import { Vokabel } from 'src/app/models/vokabel';
@@ -7,11 +8,11 @@ import { LektionenService } from 'src/app/services/lektionen.service';
 import { VokabelService } from 'src/app/services/vokabel.service';
 
 @Component({
-  selector: 'app-lernen-lektion',
-  templateUrl: './lernen-lektion.component.html',
-  styleUrls: ['./lernen-lektion.component.less']
+  selector: 'app-übersicht-lektion',
+  templateUrl: './übersicht-lektion.component.html',
+  styleUrls: ['./übersicht-lektion.component.less']
 })
-export class LernenLektionComponent implements OnInit {
+export class ÜbersichtLektionComponent implements OnInit {
   private vokabeln: Vokabel[] = [];
 
   lektion!: Lektion;
@@ -22,6 +23,7 @@ export class LernenLektionComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private fb: FormBuilder,
+    private sanitizer: DomSanitizer,
     private lektionenService: LektionenService,
     private vokabelService: VokabelService
   ) { }
@@ -57,5 +59,31 @@ export class LernenLektionComponent implements OnInit {
       vokabel.frz.toLowerCase().indexOf(this.filterQuery) >= 0
       || vokabel.deu.toLowerCase().indexOf(this.filterQuery) >= 0
     );
+  }
+
+  getHtmlStringFrz(frz: string): SafeHtml {
+    const spanStartMasc = '<span style="color: blue">'
+    const spanStartFem = '<span style="color: red">'
+    const spanEnd = '</span>'
+    
+    const artMasc = ['un', 'le'];
+
+    artMasc.forEach((art) => {
+      const searchStr = art + ' ';
+      if (frz.startsWith(searchStr)) {
+        frz = frz.replace(searchStr, spanStartMasc + searchStr + spanEnd);
+      }
+    });
+
+    const artFem = ['une', 'la'];
+
+    artFem.forEach((art) => {
+      const searchStr = art + ' ';
+      if (frz.startsWith(searchStr)) {
+        frz = frz.replace(searchStr, spanStartFem + searchStr + spanEnd);
+      }
+    })
+
+    return this.sanitizer.bypassSecurityTrustHtml(frz);
   }
 }

@@ -20,6 +20,7 @@ export class SonderzeichenComponent implements OnInit {
   }
 
   insertZeichen(): void {
+    if (this.disabled()) return;
     let newValue: string = (!this.input.value) ? '' : this.input.value.toString()
     let startPos: number = !(this.inputElem.selectionStart) ? 0 : parseInt(this.inputElem.selectionStart?.toString());
     let endPos: number = !(this.inputElem.selectionEnd) ? 0 : parseInt(this.inputElem.selectionEnd?.toString());
@@ -30,5 +31,9 @@ export class SonderzeichenComponent implements OnInit {
 
     this.inputElem.selectionStart = startPos + 1;
     this.inputElem.selectionEnd = this.inputElem.selectionStart;
+  }
+
+  disabled(): boolean {
+    return this.inputElem.disabled;
   }
 }

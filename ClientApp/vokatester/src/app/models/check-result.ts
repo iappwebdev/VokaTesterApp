@@ -7,13 +7,16 @@ export interface CheckResult {
     answer: string,
     truthSan: string,
     answerSan: string,
+    truthArticle: string,
+    answerArticle: string,
+    isArtikelFehler: boolean,
     hasMultipleCorrectAnswers: boolean,
     furtherCorrectAnswers: string[],
     furtherCorrectAnswersSan: string[],
     similarityResult: SimilarityResult
 }
 
-interface SimilarityResult {
+export interface SimilarityResult {
     truth: string;
     answer: string;
     isAnswerEqual: boolean;
@@ -24,12 +27,13 @@ interface SimilarityResult {
     isAnswerSimilarI: boolean;
     isAnswerSimilarU: boolean;
     stringSimilaritiesLevenshtein: StringSimilaritiesLevenshtein;
-    stringSimilarities: StringSimilarities;
+    stringSimilaritiesOthers: StringSimilarities;
+    editOperationsLeventhein: EditOperations[];
     numWrongCharsTruth: number;
     numWrongCharsAnswer: number;
-  }
-  
-  interface StringSimilarities {
+}
+
+interface StringSimilarities {
     dist_Metric_Damerau: number;
     longestCommonSubsequence: number;
     distance_JaroWinkler: number;
@@ -37,9 +41,9 @@ interface SimilarityResult {
     subsequence_LongestCommonSubsequenceLength: number;
     dist_norm_NGram: number;
     optimalStringAlignment: number;
-  }
-  
-  interface StringSimilaritiesLevenshtein {
+}
+
+interface StringSimilaritiesLevenshtein {
     dist_Levenshtein: number;
     dist_Normalized_Levenshtein: number;
     similiarity_NormalizedLevenshtein: number;
@@ -50,10 +54,15 @@ interface SimilarityResult {
     dist_WeightedI: number;
     dist_WeightedU: number;
     levenstheinMethod: LevenstheinMethod[];
-  }
-  
-  interface LevenstheinMethod {
+}
+
+interface LevenstheinMethod {
     operation: number;
     operationStr: string;
     value: string;
-  }
+}
+
+interface EditOperations {
+    key: number,
+    value: string
+}

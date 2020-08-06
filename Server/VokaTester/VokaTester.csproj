@@ -26,6 +26,20 @@
     <Compile Remove="Data\Migrations\20200729105428_ExtendLektionSchema.Designer.cs" />
     <Compile Remove="Data\Migrations\20200729113326_ExtendLektionSchema2.cs" />
     <Compile Remove="Data\Migrations\20200729113326_ExtendLektionSchema2.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200804110338_CreateFortschrittSchema.cs" />
+    <Compile Remove="Data\Migrations\20200804110338_CreateFortschrittSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200804111003_CreateFortschrittSchema.cs" />
+    <Compile Remove="Data\Migrations\20200804111003_CreateFortschrittSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200804152132_CreateTestResultSchema.cs" />
+    <Compile Remove="Data\Migrations\20200804152132_CreateTestResultSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200805084034_ExtendTestResultSchema.cs" />
+    <Compile Remove="Data\Migrations\20200805084034_ExtendTestResultSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200805191256_ExtendTestResultSchema2.cs" />
+    <Compile Remove="Data\Migrations\20200805191256_ExtendTestResultSchema2.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200805195250_ExtendTestResultSchema3.cs" />
+    <Compile Remove="Data\Migrations\20200805195250_ExtendTestResultSchema3.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200805195525_ExtendTestResultSchema3.cs" />
+    <Compile Remove="Data\Migrations\20200805195525_ExtendTestResultSchema3.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -18,12 +18,14 @@
     using VokaTester.Infrastructure.Filters;
     using VokaTester.Infrastructure.Services;
     using VokaTester.Features.Lektionen;
+    using VokaTester.Features.Fortschritt;
 
     public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
             => services
                 .AddScoped<ICurrentUserService, CurrentUserService>()
+                .AddTransient<IFortschrittService, FortschrittService>()
                 .AddTransient<IGeneralizeStringService, GeneralizeStringService>()
                 .AddTransient<IIdentityService, IdentityService>()
                 .AddTransient<IIdentityService, IdentityService>()

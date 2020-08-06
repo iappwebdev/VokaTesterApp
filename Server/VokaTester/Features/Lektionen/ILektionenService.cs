@@ -6,8 +6,8 @@
 
     public interface ILektionenService
     {
-        Task<IEnumerable<LektionDto>> All();
+        Task<IEnumerable<LektionDto>> AllAsync();
         
-        Task<LektionDto> Single(int id);
+        Task<LektionDto> SingleAsync(int id);
     }
 }

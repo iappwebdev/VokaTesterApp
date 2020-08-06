@@ -2,6 +2,8 @@
 {
     public interface IGeneralizeStringService
     {
-        public string SanitizeString(string dirtyString);
+        string SanitizeString(string dirtyString);
+
+        bool HasArticle(string frz, out string article, out string word);
     }
 }

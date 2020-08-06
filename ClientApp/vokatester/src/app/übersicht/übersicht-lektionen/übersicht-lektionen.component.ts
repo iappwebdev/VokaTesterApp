@@ -3,11 +3,11 @@ import { Lektion } from 'src/app/models/lektion';
 import { LektionenService } from 'src/app/services/lektionen.service';
 
 @Component({
-  selector: 'app-lernen-lektionen',
-  templateUrl: './lernen-lektionen.component.html',
-  styleUrls: ['./lernen-lektionen.component.less']
+  selector: 'app-übersicht-lektionen',
+  templateUrl: './übersicht-lektionen.component.html',
+  styleUrls: ['./übersicht-lektionen.component.less']
 })
-export class LernenLektionenComponent implements OnInit {
+export class ÜbersichtLektionenComponent implements OnInit {
   lektionen: Lektion[] = [];
 
   constructor(

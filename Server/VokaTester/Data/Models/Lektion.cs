@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Linq;
 
     using static ValidationRules.General;
 
@@ -23,8 +24,12 @@
         [Required, MaxLength(MaxNameOrTitel)]
         public string Inhalt { get; set; }
 
-        //public List<Fortschritt> Fortschritte { get; } = new List<Fortschritt>();
-
         public virtual ICollection<Vokabel> Vokabeln { get; set; }
+        
+        public virtual ICollection<Fortschritt> Fortschritte { get; set; }
+
+        public Vokabel FirstVokabel => this.Vokabeln.OrderBy(x => x.Id).First();
+        
+        public int Total => this.Vokabeln.Count();
     }
 }

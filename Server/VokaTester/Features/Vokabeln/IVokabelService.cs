@@ -6,12 +6,14 @@
 
     public interface IVokabelService
     {
-        Task<IEnumerable<VokabelDto>> All();
+        Task<IEnumerable<VokabelDto>> AllAsync();
 
-        public Task<IEnumerable<VokabelDto>> ByLektion(int lektionId);
+        Task<IEnumerable<VokabelDto>> ByLektionAsync(int lektionId);
 
-        Task<IEnumerable<VokabelDto>> ByWortnetz(string wortnetz);
+        Task<IEnumerable<VokabelDto>> ByWortnetzAsync(string wortnetz);
+        
+        Task<IEnumerable<VokabelDto>> PreviousBySimilarity(int vokabelId, string pattern);
 
-        Task<VokabelDto> Single(int id);
+        Task<VokabelDto> SingleAsync(int id);
     }
 }

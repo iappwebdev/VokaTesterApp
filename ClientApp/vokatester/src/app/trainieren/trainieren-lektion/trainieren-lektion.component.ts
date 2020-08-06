@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import { CheckResult } from 'src/app/models/check-result';
 import { Lektion } from 'src/app/models/lektion';
 import { Vokabel } from 'src/app/models/vokabel';
+import { CheckResultService } from 'src/app/services/check-result.service';
+import { FortschrittService } from 'src/app/services/fortschritt.service';
 import { LektionenService } from 'src/app/services/lektionen.service';
 import { VokabelService } from 'src/app/services/vokabel.service';
 
@@ -11,13 +15,16 @@ import { VokabelService } from 'src/app/services/vokabel.service';
   styleUrls: ['./trainieren-lektion.component.less']
 })
 export class TrainierenLektionComponent implements OnInit {
-  private idx: number = 0;
-  private srcVokabeln: Vokabel[] = [];
+  private idx: number = -1;
+  private vokabeln: Vokabel[] = [];
 
   lektion!: Lektion;
 
   constructor(
     private route: ActivatedRoute,
+    private toastr: ToastrService,
+    private checkResultService: CheckResultService,
+    private fortschrittService: FortschrittService,
     private lektionenService: LektionenService,
     private vokabelService: VokabelService
   ) { }
@@ -26,19 +33,43 @@ export class TrainierenLektionComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       let lektionId: number = parseInt(params.get('id')!)
 
-      this.lektionenService.lektion(lektionId).subscribe(res => {
-        this.lektion = res;
+      this.lektionenService.lektion(lektionId).subscribe(lektion => {
+        this.lektion = lektion;
       });
 
-      this.vokabelService.byLektion(lektionId).subscribe(res => {
-        this.srcVokabeln = res;
+      this.vokabelService.byLektion(lektionId).subscribe(vokabeln => {
+        this.vokabeln = vokabeln;
+
+        this.fortschrittService.getFortschritt(lektionId).subscribe(fortschritt => {
+          let lastVokabeld = fortschritt.letzteVokabelCorrectId;
+          let repeatLastVokabel = false;
+
+          if (fortschritt.letzteVokabelWrongId !== null
+            && fortschritt.letzteVokabelWrongId < fortschritt.letzteVokabelCorrectId) {
+            lastVokabeld = fortschritt.letzteVokabelWrongId;
+            repeatLastVokabel = true;
+          }
+
+          var index = this.vokabeln.findIndex(x => x.id == lastVokabeld);
+
+          if (!fortschritt.isBeginning
+            && !repeatLastVokabel) {
+            index++;
+            // Ggf. Neustart der Lektion
+            if (index >= this.vokabeln.length) {
+              index = 0;
+            }
+          }
+
+          this.idx = index;
+        });
       });
     });
   }
 
   get currentVokabel(): Vokabel | null {
-    if (!this.srcVokabeln?.length) return null;
-    return this.srcVokabeln[this.idx];
+    if (this.idx < 0 || !this.vokabeln?.length) return null;
+    return this.vokabeln[this.idx];
   }
 
   get inhalt(): string | undefined {
@@ -56,7 +87,48 @@ export class TrainierenLektionComponent implements OnInit {
     return `${this.lektion.name} - ${this.lektion.titel}`;
   }
 
-  proceed(): void {
-    this.idx++;
+  proceed(checkResult: CheckResult): void {
+    const lastVokabelCorrect = this.checkResultService.isCorrect(checkResult);
+    if (!lastVokabelCorrect) {
+      let copyVokabel = Object.assign({}, this.currentVokabel);
+
+      // Bei Accent Fehler ähnliche Vokabel ermitteln
+      if (this.checkResultService.isSimilarOnly(checkResult)
+        || this.checkResultService.isSimilarAndArtikelFehler(checkResult)) {
+        const pattern = checkResult.similarityResult.editOperationsLeventhein[0].value
+
+        this.vokabelService.previousBySimilarity(this.currentVokabel!.id, pattern).subscribe(res => {
+          // Nächste ähnliche Vokabel einfügen
+          if (res.length) {
+            const takePos = Math.floor((Math.random() * res.length) + 0);
+            const prevVokabel = res[takePos];
+            prevVokabel.isInserted = true;
+            prevVokabel.reasonInserted = copyVokabel!.frzSan;
+            this.vokabeln.splice(this.idx + 1, 0, prevVokabel);
+          }
+
+          this.proceedToNextVokabel();
+        });
+      }
+      else {
+        this.proceedToNextVokabel();
+      }
+
+      copyVokabel.wiederholung = copyVokabel.wiederholung ? copyVokabel.wiederholung + 1 : 1;
+      const insertPos = Math.floor((Math.random() * 5) + 2);
+      this.vokabeln.splice(this.idx + insertPos, 0, copyVokabel);
+    }
+    else {
+      this.proceedToNextVokabel();
+    }
+  }
+
+  proceedToNextVokabel(): void {
+    if (this.idx + 1 < this.vokabeln.length) {
+      this.idx++;
+    } else {
+      this.toastr.success('Du hast die Lektion erfolgreich abgeschlossen.', 'Lektion abgeschlossen!');
+      this.idx = 0;
+    }
   }
 }

@@ -41,11 +41,14 @@
 
         public double Cost(char c1, char c2)
         {
+            char char1 = char.ToLower(c1);
+            char char2 = char.ToLower(c2);
+
             foreach (List<char[]> combinations in this.combinationsLists)
             {
                 foreach (char[] comb in combinations)
                 {
-                    if (c1 == comb[0] && c2 == comb[1])
+                    if (char1 == comb[0] && char2 == comb[1])
                     {
                         return this.costs;
                     }

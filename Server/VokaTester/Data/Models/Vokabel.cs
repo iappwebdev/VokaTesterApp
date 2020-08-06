@@ -65,6 +65,10 @@
         [MaxLength(MaxWortnetze)]
         public string Wortnetze { get; set; }
 
+        public virtual ICollection<Fortschritt> FortschritteCorrect { get; set; }
+
+        public virtual ICollection<Fortschritt> FortschritteWrong { get; set; }
+
         public List<string> WortnetzList => this.Wortnetze.Trim().Split("|").ToList();
 
         [NotMapped]
@@ -74,5 +78,7 @@
         public List<string> Wortarten => this.Wortart.Trim().Split("|").ToList();
 
         private bool HasChar(char c) => this.Frz.Contains(c);
+
+        public int Position => this.Lektion.Vokabeln.Where(x => x.Id < this.Id).Count();
     }
 }

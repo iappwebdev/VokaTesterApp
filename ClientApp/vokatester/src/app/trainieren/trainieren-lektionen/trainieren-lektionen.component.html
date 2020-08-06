@@ -1,12 +1,16 @@
 <div class="section-train">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 outer-card-link" *ngFor="let lektion of lektionen">
-        <div class="card card-link" [routerLink]="'/vokabeln/trainieren/lektionen/' + lektion.id">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 outer-card-link" *ngFor="let lektion of lektionen">
+            <div class="card card-link" [routerLink]="'/vokabeln/übungen/lektionen/' + lektion.id">
                 <div class="card-header">
                     <img class="card-img-top position-absolute" src="../../assets/images/france.webp"
                         alt="Französische Flagge">
-                    <h2 class="card-title">{{lektion.name}}</h2>
-                    <h4 class="card-subtitle mb-2 text-muted">{{lektion.titel}}</h4>
+                    <h2 class="card-title">
+                        {{lektion.name}}
+                        <span *ngIf="lektion.isStarted && !lektion.isCompleted"> (gestartet)</span>
+                        <span *ngIf="lektion.isCompleted"> (abgeschlossen)</span>
+                    </h2>
+                    <h4 class="card-subtitle mb-2 lektion-titel">{{lektion.titel}}</h4>
                 </div>
                 <div class="card-body">
                     <u>
@@ -15,6 +19,17 @@
                     <p class="card-text">{{lektion.inhalt}}</p>
                 </div>
             </div>
+            <div class="reset-area">
+                <button mat-raised-button color="primary" *ngIf="lektion.isStarted || lektion.isCompleted"
+                    (click)="openModal(template)">Reset</button>
+            </div>
+            <ng-template #template>
+                <div class="modal-body text-center">
+                  <p>Soll die Lektion wirklich zurückgesetzt werden?</p>
+                  <button mat-raised-button color="primary" (click)="confirm(lektion)">Ja</button>
+                  <button mat-raised-button color="primary" (click)="decline()">Nein</button>
+                </div>
+              </ng-template>
         </div>
     </div>
 </div>

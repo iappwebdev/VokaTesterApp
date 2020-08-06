@@ -2,12 +2,13 @@
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using VokaTester.Features.Lektionen.Dto;
 
     using static VokaTester.Infrastructure.WebConstants;
 
-    //[Authorize]
+    [Authorize]
     [Route("api/lektionen")]
     public class LektionenController : ApiController
     {
@@ -21,10 +22,10 @@
         [Route(Id)]
         [HttpGet]
         public async Task<LektionDto> Lektion(int id)
-            => await this.vokabelService.Single(id);
+            => await this.vokabelService.SingleAsync(id);
 
         [HttpGet]
         public async Task<IEnumerable<LektionDto>> Lektionen()
-            => await this.vokabelService.All();
+            => await this.vokabelService.AllAsync();
     }
 }

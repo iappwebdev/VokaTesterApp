@@ -1,9 +1,9 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>Voka-Tester</span>
-  <span class="example-spacer"></span>
+  <span class="logo">
+    <img class="card-img-top position-absolute" src="../../assets/images/france.webp" alt="Französische Flagge">
+  </span>
+  <span class="title">Voka-Tester</span>
+  <span class="spacer"></span>
   <button mat-icon-button class="example-icon logout-icon">
     <mat-icon *ngIf="isLoggedIn()" (click)="logout()">exit_to_app</mat-icon>
   </button>

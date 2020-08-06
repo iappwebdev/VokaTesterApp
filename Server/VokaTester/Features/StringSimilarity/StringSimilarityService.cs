@@ -1,5 +1,6 @@
 ﻿namespace VokaTester.Features.StringSimilarity
 {
+    using System.Collections.Generic;
     using F23.StringSimilarity;
     using VokaTester.Features.StringSimilarity.Dto;
     using VokaTester.Features.StringSimilarity.Dto.Levensthein;
@@ -7,20 +8,47 @@
 
     public class StringSimilarityService : IStringSimilarityService
     {
+        private readonly IGeneralizeStringService generalizeStringService;
+
+        public StringSimilarityService(
+            IGeneralizeStringService generalizeStringService)
+        {
+            this.generalizeStringService = generalizeStringService;
+        }
+
         public SimilarityResult CheckSimilarity(string truth, string answer)
         {
             // https://github.com/feature23/StringSimilarity.NET
             var result = new SimilarityResult
             {
-                Truth = answer,
-                Answer = truth,
+                Truth = this.generalizeStringService.SanitizeString(truth),
+                Answer = this.generalizeStringService.SanitizeString(answer),
                 StringSimilaritiesLevenshtein = this.GetLevenstheinSimiliarities(truth, answer),
-                StringSimilarities = this.GetOtherSimilarities(truth, answer)
+                StringSimilaritiesOthers = this.GetOtherSimilarities(truth, answer)
             };
+
+            this.SetEditOperations(result);
 
             return result;
         }
 
+        private void SetEditOperations(SimilarityResult result)
+        {
+            result.EditOperationsLeventhein = new List<KeyValuePair<int, char>>();
+            List<EditOperation> operations = result.StringSimilaritiesLevenshtein.LevenstheinMethod;
+            int idx = 0;
+
+            foreach (EditOperation op in operations)
+            {
+                if (op.Operation == EditOperationKind.Edit)
+                {
+                    result.EditOperationsLeventhein.Add(new KeyValuePair<int, char>(idx, op.Value));
+                }
+
+                idx++;
+            }
+        }
+                    
         private StringSimilaritiesLevenshtein GetLevenstheinSimiliarities(string truth, string answer)
         {
             var stringSimilaritiesLevenshtein = new StringSimilaritiesLevenshtein();
@@ -69,6 +97,7 @@
             };
 
             stringSimilaritiesLevenshtein.LevenstheinMethod = lm.GetEditSequence();
+
             return stringSimilaritiesLevenshtein;
         }
 

@@ -13,5 +13,11 @@
         public string SubTitel { get; set; }
 
         public string Inhalt { get; set; }
+
+        public int Total { get; set; }
+
+        public bool IsStarted { get; set; }
+        
+        public bool IsCompleted { get; set; }
     }
 }

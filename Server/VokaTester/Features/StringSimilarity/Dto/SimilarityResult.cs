@@ -1,4 +1,6 @@
-﻿namespace VokaTester.Features.StringSimilarity.Dto
+﻿using System.Collections.Generic;
+
+namespace VokaTester.Features.StringSimilarity.Dto
 {
     public class SimilarityResult
     {
@@ -21,11 +23,14 @@
         public bool IsAnswerSimilarU => this.StringSimilaritiesLevenshtein?.Dist_WeightedU < 1;
 
         public StringSimilaritiesLevenshtein StringSimilaritiesLevenshtein { get; set; }
+
+        public List<KeyValuePair<int, char>> EditOperationsLeventhein { get; set; }
+
+        public StringSimilarities StringSimilaritiesOthers { get; set; }
         
-        public StringSimilarities StringSimilarities { get; set; }
+        public int NumWrongCharsTruth => this.Truth.Length - this.StringSimilaritiesOthers?.Subsequence_LongestCommonSubsequenceLength ?? 0;
         
-        public int NumWrongCharsTruth => this.Truth.Length - this.StringSimilarities?.Subsequence_LongestCommonSubsequenceLength ?? 0;
-        
-        public int NumWrongCharsAnswer => this.Answer.Length - this.StringSimilarities?.Subsequence_LongestCommonSubsequenceLength ?? 0;
+        public int NumWrongCharsAnswer => this.Answer.Length - this.StringSimilaritiesOthers?.Subsequence_LongestCommonSubsequenceLength ?? 0;
+
     }
 }

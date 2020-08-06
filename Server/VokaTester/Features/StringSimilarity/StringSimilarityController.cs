@@ -1,22 +1,20 @@
 ﻿namespace VokaTester.Features.StringSimilarity
 {
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using VokaTester.Features.StringSimilarity.Dto;
     using VokaTester.Infrastructure.Services;
 
-    //[Authorize]
+    [Authorize]
     [Route("api/string-similarity")]
     public class StringSimilarityController : ApiController
     {
         private readonly IStringSimilarityService stringSimilarityService;
-        private readonly ICurrentUserService currentUser;
 
         public StringSimilarityController(
-            IStringSimilarityService stringSimilarityService,
-            ICurrentUserService currentUser)
+            IStringSimilarityService stringSimilarityService)
         {
             this.stringSimilarityService = stringSimilarityService;
-            this.currentUser = currentUser;
         }
 
         [HttpGet]

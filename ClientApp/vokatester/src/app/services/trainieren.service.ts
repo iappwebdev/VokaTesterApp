@@ -14,7 +14,7 @@ export class TrainierenService {
     private http: HttpClient
   ) { }
 
-  checkAnswer(vokabelId: number, answer: string): Observable<CheckResult> {
-    return this.http.post<CheckResult>(this.path, { vokabelId, answer });
+  checkAnswer(vokabelId: number, answer: string, isPrevVokabel: boolean): Observable<CheckResult> {
+    return this.http.post<CheckResult>(this.path, { vokabelId, answer, isPrevVokabel });
   }
 }

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/infrastructure/auth.service';
-import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-navigation',
@@ -27,18 +26,5 @@ export class NavigationComponent {
     this.authService.removeToken();
     this.toastr.success('Sie wurden erfolgreich ausgeloggt.');
     this.router.navigate(['login']);
-  }
-
-  testToastr(): void {
-    if (!environment.production) {
-      if (this.msgCnt % 2 === 0) {
-        this.toastr.success("Das ist eine Success Test Nachricht");
-      }
-      else {
-        this.toastr.error("Das ist eine Error Test Nachricht");
-      }
-
-      this.msgCnt++;
-    }
   }
 }

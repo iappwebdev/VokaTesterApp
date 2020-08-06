@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Vokabel } from 'src/app/models/vokabel';
@@ -16,5 +16,13 @@ export class VokabelService {
 
   byLektion(lektionId: number): Observable<Vokabel[]> {
     return this.http.get<Vokabel[]>(this.path + '/by-lektion/' + lektionId);
+  }
+
+  previousBySimilarity(vokabelId: number, pattern: string): Observable<Vokabel[]> {
+    return this.http.get<Vokabel[]>(this.path + '/previous-by-similarity', {
+      params: new HttpParams()
+        .set('vokabelId', vokabelId.toString())
+        .set('pattern', pattern)
+    });
   }
 }

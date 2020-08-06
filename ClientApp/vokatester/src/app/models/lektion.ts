@@ -4,5 +4,8 @@ export interface Lektion {
   name: string,
   titel: string,
   subTitel: string,
-  inhalt: string
+  inhalt: string,
+  total: number,
+  isStarted: boolean,
+  isCompleted: boolean
 }

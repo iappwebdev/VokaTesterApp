@@ -4,10 +4,14 @@
     {
         public int Id { get; set; }
 
+        public int Position { get; set; }
+
         public int LektionId { get; set; }
 
         public string LektionName { get; set; }
         
+        public string LektionTotal { get; set; }
+
         public int BereichId { get; set; }
         
         public string BereichName { get; set; }

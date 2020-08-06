@@ -4,6 +4,6 @@ export interface AppTile {
   descr: string;
   photo: string;
   link: string;
-  isLearning: boolean;
+  isOverview: boolean;
   isTraining: boolean;
 }

@@ -6,7 +6,7 @@ namespace VokaTester.Tests.Features.StringSimilarity
 
     public class StringSimilarityServiceTests
     {
-        private readonly StringSimilarityService stringSimilarityService = new StringSimilarityService();
+        private readonly StringSimilarityService stringSimilarityService = new StringSimilarityService(new GeneralizeStringService());
 
         [SetUp]
         public void Setup()

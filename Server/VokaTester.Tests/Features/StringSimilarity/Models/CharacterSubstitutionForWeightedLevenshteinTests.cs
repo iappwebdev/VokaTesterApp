@@ -21,6 +21,14 @@
             Assert.AreEqual(1.0, this.characterSubstitution.Cost('û', 'x'));
         }
 
+
+        [Test]
+        public void CostsA()
+        {
+            Assert.AreEqual(0.5, this.characterSubstitution.Cost('a', 'à'));
+            Assert.AreEqual(1.0, this.characterSubstitution.Cost('a', 'è'));
+        }
+
         [Test]
         public void CostsC()
         {
@@ -33,6 +41,14 @@
         {
             Assert.AreEqual(0.5, this.characterSubstitution.Cost('é', 'è'));
             Assert.AreEqual(1.0, this.characterSubstitution.Cost('é', 'à'));
+        }
+
+
+        [Test]
+        public void CostsI()
+        {
+            Assert.AreEqual(0.5, this.characterSubstitution.Cost('i', 'î'));
+            Assert.AreEqual(1.0, this.characterSubstitution.Cost('i', 'ê'));
         }
 
         [Test]

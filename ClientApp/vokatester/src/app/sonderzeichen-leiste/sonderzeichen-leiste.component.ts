@@ -1,7 +1,7 @@
 import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
 
-const sonderzeichen = ['à', 'â', 'é', 'è', 'ê', 'ë', 'î', 'û', 'ç'];
+const sonderzeichen = ['à', 'â', 'é', 'è', 'ê', 'ë', 'î', 'ï', 'ù', 'û', 'ç'];
 
 @Component({
   selector: 'app-sonderzeichen-leiste',

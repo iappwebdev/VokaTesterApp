@@ -5,6 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/infrastructure/auth.service';
 import { ErrorInterceptorService } from 'src/app/services/infrastructure/error-interceptor.service';
@@ -18,12 +19,11 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './identity/login/login.component';
 import { RegisterComponent } from './identity/register/register.component';
 import { LayoutComponent } from './layout/layout.component';
-import { LernenLektionComponent } from './lernen/lernen-lektion/lernen-lektion.component';
-import { LernenLektionenComponent } from './lernen/lernen-lektionen/lernen-lektionen.component';
-import { LernenWortnetzeComponent } from './lernen/lernen-wortnetze/lernen-wortnetze.component';
-import { MainLernenComponent } from './lernen/main-lernen/main-lernen.component';
+// import { ÜbersichtWortnetzeComponent } from './übersicht/übersicht-wortnetze/übersicht-wortnetze.component';
 import { MaterialModule } from './modules/material/material.module';
 import { NavigationComponent } from './navigation/navigation.component';
+import { CheckResultService } from './services/check-result.service';
+import { FortschrittService } from './services/fortschritt.service';
 import { AuthGuardService } from './services/infrastructure/auth-guard.service';
 import { LektionenService } from './services/lektionen.service';
 import { VokabelService } from './services/vokabel.service';
@@ -33,7 +33,10 @@ import { MainTrainierenComponent } from './trainieren/main-trainieren/main-train
 import { TestVokabelComponent } from './trainieren/test-vokabel/test-vokabel.component';
 import { TrainierenLektionComponent } from './trainieren/trainieren-lektion/trainieren-lektion.component';
 import { TrainierenLektionenComponent } from './trainieren/trainieren-lektionen/trainieren-lektionen.component';
-import { TrainierenWortnetzeComponent } from './trainieren/trainieren-wortnetze/trainieren-wortnetze.component';
+import { MainÜbersichtComponent } from './übersicht/main-übersicht/main-übersicht.component';
+import { ÜbersichtLektionComponent } from './übersicht/übersicht-lektion/übersicht-lektion.component';
+import { ÜbersichtLektionenComponent } from './übersicht/übersicht-lektionen/übersicht-lektionen.component';
+// import { TrainierenWortnetzeComponent } from './trainieren/trainieren-wortnetze/trainieren-wortnetze.component';
 
 @NgModule({
   declarations: [
@@ -41,17 +44,17 @@ import { TrainierenWortnetzeComponent } from './trainieren/trainieren-wortnetze/
     HeadlineComponent,
     HomeComponent,
     LayoutComponent,
-    LernenLektionComponent,
-    LernenLektionenComponent,
-    LernenWortnetzeComponent,
+    ÜbersichtLektionComponent,
+    ÜbersichtLektionenComponent,
+    // ÜbersichtWortnetzeComponent,
     LoginComponent,
-    MainLernenComponent,
+    MainÜbersichtComponent,
     MainTrainierenComponent,
     NavigationComponent,
     RegisterComponent,
     TrainierenLektionComponent,
     TrainierenLektionenComponent,
-    TrainierenWortnetzeComponent,
+    // TrainierenWortnetzeComponent,
     TestVokabelComponent,
     SonderzeichenComponent,
     SonderzeichenLeisteComponent,
@@ -61,16 +64,18 @@ import { TrainierenWortnetzeComponent } from './trainieren/trainieren-wortnetze/
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    ModalModule.forRoot(),
     FlexLayoutModule,
     HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({
-      positionClass: 'toast-top-right',
-      // preventDuplicates: true,
+      positionClass: 'toast-top-center',
+      preventDuplicates: true,
       closeButton: true,
       progressBar: true,
       tapToDismiss: true,
-      newestOnTop: true
+      newestOnTop: true,
+      timeOut: 15000
     }),
     MaterialModule,
     LayoutModule,
@@ -78,6 +83,8 @@ import { TrainierenWortnetzeComponent } from './trainieren/trainieren-wortnetze/
   providers: [
     AuthService,
     AuthGuardService,
+    CheckResultService,
+    FortschrittService,
     LektionenService,
     TrainierenService,
     VokabelService,
