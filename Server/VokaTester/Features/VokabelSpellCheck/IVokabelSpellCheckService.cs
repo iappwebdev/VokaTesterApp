@@ -5,6 +5,6 @@
 
     public interface IVokabelSpellCheckService
     {
-        Task<CheckVokabelResponse> CheckSpellingAsync(int vokabelId, string frz, bool isPrevVokabel);
+        Task<CheckVokabelResponse> CheckSpellingVokabelAsync(int vokabelId, string frz, bool isPrevVokabel, bool isForBereich = false);
     }
 }

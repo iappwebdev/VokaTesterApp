@@ -21,9 +21,13 @@
 
         public string TruthArticle { get; set; }
 
+        public bool IsTruthArticleMasc { get; set; }
+        
+        public bool IsTruthArticleFem { get; set; }
+
         public string AnswerArticle { get; set; }
 
-        public bool IsArtikelFehler => string.Compare(this.TruthArticle, this.AnswerArticle) != 0;
+        public bool IsArtikelFehler => !this.IsWrong && !string.IsNullOrWhiteSpace(this.AnswerArticle) && string.Compare(this.TruthArticle, this.AnswerArticle) != 0;
 
         public bool HasMultipleCorrectAnswers { get; set; }
 
@@ -34,6 +38,9 @@
         public List<string> FurtherCorrectAnswersSan { get; set; }
 
         public SimilarityResult SimilarityResult { get; set; }
-        
+
+        public bool IsFortschrittSaved { get; set; }
+
+        public bool IsWrong => !this.IsCorrect && !this.IsSimilar;
     }
 }

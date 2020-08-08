@@ -1,11 +1,15 @@
+import { Bereich } from 'src/app/models/bereich';
+
 export interface Lektion {
-  id: number,
-  nr: number,
-  name: string,
-  titel: string,
-  subTitel: string,
-  inhalt: string,
-  total: number,
-  isStarted: boolean,
-  isCompleted: boolean
+  id: number;
+  key: string;
+  name: string;
+  titel: string;
+  subTitel: string;
+  inhalt: string;
+  position: number;
+  total: number;
+  isStarted: boolean;
+  isCompleted: boolean;
+  bereiche: Bereich[];
 }

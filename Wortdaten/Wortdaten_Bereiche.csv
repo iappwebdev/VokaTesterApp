@@ -1,7 +1,7 @@
-BereichNr;BereichName
-BV;Bienvenue
-DE;Découvertes
-AA;Atelier A
-AB;Atelier B
-AC;Atelier C
-PR;Pratique
+SeedId;BereichKey;BereichAbkuerzung;BereichName
+1;bienvenue;BV;Bienvenue
+2;decouvertes;DE;Découvertes
+3;atelier-a;AA;Atelier A
+4;atelier-b;AB;Atelier B
+5;atelier-c;AC;Atelier C
+6;pratique;PR;Pratique

@@ -1,0 +1,2 @@
+<app-headline-lektion [lektion]="lektion" [bereich]="bereich"></app-headline-lektion>
+<app-test-vokabel *ngIf="currentVokabel?.id" [vokabel]="currentVokabel" [lektion]="lektion" [bereich]="bereich" (onProceed)="proceed($event)"></app-test-vokabel>

@@ -1,0 +1,41 @@
+@import '../../../globals.less';
+
+* {
+    font-size: 16px;
+}
+
+.result-info {
+    margin-bottom: 5px;
+}
+
+.buttonbar {
+    margin: 15px 0;
+
+    button.hidden {
+        background-color: lightgrey;
+    } 
+}
+
+table {
+    margin-top: 10px;
+}
+
+.is-correct {
+    color: @correct-answer;
+}
+
+.is-mostly-correct {
+    color: @similar-answer;
+
+    &.male {
+        color: @male;
+    }
+
+    &.female {
+        color: @female;
+    }
+}
+
+.is-wrong {
+    color: @wrong-answer;
+}

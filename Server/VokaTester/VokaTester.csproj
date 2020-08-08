@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\WortArt\**" />
+    <Content Remove="Features\WortArt\**" />
+    <EmbeddedResource Remove="Features\WortArt\**" />
+    <None Remove="Features\WortArt\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Data\Migrations\20200723170840_CreateVokabelSchema.cs" />
     <Compile Remove="Data\Migrations\20200723170840_CreateVokabelSchema.Designer.cs" />
     <Compile Remove="Data\Migrations\20200723173958_CreateVokabelSchema.cs" />
@@ -26,6 +33,10 @@
     <Compile Remove="Data\Migrations\20200729105428_ExtendLektionSchema.Designer.cs" />
     <Compile Remove="Data\Migrations\20200729113326_ExtendLektionSchema2.cs" />
     <Compile Remove="Data\Migrations\20200729113326_ExtendLektionSchema2.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200729113646_CreateVokabelSchema.cs" />
+    <Compile Remove="Data\Migrations\20200729113646_CreateVokabelSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200729113830_CreateVokabelSchema2.cs" />
+    <Compile Remove="Data\Migrations\20200729113830_CreateVokabelSchema2.Designer.cs" />
     <Compile Remove="Data\Migrations\20200804110338_CreateFortschrittSchema.cs" />
     <Compile Remove="Data\Migrations\20200804110338_CreateFortschrittSchema.Designer.cs" />
     <Compile Remove="Data\Migrations\20200804111003_CreateFortschrittSchema.cs" />
@@ -40,6 +51,30 @@
     <Compile Remove="Data\Migrations\20200805195250_ExtendTestResultSchema3.Designer.cs" />
     <Compile Remove="Data\Migrations\20200805195525_ExtendTestResultSchema3.cs" />
     <Compile Remove="Data\Migrations\20200805195525_ExtendTestResultSchema3.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200805200742_CreateTestResultAndFortschrittSchema.cs" />
+    <Compile Remove="Data\Migrations\20200805200742_CreateTestResultAndFortschrittSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200806085429_ExtenTestResultForArtikelFehler.cs" />
+    <Compile Remove="Data\Migrations\20200806085429_ExtenTestResultForArtikelFehler.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200806103505_RenameColumnWrongVokabelId.cs" />
+    <Compile Remove="Data\Migrations\20200806103505_RenameColumnWrongVokabelId.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200807072737_ExtendFortschrittSchemaByBereich.cs" />
+    <Compile Remove="Data\Migrations\20200807072737_ExtendFortschrittSchemaByBereich.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200807121756_CreateVokaTesterSchema.cs" />
+    <Compile Remove="Data\Migrations\20200807121756_CreateVokaTesterSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200807123850_CreateVokaTesterSchema.cs" />
+    <Compile Remove="Data\Migrations\20200807123850_CreateVokaTesterSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200807125043_CreateVokaTesterSchema.cs" />
+    <Compile Remove="Data\Migrations\20200807125043_CreateVokaTesterSchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200807145306_ExtendVokaTesterSchemaByPositionVokabel.cs" />
+    <Compile Remove="Data\Migrations\20200807145306_ExtendVokaTesterSchemaByPositionVokabel.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200807155729_ExtendVokaTesterSchemaByUserDateInfo.cs" />
+    <Compile Remove="Data\Migrations\20200807155729_ExtendVokaTesterSchemaByUserDateInfo.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200807160504_ExtendVokaTesterSchemaByUserDateInfo.cs" />
+    <Compile Remove="Data\Migrations\20200807160504_ExtendVokaTesterSchemaByUserDateInfo.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200808170511_ExtendTestResultSchema.cs" />
+    <Compile Remove="Data\Migrations\20200808170511_ExtendTestResultSchema.Designer.cs" />
+    <Compile Remove="Data\Models\FehlerArt.cs" />
+    <Compile Remove="Data\Models\Wortart.cs" />
   </ItemGroup>
 
   <ItemGroup>

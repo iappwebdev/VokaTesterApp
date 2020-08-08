@@ -21,26 +21,36 @@ export class ErrorInterceptorService implements HttpInterceptor {
     return next.handle(request).pipe(
       retry(1),
       catchError((err) => {
-        let message = ""
+        let message = '';
+        let returnToHome = false;
+        
         if (err.status === 401) {
-          message = "Die Sitzung ist abgelaufen, bitte erneut einloggen.";
+          message = 'Die Sitzung ist abgelaufen, bitte erneut einloggen.';
           this.authService.removeToken();
           this.router.navigate(['login']);
         }
         else if (err.status === 403) {
-          message = "Keine Berechtigung.";
+          message = 'Keine Berechtigung.';
+          returnToHome = true;
         }
         else if (err.status === 404) {
-          message = "Seite nicht gefunden.";
+          message = 'Seite nicht gefunden.';
+          returnToHome = true;
         }
         else if (err.status === 400) {
-          message = "Client-Fehler.";
+          message = 'Client-Fehler.';
+        }
+        else if (err.status === 0) {
+          message = 'Konnte keine Verbindung zum Server herstellen.';
         }
         else {
           //global message for error
-          message = "Ein unbekannter Fehler ist aufgetreten.";
+          console.log('ErrorInterceptorService -> err', err)
+          message = 'Ein unbekannter Fehler ist aufgetreten.';
         }
-        this.toastrService.error(message, 'Fehler')
+
+        this.toastrService.error(message, 'Fehler');
+        if (returnToHome) this.router.navigate(['home-vokabeln']);
         return throwError(err)
       })
     );

@@ -12,7 +12,6 @@
 
         public int SheetNr { get; set; }
 
-        [Required]
         public int LektionId { get; set; }
 
         public virtual Lektion Lektion { get; set; }
@@ -20,6 +19,10 @@
         public int BereichId { get; set; }
 
         public virtual Bereich Bereich { get; set; }
+
+        public int PositionLektion { get; set; }
+
+        public int PositionBereich { get; set; }
 
         public bool CaseSensitive { get; set; }
 
@@ -62,23 +65,21 @@
         
         public bool HasChar_û => this.HasChar('û');
 
-        [MaxLength(MaxWortnetze)]
-        public string Wortnetze { get; set; }
+        //[MaxLength(MaxWortnetze)]
+        //public string Wortnetze { get; set; }
 
         public virtual ICollection<Fortschritt> FortschritteCorrect { get; set; }
 
         public virtual ICollection<Fortschritt> FortschritteWrong { get; set; }
 
-        public List<string> WortnetzList => this.Wortnetze.Trim().Split("|").ToList();
+        //public List<string> WortnetzList => this.Wortnetze.Trim().Split("|").ToList();
 
-        [NotMapped]
-        [MaxLength(MaxWortart)]
-        public string Wortart { get; set; }
+        //[NotMapped]
+        //[MaxLength(MaxWortart)]
+        //public string Wortart { get; set; }
 
-        public List<string> Wortarten => this.Wortart.Trim().Split("|").ToList();
+        //public List<string> Wortarten => this.Wortart.Trim().Split("|").ToList();
 
         private bool HasChar(char c) => this.Frz.Contains(c);
-
-        public int Position => this.Lektion.Vokabeln.Where(x => x.Id < this.Id).Count();
     }
 }

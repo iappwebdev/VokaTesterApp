@@ -7,5 +7,7 @@
         public string Answer { get; set; }
 
         public bool IsPrevVokabel { get; set; }
+
+        public bool IsBereich { get; set; }
     }
 }

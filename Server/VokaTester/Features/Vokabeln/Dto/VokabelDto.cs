@@ -4,7 +4,9 @@
     {
         public int Id { get; set; }
 
-        public int Position { get; set; }
+        public int PositionLektion { get; set; }
+
+        public int PositionBereich { get; set; }
 
         public int LektionId { get; set; }
 

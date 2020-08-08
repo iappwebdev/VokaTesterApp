@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RoutesRecognized } from '@angular/router';
 
 @Component({
@@ -6,21 +6,19 @@ import { ActivatedRoute, Router, RoutesRecognized } from '@angular/router';
   templateUrl: './headline.component.html',
   styleUrls: ['./headline.component.less']
 })
-export class HeadlineComponent implements OnInit {
+export class HeadlineComponent {
   private routeData: any;
 
   constructor(
     private router: Router,
     private route: ActivatedRoute
   ) {
-    this.router.events.subscribe((data) => {
-      if (data instanceof RoutesRecognized) {
-        this.routeData = data.state.root.firstChild?.data;
-      }
-    });
-  }
-
-  ngOnInit(): void {
+    this.router.events
+      .subscribe((data) => {
+        if (data instanceof RoutesRecognized) {
+          this.routeData = data.state.root.firstChild?.data;
+        }
+      });
   }
 
   get title() {

@@ -17,8 +17,14 @@
             this.vokabelSpellCheckService = vokabelSpellCheckService;
         }
 
+        //[Route("lektion")]
         [HttpPost]
-        public async Task<CheckVokabelResponse> CheckSpelling(CheckVokabelRequest model)
-            => await this.vokabelSpellCheckService.CheckSpellingAsync(model.VokabelId, model.Answer, model.IsPrevVokabel);
+        public async Task<CheckVokabelResponse> CheckSpellingLektion(CheckVokabelRequest model)
+            => await this.vokabelSpellCheckService.CheckSpellingVokabelAsync(model.VokabelId, model.Answer, model.IsPrevVokabel, model.IsBereich);
+
+        //[Route("lektion-bereich")]
+        //[HttpPost]
+        //public async Task<CheckVokabelResponse> CheckSpellingBereich(CheckVokabelRequest model)
+        //    => await this.vokabelSpellCheckService.CheckSpellingVokabelAsync(model.VokabelId, model.Answer, model.IsPrevVokabel, true);
     }
 }

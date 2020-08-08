@@ -157,12 +157,17 @@ namespace VokaTester.Data.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Abkuerzung")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Nr")
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
@@ -172,33 +177,18 @@ namespace VokaTester.Data.Migrations
                     b.ToTable("Bereich");
                 });
 
-            modelBuilder.Entity("VokaTester.Data.Models.FehlerArt", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Answer")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Truth")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("FehlerArt");
-                });
-
             modelBuilder.Entity("VokaTester.Data.Models.Fortschritt", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
+
+                    b.Property<int?>("BereichId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateTestedLast")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("Durchlauf")
                         .HasColumnType("int");
@@ -216,7 +206,13 @@ namespace VokaTester.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("BereichId");
 
                     b.HasIndex("LektionId");
 
@@ -241,13 +237,15 @@ namespace VokaTester.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Key")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("Nr")
-                        .HasColumnType("int");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("SubTitel")
                         .HasMaxLength(100)
@@ -272,6 +270,12 @@ namespace VokaTester.Data.Migrations
                     b.Property<string>("Answer")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("AnswerSan")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateTested")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsArtikelFehler")
                         .HasColumnType("bit");
 
@@ -287,13 +291,25 @@ namespace VokaTester.Data.Migrations
                     b.Property<bool>("IsWrong")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Question")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Truth")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TruthSan")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("VokabelId")
                         .HasColumnType("int");
@@ -413,12 +429,14 @@ namespace VokaTester.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("SheetNr")
+                    b.Property<int>("PositionBereich")
                         .HasColumnType("int");
 
-                    b.Property<string>("Wortnetze")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                    b.Property<int>("PositionLektion")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SheetNr")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -482,6 +500,10 @@ namespace VokaTester.Data.Migrations
 
             modelBuilder.Entity("VokaTester.Data.Models.Fortschritt", b =>
                 {
+                    b.HasOne("VokaTester.Data.Models.Bereich", "Bereich")
+                        .WithMany()
+                        .HasForeignKey("BereichId");
+
                     b.HasOne("VokaTester.Data.Models.Lektion", "Lektion")
                         .WithMany("Fortschritte")
                         .HasForeignKey("LektionId")
@@ -508,7 +530,7 @@ namespace VokaTester.Data.Migrations
             modelBuilder.Entity("VokaTester.Data.Models.TestResult", b =>
                 {
                     b.HasOne("VokaTester.Data.Models.User", "User")
-                        .WithMany()
+                        .WithMany("TestResults")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

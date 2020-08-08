@@ -1,12 +1,15 @@
 ﻿namespace VokaTester.Features.VokabelSpellCheck
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text.Json;
     using System.Threading.Tasks;
     using Microsoft.EntityFrameworkCore;
     using VokaTester.Data;
     using VokaTester.Data.Models;
     using VokaTester.Features.StringSimilarity;
+    using VokaTester.Features.StringSimilarity.Dto;
     using VokaTester.Features.VokabelSpellCheck.Dto;
     using VokaTester.Infrastructure.Services;
 
@@ -29,14 +32,21 @@
             this.stringSimilarityService = stringSimilarityService;
         }
 
-        public async Task<CheckVokabelResponse> CheckSpellingAsync(int vokabelId, string frz, bool isPrevVokabel)
+        public async Task<CheckVokabelResponse> CheckSpellingVokabelAsync(int vokabelId, string frz, bool isPrevVokabel, bool isForBereich = false)
         {
             Vokabel vokabel = await this.dbContext.Vokabel.FindAsync(vokabelId);
             CheckVokabelResponse result = await this.CheckSpellingAsync(vokabel, frz);
+            int res1 = await SaveTestResult(vokabel, result);
 
             if (!isPrevVokabel)
-            { 
-                int res = await this.SaveFortschrittAsync(vokabel, result);
+            {
+                // Result muss erwartet werden
+                int res2 = await this.SaveFortschrittAsync(vokabel, result, isForBereich);
+
+                if (res2 > 0)
+                {
+                    result.IsFortschrittSaved = true;
+                }
             }
 
             return result;
@@ -57,21 +67,28 @@
 
             await this.SetAdditionalAnswers(vokabel, result);
 
-            if (this.generalizeStringService.HasArticle(result.TruthSan, out string articleTruth, out string wordTruth)
-                && this.generalizeStringService.HasArticle(result.AnswerSan, out string articleAnswer, out string wordAnswer))
+            ArticleInfo articleInfoTruth = this.generalizeStringService.GetArticleInfo(result.TruthSan);
+            ArticleInfo articleInfoAnswer = this.generalizeStringService.GetArticleInfo(result.AnswerSan);
+
+            if (articleInfoTruth.HasArticle)
             {
-                result.TruthArticle = articleTruth;
-                result.TruthSan = wordTruth;
-                result.AnswerArticle = articleAnswer;
-                result.AnswerSan = wordAnswer;
+                result.TruthArticle = articleInfoTruth.Article;
+                result.TruthSan = articleInfoTruth.Word;
+                result.IsTruthArticleMasc = articleInfoTruth.IsMasc;
+                result.IsTruthArticleFem = articleInfoTruth.IsFem;
+            }
+
+            if (articleInfoAnswer.HasArticle)
+            {
+                result.AnswerArticle = articleInfoAnswer.Article;
+                result.AnswerSan = articleInfoAnswer.Word;
             }
 
             if (this.IsCorrectAnswer(result.TruthSan, result.AnswerSan, vokabel.CaseSensitive))
             {
-
                 result.IsCorrect = true;
             }
-            else
+            else if (!string.IsNullOrWhiteSpace(result.Answer))
             {
                 result.SimilarityResult = this.stringSimilarityService.CheckSimilarity(result.TruthSan, result.AnswerSan);
             }
@@ -96,49 +113,29 @@
             => isCaseSensitive ? truth == answer : truth.ToLower() == answer.ToLower();
 
 
-        private async Task<int> SaveFortschrittAsync(Vokabel vokabel, CheckVokabelResponse result)
+        private async Task<int> SaveFortschrittAsync(Vokabel vokabel, CheckVokabelResponse result, bool isForBereich = false)
         {
-            var testResult = new TestResult
-            {
-                UserId = this.currentUserService.GetId(),
-                VokabelId = result.VokabelId,
-                Truth = result.TruthSan,
-                Answer = result.AnswerSan,
-                IsCorrect = result.IsCorrect,
-                IsSimilar = !result.IsCorrect && result.IsSimilar,
-                IsArtikelFehler = result.IsArtikelFehler,
-                IsSimilarAndArtikelFehler = !result.IsCorrect && result.IsSimilar && result.IsArtikelFehler,
-                IsWrong = !result.IsCorrect && !result.IsSimilar
-            };
-
-            await this.dbContext.AddAsync(testResult);
-
-            Fortschritt fortschritt =
-                await this.dbContext
-                   .Fortschritt
-                   .FirstOrDefaultAsync(x => x.UserId == currentUserService.GetId() && x.LektionId == vokabel.LektionId);
+            Fortschritt fortschritt = await this.GetFortschritt(vokabel, isForBereich);
 
             if (fortschritt == null)
             {
                 fortschritt = new Fortschritt
                 {
                     UserId = currentUserService.GetId(),
+                    UserName = this.currentUserService.GetUserName(),
                     LektionId = vokabel.LektionId,
-                    Durchlauf = 1
+                    Durchlauf = 1,
+                    BereichId = isForBereich ? vokabel.BereichId : (int?)null
                 };
 
                 await this.dbContext.AddAsync(fortschritt);
             }
 
+            fortschritt.DateTestedLast = DateTime.Now;
+
             if (result.IsCorrect
                 && !result.IsArtikelFehler)
             {
-                if (fortschritt.LetzteVokabelCorrectId.HasValue
-                    && vokabel.Id == vokabel.Lektion.FirstVokabel.Id)
-                {
-                    fortschritt.Durchlauf++;
-                }
-
                 if (!fortschritt.LetzteVokabelCorrectId.HasValue
                     || fortschritt.LetzteVokabelCorrectId.Value < vokabel.Id)
                 {
@@ -163,11 +160,52 @@
             return await this.dbContext.SaveChangesAsync();
         }
 
-        private bool IsNomen(string frz) =>
-            frz.StartsWith("un ")
-            || frz.StartsWith("une ")
-            || frz.StartsWith("le ")
-            || frz.StartsWith("la ");
+        private async Task<int> SaveTestResult(Vokabel vokabel, CheckVokabelResponse result)
+        {
+            var testResult = new TestResult
+            {
+                UserId = this.currentUserService.GetId(),
+                UserName = this.currentUserService.GetUserName(),
+                VokabelId = result.VokabelId,
+                Question = vokabel.Deu,
+                Truth = result.Truth,
+                TruthSan = result.TruthSan,
+                Answer = result.Answer,
+                AnswerSan = result.AnswerSan,
+                IsCorrect = result.IsCorrect,
+                IsSimilar = !result.IsCorrect && result.IsSimilar,
+                IsArtikelFehler = result.IsArtikelFehler,
+                IsSimilarAndArtikelFehler = !result.IsCorrect && result.IsSimilar && result.IsArtikelFehler,
+                IsWrong = result.IsWrong,
+                DateTested = DateTime.Now
+            };
 
+            if (testResult.IsSimilar)
+            {
+                //testResult.ReplaceOps = JsonSerializer.Serialize(result.SimilarityResult.ReplaceOps);
+            }
+
+            await this.dbContext.AddAsync(testResult);
+
+            return await this.dbContext.SaveChangesAsync();
+        }
+
+        private async Task<Fortschritt> GetFortschritt(Vokabel vokabel, bool isForBereich)
+        {
+            return isForBereich
+                ? await this.dbContext
+                    .Fortschritt
+                    .FirstOrDefaultAsync(x =>
+                        x.UserId == this.currentUserService.GetId()
+                        && x.LektionId == vokabel.LektionId
+                        && x.BereichId.HasValue
+                        && x.BereichId.Value == vokabel.BereichId)
+                : await this.dbContext
+                   .Fortschritt
+                   .FirstOrDefaultAsync(x =>
+                        x.UserId == this.currentUserService.GetId()
+                        && x.LektionId == vokabel.LektionId
+                        && !x.BereichId.HasValue);
+        }
     }
 }

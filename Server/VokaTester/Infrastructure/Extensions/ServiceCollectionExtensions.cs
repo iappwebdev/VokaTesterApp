@@ -10,15 +10,15 @@
     using Microsoft.OpenApi.Models;
     using VokaTester.Data;
     using VokaTester.Data.Models;
+    using VokaTester.Features.Fortschritt;
     using VokaTester.Features.Identity;
-    using VokaTester.Features.VokabelSpellCheck;
+    using VokaTester.Features.Lektionen;
     using VokaTester.Features.StringSimilarity;
+    using VokaTester.Features.TestResults;
     using VokaTester.Features.Vokabeln;
-    using VokaTester.Features.WortArt;
+    using VokaTester.Features.VokabelSpellCheck;
     using VokaTester.Infrastructure.Filters;
     using VokaTester.Infrastructure.Services;
-    using VokaTester.Features.Lektionen;
-    using VokaTester.Features.Fortschritt;
 
     public static class ServiceCollectionExtensions
     {
@@ -31,9 +31,9 @@
                 .AddTransient<IIdentityService, IdentityService>()
                 .AddTransient<ILektionenService, LektionenService>()
                 .AddTransient<IStringSimilarityService, StringSimilarityService>()
+                .AddTransient<ITestResultsService, TestResultsService>()
                 .AddTransient<IVokabelService, VokabelService>()
-                .AddTransient<IVokabelSpellCheckService, VokabelSpellCheckService>()
-                .AddTransient<IWortArtService, WortArtService>();
+                .AddTransient<IVokabelSpellCheckService, VokabelSpellCheckService>();
 
         public static void AddApiControllers(this IServiceCollection services)
             => services
@@ -46,9 +46,6 @@
                     .AddDbContext<VokaTesterDbContext>(options => options
                         .UseLazyLoadingProxies()
                         .UseSqlServer(configuration.GetDefaultConnectionString()));
-            //services
-                //.AddIdentity<User, IdentityRole>()
-                //.AddRoles<IdentityRole>();
 
             return services;
         }

@@ -10,7 +10,10 @@
         public int Id { get; set; }
 
         [Required, MaxLength(MaxNameOrTitel)]
-        public string Nr { get; set; }
+        public string Key { get; set; }
+
+        [Required, MaxLength(MaxNameOrTitel)]
+        public string Abkuerzung { get; set; }
 
         [Required, MaxLength(MaxNameOrTitel)]
         public string Name { get; set; }

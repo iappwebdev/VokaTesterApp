@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Vokabel } from 'src/app/models/vokabel';
@@ -14,15 +14,20 @@ export class VokabelService {
     private http: HttpClient
   ) { }
 
-  byLektion(lektionId: number): Observable<Vokabel[]> {
-    return this.http.get<Vokabel[]>(this.path + '/by-lektion/' + lektionId);
+  all(): Observable<Vokabel[]> {
+    return this.http.get<Vokabel[]>(this.path);
   }
 
-  previousBySimilarity(vokabelId: number, pattern: string): Observable<Vokabel[]> {
-    return this.http.get<Vokabel[]>(this.path + '/previous-by-similarity', {
-      params: new HttpParams()
-        .set('vokabelId', vokabelId.toString())
-        .set('pattern', pattern)
-    });
+  byLektion(lektionId: number): Observable<Vokabel[]> {
+    return this.http.get<Vokabel[]>(this.path + '/lektion/' + lektionId);
+  }
+
+  byLektionBereich(lektionId: number, bereichId: number): Observable<Vokabel[]> {
+    return this.http.get<Vokabel[]>(this.path + '/lektion/' + lektionId + '/bereich/' + bereichId);
+  }
+
+  previousBySimilarity(vokabelId: number, pattern: string, prev?: string, next?: string): Observable<Vokabel[]> {
+    const data = { vokabelId, pattern, prev, next };
+    return this.http.post<Vokabel[]>(this.path + '/previous-with-similarity', data);
   }
 }

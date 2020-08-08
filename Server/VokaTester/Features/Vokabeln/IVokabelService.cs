@@ -10,9 +10,9 @@
 
         Task<IEnumerable<VokabelDto>> ByLektionAsync(int lektionId);
 
-        Task<IEnumerable<VokabelDto>> ByWortnetzAsync(string wortnetz);
-        
-        Task<IEnumerable<VokabelDto>> PreviousBySimilarity(int vokabelId, string pattern);
+        Task<IEnumerable<VokabelDto>> ByLektionBereichAsync(int lektionId, int bereichId);
+
+        Task<IEnumerable<VokabelDto>> PreviousBySimilarity(int vokabelId, char pattern, char? prev, char? next);
 
         Task<VokabelDto> SingleAsync(int id);
     }

@@ -13,7 +13,7 @@
 
             public const int MaxPhonetik = 100;
 
-            public const int MaxWortnetze = 200;
+            //public const int MaxWortnetze = 200;
             
             public const int MaxWortart = 200;
         }

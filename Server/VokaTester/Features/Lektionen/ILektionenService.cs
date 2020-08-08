@@ -9,5 +9,7 @@
         Task<IEnumerable<LektionDto>> AllAsync();
         
         Task<LektionDto> SingleAsync(int id);
+        
+        Task<LektionDto> SingleByKeyAsync(string key);
     }
 }

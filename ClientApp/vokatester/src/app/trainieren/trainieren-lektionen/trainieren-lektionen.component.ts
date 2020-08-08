@@ -25,32 +25,40 @@ export class TrainierenLektionenComponent implements OnInit {
     this.getLektionen();
   }
 
+  getColor(lektion: Lektion): string {
+    return this.lektionenService.getColorTrain(lektion);
+  }
+
   getLektionen(): void {
-    this.lektionenService.lektionen().subscribe(res => {
-      this.lektionen = res;
-    });
+    this.lektionenService
+      .lektionen()
+      .subscribe(res => {
+        this.lektionen = res;
+      });
   }
 
   reset(lektion: Lektion) {
-    this.fortschrittService.resetFortschritt(lektion.id).subscribe(res => {
-      if (res) {
-        this.toastr.success(`Lektion ${lektion.name} wurde erfolgreich zurückgesetzt.`)
-        this.getLektionen();
-      } else {
-        this.toastr.success(`Fehler beim Zurücksetzen der Lektion ${lektion.name}.`)
-      }
-    });
+    this.fortschrittService
+      .resetFortschrittLektion(lektion.id)
+      .subscribe(res => {
+        if (res) {
+          this.toastr.success(`Lektion '${lektion.name}' wurde erfolgreich zurückgesetzt.`)
+          this.getLektionen();
+        } else {
+          this.toastr.success(`Fehler beim Zurücksetzen der Lektion '${lektion.name}'.`)
+        }
+      });
   }
 
   openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+    this.modalRef = this.modalService.show(template, { class: 'modal-sm' });
   }
- 
+
   confirm(lektion: Lektion): void {
     this.reset(lektion);
     this.modalRef!.hide();
   }
- 
+
   decline(): void {
     this.modalRef!.hide();
   }

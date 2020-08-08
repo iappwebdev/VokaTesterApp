@@ -3,7 +3,9 @@
   <column name="Sheet" type="Text" />
   <column name="LektionNr" type="Text" />
   <column name="LektionName" type="Text" />
+  <column name="PosLektion" type="Text" />
   <column name="BereichNr" type="Text" />
+  <column name="PosBereich" type="Text" />
   <column name="CaseSensitive" type="Boolean" format="1;0" nulltext="-" alignment="Center" />
   <column name="Frz" type="Text" />
   <column name="Frz_San" type="Text" />

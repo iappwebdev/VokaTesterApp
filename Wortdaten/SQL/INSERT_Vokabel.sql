@@ -1,3 +1,5 @@
+--DELETE FROM [dbo].[Fortschritt]
+--DELETE FROM [dbo].[TestResult]
 DELETE FROM [dbo].[Vokabel]
 DBCC CHECKIDENT ('[Vokabel]', RESEED, 0);
 GO
@@ -10,25 +12,27 @@ INSERT INTO [dbo].[Vokabel]
 	,[SheetNr]
     ,[LektionId]
     ,[BereichId]
+	,[PositionLektion]
+	,[PositionBereich]
     ,[CaseSensitive]
     ,[Frz]
     ,[FrzSan]
     ,[Phonetik]
     ,[Deu]
-    ,[DeuSan]
-    ,[Wortnetze])
+    ,[DeuSan])
 SELECT
 	SeedId,
 	Sheet,
-	(SELECT Id FROM [dbo].[Lektion] WHERE Nr = LektionNr),
-	(SELECT Id FROM [dbo].[Bereich] WHERE Nr = BereichNr),
+	(SELECT Id FROM [dbo].[Lektion] WHERE Id = LektionNr),
+	(SELECT Id FROM [dbo].[Bereich] WHERE Abkuerzung = BereichNr),
+	PosLektion,
+	PosBereich,
 	CaseSensitive,
 	Frz,
 	Frz_San,
 	Phonetik,
 	Deu,
-	Deu_San,
-	''
+	Deu_San
 FROM [dbo].[Wortdaten_Vokabeln]
 GO
 

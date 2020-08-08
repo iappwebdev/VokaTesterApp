@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Bereich } from 'src/app/models/bereich';
 import { Lektion } from 'src/app/models/lektion';
 
 @Component({
@@ -6,13 +7,11 @@ import { Lektion } from 'src/app/models/lektion';
   templateUrl: './headline-lektion.component.html',
   styleUrls: ['./headline-lektion.component.less']
 })
-export class HeadlineLektionComponent implements OnInit {
+export class HeadlineLektionComponent {
   @Input() lektion: Lektion | null = null;
+  @Input() bereich?: Bereich | undefined;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   get inhalt(): string | undefined {
     if (!this.lektion) return;
@@ -26,6 +25,9 @@ export class HeadlineLektionComponent implements OnInit {
 
   get title(): string | undefined {
     if (!this.lektion) return;
-    return `${this.lektion.name} - ${this.lektion.titel}`;
+    let title = this.lektion.name;
+    if (this.lektion.titel) title += ` - ${this.lektion.titel}`;
+    if (this.bereich) title = `${this.bereich.name} (${title})`;
+    return title;
   }
 }

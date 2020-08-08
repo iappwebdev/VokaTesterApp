@@ -1,9 +1,10 @@
 export interface AppTile {
-  id: number,
+  id: number;
   text: string;
   descr: string;
   photo: string;
   link: string;
-  isOverview: boolean;
-  isTraining: boolean;
+  isOverview?: boolean;
+  isTraining?: boolean;
+  isTestResults?: boolean;
 }

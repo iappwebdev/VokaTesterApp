@@ -1,9 +1,9 @@
-LektionNr;LektionName;Titel;SubTitel;Inhalt
-1;Au début;Bienvenue;La France;Was weißt du schon über Frankreich und Französisch?
-2;Unité 1;Bonjour, Paris!;Moi et mes amis;Wie nimmt man mit jemandem Kontakt auf?
-3;Unité 2;Copain, copine;Moi, mes amis et mes activités;Wie beteiligt man sich an Kennenlerngesprächen?
-4;Unité 3;Bon anniversaire, Léo!;Moi, ma famille et mes amis;Wie sieht eine Geburtstagsfeier in Frankreich aus?
-5;Unité 4;Au collège Balzac;Moi et mon collège;"Was ist ein ""collège""?"
-6;Unité 5;Un samedi dans le quartier;Moi et mon quartier;"Was kann man im ""quartier"" unternehmen?"
-7;Unité 6;On va a la fête!;Moi et les fêtes;Wie kann man etwas erzählen?
-8;Unité 7;P comme ... Papa à Paris;Moi et ma ville;Wie kann man selbständig arbeiten?
+SeedId;LektionKey;LektionName;Titel;SubTitel;Inhalt
+1;au-debut;Au début; ;La France;Was weißt du schon über Frankreich und Französisch?
+2;unite-1;Unité 1;Bonjour, Paris!;Moi et mes amis;Wie nimmt man mit jemandem Kontakt auf?
+3;unite-2;Unité 2;Copain, copine;Moi, mes amis et mes activités;Wie beteiligt man sich an Kennenlerngesprächen?
+4;unite-3;Unité 3;Bon anniversaire, Léo!;Moi, ma famille et mes amis;Wie sieht eine Geburtstagsfeier in Frankreich aus?
+5;unite-4;Unité 4;Au collège Balzac;Moi et mon collège;"Was ist ein ""collège""?"
+6;unite-5;Unité 5;Un samedi dans le quartier;Moi et mon quartier;"Was kann man im ""quartier"" unternehmen?"
+7;unite-6;Unité 6;On va a la fête!;Moi et les fêtes;Wie kann man etwas erzählen?
+8;unite-7;Unité 7;P comme ... Papa à Paris;Moi et ma ville;Wie kann man selbständig arbeiten?

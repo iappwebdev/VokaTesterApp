@@ -15,7 +15,7 @@
             </mat-card-content>
             <mat-card-actions align="start">
                 <button mat-raised-button color="primary" [disabled]="!loginForm.valid">Login</button>
-                <div class="link-register">
+                <div *ngIf="isRegisterEnabled()" class="link-register">
                     Noch kein Konto? <a routerLink="/register">Registrieren</a>
                 </div>
             </mat-card-actions>

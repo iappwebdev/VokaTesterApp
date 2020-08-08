@@ -1,19 +1,22 @@
 export interface CheckResult {
-    vokabelId: number,
-    isCorrect: boolean,
-    isSimilar: boolean,
-    truth: string,
-    phonetik: string,
-    answer: string,
-    truthSan: string,
-    answerSan: string,
-    truthArticle: string,
-    answerArticle: string,
-    isArtikelFehler: boolean,
-    hasMultipleCorrectAnswers: boolean,
-    furtherCorrectAnswers: string[],
-    furtherCorrectAnswersSan: string[],
-    similarityResult: SimilarityResult
+    vokabelId: number;
+    isCorrect: boolean;
+    isSimilar: boolean;
+    truth: string;
+    phonetik: string;
+    answer: string;
+    truthSan: string;
+    answerSan: string;
+    truthArticle: string;
+    answerArticle: string;
+    isTruthArticleMasc: boolean;
+    isTruthArticleFem: boolean;
+    isArtikelFehler: boolean;
+    hasMultipleCorrectAnswers: boolean;
+    furtherCorrectAnswers: string[];
+    furtherCorrectAnswersSan: string[];
+    similarityResult: SimilarityResult;
+    savedFortschritt: boolean;
 }
 
 export interface SimilarityResult {
@@ -26,11 +29,21 @@ export interface SimilarityResult {
     isAnswerSimilarE: boolean;
     isAnswerSimilarI: boolean;
     isAnswerSimilarU: boolean;
+    replaceOps: ReplaceOps[];
     stringSimilaritiesLevenshtein: StringSimilaritiesLevenshtein;
     stringSimilaritiesOthers: StringSimilarities;
     editOperationsLeventhein: EditOperations[];
     numWrongCharsTruth: number;
     numWrongCharsAnswer: number;
+}
+
+export interface ReplaceOps {
+    target: string;
+    source: string;
+    pos: number;
+    prev?: string;
+    pattern: string;
+    next?: string;
 }
 
 interface StringSimilarities {
@@ -63,6 +76,6 @@ interface LevenstheinMethod {
 }
 
 interface EditOperations {
-    key: number,
-    value: string
+    key: number;
+    value: string;
 }

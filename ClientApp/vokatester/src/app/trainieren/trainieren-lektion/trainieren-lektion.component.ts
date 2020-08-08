@@ -30,41 +30,43 @@ export class TrainierenLektionComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      let lektionId: number = parseInt(params.get('id')!)
+    this.route.paramMap
+      .subscribe(params => {
+        const lektionKey: string = params.get('lektionKey')!;
 
-      this.lektionenService.lektion(lektionId).subscribe(lektion => {
-        this.lektion = lektion;
+        this.lektionenService
+          .lektion(lektionKey)
+          .subscribe(lektion => {
+            this.lektion = lektion;
+
+            this.vokabelService
+              .byLektion(this.lektion.id)
+              .subscribe(vokabeln => {
+                this.vokabeln = vokabeln;
+
+                this.fortschrittService
+                  .getFortschrittLektion(this.lektion.id)
+                  .subscribe(fortschritt => {
+                    let lastVokabeld = fortschritt.letzteVokabelCorrectId;
+
+                    if (fortschritt?.letzteVokabelWrongId !== null
+                      && fortschritt.letzteVokabelWrongId! < lastVokabeld) {
+                      lastVokabeld = fortschritt.letzteVokabelWrongId!;
+                    }
+
+                    var index = this.vokabeln.findIndex(x => x.id == lastVokabeld);
+
+                    // Ggf. Neustart der Lektion
+                    if (index < 0
+                      || index >= this.vokabeln.length) {
+                      index = 0;
+                    }
+
+                    this.idx = index;
+                  });
+              });
+          });
       });
-
-      this.vokabelService.byLektion(lektionId).subscribe(vokabeln => {
-        this.vokabeln = vokabeln;
-
-        this.fortschrittService.getFortschritt(lektionId).subscribe(fortschritt => {
-          let lastVokabeld = fortschritt.letzteVokabelCorrectId;
-          let repeatLastVokabel = false;
-
-          if (fortschritt.letzteVokabelWrongId !== null
-            && fortschritt.letzteVokabelWrongId < fortschritt.letzteVokabelCorrectId) {
-            lastVokabeld = fortschritt.letzteVokabelWrongId;
-            repeatLastVokabel = true;
-          }
-
-          var index = this.vokabeln.findIndex(x => x.id == lastVokabeld);
-
-          if (!fortschritt.isBeginning
-            && !repeatLastVokabel) {
-            index++;
-            // Ggf. Neustart der Lektion
-            if (index >= this.vokabeln.length) {
-              index = 0;
-            }
-          }
-
-          this.idx = index;
-        });
-      });
-    });
   }
 
   get currentVokabel(): Vokabel | null {
@@ -95,20 +97,22 @@ export class TrainierenLektionComponent implements OnInit {
       // Bei Accent Fehler ähnliche Vokabel ermitteln
       if (this.checkResultService.isSimilarOnly(checkResult)
         || this.checkResultService.isSimilarAndArtikelFehler(checkResult)) {
-        const pattern = checkResult.similarityResult.editOperationsLeventhein[0].value
+        const replaceOp = checkResult.similarityResult.replaceOps[0];
 
-        this.vokabelService.previousBySimilarity(this.currentVokabel!.id, pattern).subscribe(res => {
-          // Nächste ähnliche Vokabel einfügen
-          if (res.length) {
-            const takePos = Math.floor((Math.random() * res.length) + 0);
-            const prevVokabel = res[takePos];
-            prevVokabel.isInserted = true;
-            prevVokabel.reasonInserted = copyVokabel!.frzSan;
-            this.vokabeln.splice(this.idx + 1, 0, prevVokabel);
-          }
+        this.vokabelService
+          .previousBySimilarity(this.currentVokabel!.id, replaceOp.pattern, replaceOp.prev, replaceOp.next)
+          .subscribe(res => {
+            // Nächste ähnliche Vokabel einfügen
+            if (res.length) {
+              const takePos = Math.floor((Math.random() * res.length) + 0);
+              const prevVokabel = res[takePos];
+              prevVokabel.isInserted = true;
+              prevVokabel.reasonInserted = copyVokabel!.frzSan;
+              this.vokabeln.splice(this.idx + 1, 0, prevVokabel);
+            }
 
-          this.proceedToNextVokabel();
-        });
+            this.proceedToNextVokabel();
+          });
       }
       else {
         this.proceedToNextVokabel();
@@ -127,6 +131,7 @@ export class TrainierenLektionComponent implements OnInit {
     if (this.idx + 1 < this.vokabeln.length) {
       this.idx++;
     } else {
+      this.fortschrittService.finishLektion(this.lektion.id);
       this.toastr.success('Du hast die Lektion erfolgreich abgeschlossen.', 'Lektion abgeschlossen!');
       this.idx = 0;
     }

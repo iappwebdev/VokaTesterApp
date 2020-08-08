@@ -1,6 +1,7 @@
 ﻿namespace VokaTester.Features.StringSimilarity
 {
     using System.Collections.Generic;
+    using System.Linq;
     using F23.StringSimilarity;
     using VokaTester.Features.StringSimilarity.Dto;
     using VokaTester.Features.StringSimilarity.Dto.Levensthein;
@@ -35,6 +36,8 @@
         private void SetEditOperations(SimilarityResult result)
         {
             result.EditOperationsLeventhein = new List<KeyValuePair<int, char>>();
+            result.ReplaceOps = new List<ReplaceOp>();
+
             List<EditOperation> operations = result.StringSimilaritiesLevenshtein.LevenstheinMethod;
             int idx = 0;
 
@@ -42,13 +45,28 @@
             {
                 if (op.Operation == EditOperationKind.Edit)
                 {
-                    result.EditOperationsLeventhein.Add(new KeyValuePair<int, char>(idx, op.Value));
+                    bool interestedInSourceValue = CharConstants.FrenchChars.Contains(op.OldValue) && !CharConstants.FrenchChars.Contains(op.Value);
+                    char charInterested = interestedInSourceValue ? op.OldValue : op.Value;
+                    string stringInterested = interestedInSourceValue ? result.Answer : result.Truth;
+
+                    result.EditOperationsLeventhein.Add(new KeyValuePair<int, char>(idx, charInterested));
+                    result.ReplaceOps.Add(new ReplaceOp
+                    {
+                        Target = result.Truth,
+                        Source = result.Answer,
+                        Pos = idx,
+                        Pattern = charInterested,
+                        Prev = this.generalizeStringService.GetPrevChar(stringInterested, idx),
+                        Next = this.generalizeStringService.GetNextChar(stringInterested, idx)
+                    });
                 }
 
-                idx++;
+                if (op.Operation != EditOperationKind.Remove) { 
+                    idx++;
+                }
             }
         }
-                    
+
         private StringSimilaritiesLevenshtein GetLevenstheinSimiliarities(string truth, string answer)
         {
             var stringSimilaritiesLevenshtein = new StringSimilaritiesLevenshtein();

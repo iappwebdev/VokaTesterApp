@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  registerEnabled: false,
   apiUrl: 'https://localhost:44388/api',
   // apiUrl: 'https://localhost:5001/api',
   // apiUrl: 'https://vokatester.de/backend/api'

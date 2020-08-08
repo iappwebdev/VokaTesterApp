@@ -14,11 +14,27 @@ export class FortschrittService {
     private http: HttpClient
   ) { }
 
-  getFortschritt(lektionId: number): Observable<Fortschritt> {
+  getFortschrittLektion(lektionId: number): Observable<Fortschritt> {
     return this.http.get<Fortschritt>(this.path + '/' + lektionId);
   }
 
-  resetFortschritt(lektionId: number): Observable<boolean> {
+  getFortschrittLektionBereich(lektionId: number, bereichId: number): Observable<Fortschritt> {
+    return this.http.get<Fortschritt>(this.path + '/' + lektionId + '/bereich/' + bereichId);
+  }
+
+  finishLektion(lektionId: number): Observable<boolean> {
+    return this.http.post<boolean>(this.path + '/finish/' + lektionId, {});
+  }
+  
+  finishLektionBereich(lektionId: number, bereichId: number): Observable<boolean> {
+    return this.http.post<boolean>(this.path + '/finish/' + lektionId + '/bereich/' + bereichId, {});
+  }
+
+  resetFortschrittLektion(lektionId: number): Observable<boolean> {
     return this.http.post<boolean>(this.path + '/reset/' + lektionId, {});
+  }
+  
+  resetFortschrittLektionBereich(lektionId: number, bereichId: number): Observable<boolean> {
+    return this.http.post<boolean>(this.path + '/reset/' + lektionId + '/bereich/' + bereichId, {});
   }
 }

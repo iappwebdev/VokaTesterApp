@@ -1,5 +1,6 @@
 ﻿namespace VokaTester.Infrastructure.Extensions
 {
+    using System.Collections.Generic;
     using System.Linq;
     using System.Security.Claims;
     using Microsoft.AspNetCore.Identity;
@@ -35,12 +36,24 @@
 
         public static void SeedUsers(this UserManager<User> userManager)
         {
-            CreateUser(userManager, "Admin", IdentityRoles.Administrator);
-            CreateUser(userManager, "Standard", IdentityRoles.Learner);
+            CreateUser(userManager, "Admin", IdentityRoles.Administrator, "Adm123");
+            CreateUser(userManager, "Standard", IdentityRoles.Learner, "Std123");
 
-            static void CreateUser(UserManager<User> userManager, string userName, string role)
+            List<KeyValuePair<string, string>> initialUsers = new List<KeyValuePair<string, string>>
             {
-                string emailhost = "localhost.de";
+                new KeyValuePair<string, string>("E4p2xmtP", "pau_Engelhardt"),
+                new KeyValuePair<string, string>("F4zH4BlK", "kpl_Fabel"),
+                new KeyValuePair<string, string>("FxC6EGrG", "gth_Faßbender"),
+                new KeyValuePair<string, string>("Hg56eLnK", "kpl_Hein"),
+                new KeyValuePair<string, string>("Hj4bcxkK", "kpl_Honeck"),
+                new KeyValuePair<string, string>("Z2txqXiD", "dfg_Zanucchi")
+            };
+
+            initialUsers.ForEach(x => CreateUser(userManager, x.Value, IdentityRoles.Learner, x.Key));
+
+            static void CreateUser(UserManager<User> userManager, string userName, string role, string password)
+            {
+                string emailhost = "ba-server.de";
 
                 if (userManager.FindByNameAsync(userName).Result == null)
                 {
@@ -50,7 +63,7 @@
                         Email = $"{userName}@{emailhost}"
                     };
 
-                    IdentityResult result = userManager.CreateAsync(user, $"{userName.Substring(0, 3)}123").Result;
+                    IdentityResult result = userManager.CreateAsync(user, password).Result;
 
                     if (result.Succeeded)
                     {

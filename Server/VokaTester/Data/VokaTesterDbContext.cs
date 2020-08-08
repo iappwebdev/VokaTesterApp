@@ -3,7 +3,6 @@
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
     using VokaTester.Data.Models;
-    using VokaTester.Infrastructure.Services;
 
     public class VokaTesterDbContext : IdentityDbContext<User>
     {
@@ -15,8 +14,6 @@
 
         public DbSet<Bereich> Bereich { get; set; }
 
-        public DbSet<FehlerArt> FehlerArt { get; set; }
-        
         public DbSet<Fortschritt> Fortschritt { get; set; }
 
         public DbSet<Lektion> Lektion { get; set; }
@@ -47,7 +44,6 @@
                 .WithMany(x => x.FortschritteCorrect)
                 .HasForeignKey(x => x.LetzteVokabelCorrectId)
                 .OnDelete(DeleteBehavior.Restrict);
-
 
             builder
                 .Entity<Fortschritt>()

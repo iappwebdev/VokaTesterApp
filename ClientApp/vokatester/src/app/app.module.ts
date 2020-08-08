@@ -10,6 +10,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/infrastructure/auth.service';
 import { ErrorInterceptorService } from 'src/app/services/infrastructure/error-interceptor.service';
 import { TokenInterceptorService } from 'src/app/services/infrastructure/token-interceptor.service';
+import { TestResultsService } from 'src/app/services/test-results.service';
 import { TrainierenService } from 'src/app/services/trainieren.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,8 +19,9 @@ import { HeadlineComponent } from './headline/headline.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './identity/login/login.component';
 import { RegisterComponent } from './identity/register/register.component';
+import { IpaAlphabetComponent } from './ipa-alphabet/ipa-alphabet.component';
 import { LayoutComponent } from './layout/layout.component';
-// import { ÜbersichtWortnetzeComponent } from './übersicht/übersicht-wortnetze/übersicht-wortnetze.component';
+// import { UebersichtWortnetzeComponent } from './uebersicht/uebersicht-wortnetze/uebersicht-wortnetze.component';
 import { MaterialModule } from './modules/material/material.module';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CheckResultService } from './services/check-result.service';
@@ -29,13 +31,19 @@ import { LektionenService } from './services/lektionen.service';
 import { VokabelService } from './services/vokabel.service';
 import { SonderzeichenLeisteComponent } from './sonderzeichen-leiste/sonderzeichen-leiste.component';
 import { SonderzeichenComponent } from './sonderzeichen/sonderzeichen.component';
+import { TableTestResultsComponent } from './test-results/table-test-results/table-test-results.component';
+import { TestResultOverviewComponent } from './test-results/test-result-overview/test-result-overview.component';
 import { MainTrainierenComponent } from './trainieren/main-trainieren/main-trainieren.component';
 import { TestVokabelComponent } from './trainieren/test-vokabel/test-vokabel.component';
+import { TrainierenBereichComponent } from './trainieren/trainieren-bereich/trainieren-bereich.component';
+import { TrainierenBereicheComponent } from './trainieren/trainieren-bereiche/trainieren-bereiche.component';
 import { TrainierenLektionComponent } from './trainieren/trainieren-lektion/trainieren-lektion.component';
 import { TrainierenLektionenComponent } from './trainieren/trainieren-lektionen/trainieren-lektionen.component';
-import { MainÜbersichtComponent } from './übersicht/main-übersicht/main-übersicht.component';
-import { ÜbersichtLektionComponent } from './übersicht/übersicht-lektion/übersicht-lektion.component';
-import { ÜbersichtLektionenComponent } from './übersicht/übersicht-lektionen/übersicht-lektionen.component';
+import { MainUebersichtComponent } from './uebersicht/main-uebersicht/main-uebersicht.component';
+import { TableVokabelnComponent } from './uebersicht/table-vokabeln/table-vokabeln.component';
+import { UebersichtGesamtComponent } from './uebersicht/uebersicht-gesamt/uebersicht-gesamt.component';
+import { UebersichtLektionComponent } from './uebersicht/uebersicht-lektion/uebersicht-lektion.component';
+import { UebersichtLektionenComponent } from './uebersicht/uebersicht-lektionen/uebersicht-lektionen.component';
 // import { TrainierenWortnetzeComponent } from './trainieren/trainieren-wortnetze/trainieren-wortnetze.component';
 
 @NgModule({
@@ -44,11 +52,11 @@ import { ÜbersichtLektionenComponent } from './übersicht/übersicht-lektionen/
     HeadlineComponent,
     HomeComponent,
     LayoutComponent,
-    ÜbersichtLektionComponent,
-    ÜbersichtLektionenComponent,
-    // ÜbersichtWortnetzeComponent,
+    UebersichtLektionComponent,
+    UebersichtLektionenComponent,
+    // UebersichtWortnetzeComponent,
     LoginComponent,
-    MainÜbersichtComponent,
+    MainUebersichtComponent,
     MainTrainierenComponent,
     NavigationComponent,
     RegisterComponent,
@@ -59,6 +67,13 @@ import { ÜbersichtLektionenComponent } from './übersicht/übersicht-lektionen/
     SonderzeichenComponent,
     SonderzeichenLeisteComponent,
     HeadlineLektionComponent,
+    TrainierenBereichComponent,
+    TrainierenBereicheComponent,
+    UebersichtGesamtComponent,
+    TableVokabelnComponent,
+    IpaAlphabetComponent,
+    TestResultOverviewComponent,
+    TableTestResultsComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,6 +101,7 @@ import { ÜbersichtLektionenComponent } from './übersicht/übersicht-lektionen/
     CheckResultService,
     FortschrittService,
     LektionenService,
+    TestResultsService,
     TrainierenService,
     VokabelService,
     {

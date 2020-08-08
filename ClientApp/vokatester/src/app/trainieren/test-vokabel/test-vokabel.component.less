@@ -9,11 +9,17 @@ mat-card-title {
         float: right;
         text-align: right;
         height: 50px;
+
+        .wiederholung {
+            color: @accent;
+        }
     }
 }
 
 .prev-error {
-font-size: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: -30px;
 
     .word {
         font-weight: 500;
@@ -32,18 +38,15 @@ font-size: 15px;
 
     .heading {
         font-size: 22px;
-        margin-bottom: 7px;
+        margin-bottom: 9px;
     }
 
     .truth {
         font-size: 20px;
 
-        span {
+        .phonetik {
             display: block;
-
-            &.phonetik {
-                margin-top: 7px;
-            }
+            margin-top: 9px;
         }
     }
 }
@@ -62,9 +65,25 @@ app-sonderzeichen-leiste {
     margin-top: 10px;
 }
 
+.info-progress {
+    height: 40px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: @correct-answer;
+
+    .progress-text-info {
+        text-decoration: underline;
+    }
+
+    .progress-icon-info {
+        font-size: 22px;
+        padding-left: 5px;
+    }
+}
+
 mat-card-actions {
     text-align: left;
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
 
     button {
         font-size: 18px;
@@ -93,11 +112,23 @@ mat-card-actions {
         .input-group-text {
             color: @similar-answer;
             border-color: @similar-answer;
+
+            &.male {
+                color: @male;
+            }
+    
+            &.female {
+                color: @female;
+            }
         }
-        
+
         .solution {
             .heading {
                 color: @similar-answer;
+            }
+
+            .phonetik {
+                margin-top: 7px;
             }
         }
     }
@@ -109,7 +140,7 @@ mat-card-actions {
             color: @wrong-answer;
             border-color: @wrong-answer;
         }
-        
+
         .solution {
             .heading {
                 color: @wrong-answer;

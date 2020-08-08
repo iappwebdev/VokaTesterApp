@@ -5,11 +5,8 @@
 //   templateUrl: './trainieren-wortnetze.component.html',
 //   styleUrls: ['./trainieren-wortnetze.component.less']
 // })
-// export class TrainierenWortnetzeComponent implements OnInit {
+// export class TrainierenWortnetzeComponent  {
 
 //   constructor() { }
-
-//   ngOnInit(): void {
-//   }
 
 // }

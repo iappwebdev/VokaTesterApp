@@ -19,10 +19,15 @@
             this.vokabelService = vokabelService;
         }
 
-        [Route(Id)]
+        //[Route(Id)]
+        //[HttpGet]
+        //public async Task<LektionDto> Lektion(int id)
+        //    => await this.vokabelService.SingleAsync(id);
+
+        [Route(Key)]
         [HttpGet]
-        public async Task<LektionDto> Lektion(int id)
-            => await this.vokabelService.SingleAsync(id);
+        public async Task<LektionDto> Lektion(string key)
+            => await this.vokabelService.SingleByKeyAsync(key);
 
         [HttpGet]
         public async Task<IEnumerable<LektionDto>> Lektionen()

@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
     using static ValidationRules.General;
@@ -10,7 +11,8 @@
     {
         public int Id { get; set; }
 
-        public int Nr { get; set; }
+        [Required, MaxLength(MaxNameOrTitel)]
+        public string Key { get; set; }
 
         [Required, MaxLength(MaxNameOrTitel)]
         public string Name { get; set; }
@@ -29,6 +31,11 @@
         public virtual ICollection<Fortschritt> Fortschritte { get; set; }
 
         public Vokabel FirstVokabel => this.Vokabeln.OrderBy(x => x.Id).First();
+
+        public Vokabel LastVokabel => this.Vokabeln.OrderBy(x => x.Id).Last();
+
+        [NotMapped]
+        public List<Bereich> Bereiche => this.Vokabeln.GroupBy(x => x.Bereich).Select(x => x.Key).OrderBy(x => x.Id).ToList();
         
         public int Total => this.Vokabeln.Count();
     }

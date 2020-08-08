@@ -21,6 +21,8 @@ namespace VokaTester.Features.StringSimilarity.Dto
         public bool IsAnswerSimilarI => this.StringSimilaritiesLevenshtein?.Dist_WeightedI < 1;
 
         public bool IsAnswerSimilarU => this.StringSimilaritiesLevenshtein?.Dist_WeightedU < 1;
+        
+        public List<ReplaceOp> ReplaceOps { get; set; }
 
         public StringSimilaritiesLevenshtein StringSimilaritiesLevenshtein { get; set; }
 

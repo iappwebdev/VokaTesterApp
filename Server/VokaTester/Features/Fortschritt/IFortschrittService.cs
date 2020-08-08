@@ -5,8 +5,16 @@
 
     public interface IFortschrittService
     {
-        Task<FortschrittDto> SingleAsync(int lektionId);
+        Task<FortschrittDto> ByLektionAsync(int lektionId);
         
-        Task<int> ResetAsync(int lektionId);
+        Task<FortschrittDto> ByLektionBereichAsync(int lektionId, int bereichId);
+
+        Task<int> FinishLektionAsync(int lektionId);
+
+        Task<int> FinishLektionBereichAsync(int lektionId, int bereichId);
+
+        Task<int> ResetLektionAsync(int lektionId);
+
+        Task<int> ResetLektionBereichAsync(int lektionId, int bereichId);
     }
 }

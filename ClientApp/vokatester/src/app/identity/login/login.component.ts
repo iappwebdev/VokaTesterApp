@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { FormValidationService } from 'src/app/services/form-validation.service';
 import { AuthService } from 'src/app/services/infrastructure/auth.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -32,12 +33,16 @@ export class LoginComponent implements OnInit {
 
   hasErrorRequired = (controlName: string) => this.formValidation.hasErrorRequired(this.loginForm, controlName);
 
+  isRegisterEnabled = () => environment.registerEnabled;
+  
   login() {
-    this.authService.login(this.loginForm.value).subscribe(data => {
-      this.authService.saveToken(data.token);
-      this.toastr.success('Wähle zwischen den Übersichten der Lektionen und Vokabeln üben.', 'Willkommen!');
-      this.router.navigate(['home-vokabeln'])
-    })
+    this.authService
+      .login(this.loginForm.value)
+      .subscribe(data => {
+        this.authService.saveToken(data.token);
+        this.toastr.success('Wähle zwischen den Übersichten der Lektionen und Vokabeln üben.', 'Willkommen!');
+        this.router.navigate(['home-vokabeln'])
+      })
   }
 
   get username() {

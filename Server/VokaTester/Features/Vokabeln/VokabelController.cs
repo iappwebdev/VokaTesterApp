@@ -28,19 +28,19 @@
         public async Task<IEnumerable<VokabelDto>> All()
             => await this.vokabelService.AllAsync();
 
-        [Route("by-lektion/{lektionId}")]
+        [Route("lektion/{lektionId}")]
         [HttpGet]
         public async Task<IEnumerable<VokabelDto>> ByLektion(int lektionId)
             => await this.vokabelService.ByLektionAsync(lektionId);
 
-        //[Route("by-wortnetz/{wortnetzId}")]
-        //[HttpGet]
-        //public async Task<IEnumerable<VokabelDto>> ByWortnetz(string wortnetz)
-        //    => await this.vokabelService.ByWortnetzAsync(wortnetz);
-
-        [Route("previous-by-similarity")]
+        [Route("lektion/{lektionId}/bereich/{bereichId}")]
         [HttpGet]
-        public async Task<IEnumerable<VokabelDto>> PreviousBySimilarity(int vokabelId, string pattern)
-            => await this.vokabelService.PreviousBySimilarity(vokabelId, pattern);
+        public async Task<IEnumerable<VokabelDto>> ByLektionBereich(int lektionId, int bereichId)
+            => await this.vokabelService.ByLektionBereichAsync(lektionId, bereichId);
+
+        [Route("previous-with-similarity")]
+        [HttpPost]
+        public async Task<IEnumerable<VokabelDto>> PreviousBySimilarity(SimilarityRequestDto dto)
+            => await this.vokabelService.PreviousBySimilarity(dto.VokabelId, dto.Pattern, dto.Prev, dto.Next);
     }
 }

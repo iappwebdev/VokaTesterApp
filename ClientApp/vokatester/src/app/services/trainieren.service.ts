@@ -14,7 +14,12 @@ export class TrainierenService {
     private http: HttpClient
   ) { }
 
-  checkAnswer(vokabelId: number, answer: string, isPrevVokabel: boolean): Observable<CheckResult> {
-    return this.http.post<CheckResult>(this.path, { vokabelId, answer, isPrevVokabel });
+  checkAnswer(
+    vokabelId: number,
+    answer: string,
+    isPrevVokabel: boolean,
+    isBereich: boolean): Observable<CheckResult> {
+    const data = { vokabelId, answer, isPrevVokabel, isBereich };
+    return this.http.post<CheckResult>(this.path, data);
   }
 }

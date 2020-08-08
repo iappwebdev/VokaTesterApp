@@ -5,5 +5,8 @@
         public const string DefaultRoute = "api/[controller]";
 
         public const string Id = "{id}";
+
+        public const string Key = "{key}";
+
     }
 }

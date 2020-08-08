@@ -10,6 +10,10 @@
 
         public string LektionName { get; set; }
 
+        public int? BereichId { get; set; }
+
+        public string BereichName { get; set; }
+
         public int LetzteVokabelCorrectId { get; set; }
 
         public string LetzteVokabelCorrectFrz { get; set; }

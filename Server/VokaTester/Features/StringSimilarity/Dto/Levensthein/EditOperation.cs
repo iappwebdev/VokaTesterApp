@@ -4,9 +4,10 @@
 
     public struct EditOperation
     {
-        public EditOperation(char value, EditOperationKind operation)
+        public EditOperation(char value, char oldValue, EditOperationKind operation)
         {
             Value = value;
+            OldValue = oldValue;
             Operation = operation;
         }
 
@@ -15,5 +16,6 @@
         public string OperationStr => Enum.GetName(typeof(EditOperationKind), this.Operation);
 
         public char Value { get; }
-    }
+     
+        public char OldValue { get; }}
 }

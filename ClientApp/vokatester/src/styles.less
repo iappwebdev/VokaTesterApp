@@ -13,43 +13,67 @@ body {
 
 .toast-container .ngx-toastr {
   width: 500px !important;
-  margin-top: 10px;;
+  margin-top: 10px;
+  ;
 }
 
 .section-overview {
   .card-link {
-    background-color: @learn  !important;
+    background-color: @overview;
   }
 }
 
 .section-train {
   .card-link {
-    background-color: @train  !important;
+    background-color: @train;
+  }
+}
+
+.section-test-results {
+  .card-link {
+    background-color: @test-results;
   }
 }
 
 .outer-card-link {
-  // margin-bottom: 30px;
   padding-bottom: 30px;
 
   .card-link {
     cursor: pointer;
     margin: 0 auto;
-    height: 90%;
 
     &:hover {
       opacity: 0.8;
     }
 
     .card-header {
+      min-height: 86px;
+
       h2 {
         margin-bottom: 0;
-        padding-right: 35px;
+        padding-right: 40px;
+        color: white;
       }
 
       img {
         right: 10px;
         width: 35px;
+      }
+
+      .started,
+      .completed {
+        right: 5px;
+        font-size: 40px;
+      }
+
+      .started {
+        top: 0;
+        // color: white;
+      }
+
+      .completed {
+        top: 10px;
+        // color: rgb(255 196 64);
       }
     }
 
@@ -57,10 +81,19 @@ body {
       margin-bottom: 5px !important;
     }
 
-    .lektion-titel{
+    .lektion-titel {
       font-size: 18px;
       color: #4a1cb7 !important;
     }
+  }
+}
+
+.reset-area {
+  text-align: center;
+
+  button {
+    width: 100%;
+    margin-top: 1px;
   }
 }
 

@@ -1,7 +1,8 @@
 ﻿namespace VokaTester.Features.StringSimilarity.Dto.WeightedLevenshtein
 {
     using System.Collections.Generic;
-    
+    using System.Linq;
+
     public class CharConstants
     {
         public const char A = 'a';
@@ -36,5 +37,9 @@
         public static readonly char[] VariationsU = new[] { U, U_grave, U_circonflexe };
 
         public static readonly List<char[]> Variations = new List<char[]> { VariationsA, VariationsC, VariationsE, VariationsI, VariationsU };
+
+        public static readonly List<char> GermanChars = new List<char> { A, C, E, I, U };
+
+        public static List<char> FrenchChars => Variations.SelectMany(x => x).Where(x => GermanChars.Contains(x) == false).ToList();
     }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -10,7 +10,7 @@ import { AuthService } from 'src/app/services/infrastructure/auth.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.less']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
   registerForm = this.fb.group({
     'username': ['', [Validators.required]],
     'email': ['', [Validators.required]],
@@ -25,16 +25,15 @@ export class RegisterComponent implements OnInit {
     private toastr: ToastrService
   ) { }
 
-  ngOnInit(): void {
-  }
-
   hasErrorRequired = (controlName: string) => this.formValidation.hasErrorRequired(this.registerForm, controlName);
 
   register() {
-    this.authService.register(this.registerForm.value).subscribe(data => {
-      this.toastr.success('Sie können sich nun anmelden.', 'Registrierung erfolgreich!');
-      this.router.navigate(['login'])
-    });
+    this.authService
+      .register(this.registerForm.value)
+      .subscribe(data => {
+        this.toastr.success('Sie können sich nun anmelden.', 'Registrierung erfolgreich!');
+        this.router.navigate(['login'])
+      });
   }
 
   get username() {

@@ -35,27 +35,95 @@
                 .Select(x => this.mapper.Map<VokabelDto>(x))
                 .ToListAsync();
 
-        public async Task<IEnumerable<VokabelDto>> PreviousBySimilarity(int vokabelId, string pattern)
+        public async Task<IEnumerable<VokabelDto>> ByLektionBereichAsync(int lektionId, int bereichId)
+            => await this.dbContext
+                .Vokabel
+                .Where(x => x.LektionId == lektionId
+                            && x.BereichId == bereichId)
+                .Select(x => this.mapper.Map<VokabelDto>(x))
+                .ToListAsync();
+
+        public async Task<IEnumerable<VokabelDto>> PreviousBySimilarity(int vokabelId, char pattern, char? prev, char? next)
         {
             Vokabel vokabel = this.dbContext.Vokabel.Find(vokabelId);
 
-            return await this.dbContext
+            List<Vokabel> seenVokabeln = await this.dbContext
                 .Vokabel
                 .Where(x => x.Id < vokabelId
                             && !x.FrzSan.Contains(vokabel.FrzSan)
-                            && x.FrzSan.Contains(pattern))
-                .OrderByDescending(x => x.Id)
-                .Take(10)
-                .Select(x => this.mapper.Map<VokabelDto>(x))
+                            && !vokabel.FrzSan.Contains(x.FrzSan))
                 .ToListAsync();
-        }
 
-        public async Task<IEnumerable<VokabelDto>> ByWortnetzAsync(string wortnetz)
-            => await this.dbContext
-                .Vokabel
-                .Where(x => x.WortnetzList.Contains(wortnetz))
+            var result = new List<Vokabel>();
+            int take = 5;
+
+            if (prev.HasValue)
+            {
+                string prevPattern = string.Concat(prev.Value, pattern);
+                var resultPrev =
+                    seenVokabeln
+                    .Where(x => x.FrzSan.Contains(prevPattern))
+                    .OrderByDescending(x => x.Id)
+                    .ToList();
+
+                result.AddRange(resultPrev.Take(take));
+                seenVokabeln = seenVokabeln.Except(resultPrev).ToList();
+            }
+            else
+            {
+                var resultPrev =
+                        seenVokabeln
+                        .Where(x => x.FrzSan.StartsWith(pattern))
+                        .OrderByDescending(x => x.Id)
+                        .ToList();
+
+                result.AddRange(resultPrev.Take(take));
+                seenVokabeln = seenVokabeln.Except(resultPrev).ToList();
+            }
+
+            if (!result.Any())
+            {
+                if (next.HasValue)
+                {
+                    string nextPattern = string.Concat(pattern, next.Value);
+                    var resultNext =
+                        seenVokabeln
+                        .Where(x => x.FrzSan.Contains(nextPattern))
+                        .OrderByDescending(x => x.Id)
+                        .ToList();
+
+                    result.AddRange(resultNext.Take(take));
+                    seenVokabeln = seenVokabeln.Except(resultNext).ToList();
+                }
+                else
+                {
+                    var resultNext =
+                            seenVokabeln
+                            .Where(x => x.FrzSan.EndsWith(pattern))
+                            .OrderByDescending(x => x.Id)
+                            .ToList();
+
+                    result.AddRange(resultNext.Take(take));
+                    seenVokabeln = seenVokabeln.Except(resultNext).ToList();
+                }
+            }
+
+            if (!result.Any())
+            {
+                var resultPattern =
+                    seenVokabeln
+                        .Where(x => x.FrzSan.Contains(pattern))
+                        .OrderByDescending(x => x.Id)
+                        .ToList();
+
+                result.AddRange(resultPattern.Take(take));
+            }
+
+            return result
+                .Take(take)
                 .Select(x => this.mapper.Map<VokabelDto>(x))
-                .ToListAsync();
+                .ToList();
+        }
 
         public async Task<VokabelDto> SingleAsync(int id)
         {
