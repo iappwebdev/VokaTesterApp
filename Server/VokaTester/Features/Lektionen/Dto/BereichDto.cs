@@ -15,7 +15,11 @@
         public int Position { get; set; }
 
         public int Total { get; set; }
-        
+
+        public int FirstVokabelId { get; set; }
+
+        public int LastVokabelId { get; set; }
+
         public bool IsStarted { get; set; }
         
         public bool IsCompleted { get; set; }

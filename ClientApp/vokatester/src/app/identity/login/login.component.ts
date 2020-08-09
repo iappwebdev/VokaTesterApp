@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
       .login(this.loginForm.value)
       .subscribe(data => {
         this.authService.saveToken(data.token);
-        this.toastr.success('Wähle zwischen den Übersichten der Lektionen und Vokabeln üben.', 'Willkommen!');
+        this.toastr.success('Wähle zwischen der Vokabel-Liste, der Vokabel-Übung und dem Test-Protokoll.', 'Willkommen!');
         this.router.navigate(['home-vokabeln'])
       })
   }

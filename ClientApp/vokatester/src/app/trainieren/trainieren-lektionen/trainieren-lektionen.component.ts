@@ -42,10 +42,10 @@ export class TrainierenLektionenComponent implements OnInit {
       .resetFortschrittLektion(lektion.id)
       .subscribe(res => {
         if (res) {
-          this.toastr.success(`Lektion '${lektion.name}' wurde erfolgreich zurückgesetzt.`)
+          this.toastr.success(`Die Lektion '${lektion.name}' wurde erfolgreich zurückgesetzt.`)
           this.getLektionen();
         } else {
-          this.toastr.success(`Fehler beim Zurücksetzen der Lektion '${lektion.name}'.`)
+          this.toastr.error(`Fehler beim Zurücksetzen der Lektion '${lektion.name}'.`)
         }
       });
   }

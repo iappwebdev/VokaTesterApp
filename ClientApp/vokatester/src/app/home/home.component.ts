@@ -12,15 +12,15 @@ export class HomeComponent implements OnInit {
   tiles: AppTile[] = [
     {
       id: 1,
-      text: 'Übersicht der Vokabel',
-      descr: 'Hier kannst du die Vokabeln in einer Übersicht ansehen und durchsuchen.',
+      text: 'Vokabel-Liste',
+      descr: 'Hier kannst du die Vokabel-Listen ansehen und durchsuchen.',
       photo: '../../assets/images/learn.jpeg',
-      link: '/vokabeln/uebersicht',
+      link: '/vokabeln/liste',
       isOverview: true
     },
     {
       id: 2,
-      text: 'Übung der Vokabeln',
+      text: 'Vokabeln-Übung',
       descr: 'Hier kannst du deine gelernten Vokabeln üben.',
       photo: '../../assets/images/ki2.webp',
       link: '/vokabeln/übung',
@@ -28,11 +28,11 @@ export class HomeComponent implements OnInit {
     },
     {
       id: 3,
-      text: 'Testresultate',
-      descr: 'Hier kannst du die Testresultate deine geübten Vokabeln ansehen und durchsuchen.',
+      text: 'Test-Protokoll',
+      descr: 'Hier kannst du das Testprotokoll deiner geübten Vokabeln ansehen und durchsuchen.',
       photo: '../../assets/images/ki2.webp',
-      link: '/vokabeln/test-results',
-      isTestResults: true
+      link: '/vokabeln/testprotokoll',
+      isTestProtokoll: true
     }
   ];
 

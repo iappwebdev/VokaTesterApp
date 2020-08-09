@@ -92,8 +92,12 @@
         {
             res.Bereiche.ForEach(bereich =>
             {
+                IOrderedEnumerable<Vokabel> vokabeln = lektion.Vokabeln.Where(x => x.BereichId == bereich.Id).OrderBy(x => x.Id);
+
                 bereich.LektionName = lektion.Name;
-                bereich.Total = lektion.Vokabeln.Where(x => x.BereichId == bereich.Id).Count();
+                bereich.Total = vokabeln.Count();
+                bereich.FirstVokabelId = vokabeln.First().Id;
+                bereich.LastVokabelId = vokabeln.Last().Id;
             });
         }
 
@@ -156,16 +160,16 @@
                     {
                         resBereich.Position =
                             fortschritt.LetzteVokabelCorrect.Id < fortschritt.LetzteVokabelWrong.Id
-                            ? fortschritt.LetzteVokabelCorrect.PositionLektion
-                            : fortschritt.LetzteVokabelWrong.PositionLektion;
+                            ? fortschritt.LetzteVokabelCorrect.PositionBereich
+                            : fortschritt.LetzteVokabelWrong.PositionBereich;
                     }
                     else if (fortschritt.LetzteVokabelCorrectId.HasValue)
                     {
-                        resBereich.Position = fortschritt.LetzteVokabelCorrect.PositionLektion;
+                        resBereich.Position = fortschritt.LetzteVokabelCorrect.PositionBereich;
                     }
                     else if (fortschritt.LetzteVokabelWrongId.HasValue)
                     {
-                        resBereich.Position = fortschritt.LetzteVokabelWrong.PositionLektion;
+                        resBereich.Position = fortschritt.LetzteVokabelWrong.PositionBereich;
                     }
                 }
             }

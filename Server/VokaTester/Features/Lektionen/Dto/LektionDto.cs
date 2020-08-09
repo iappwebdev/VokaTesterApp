@@ -15,10 +15,14 @@
         public string SubTitel { get; set; }
 
         public string Inhalt { get; set; }
-        
+
         public int Position { get; set; }
 
         public int Total { get; set; }
+        
+        public int FirstVokabelId { get; set; }
+
+        public int LastVokabelId { get; set; }
 
         public bool IsStarted { get; set; }
 

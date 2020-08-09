@@ -25,24 +25,24 @@ const routes: Routes = [
     data: { title: 'Home' }
   },
   {
-    path: 'vokabeln/uebersicht', component: MainUebersichtComponent, canActivate: [AuthGuardService],
-    data: { title: 'Übersicht der Vokabeln', parent: 'vokabeln' }, 
+    path: 'vokabeln/liste', component: MainUebersichtComponent, canActivate: [AuthGuardService],
+    data: { title: 'Vokabel-Liste', parent: 'vokabeln' }, 
   },
   {
-    path: 'vokabeln/uebersicht/lektionen', component: UebersichtLektionenComponent, canActivate: [AuthGuardService],
-    data: { title: 'Übersicht der Vokabeln nach Lektionen', parent: 'vokabeln/uebersicht' }, 
+    path: 'vokabeln/liste/lektionen', component: UebersichtLektionenComponent, canActivate: [AuthGuardService],
+    data: { title: 'Vokabel-Liste nach Lektionen', parent: 'vokabeln/liste' }, 
   },
   {
-    path: 'vokabeln/uebersicht/gesamt', component: UebersichtGesamtComponent, canActivate: [AuthGuardService],
-    data: { title: 'Übersicht der Vokabeln gesamt', parent: 'vokabeln/uebersicht' }, 
+    path: 'vokabeln/liste/gesamt', component: UebersichtGesamtComponent, canActivate: [AuthGuardService],
+    data: { title: 'Vokabel-Liste gesamt', parent: 'vokabeln/liste' }, 
   },
   {
-    path: 'vokabeln/uebersicht/lektionen/:lektionKey', component: UebersichtLektionComponent, canActivate: [AuthGuardService],
-    data: { title: 'Übersicht der Vokabeln nach Lektion', parent: 'vokabeln/uebersicht/lektionen' }, 
+    path: 'vokabeln/liste/lektionen/:lektionKey', component: UebersichtLektionComponent, canActivate: [AuthGuardService],
+    data: { title: 'Vokabel-Liste nach Lektion', parent: 'vokabeln/liste/lektionen' }, 
   },
   // {
-  //   path: 'vokabeln/uebersicht/wortnetze', component: UebersichtWortnetzeComponent, canActivate: [AuthGuardService],
-  //   data: { title: 'Übersicht der Vokabeln nach Wortnetzen', parent: 'vokabeln/uebersicht' }, 
+  //   path: 'vokabeln/liste/wortnetze', component: UebersichtWortnetzeComponent, canActivate: [AuthGuardService],
+  //   data: { title: 'Vokabel-Liste nach Wortnetzen', parent: 'vokabeln/liste' }, 
   // },
   {
     path: 'vokabeln/übung', component: MainTrainierenComponent, canActivate: [AuthGuardService],
@@ -66,11 +66,11 @@ const routes: Routes = [
   },
   // {
   //   path: 'vokabeln/übung/wortnetze', component: TrainierenWortnetzeComponent, canActivate: [AuthGuardService],
-  //   data: { title: 'Vokabeln trainieren nach Wortnetzen', parent: 'vokabeln/übung' }, 
+  //   data: { title: 'Vokabeln üben nach Wortnetzen', parent: 'vokabeln/übung' }, 
   // },
   {
-    path: 'vokabeln/test-results', component: TestResultOverviewComponent, canActivate: [AuthGuardService],
-    data: { title: 'Testresultate', parent: 'vokabeln' }, 
+    path: 'vokabeln/testprotokoll', component: TestResultOverviewComponent, canActivate: [AuthGuardService],
+    data: { title: 'Test-Protokoll', parent: 'vokabeln' }, 
   },
   { path: '', redirectTo: defaultPath, pathMatch: 'prefix' },
   { path: '**', redirectTo: defaultPath }

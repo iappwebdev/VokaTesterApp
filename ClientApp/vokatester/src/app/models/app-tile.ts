@@ -6,5 +6,5 @@ export interface AppTile {
   link: string;
   isOverview?: boolean;
   isTraining?: boolean;
-  isTestResults?: boolean;
+  isTestProtokoll?: boolean;
 }

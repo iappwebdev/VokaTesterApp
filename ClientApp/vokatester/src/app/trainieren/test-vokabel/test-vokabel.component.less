@@ -115,21 +115,29 @@ mat-card-actions {
 
             &.male {
                 color: @male;
+                fill: @male;
             }
-    
+
             &.female {
                 color: @female;
+                fill: @female;
             }
         }
 
         .solution {
             .heading {
                 color: @similar-answer;
+
+                .fehler-artikel,
+                .fehler-accent {
+                    text-decoration: underline;
+                }
             }
 
             .phonetik {
                 margin-top: 7px;
             }
+
         }
     }
 

@@ -6,19 +6,36 @@
                 <div class="card-header">
                     <img *ngIf="!lektion.isStarted && !lektion.isCompleted" class="card-img-top position-absolute"
                         src="../../assets/images/france.webp" alt="Französische Flagge">
-                    <span *ngIf="lektion.isStarted && !lektion.isCompleted" class="started position-absolute">
+                    <span *ngIf="lektion.isStarted && !lektion.isCompleted && lektion.position/lektion.total < 0.25"
+                        class="progress-icon position-absolute">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-1" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </span>
+                    <span
+                        *ngIf="lektion.isStarted && !lektion.isCompleted && lektion.position/lektion.total >= 0.25 && lektion.position/lektion.total < 0.75"
+                        class="progress-icon position-absolute">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-2" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4 5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
                         </svg>
                     </span>
-                    <span *ngIf="lektion.isCompleted" class="completed position-absolute">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-award-fill" fill="currentColor"
+                    <span *ngIf="lektion.isStarted && !lektion.isCompleted && lektion.position/lektion.total >= 0.75"
+                        class="progress-icon position-absolute">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-3" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
-                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                                d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </span>
+                    <span *ngIf="lektion.isCompleted" class="progress-icon position-absolute">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-4" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z" />
                         </svg>
                     </span>
                     <h2 class="card-title">
@@ -29,6 +46,14 @@
                     <h4 class="card-subtitle mb-2 lektion-titel">{{lektion.titel}}</h4>
                 </div>
                 <div class="card-body">
+                    <span *ngIf="lektion.isCompleted" class="completed position-absolute">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-award-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                        </svg>
+                    </span>
                     <u>
                         <h4 class="card-subtitle">{{lektion.subTitel}}</h4>
                     </u>

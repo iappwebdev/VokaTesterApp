@@ -41,6 +41,7 @@ body {
   .card-link {
     cursor: pointer;
     margin: 0 auto;
+    height: 100%;
 
     &:hover {
       opacity: 0.8;
@@ -60,25 +61,34 @@ body {
         width: 35px;
       }
 
-      .started,
-      .completed {
-        right: 5px;
-        font-size: 40px;
-      }
-
-      .started {
-        top: 0;
-        // color: white;
-      }
-
-      .completed {
+      .overview-icon,
+      .train-icon,
+      .protocol-icon,
+      .progress-icon {
         top: 10px;
-        // color: rgb(255 196 64);
+        right: 10px;
+        font-size: 40px;
+        color: white;
       }
     }
 
     .card-subtitle {
+      font-weight: 500;
+      font-size: 18px;
       margin-bottom: 5px !important;
+    }
+
+    .card-body {
+      .completed {
+        bottom: 10px;
+        right: 5px;
+        font-size: 40px;
+        color: rgb(255, 196, 64);
+      }
+    }
+
+    .card-text {
+      font-size: 16px;
     }
 
     .lektion-titel {
@@ -89,12 +99,10 @@ body {
 }
 
 .reset-area {
-  text-align: center;
-
-  button {
-    width: 100%;
-    margin-top: 1px;
-  }
+  top: -50px;
+  left: 20px;
+  position: relative;
+  width: 40px;
 }
 
 .modal-dialog {

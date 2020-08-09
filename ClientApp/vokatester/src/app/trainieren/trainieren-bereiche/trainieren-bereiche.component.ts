@@ -40,15 +40,15 @@ export class TrainierenBereicheComponent implements OnInit {
 
   reset(lektion: Lektion, bereich: Bereich) {
     this.fortschrittService
-    .resetFortschrittLektion(lektion.id)
-    .subscribe(res => {
-      if (res) {
-        this.toastr.success(`Bereich '${bereich.name}' der Lektion '${lektion.name}' wurde erfolgreich zurückgesetzt.`)
-        this.getLektionen();
-      } else {
-        this.toastr.success(`Fehler beim Zurücksetzen des Bereiches '${bereich.name}' der Lektion '${lektion.name}'.`)
-      }
-    });
+      .resetFortschrittLektionBereich(lektion.id, bereich.id)
+      .subscribe(res => {
+        if (res) {
+          this.toastr.success(`Der Bereich '${bereich.name}' der Lektion '${lektion.name}' wurde erfolgreich zurückgesetzt.`)
+          this.getLektionen();
+        } else {
+          this.toastr.error(`Fehler beim Zurücksetzen des Bereiches '${bereich.name}' der Lektion '${lektion.name}'.`)
+        }
+      });
   }
 
   openModal(template: TemplateRef<any>) {

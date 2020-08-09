@@ -6,6 +6,8 @@ export interface Bereich {
   name: string;
   position: number;
   total: number;
+  firstVokabelId: number,
+  lastVokabelId: number,
   isStarted: boolean;
   isCompleted: boolean;
 }

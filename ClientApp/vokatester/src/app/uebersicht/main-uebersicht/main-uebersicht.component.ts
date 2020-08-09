@@ -10,28 +10,28 @@ export class MainUebersichtComponent {
   tiles: AppTile[] = [
     {
       id: 1,
-      text: 'Übersicht der Vokabeln nach Lektion',
+      text: 'Vokabel-Liste nach Lektion',
       descr: 'Hier kannst du je Lektion die Vokabeln ansehen und durchsuchen.',
       photo: '../../assets/images/learn.jpeg',
-      link: '/vokabeln/uebersicht/lektionen',
+      link: '/vokabeln/liste/lektionen',
       isOverview: true,
       isTraining: false
     },
     {
       id: 1,
-      text: 'Übersicht der Vokabeln gesamt',
+      text: 'Vokabel-Liste gesamt',
       descr: 'Hier kannst du alle Vokabeln ansehen und durchsuchen.',
       photo: '../../assets/images/learn.jpeg',
-      link: '/vokabeln/uebersicht/gesamt',
+      link: '/vokabeln/liste/gesamt',
       isOverview: true,
       isTraining: false
     },
     // {
     //   id: 2,
-    //   text: 'Übersicht der Vokabeln nach Wortnetzen',
-    //   descr: 'Hier kannst du je Wortnetz die Vokabeln in einer Übersicht ansehen und durchsuchen.',
+    //   text: 'Vokabel-Liste nach Wortnetz',
+    //   descr: 'Hier kannst du je Wortnetz die Vokabeln ansehen und durchsuchen.',
     //   photo: '../../assets/images/ki2.webp',
-    //   link: '/vokabeln/uebersicht/wortnetze',
+    //   link: '/vokabeln/liste/wortnetze',
     //   isOverview: true,
     //   isTraining: false
     // }

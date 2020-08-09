@@ -1,7 +1,7 @@
 <div class="section-overview">
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 outer-card-link" *ngFor="let lektion of lektionen">
-            <div class="card card-link" [routerLink]="'/vokabeln/uebersicht/lektionen/' + lektion.key"
+            <div class="card card-link" [routerLink]="'/vokabeln/liste/lektionen/' + lektion.key"
                 [ngStyle]="{'background-color': getColor(lektion)}">
                 <div class="card-header">
                     <img class="card-img-top position-absolute" src="../../assets/images/france.webp"

@@ -9,6 +9,8 @@ export interface Lektion {
   inhalt: string;
   position: number;
   total: number;
+  firstVokabelId: number,
+  lastVokabelId: number,
   isStarted: boolean;
   isCompleted: boolean;
   bereiche: Bereich[];
