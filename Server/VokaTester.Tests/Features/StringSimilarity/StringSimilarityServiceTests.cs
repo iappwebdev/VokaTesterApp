@@ -22,6 +22,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsTrue(res.IsAnswerSimilarA);
             Assert.IsTrue(res.IsAnswerSimilarC);
             Assert.IsTrue(res.IsAnswerSimilarE);
+            Assert.IsTrue(res.IsAnswerSimilarI);
+            Assert.IsTrue(res.IsAnswerSimilarO);
             Assert.IsTrue(res.IsAnswerSimilarU);
         }
 
@@ -34,6 +36,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -46,6 +50,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsTrue(res.IsAnswerSimilarA);
             Assert.IsTrue(res.IsAnswerSimilarC);
             Assert.IsTrue(res.IsAnswerSimilarE);
+            Assert.IsTrue(res.IsAnswerSimilarI);
+            Assert.IsTrue(res.IsAnswerSimilarO);
             Assert.IsTrue(res.IsAnswerSimilarU);
         }
 
@@ -58,6 +64,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsTrue(res.IsAnswerSimilarA);
             Assert.IsTrue(res.IsAnswerSimilarC);
             Assert.IsTrue(res.IsAnswerSimilarE);
+            Assert.IsTrue(res.IsAnswerSimilarI);
+            Assert.IsTrue(res.IsAnswerSimilarO);
             Assert.IsTrue(res.IsAnswerSimilarU);
         }
 
@@ -70,6 +78,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsTrue(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -82,6 +92,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -94,6 +106,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -107,6 +121,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -119,6 +135,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsTrue(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -131,6 +149,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsTrue(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -143,6 +163,22 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
+            Assert.IsFalse(res.IsAnswerSimilarU);
+        }
+
+        [Test]
+        public void AreSimilar8()
+        {
+            SimilarityResult res = this.stringSimilarityService.CheckSimilarity("tôt", "tot");
+            Assert.IsFalse(res.IsAnswerEqual);
+            Assert.IsTrue(res.IsAnswerSimilar);
+            Assert.IsFalse(res.IsAnswerSimilarA);
+            Assert.IsFalse(res.IsAnswerSimilarC);
+            Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -155,6 +191,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -167,6 +205,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -179,6 +219,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -191,6 +233,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
 
@@ -203,6 +247,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsAnswerSimilarA);
             Assert.IsFalse(res.IsAnswerSimilarC);
             Assert.IsFalse(res.IsAnswerSimilarE);
+            Assert.IsFalse(res.IsAnswerSimilarI);
+            Assert.IsFalse(res.IsAnswerSimilarO);
             Assert.IsFalse(res.IsAnswerSimilarU);
         }
     }

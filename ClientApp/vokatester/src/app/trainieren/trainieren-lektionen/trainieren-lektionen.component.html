@@ -40,8 +40,6 @@
                     </span>
                     <h2 class="card-title">
                         {{lektion.name}}
-                        <span *ngIf="lektion.isStarted && !lektion.isCompleted"> (gestartet)</span>
-                        <span *ngIf="lektion.isCompleted"> (abgeschlossen)</span>
                     </h2>
                     <h4 class="card-subtitle mb-2 lektion-titel">{{lektion.titel}}</h4>
                 </div>

@@ -87,6 +87,7 @@ namespace VokaTester.Data.Migrations
                     Durchlauf = table.Column<int>(type: "int", nullable: false),
                     LetzteVokabelCorrectId = table.Column<int>(type: "int", nullable: true),
                     LetzteVokabelWrongId = table.Column<int>(type: "int", nullable: true),
+                    DateStarted = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DateTestedLast = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -133,8 +134,11 @@ namespace VokaTester.Data.Migrations
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     VokabelId = table.Column<int>(type: "int", nullable: false),
+                    Question = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Truth = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TruthSan = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Answer = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AnswerSan = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsCorrect = table.Column<bool>(type: "bit", nullable: false),
                     IsSimilar = table.Column<bool>(type: "bit", nullable: false),
                     IsArtikelFehler = table.Column<bool>(type: "bit", nullable: false),

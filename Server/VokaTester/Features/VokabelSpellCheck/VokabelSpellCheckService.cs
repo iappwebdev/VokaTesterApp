@@ -86,7 +86,10 @@
 
             if (this.IsCorrectAnswer(result.TruthSan, result.AnswerSan, vokabel.CaseSensitive))
             {
-                result.IsCorrect = true;
+                if (!this.IsArticleMissing(result.TruthArticle, result.AnswerArticle))
+                {
+                    result.IsCorrect = true;
+                }
             }
             else if (!string.IsNullOrWhiteSpace(result.Answer))
             {
@@ -95,6 +98,13 @@
 
             return result;
         }
+
+
+        private bool IsCorrectAnswer(string truth, string answer, bool isCaseSensitive)
+            => isCaseSensitive ? truth == answer : truth.ToLower() == answer.ToLower();
+
+        private bool IsArticleMissing(string truthArticle, string answerArticle)
+            => !string.IsNullOrWhiteSpace(truthArticle) && string.IsNullOrWhiteSpace(answerArticle);
 
         private async Task SetAdditionalAnswers(Vokabel vokabel, CheckVokabelResponse result)
         {
@@ -109,12 +119,10 @@
             }
         }
 
-        private bool IsCorrectAnswer(string truth, string answer, bool isCaseSensitive)
-            => isCaseSensitive ? truth == answer : truth.ToLower() == answer.ToLower();
-
 
         private async Task<int> SaveFortschrittAsync(Vokabel vokabel, CheckVokabelResponse result, bool isForBereich = false)
         {
+            DateTime dateNow = DateTime.Now;
             Fortschritt fortschritt = await this.GetFortschritt(vokabel, isForBereich);
 
             if (fortschritt == null)
@@ -125,13 +133,14 @@
                     UserName = this.currentUserService.GetUserName(),
                     LektionId = vokabel.LektionId,
                     Durchlauf = 1,
-                    BereichId = isForBereich ? vokabel.BereichId : (int?)null
+                    BereichId = isForBereich ? vokabel.BereichId : (int?)null,
+                    DateStarted = dateNow
                 };
 
                 await this.dbContext.AddAsync(fortschritt);
             }
 
-            fortschritt.DateTestedLast = DateTime.Now;
+            fortschritt.DateTestedLast = dateNow;
 
             if (result.IsCorrect
                 && !result.IsArtikelFehler)

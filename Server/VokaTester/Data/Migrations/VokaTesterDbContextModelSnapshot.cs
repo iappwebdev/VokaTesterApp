@@ -187,6 +187,9 @@ namespace VokaTester.Data.Migrations
                     b.Property<int?>("BereichId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("DateStarted")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("DateTestedLast")
                         .HasColumnType("datetime2");
 

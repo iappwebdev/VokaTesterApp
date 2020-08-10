@@ -19,6 +19,8 @@ namespace VokaTester.Features.StringSimilarity.Dto
         public bool IsAnswerSimilarE => this.StringSimilaritiesLevenshtein?.Dist_WeightedE < 1;
         
         public bool IsAnswerSimilarI => this.StringSimilaritiesLevenshtein?.Dist_WeightedI < 1;
+        
+        public bool IsAnswerSimilarO => this.StringSimilaritiesLevenshtein?.Dist_WeightedO < 1;
 
         public bool IsAnswerSimilarU => this.StringSimilaritiesLevenshtein?.Dist_WeightedU < 1;
         

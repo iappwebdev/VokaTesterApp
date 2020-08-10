@@ -46,10 +46,6 @@
                         <h4 class="card-subtitle mb-2 lektion-titel">
                             {{lektion.titel}}
                         </h4>
-                        <div>
-                            <span *ngIf="lektion.isStarted && !lektion.isCompleted"> (gestartet)</span>
-                            <span *ngIf="lektion.isCompleted"> (abgeschlossen)</span>
-                        </div>
                     </div>
                     <div class="card-body">
                         <span *ngIf="bereich.isCompleted" class="completed position-absolute">

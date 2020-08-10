@@ -32,7 +32,10 @@
         public int? LetzteVokabelWrongId { get; set; }
 
         public virtual Vokabel LetzteVokabelWrong { get; set; }
-     
+
+        [Required]
+        public DateTime DateStarted { get; set; }
+
         [Required]
         public DateTime DateTestedLast { get; set; }
     }

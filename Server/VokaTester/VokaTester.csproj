@@ -71,6 +71,8 @@
     <Compile Remove="Data\Migrations\20200807155729_ExtendVokaTesterSchemaByUserDateInfo.Designer.cs" />
     <Compile Remove="Data\Migrations\20200807160504_ExtendVokaTesterSchemaByUserDateInfo.cs" />
     <Compile Remove="Data\Migrations\20200807160504_ExtendVokaTesterSchemaByUserDateInfo.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200808123432_CreateVokaTesterSchema.cs" />
+    <Compile Remove="Data\Migrations\20200808123432_CreateVokaTesterSchema.Designer.cs" />
     <Compile Remove="Data\Migrations\20200808170511_ExtendTestResultSchema.cs" />
     <Compile Remove="Data\Migrations\20200808170511_ExtendTestResultSchema.Designer.cs" />
     <Compile Remove="Data\Models\FehlerArt.cs" />

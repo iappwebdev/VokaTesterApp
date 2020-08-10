@@ -20,6 +20,8 @@
         public double Dist_WeightedE { get; set; }
         
         public double Dist_WeightedI { get; set; }
+        
+        public double Dist_WeightedO { get; internal set; }
 
         public double Dist_WeightedU { get; set; }
         

@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AppTile } from 'src/app/models/app-tile';
-import { Lektion } from 'src/app/models/lektion';
-import { LektionenService } from 'src/app/services/lektionen.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.less']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   tiles: AppTile[] = [
     {
       id: 1,
@@ -20,7 +18,7 @@ export class HomeComponent implements OnInit {
     },
     {
       id: 2,
-      text: 'Vokabeln-Übung',
+      text: 'Vokabel-Übung',
       descr: 'Hier kannst du deine gelernten Vokabeln üben.',
       photo: '../../assets/images/ki2.webp',
       link: '/vokabeln/übung',
@@ -36,16 +34,6 @@ export class HomeComponent implements OnInit {
     }
   ];
 
-  lektionen: Lektion[] = [];
-
   constructor(
-    private lektionenService: LektionenService
   ) { }
-
-  ngOnInit(): void {
-    this.lektionenService.lektionen()
-      .subscribe(res => {
-        this.lektionen = res;
-      })
-  }
 }

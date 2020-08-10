@@ -18,6 +18,7 @@ import { VokabelService } from 'src/app/services/vokabel.service';
 export class TrainierenBereichComponent implements OnInit {
   private idx: number = -1;
   private vokabeln: Vokabel[] = [];
+  private isLastVokabelCorrect: boolean = false;
 
   lektion!: Lektion;
   bereich!: Bereich;
@@ -94,9 +95,12 @@ export class TrainierenBereichComponent implements OnInit {
   }
 
   proceed(checkResult: CheckResult): void {
-    const lastVokabelCorrect = this.checkResultService.isCorrect(checkResult);
-    if (!lastVokabelCorrect) {
+    this.isLastVokabelCorrect = this.checkResultService.isCorrect(checkResult);
+    if (!this.isLastVokabelCorrect) {
       let copyVokabel = Object.assign({}, this.currentVokabel);
+      copyVokabel.wiederholung = copyVokabel.wiederholung ? copyVokabel.wiederholung + 1 : 1;
+      const insertPos = Math.floor((Math.random() * 5) + 2);
+      this.vokabeln.splice(this.idx + insertPos, 0, copyVokabel);
 
       // Bei Accent Fehler ähnliche Vokabel ermitteln
       if (this.checkResultService.isSimilarOnly(checkResult)
@@ -121,10 +125,6 @@ export class TrainierenBereichComponent implements OnInit {
       else {
         this.proceedToNextVokabel();
       }
-
-      copyVokabel.wiederholung = copyVokabel.wiederholung ? copyVokabel.wiederholung + 1 : 1;
-      const insertPos = Math.floor((Math.random() * 5) + 2);
-      this.vokabeln.splice(this.idx + insertPos, 0, copyVokabel);
     }
     else {
       this.proceedToNextVokabel();
@@ -134,10 +134,10 @@ export class TrainierenBereichComponent implements OnInit {
   proceedToNextVokabel(): void {
     if (this.idx + 1 < this.vokabeln.length) {
       this.idx++;
-    } else {
+    } else if (this.isLastVokabelCorrect) {
       this.fortschrittService.finishLektionBereich(this.lektion.id, this.bereich.id).subscribe(res => {
         this.toastr.success('Du hast den Bereich der Lektion erfolgreich abgeschlossen.', 'Bereich abgeschlossen!');
-      })
+      });
       this.idx = 0;
     }
   }

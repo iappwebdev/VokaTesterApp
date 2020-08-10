@@ -82,27 +82,31 @@
 
             double costs = 0.05;
 
-            // Weighted Levenshtein -> Weighted StringDistance
+            // FULL Weighted Levenshtein -> Weighted StringDistance
             var wl = new MyWeightedLevenshtein(new CharacterSubstitution(costs));
             stringSimilaritiesLevenshtein.Dist_Weighted = wl.Distance(truth, answer);
 
-            // Weighted Levenshtein -> Weighted StringDistance
+            // A Weighted Levenshtein -> Weighted StringDistance
             var wlA = new MyWeightedLevenshtein(new CharacterSubstitutionA(costs));
             stringSimilaritiesLevenshtein.Dist_WeightedA = wlA.Distance(truth, answer);
 
-            // Weighted Levenshtein -> Weighted StringDistance
+            // C Weighted Levenshtein -> Weighted StringDistance
             var wlC = new MyWeightedLevenshtein(new CharacterSubstitutionC(costs));
             stringSimilaritiesLevenshtein.Dist_WeightedC = wlC.Distance(truth, answer);
 
-            // Weighted Levenshtein -> Weighted StringDistance
+            // E Weighted Levenshtein -> Weighted StringDistance
             var wlE = new MyWeightedLevenshtein(new CharacterSubstitutionE(costs));
             stringSimilaritiesLevenshtein.Dist_WeightedE = wlE.Distance(truth, answer);
 
-            // Weighted Levenshtein -> Weighted StringDistance
+            // I Weighted Levenshtein -> Weighted StringDistance
             var wlI = new MyWeightedLevenshtein(new CharacterSubstitutionI(costs));
             stringSimilaritiesLevenshtein.Dist_WeightedI = wlI.Distance(truth, answer);
 
-            // Weighted Levenshtein -> Weighted StringDistance
+            // O Weighted Levenshtein -> Weighted StringDistance
+            var wlO = new MyWeightedLevenshtein(new CharacterSubstitutionU(costs));
+            stringSimilaritiesLevenshtein.Dist_WeightedO = wlO.Distance(truth, answer);
+
+            // U Weighted Levenshtein -> Weighted StringDistance
             var wlU = new MyWeightedLevenshtein(new CharacterSubstitutionU(costs));
             stringSimilaritiesLevenshtein.Dist_WeightedU = wlU.Distance(truth, answer);
 

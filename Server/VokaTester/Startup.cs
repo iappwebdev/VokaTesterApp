@@ -64,8 +64,11 @@ namespace VokaTester
                     endpoints.MapControllers();
                 });
 
-            roleManager.SeedRoles();
-            userManager.SeedUsers();
+            if (env.IsDevelopment())
+            {
+                roleManager.SeedRoles();
+                userManager.SeedUsers();
+            }
         }
     }
 }

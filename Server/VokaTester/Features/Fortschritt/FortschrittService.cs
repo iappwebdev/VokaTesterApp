@@ -104,6 +104,8 @@
             if (fortschritt != null)
             {
                 fortschritt.Durchlauf++;
+                fortschritt.LetzteVokabelCorrectId = null;
+                fortschritt.LetzteVokabelWrongId = null;
             }
 
             return await this.dbContext.SaveChangesAsync();
@@ -123,6 +125,8 @@
             if (fortschritt != null)
             {
                 fortschritt.Durchlauf++;
+                fortschritt.LetzteVokabelCorrectId = null;
+                fortschritt.LetzteVokabelWrongId = null;
             }
 
             return await this.dbContext.SaveChangesAsync();

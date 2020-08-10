@@ -27,16 +27,25 @@ export class TableVokabelnComponent {
 
   get filterQuery(): string {
     if (!this.filter?.value) return '';
-    return this.filter.value;
+    return this.filter.value.toLowerCase();
   }
 
   get vokabelnFiltered() {
     if (!this.filterQuery) return this.vokabeln;
 
     return this.vokabeln.filter(vokabel =>
-      vokabel.frz.toLowerCase().indexOf(this.filterQuery) >= 0
+      vokabel.frz.toLowerCase().indexOf(this.filterQuery.toLowerCase()) >= 0
       || vokabel.deu.toLowerCase().indexOf(this.filterQuery) >= 0
+      || vokabel.phonetik.toLowerCase().indexOf(this.filterQuery) >= 0
     );
+  }
+
+  displayLektion(): boolean {
+    var lektionen = this.vokabeln.map(function(item) {
+      return item.lektionId;
+    }, {});
+    var set = new Set(lektionen);
+    return set.size > 1;
   }
 
   getHtmlStringFrz(frz: string): SafeHtml {
@@ -64,4 +73,12 @@ export class TableVokabelnComponent {
 
     return this.sanitizer.bypassSecurityTrustHtml(frz);
   }
+
+  groupBy = function(xs, key) {
+    return xs.reduce(function(rv, x) {
+      (rv[x[key]] = rv[x[key]] || []).push(x);
+      return rv;
+    }, {});
+  };
+  
 }

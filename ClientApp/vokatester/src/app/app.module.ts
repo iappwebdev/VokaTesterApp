@@ -9,6 +9,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/infrastructure/auth.service';
 import { ErrorInterceptorService } from 'src/app/services/infrastructure/error-interceptor.service';
+import { LoadingScreenInterceptor } from 'src/app/services/infrastructure/loading-screen-interceptor.service';
 import { TokenInterceptorService } from 'src/app/services/infrastructure/token-interceptor.service';
 import { TestResultsService } from 'src/app/services/test-results.service';
 import { TrainierenService } from 'src/app/services/trainieren.service';
@@ -21,6 +22,7 @@ import { LoginComponent } from './identity/login/login.component';
 import { RegisterComponent } from './identity/register/register.component';
 import { IpaAlphabetComponent } from './ipa-alphabet/ipa-alphabet.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 // import { UebersichtWortnetzeComponent } from './uebersicht/uebersicht-wortnetze/uebersicht-wortnetze.component';
 import { MaterialModule } from './modules/material/material.module';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -74,6 +76,7 @@ import { UebersichtLektionenComponent } from './uebersicht/uebersicht-lektionen/
     IpaAlphabetComponent,
     TestResultOverviewComponent,
     TableTestResultsComponent,
+    LoadingScreenComponent,
   ],
   imports: [
     BrowserModule,
@@ -112,6 +115,11 @@ import { UebersichtLektionenComponent } from './uebersicht/uebersicht-lektionen/
     {
       provide: HTTP_INTERCEPTORS,
       useClass: ErrorInterceptorService,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoadingScreenInterceptor,
       multi: true
     }
   ],

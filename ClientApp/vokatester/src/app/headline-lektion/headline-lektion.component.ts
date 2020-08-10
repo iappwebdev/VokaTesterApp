@@ -26,7 +26,7 @@ export class HeadlineLektionComponent {
   get title(): string | undefined {
     if (!this.lektion) return;
     let title = this.lektion.name;
-    if (this.lektion.titel) title += ` - ${this.lektion.titel}`;
+    if (this.lektion.titel && this.lektion.titel !== ' ') title += ` - ${this.lektion.titel}`;
     if (this.bereich) title = `${this.bereich.name} (${title})`;
     return title;
   }

@@ -8,16 +8,34 @@
     margin-bottom: 5px;
 }
 
-.buttonbar {
+.button-bar {
+    display: table;
     margin: 15px 0;
+
+    .button-row {
+        display: table-row;
+    }
+
+    .button-cell {
+        display: table-cell;
+        text-align: center;
+        font-weight: 500;
+    }
 
     button.hidden {
         background-color: lightgrey;
-    } 
+    }
 }
 
 table {
     margin-top: 10px;
+
+    th {
+        svg, g {
+            color: #495057 !important;
+            fill: #495057 !important;
+        }
+    }
 }
 
 .is-correct {

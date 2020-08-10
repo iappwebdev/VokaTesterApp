@@ -17,6 +17,7 @@ import { VokabelService } from 'src/app/services/vokabel.service';
 export class TrainierenLektionComponent implements OnInit {
   private idx: number = -1;
   private vokabeln: Vokabel[] = [];
+  private isLastVokabelCorrect: boolean = false;
 
   lektion!: Lektion;
 
@@ -90,9 +91,12 @@ export class TrainierenLektionComponent implements OnInit {
   }
 
   proceed(checkResult: CheckResult): void {
-    const lastVokabelCorrect = this.checkResultService.isCorrect(checkResult);
-    if (!lastVokabelCorrect) {
+    this.isLastVokabelCorrect = this.checkResultService.isCorrect(checkResult);
+    if (!this.isLastVokabelCorrect) {
       let copyVokabel = Object.assign({}, this.currentVokabel);
+      copyVokabel.wiederholung = copyVokabel.wiederholung ? copyVokabel.wiederholung + 1 : 1;
+      const insertPos = Math.floor((Math.random() * 5) + 2);
+      this.vokabeln.splice(this.idx + insertPos, 0, copyVokabel);
 
       // Bei Accent Fehler ähnliche Vokabel ermitteln
       if (this.checkResultService.isSimilarOnly(checkResult)
@@ -118,9 +122,6 @@ export class TrainierenLektionComponent implements OnInit {
         this.proceedToNextVokabel();
       }
 
-      copyVokabel.wiederholung = copyVokabel.wiederholung ? copyVokabel.wiederholung + 1 : 1;
-      const insertPos = Math.floor((Math.random() * 5) + 2);
-      this.vokabeln.splice(this.idx + insertPos, 0, copyVokabel);
     }
     else {
       this.proceedToNextVokabel();
@@ -130,9 +131,10 @@ export class TrainierenLektionComponent implements OnInit {
   proceedToNextVokabel(): void {
     if (this.idx + 1 < this.vokabeln.length) {
       this.idx++;
-    } else {
-      this.fortschrittService.finishLektion(this.lektion.id);
-      this.toastr.success('Du hast die Lektion erfolgreich abgeschlossen.', 'Lektion abgeschlossen!');
+    } else if (this.isLastVokabelCorrect) {
+      this.fortschrittService.finishLektion(this.lektion.id).subscribe(res => {
+        this.toastr.success('Du hast die Lektion erfolgreich abgeschlossen.', 'Lektion abgeschlossen!');
+      });
       this.idx = 0;
     }
   }

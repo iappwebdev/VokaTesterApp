@@ -30,13 +30,18 @@
 
         public static readonly char[] VariationsI = new[] { I, I_circonflexe, I_trema };
 
+        public const char O = 'o';
+        public const char O_circonflexe = 'ô';
+
+        public static readonly char[] VariationsO = new[] { O, O_circonflexe };
+
         public const char U = 'u';
         public const char U_grave = 'ù';
         public const char U_circonflexe = 'û';
 
         public static readonly char[] VariationsU = new[] { U, U_grave, U_circonflexe };
 
-        public static readonly List<char[]> Variations = new List<char[]> { VariationsA, VariationsC, VariationsE, VariationsI, VariationsU };
+        public static readonly List<char[]> Variations = new List<char[]> { VariationsA, VariationsC, VariationsE, VariationsI, VariationsO, VariationsU };
 
         public static readonly List<char> GermanChars = new List<char> { A, C, E, I, U };
 

@@ -36,18 +36,7 @@
 
         public static void SeedUsers(this UserManager<User> userManager)
         {
-            CreateUser(userManager, "Admin", IdentityRoles.Administrator, "Adm123");
-            CreateUser(userManager, "Standard", IdentityRoles.Learner, "Std123");
-
-            List<KeyValuePair<string, string>> initialUsers = new List<KeyValuePair<string, string>>
-            {
-                new KeyValuePair<string, string>("E4p2xmtP", "pau_Engelhardt"),
-                new KeyValuePair<string, string>("F4zH4BlK", "kpl_Fabel"),
-                new KeyValuePair<string, string>("FxC6EGrG", "gth_Faßbender"),
-                new KeyValuePair<string, string>("Hg56eLnK", "kpl_Hein"),
-                new KeyValuePair<string, string>("Hj4bcxkK", "kpl_Honeck"),
-                new KeyValuePair<string, string>("Z2txqXiD", "dfg_Zanucchi")
-            };
+            List<KeyValuePair<string, string>> initialUsers = new List<KeyValuePair<string, string>>();
 
             initialUsers.ForEach(x => CreateUser(userManager, x.Value, IdentityRoles.Learner, x.Key));
 

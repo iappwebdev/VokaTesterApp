@@ -35,8 +35,8 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.HasArticle);
             Assert.IsFalse(res.IsMasc);
             Assert.IsFalse(res.IsFem);
-            Assert.AreEqual(string.Empty, res.PossibleArticle);
-            Assert.AreEqual(string.Empty, res.Article);
+            Assert.AreEqual(null, res.PossibleArticle);
+            Assert.AreEqual(null, res.Article);
             Assert.AreEqual("fête", res.Word);
         }
 
@@ -49,7 +49,7 @@ namespace VokaTester.Tests.Features.StringSimilarity
             Assert.IsFalse(res.IsMasc);
             Assert.IsFalse(res.IsFem);
             Assert.AreEqual("ma", res.PossibleArticle);
-            Assert.AreEqual(string.Empty, res.Article);
+            Assert.AreEqual(null, res.Article);
             Assert.AreEqual("ma fête", res.Word);
         }
 
@@ -58,9 +58,9 @@ namespace VokaTester.Tests.Features.StringSimilarity
         {
             ArticleInfo res = this.generalizeStringService.GetArticleInfo("une fête");
             Assert.IsTrue(res.HasPossibleArticle);
-            Assert.IsFalse(res.HasArticle);
-            Assert.IsTrue(res.IsMasc);
-            Assert.IsFalse(res.IsFem);
+            Assert.IsTrue(res.HasArticle);
+            Assert.IsFalse(res.IsMasc);
+            Assert.IsTrue(res.IsFem);
             Assert.AreEqual("une", res.PossibleArticle);
             Assert.AreEqual("une", res.Article);
             Assert.AreEqual("fête", res.Word);

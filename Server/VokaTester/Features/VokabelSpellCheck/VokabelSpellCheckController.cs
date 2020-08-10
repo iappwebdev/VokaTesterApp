@@ -19,7 +19,7 @@
 
         //[Route("lektion")]
         [HttpPost]
-        public async Task<CheckVokabelResponse> CheckSpellingLektion(CheckVokabelRequest model)
+        public async Task<CheckVokabelResponse> CheckSpellingVokabel(CheckVokabelRequest model)
             => await this.vokabelSpellCheckService.CheckSpellingVokabelAsync(model.VokabelId, model.Answer, model.IsPrevVokabel, model.IsBereich);
 
         //[Route("lektion-bereich")]

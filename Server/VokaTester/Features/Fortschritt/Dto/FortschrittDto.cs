@@ -2,6 +2,8 @@
 {
     public class FortschrittDto
     {
+        public int Id { get; set; }
+
         public string UserId { get; set; }
 
         public string UserUserName { get; set; }

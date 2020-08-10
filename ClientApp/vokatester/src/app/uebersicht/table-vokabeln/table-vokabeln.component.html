@@ -16,7 +16,7 @@
         <th style="width: 20%" scope="col">Aussprache</th>
         <th style="width: 25%" scope="col">Deutsch</th>
         <th style="width: 15%" scope="col">Bereich</th>
-        <th style="width: 10%" scope="col">Lektion</th>
+        <th *ngIf="displayLektion()" style="width: 10%" scope="col">Lektion</th>
       </tr>
     </thead>
     <tbody>
@@ -27,7 +27,7 @@
         <td>[{{vokabel.phonetik}}]</td>
         <td>{{vokabel.deu}}</td>
         <td>{{vokabel.bereichName}}</td>
-        <td>{{vokabel.lektionName}}</td>
+        <td *ngIf="displayLektion()">{{vokabel.lektionName}}</td>
       </tr>
     </tbody>
   </table>

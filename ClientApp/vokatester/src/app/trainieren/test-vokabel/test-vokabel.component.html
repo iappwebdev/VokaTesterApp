@@ -30,7 +30,7 @@
                         </p>
                     </div>
                     <div *ngIf="hasAnswered && isSimilarOnly()">
-                        <p class="heading">Fast richtig, achte auf <span class="fehler-accent">Accents</span>:</p>
+                        <p class="heading">Fast richtig, achte auf <span class="fehler-accent">Accente</span>:</p>
                         <p class="truth">
                             <span class="result-accent-fehler" [innerHtml]="getHtmlStringTruth()"></span>
                             <span class="phonetik">[{{vokabel!.phonetik}}]</span>
@@ -46,7 +46,7 @@
                     </div>
                     <div *ngIf="hasAnswered && isSimilarAndArtikelFehler()">
                         <p class="heading">Fast richtig, achte auf den <span class="fehler-artikel">Artikel</span>
-                            und <span class="fehler-accent">Accents</span>.</p>
+                            und <span class="fehler-accent">Accente</span>.</p>
                         <p class="truth">
                             <span class="result-artikel-fehler-and-accent-fehler"
                                 [innerHtml]="getHtmlStringTruth()"></span>

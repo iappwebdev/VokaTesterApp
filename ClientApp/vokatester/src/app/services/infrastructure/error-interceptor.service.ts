@@ -30,18 +30,18 @@ export class ErrorInterceptorService implements HttpInterceptor {
           this.router.navigate(['login']);
         }
         else if (err.status === 403) {
-          message = 'Keine Berechtigung.';
+          message = 'Keine Berechtigung vorhanden für diesen Vorgang.';
           returnToHome = true;
         }
         else if (err.status === 404) {
-          message = 'Seite nicht gefunden.';
+          message = 'Die gewünschte Seite wurde nicht gefunden.';
           returnToHome = true;
         }
         else if (err.status === 400) {
-          message = 'Client-Fehler.';
+          message = 'Ein Client-Fehler ist aufgetreten.';
         }
         else if (err.status === 0) {
-          message = 'Konnte keine Verbindung zum Server herstellen.';
+          message = 'Fehler beim Herstellen der Verbindung zum Server.';
         }
         else {
           //global message for error

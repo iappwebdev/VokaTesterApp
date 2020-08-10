@@ -10,8 +10,8 @@ using VokaTester.Data;
 namespace VokaTester.Data.Migrations
 {
     [DbContext(typeof(VokaTesterDbContext))]
-    [Migration("20200808172750_ExtendTestResultSchema")]
-    partial class ExtendTestResultSchema
+    [Migration("20200810092612_CreateVokaTesterSchema")]
+    partial class CreateVokaTesterSchema
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -188,6 +188,9 @@ namespace VokaTester.Data.Migrations
 
                     b.Property<int?>("BereichId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("DateStarted")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DateTestedLast")
                         .HasColumnType("datetime2");

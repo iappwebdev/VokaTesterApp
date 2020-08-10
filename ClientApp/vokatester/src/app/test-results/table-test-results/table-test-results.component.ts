@@ -19,10 +19,10 @@ export class TableTestResultsComponent {
     'filter': ['']
   });
   
-  hideCorrect: boolean = false;
-  hideAccent: boolean = false;
-  hideArtikel: boolean = false;
-  hideWrong: boolean = false;
+  showCorrect: boolean = false;
+  showAccent: boolean = false;
+  showArtikel: boolean = false;
+  showWrong: boolean = false;
 
   constructor(
     private fb: FormBuilder,
@@ -35,19 +35,24 @@ export class TableTestResultsComponent {
 
   get filterQuery(): string {
     if (!this.filter?.value) return '';
-    return this.filter.value;
+    return this.filter.value.toLowerCase();
   }
 
   get testResultsPreFiltered() {
+    if (!this.isPreFilterActive) return this.testResults;
     const preFiltered = this.testResults.filter(tr => {
-      if (this.hideCorrect && (tr.isCorrect && !tr.isArtikelFehler)) return false;
-      if (this.hideAccent && (tr.isSimilar || tr.isSimilarAndArtikelFehler)) return false;
-      if (this.hideArtikel && (tr.isArtikelFehler || tr.isSimilarAndArtikelFehler)) return false;
-      if (this.hideWrong && tr.isWrong) return false;
-      return true;
-    })
+      if (this.showCorrect && (tr.isCorrect && !tr.isArtikelFehler)) return true;
+      if (this.showAccent && (tr.isSimilar || tr.isSimilarAndArtikelFehler)) return true;
+      if (this.showArtikel && (tr.isArtikelFehler || tr.isSimilarAndArtikelFehler)) return true;
+      if (this.showWrong && tr.isWrong) return true;
+      return false;
+    });
 
     return preFiltered;
+  }
+
+  get isPreFilterActive() : boolean {
+    return this.showCorrect || this.showAccent || this.showArtikel || this.showWrong;
   }
 
   get testResultsFiltered() {
@@ -56,6 +61,7 @@ export class TableTestResultsComponent {
     return this.testResultsPreFiltered.filter(testResult =>
       testResult.truth.toLowerCase().indexOf(this.filterQuery) >= 0
       || testResult.answer.toLowerCase().indexOf(this.filterQuery) >= 0
+      || testResult.phonetik.toLowerCase().indexOf(this.filterQuery) >= 0
     );
   }
 
@@ -70,11 +76,18 @@ export class TableTestResultsComponent {
     var day = this.str_pad(date.getDate());
     var month = this.str_pad(date.getMonth());
     var year = date.getFullYear();
+
+    return `${day}.${month}.${year}`;
+  }
+
+  
+  getFormattedTime(dateString: string): string {
+    var date = new Date(dateString);
     var hours = this.str_pad(date.getHours());
     var min = this.str_pad(date.getMinutes());
     var sec = this.str_pad(date.getSeconds());
 
-    return `${day}.${month}.${year} ${hours}:${min}:${sec}`;
+    return `${hours}:${min}:${sec}`;
   }
 
   getHtmlStringFrz(frz: string): SafeHtml {
@@ -108,19 +121,19 @@ export class TableTestResultsComponent {
   } 
 
   toggleCorrect(): void {
-    this.hideCorrect = !this.hideCorrect;
+    this.showCorrect = !this.showCorrect;
   }
 
   toggleAccent(): void {
-    this.hideAccent = !this.hideAccent;
+    this.showAccent = !this.showAccent;
   }
 
   toggleArtikel(): void {
-    this.hideArtikel = !this.hideArtikel;
+    this.showArtikel = !this.showArtikel;
   }
 
   toggleWrong(): void {
-    this.hideWrong = !this.hideWrong;
+    this.showWrong = !this.showWrong;
   }
 
   private str_pad(n: number): string {

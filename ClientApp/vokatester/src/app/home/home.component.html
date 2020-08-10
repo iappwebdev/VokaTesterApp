@@ -1,6 +1,6 @@
 <div class="row justify-content-start">
     <div class="col-sm outer-card-link" *ngFor=" let tile of tiles"
-        [ngClass]="{'section-overview': tile.isOverview, 'section-train': tile.isTraining, 'section-testprotokoll': tile.isTestProtokoll}">
+        [ngClass]="{'section-overview': tile.isOverview, 'section-train': tile.isTraining, 'section-testprotocol': tile.isTestProtokoll}">
         <div class="card card-link" [routerLink]="tile.link">
             <div class="card-header">
                 <span *ngIf="tile.isOverview" class="overview-icon position-absolute">
