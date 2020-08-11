@@ -93,7 +93,7 @@ import { UebersichtLektionenComponent } from './uebersicht/uebersicht-lektionen/
       progressBar: true,
       tapToDismiss: true,
       newestOnTop: true,
-      timeOut: 15000
+      timeOut: 7000
     }),
     MaterialModule,
     LayoutModule,
